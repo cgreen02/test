@@ -1,0 +1,145 @@
+{
+  "sections": {
+    "main-page": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "f2d9e7b8-58c8-49ab-89ed-580a7cc47c82": {
+      "type": "jump-higher-slider",
+      "settings": {
+      }
+    },
+    "1ad377d4-edb4-4647-879b-30db9c438b60": {
+      "type": "section-support",
+      "settings": {
+        "lead_title": "",
+        "title": "",
+        "subtitle": "",
+        "showcase_title": "Scientifically proven to help athletes\n<span>JUMP AN AVERAGE OF 1.6” HIGHER<\/span>",
+        "showcase_title_two": "For high school athletes, to weekend warriors, all the way to the pros",
+        "background": "shopify:\/\/shop_images\/vktry_insoles_info_2x_3bcfa981-381d-4958-9e63-22b454123407.webp"
+      }
+    },
+    "ece1d196-78ef-4c54-8ca0-ce6dd1e7503d": {
+      "type": "section-quote-video",
+      "settings": {
+        "quote_title": "I just got my first dunk…",
+        "quote_body": "<p>VKTRY Insoles are amazing.. they felt really good. I just got my first dunk if y’all could tell by all the energy that we just had. VKTRY made me feel more springy and more bouncy. Compared to my old insoles? I’ll never wear those again.<\/p>",
+        "quote_author": "<em>- Bryce M.<\/em>",
+        "quote_video": "shopify:\/\/files\/videos\/fa6478a4f2e843b686b457402d512a71.mp4",
+        "quote_button_label": "Watch Dunk Video",
+        "quote_image": "shopify:\/\/shop_images\/dunk-2.webp",
+        "quote_image_mobile": "shopify:\/\/shop_images\/image.webp"
+      }
+    },
+    "8ecc4fd3-4063-49b6-9b33-2608724a1060": {
+      "type": "section-compare-gold",
+      "settings": {
+      }
+    },
+    "63d3e9a9-66c7-4529-979c-18c705839c7c": {
+      "type": "section-compare-silver",
+      "settings": {
+      }
+    },
+    "6f35d860-38e4-416b-b63b-38d1f15d87a8": {
+      "type": "section-quote-grid",
+      "blocks": {
+        "e7c699a9-dbbe-4cf5-b593-79fcf2fd4802": {
+          "type": "item",
+          "settings": {
+            "title": "Extra power & explosion…",
+            "body": "<p>This is the one product that would help them take their game to the next level. Foam insoles don’t respond or give you anything back. Wearing VKTRY’s carbon fiber insoles, the one thing I notice instantly is that extra power & explosion that they give me.<\/p>",
+            "author": "<em>- Jonathan Taylor, Indianapolis All-Pro Running Back<\/em>",
+            "image": "shopify:\/\/shop_images\/jt.webp"
+          }
+        }
+      },
+      "block_order": [
+        "e7c699a9-dbbe-4cf5-b593-79fcf2fd4802"
+      ],
+      "settings": {
+        "background": "#fff",
+        "per_row": 1
+      }
+    },
+    "8bc0ad12-c0d8-4652-9fd7-1268aeaae7c9": {
+      "type": "section-quote-grid",
+      "blocks": {
+        "1834db4c-008c-4db8-b788-b42b4372cc92": {
+          "type": "item",
+          "settings": {
+            "title": "She gained inches on her jump…",
+            "body": "<p>My daughter plays club and High School Volleyball. I wanted to give her an edge on her verticle jump at the net, and some height on her swing (outside hitter). She was extremely reluctant to try these insoles for some reason, but once she did, it was a HUGE difference. She gained INCHES on her jump and LOVES how these allow her to play longer without getting tired.<\/p>",
+            "author": "<em>- Wayne A.<\/em>"
+          }
+        },
+        "03903eee-c339-461a-b400-df3a81e3a827": {
+          "type": "item",
+          "settings": {
+            "title": "Legit game changer…",
+            "body": "<p>We bought my son the Gold pro-level VKs for Christmas. He had come off of a summer injury and it was his high school basketball senior season so we wanted to give him a boost, and add protection! These inserts were and are a game-changer in his performance! If you are on the fence about purchasing Vk’s, do not be! They are 1000% legit!!!!<\/p>",
+            "author": "<em>- Jennifer Z.<\/em>"
+          }
+        }
+      },
+      "block_order": [
+        "1834db4c-008c-4db8-b788-b42b4372cc92",
+        "03903eee-c339-461a-b400-df3a81e3a827"
+      ],
+      "settings": {
+        "background": "#f3f3f3",
+        "per_row": 2
+      }
+    },
+    "a938bd97-a1b6-4930-bae7-7a625d18f5ad": {
+      "type": "section-large-quote",
+      "settings": {
+        "title": "VKs give me that extra edge on the court…",
+        "body": "<p>Exploding vertically is important in Volleyball and VKs give me that extra edge on the court. I love that VKs help to protect against injuries from the countless jumps I take.<\/p>",
+        "author": "<em>- Jordan Larson, Captain of 2020 gold-medal-winning Team USA<\/em>",
+        "image": "shopify:\/\/shop_images\/vktry_jump_higher_volleyball_2x_5b1bbfea-2c7c-4830-9b3a-d81896e450c1.webp",
+        "mobile_image": "shopify:\/\/shop_images\/image_2.webp"
+      }
+    },
+    "2a4ab7f8-aa34-49ac-97d1-31e28f7c4e8f": {
+      "type": "section-cta",
+      "blocks": {
+        "19501cdf-1d6c-499d-9e4b-5e77119caf36": {
+          "type": "button",
+          "settings": {
+            "label": "Insoles For Serious Athletes",
+            "link": "shopify:\/\/products\/vktry-insoles-gold"
+          }
+        },
+        "5fe6dd44-d97f-4524-ba0f-ed9562784692": {
+          "type": "button",
+          "settings": {
+            "label": "Insoles For Casual Athletes",
+            "link": "shopify:\/\/products\/vktry-insoles-silver"
+          }
+        }
+      },
+      "block_order": [
+        "19501cdf-1d6c-499d-9e4b-5e77119caf36",
+        "5fe6dd44-d97f-4524-ba0f-ed9562784692"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main-page",
+    "f2d9e7b8-58c8-49ab-89ed-580a7cc47c82",
+    "1ad377d4-edb4-4647-879b-30db9c438b60",
+    "ece1d196-78ef-4c54-8ca0-ce6dd1e7503d",
+    "8ecc4fd3-4063-49b6-9b33-2608724a1060",
+    "63d3e9a9-66c7-4529-979c-18c705839c7c",
+    "6f35d860-38e4-416b-b63b-38d1f15d87a8",
+    "8bc0ad12-c0d8-4652-9fd7-1268aeaae7c9",
+    "a938bd97-a1b6-4930-bae7-7a625d18f5ad",
+    "2a4ab7f8-aa34-49ac-97d1-31e28f7c4e8f"
+  ]
+}

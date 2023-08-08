@@ -1,0 +1,275 @@
+{
+  "sections": {
+    "sport-hero": {
+      "type": "section-sport-hero",
+      "settings": {
+        "hero": "shopify:\/\/shop_images\/DSC02227.jpg",
+        "hero_mobile": "shopify:\/\/shop_images\/DSC02227.jpg",
+        "subtitle": "VKTRY Baseball Insoles",
+        "subtitle_font_size": 2,
+        "title": "<p>The Official <strong>Insoles<\/strong><\/p><p>of Silver Slugger <strong>Winner<\/strong><\/p><p>Julio <strong>Rodríguez<\/strong><\/p>",
+        "title_font_size": 3.5,
+        "content_top": 7,
+        "content_left": 1,
+        "content_width": 68,
+        "sport": "Baseball\/Softball",
+        "show_silver": false,
+        "buttons_bottom": 21,
+        "body": "Julio Rodríguez chooses VKTRY Insoles for the long grind of a baseball season. Research proves VKTRY’s full-length carbon fiber baseball insoles provide added explosiveness and ground force in the baseball swing in addition to faster 40 times and higher jumps. Power starts with the ground up with VKTRY Insoles."
+      }
+    },
+    "7a9ba350-935a-498e-83f8-d192ffae25fe": {
+      "type": "section-sport-why",
+      "blocks": {
+        "template--16150266642603__7a9ba350-935a-498e-83f8-d192ffae25fe-16881878951192115d-0": {
+          "type": "item",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/icon_arrow.png",
+            "title": "JUMP HIGHER",
+            "body": "Proven average <b>+1.6” vertical<\/b> jump increase"
+          }
+        },
+        "template--16150266642603__7a9ba350-935a-498e-83f8-d192ffae25fe-16881878951192115d-1": {
+          "type": "item",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/icon_run.png",
+            "title": "LAND SOFTER",
+            "body": "<b>41% less<\/b> foot injuries and <b>22% less<\/b> lower leg injuries over the course of a season"
+          }
+        },
+        "template--16150266642603__7a9ba350-935a-498e-83f8-d192ffae25fe-16881878951192115d-2": {
+          "type": "item",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/icon_foot.png",
+            "title": "INCREASED STABILITY",
+            "body": "Get a <b>firm foundation<\/b> for crisp cutting"
+          }
+        }
+      },
+      "block_order": [
+        "template--16150266642603__7a9ba350-935a-498e-83f8-d192ffae25fe-16881878951192115d-0",
+        "template--16150266642603__7a9ba350-935a-498e-83f8-d192ffae25fe-16881878951192115d-1",
+        "template--16150266642603__7a9ba350-935a-498e-83f8-d192ffae25fe-16881878951192115d-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/why-sport.jpg"
+      }
+    },
+    "76323fbe-abe2-443d-9299-37a07506f89b": {
+      "type": "section-reviews",
+      "settings": {
+        "size": "small"
+      }
+    },
+    "c2d0ee49-4ee9-4024-921a-8630045211b4": {
+      "type": "section-parent-videos",
+      "blocks": {
+        "01202b79-a6ad-46cc-9a73-7084d1a372bb": {
+          "type": "video",
+          "settings": {
+            "poster": "shopify:\/\/shop_images\/julio_experience_insole.png",
+            "video": "shopify:\/\/files\/videos\/Seattle Outfielder Julio Rodriguez and His VKTRY Insole Experience.mp4",
+            "title": "Seattle Outfielder Julio Rodriguez and His VKTRY Insole Experience"
+          }
+        },
+        "36bdc6bd-afdf-48a8-8937-882e41d3687f": {
+          "type": "video",
+          "settings": {
+            "poster": "shopify:\/\/shop_images\/wasting_energy_thumbnail_2a51bbe6-7891-43f2-ac9a-bbb107e2f991.png",
+            "video": "shopify:\/\/files\/videos\/perfect-game-all-americans-compare-their-insoles-to-vktry-carbon-fiber-insoles-1280-ytshorts.savetube.me.mp4",
+            "title": "Perfect Game All-Americans Compare Their Insoles to VKTRY Carbon Fiber Insoles"
+          }
+        },
+        "38390b8a-2e59-4d20-a08c-75beb7ce73af": {
+          "type": "video",
+          "settings": {
+            "poster": "shopify:\/\/shop_images\/julio_swing_thumbnail.png",
+            "video": "shopify:\/\/files\/videos\/vktry-insoles-make-you-swing-like-julio-rodriguez-1280-ytshorts.savetube.me.mp4",
+            "title": "VKTRY Insoles make you swing like Julio Rodriguez 😂"
+          }
+        },
+        "7b9e0fed-dbd6-4013-9557-860585a3ee02": {
+          "type": "video",
+          "settings": {
+            "poster": "shopify:\/\/shop_images\/b7053731258d4e8c9ccdae7d0e9da707.thumbnail.0000000000.webp",
+            "video": "shopify:\/\/files\/videos\/b7053731258d4e8c9ccdae7d0e9da707.mp4",
+            "title": "See VKTRY Energy\nStorage and Return"
+          }
+        },
+        "1eb97e75-053f-49e3-9842-f6eb7b4587be": {
+          "type": "video",
+          "settings": {
+            "poster": "shopify:\/\/shop_images\/ryan_fuller_thumbnail.png",
+            "video": "shopify:\/\/files\/videos\/vktry-performance-insoles-in-baseball-720-ytshorts.savetube.me.mp4",
+            "title": "Ryan Fuller is one of baseball's best at breaking down and analyzing the game"
+          }
+        },
+        "5e9a03b0-163f-453f-bdb5-ef5bee930fff": {
+          "type": "video",
+          "disabled": true,
+          "settings": {
+            "poster": "shopify:\/\/shop_images\/4ea5d157668f49fbb554002865874bd1.thumbnail.0000000000.webp",
+            "video": "shopify:\/\/files\/videos\/4ea5d157668f49fbb554002865874bd1.mp4",
+            "title": "Some elite athletes jump +5\" higher with VKTRY Insoles"
+          }
+        },
+        "8e2eea79-9b43-4e25-b5fe-bbf08580b207": {
+          "type": "video",
+          "disabled": true,
+          "settings": {
+            "poster": "shopify:\/\/shop_images\/e9d076113256473891ba8965032ea9ce.thumbnail.0000000000.webp",
+            "video": "shopify:\/\/files\/videos\/e9d076113256473891ba8965032ea9ce.mp4",
+            "title": "Team USA\nand VKs"
+          }
+        },
+        "122e2e9d-8013-42b7-9dc0-2dacb4268c3d": {
+          "type": "video",
+          "disabled": true,
+          "settings": {
+            "poster": "shopify:\/\/shop_images\/b08a7cbdbd1e4ed0bad83666898f7d0d.thumbnail.0000000000.webp",
+            "video": "shopify:\/\/files\/videos\/b08a7cbdbd1e4ed0bad83666898f7d0d.mp4",
+            "title": "I just got my first\ndunk with VKTRY"
+          }
+        },
+        "2c16576b-1750-4734-9281-3cb5c6a50945": {
+          "type": "video",
+          "disabled": true,
+          "settings": {
+            "poster": "shopify:\/\/shop_images\/b22c137d5cc64852abbd239a3d568bff.thumbnail.0000000000.webp",
+            "video": "shopify:\/\/files\/videos\/b22c137d5cc64852abbd239a3d568bff.mp4",
+            "title": "Jonathan Taylor on\nWhat He Thinks of VKs"
+          }
+        },
+        "2e6c838c-cd16-404f-a65e-8aae615e90c9": {
+          "type": "video",
+          "disabled": true,
+          "settings": {
+            "poster": "shopify:\/\/shop_images\/cdn.shopify.com_videos_c_o_v_1f432e86ff044570a47c9fa4fd394b39.mp4.webp",
+            "video": "shopify:\/\/files\/videos\/1f432e86ff044570a47c9fa4fd394b39.mp4",
+            "title": "VKTRY at\nPerfect Game ‘22"
+          }
+        },
+        "a27996c2-8977-4bb3-b706-2ee3cb7b0401": {
+          "type": "video",
+          "disabled": true,
+          "settings": {
+            "poster": "shopify:\/\/shop_images\/17150.jpg",
+            "video": "shopify:\/\/files\/videos\/Wheeler1_1.mp4",
+            "title": "High School Basketball Players React to VKTRY Insoles"
+          }
+        },
+        "e93d3d00-846e-454a-b459-4018ffa94483": {
+          "type": "video",
+          "disabled": true,
+          "settings": {
+            "poster": "shopify:\/\/shop_images\/IMG_1398.jpg",
+            "video": "shopify:\/\/files\/videos\/Brandon Beloti Nov.mp4",
+            "title": "VKTRY Insoles are the Vert Secret"
+          }
+        },
+        "3da09cfb-9095-407b-8ef3-da02726d2cd7": {
+          "type": "video",
+          "disabled": true,
+          "settings": {
+            "poster": "shopify:\/\/shop_images\/31284.jpg",
+            "video": "shopify:\/\/files\/videos\/Barrera Original.mp4",
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "01202b79-a6ad-46cc-9a73-7084d1a372bb",
+        "36bdc6bd-afdf-48a8-8937-882e41d3687f",
+        "38390b8a-2e59-4d20-a08c-75beb7ce73af",
+        "7b9e0fed-dbd6-4013-9557-860585a3ee02",
+        "1eb97e75-053f-49e3-9842-f6eb7b4587be",
+        "5e9a03b0-163f-453f-bdb5-ef5bee930fff",
+        "8e2eea79-9b43-4e25-b5fe-bbf08580b207",
+        "122e2e9d-8013-42b7-9dc0-2dacb4268c3d",
+        "2c16576b-1750-4734-9281-3cb5c6a50945",
+        "2e6c838c-cd16-404f-a65e-8aae615e90c9",
+        "a27996c2-8977-4bb3-b706-2ee3cb7b0401",
+        "e93d3d00-846e-454a-b459-4018ffa94483",
+        "3da09cfb-9095-407b-8ef3-da02726d2cd7"
+      ],
+      "settings": {
+      }
+    },
+    "e9161fa9-1658-4cec-8733-4ee9b8ccf7e9": {
+      "type": "section-compare-gold",
+      "settings": {
+      }
+    },
+    "8a85a323-a0fb-42fe-9b29-11e492f94ab3": {
+      "type": "section-compare-silver",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "caed3e59-b4e9-4d47-81ca-dfd8591046e1": {
+      "type": "section-foam-compare",
+      "settings": {
+      }
+    },
+    "4955306a-ebdc-4f41-9128-416ad1400e4e": {
+      "type": "section-sport-faq",
+      "blocks": {
+        "6e5d2c35-69f2-40d8-8498-8564b422a3aa": {
+          "type": "FAQ",
+          "settings": {
+            "question": "Are VKTRY Insoles comfortable?",
+            "answer": "Yes, VKTRY Insoles are very comfortable. Although the base is made of carbon fiber, the top portion of the insole is made with a softer EVA foam that supports & cushions the foot. It's important to note that every pair needs to be broken in, which typically takes a few short days of light training. Instructions on the break-in process come inside the packaging with your order."
+          }
+        },
+        "90adef8d-ffe5-46bf-bde0-249b646f0b6b": {
+          "type": "FAQ",
+          "settings": {
+            "question": "Are VKTRY Insoles good for my feet?",
+            "answer": "VKTRY Insoles are clinically proven to help you protect & recover from many common foot & lower-leg injuries. They are totally safe for your feet, and absorb more shock than a standard foam insole upon impact. Not only that, but they also support & stabilize the lower-body, which translates to better protection."
+          }
+        },
+        "7b359090-7886-4f33-9e07-7ae83fd41a6e": {
+          "type": "FAQ",
+          "settings": {
+            "question": "How do VKTRY Insoles work?",
+            "answer": "VKTRY Insoles are made with a full-length carbon fiber base plate, in which the flexibility (we call \"Pro Level) comes personalized to your sport & weight. When you bend your foot to walk, run or jump, your foot is putting energy into the ground. A standard foam or plastic insole would disperse (and waste) that energy. VKTRY Insoles absorb that energy and then return back to you, similar to how a diving board or trampoline would. Athletes are proven to see greater explosiveness & ground force when wearing VKTRY, resulting in higher verticals and faster sprints."
+          }
+        },
+        "71f8a9dc-a8e3-4d72-a16d-08837c039fa3": {
+          "type": "FAQ",
+          "settings": {
+            "question": "Are VKTRY Insoles legal?",
+            "answer": "We have not heard from any governing body on VKTRY Insoles being banned in any sport or league. VKTRY Insoles are worn by amateur and professional athletes alike all over the world. It's important to note that VKTRY Insoles are also proven to protect from injury, and no governing body would have it in their best interest to ban something that's proven to protect their players. It's not cheating, it's just better technology!"
+          }
+        },
+        "5f432b22-af89-4194-a4e8-0c57fc0a88c2": {
+          "type": "FAQ",
+          "settings": {
+            "question": "What if VKTRY Insoles don't fit after ordering?",
+            "answer": "Every order comes with a 90-day money back guarantee. If there's any issues with the fitment, comfort or performance of your product, we will handle an exchange free of charge (customers outside of the USA must pay for postage).  To get in contact, either chat with us by clicking on the question mark at the bottom right of the screen, call us by clicking on the phone at the top right of the screen, or email us at info@vktrygear.com."
+          }
+        }
+      },
+      "block_order": [
+        "6e5d2c35-69f2-40d8-8498-8564b422a3aa",
+        "90adef8d-ffe5-46bf-bde0-249b646f0b6b",
+        "7b359090-7886-4f33-9e07-7ae83fd41a6e",
+        "71f8a9dc-a8e3-4d72-a16d-08837c039fa3",
+        "5f432b22-af89-4194-a4e8-0c57fc0a88c2"
+      ],
+      "settings": {
+        "sport": "Baseball"
+      }
+    }
+  },
+  "order": [
+    "sport-hero",
+    "7a9ba350-935a-498e-83f8-d192ffae25fe",
+    "76323fbe-abe2-443d-9299-37a07506f89b",
+    "c2d0ee49-4ee9-4024-921a-8630045211b4",
+    "e9161fa9-1658-4cec-8733-4ee9b8ccf7e9",
+    "8a85a323-a0fb-42fe-9b29-11e492f94ab3",
+    "caed3e59-b4e9-4d47-81ca-dfd8591046e1",
+    "4955306a-ebdc-4f41-9128-416ad1400e4e"
+  ]
+}

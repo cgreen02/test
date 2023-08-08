@@ -1,0 +1,42 @@
+{
+  "sections": {
+    "main-page": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "46bbbac2-3253-41dd-b543-c3970d5cc4ab": {
+      "type": "section-hero",
+      "settings": {
+        "hero_image": "shopify://shop_images/ar-8-i-0438-1.webp",
+        "hero_image_size": 2000,
+        "hero_title_large": "Athlete Stories & Sponsorships",
+        "hero_title_medium": "",
+        "hero_title_small_top": false,
+        "hero_title_small": "",
+        "hero_description": "",
+        "hero_has_overlay": true,
+        "hero_scroll": true,
+        "hero_video_link": "",
+        "hero_video_text": "",
+        "hero_video_new_tab": false,
+        "hero_class": ""
+      }
+    },
+    "0f2c14d7-b053-4344-a2d5-2ce13054fe21": {
+      "type": "section-description",
+      "settings": {
+        "description_title": "<p>Thousands of athletes at over 300<br/>pro and college teams use VKs.</p>",
+        "description_copy": "",
+        "description_class": "section-description--padding-bottom",
+        "description_button_url": ""
+      }
+    }
+  },
+  "order": [
+    "main-page",
+    "46bbbac2-3253-41dd-b543-c3970d5cc4ab",
+    "0f2c14d7-b053-4344-a2d5-2ce13054fe21"
+  ]
+}

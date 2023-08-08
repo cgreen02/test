@@ -1,0 +1,19 @@
+{
+  "sections": {
+    "main-list-collections": {
+      "type": "main-list-collections",
+      "settings": {
+      }
+    },
+    "b2f9b0c7-1e75-423a-ae8d-e5a067f687c1": {
+      "type": "section-reviews",
+      "settings": {
+        "size": "small"
+      }
+    }
+  },
+  "order": [
+    "main-list-collections",
+    "b2f9b0c7-1e75-423a-ae8d-e5a067f687c1"
+  ]
+}

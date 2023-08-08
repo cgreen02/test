@@ -1,0 +1,26 @@
+{% form "create_customer", class: "form" %}
+    <h1 class="formTitle">Register</h1>
+
+    {{ form.errors | default_errors }}
+
+    <label for="first-name">First name</label>
+    <input id="first-name" type="text" name="customer[first_name]">
+
+    <label for="last-name">Last name</label>
+    <input id="last-name" type="text" name="customer[last_name]">
+
+    <label for="email">Email</label>
+    <input id="email" type="email" name="customer[email]">
+
+    <label for="password">Password</label>
+    <input id="password" type="password" name="customer[password]">
+
+    <button class="button">Submit</button>
+{% endform %}
+
+<div class="formDivider"></div>
+
+<div class="form bottom">
+    <div class="formSubtitle">Existing Customers</div>
+    <a class="formLink" href="/account/login">Log In</a>
+</div>

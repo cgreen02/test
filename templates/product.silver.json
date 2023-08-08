@@ -1,0 +1,274 @@
+{
+  "sections": {
+    "main-product": {
+      "type": "main-product-insoles",
+      "settings": {
+      }
+    },
+    "cd84ffa9-381b-4cf8-9200-3575d5a8e20e": {
+      "type": "section-index-benefits",
+      "blocks": {
+        "63e85371-3147-4e2b-9cb0-ecf7c6e58143": {
+          "type": "benefit",
+          "settings": {
+            "title": "",
+            "sub_title": "<p>More Energy Return<\/p>",
+            "image": "shopify:\/\/shop_images\/benefit1.webp"
+          }
+        },
+        "d72bc618-6b86-474b-9c3d-701a421e22b8": {
+          "type": "benefit",
+          "settings": {
+            "title": "",
+            "sub_title": "<p>More Shock Absorption<\/p>",
+            "image": "shopify:\/\/shop_images\/benefit2.webp"
+          }
+        },
+        "fc5a2259-5d50-4689-bc5a-ebbb8981be4c": {
+          "type": "benefit",
+          "settings": {
+            "title": "",
+            "sub_title": "<p>More Stability<\/p>",
+            "image": "shopify:\/\/shop_images\/vk_silver_golf.webp"
+          }
+        },
+        "f9f574ad-d80c-49fc-87ad-ddf853aa22fd": {
+          "type": "benefit",
+          "settings": {
+            "title": "",
+            "sub_title": "<p>More Support<\/p>",
+            "image": "shopify:\/\/shop_images\/benefit4.webp"
+          }
+        }
+      },
+      "block_order": [
+        "63e85371-3147-4e2b-9cb0-ecf7c6e58143",
+        "d72bc618-6b86-474b-9c3d-701a421e22b8",
+        "fc5a2259-5d50-4689-bc5a-ebbb8981be4c",
+        "f9f574ad-d80c-49fc-87ad-ddf853aa22fd"
+      ],
+      "settings": {
+        "title": "THE MOST RESEARCHED <span>INSOLES IN THE WORLD<\/span>",
+        "flip_cards": true,
+        "button_label": "Learn How VKs Work",
+        "button_url": "shopify:\/\/pages\/how-it-works",
+        "show_modal": false
+      }
+    },
+    "70f44b5c-d5ce-4081-b39b-cb1ed1f20b92": {
+      "type": "section-athletes",
+      "blocks": {
+        "e23b0ee0-51d3-4283-97c8-b3fa8b8a98c7": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/IMG_0897.webp",
+            "quote": "<p>\"In basketball, jumping a couple inches higher and having a more explosive first step, makes a huge difference in your game.\"<\/p>",
+            "quote_author": "<p>Tracy McGrady <\/p><p>Hall of Fame Basketball Player<\/p>"
+          }
+        },
+        "5d9538b1-5e9c-467b-aa36-3aecdeaa5e89": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/JT-high-def.webp",
+            "quote": "<p>\"When I first put VKTRY Insoles into my cleats, it was an instant boost of explosion, power & speed. Being able to explode out of my cuts with more power helps me separate from a defender. Having this high-tech product inside your cleats makes you feel like no one can stop you on the field.\"<\/p>",
+            "quote_author": "<p>Jonathan Taylor <\/p><p>All Pro Running Back, Indianapolis<\/p>"
+          }
+        },
+        "0951279f-73ca-4ea1-8d91-2f2189dcba8f": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Jordan_Larson_MVP.jpg",
+            "quote": "<p>\"I’ve been really impressed with how VKTRY insoles have helped me increase my vertical, even at my age....I felt the difference immediately when I put these insoles into my shoes – Wow!\"<\/p>",
+            "quote_author": "<p><strong>Jordan Larson<\/strong><\/p><p>3x World Champion Volleyball Player<\/p>"
+          }
+        },
+        "8699de7a-df2e-44e7-9045-ed25a9c40dd4": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/julio---insoles-into-shoes.webp",
+            "quote": "<p>\"With VKTRY, I feel a lot more explosive getting an initial jump. The spring you feel is next level. I really believe VKTRY Insoles are a secret weapon for anyone wearing them... they have really helped me run faster.\"<\/p>",
+            "quote_author": "<p>Julio Rodriguez<\/p><p>Outfielder, Seattle<\/p>"
+          }
+        },
+        "3d11c3e1-b5db-498f-913b-1d92c30a3b8f": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Padraig-Google.webp",
+            "quote": "<p>\"When you wear VKTRY, you know you have something that’s elite. It’s very important as an athlete that you don’t leave anything to chance. VKTRY brings confidence that you’ve got something that’s going to give maximum power & maximum stability.. as I always say, you can’t launch a rocket from a canoe.\"<\/p>",
+            "quote_author": "<p>Padraig Harrington<\/p><p>3x Major Champion<\/p>"
+          }
+        },
+        "1093b1ba-a3ae-4bae-9c0a-858ae0da757c": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Antonio-Gibson-x-VKTRY-Pic-Jun-2021.jpg",
+            "quote": "<p>\"VKTRY insoles were a key part of my return from a turf toe injury during my rookie season. I feel the added protection and power it gives me every time I step on the field.\"<\/p>",
+            "quote_author": "<p>Antonio Gibson<\/p><p>Running Back, Washington Football Team<\/p>"
+          }
+        },
+        "820dac87-ddeb-49a8-aa30-f3594f2980ee": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Angel_McCoughtry_MVP.jpg",
+            "quote": "<p>\"VKTRY insoles help me with shock absorption and allows me to play and train freely. That freeing of my mind is beyond valuable and I owe that to VKTRY Gear and their amazing insoles.\"<\/p>",
+            "quote_author": "<p><strong>Angel McCoughtry<\/strong><\/p><p>#1 overall pick in the 2009 WNBA Draft<\/p>"
+          }
+        },
+        "efb7b947-5104-4e6e-b245-ade2cb10acfb": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/jarryd-wallace-mvp.webp",
+            "quote": "<p>\"When you’re running with something like VKTRY in your spikes and you feel that power and explosiveness, that’s something you can’t argue against.\"<\/p>",
+            "quote_author": "<p>Jarryd Wallace<\/p><p><strong>2x World Champion Sprinter<\/strong><\/p>"
+          }
+        },
+        "bab73d4f-8f8f-47bc-85ad-f5ab3f6f63ce": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Jamia_Fields_MVP.jpg",
+            "quote": "<p>\"I love using VKTRY insoles, not only do I feel fast and explosive, but they fit perfectly inside my cleat.\"<\/p>",
+            "quote_author": "<p><strong>Jamia Fields<\/strong><\/p><p>Forward for the Houston Dash, NWSL<\/p>"
+          }
+        },
+        "5754de49-cdf4-4d56-bbd4-e67428a1225a": {
+          "type": "button",
+          "settings": {
+            "button_label": "Customize Your Pair",
+            "button_link": "shopify:\/\/products\/vktry-insoles-silver"
+          }
+        }
+      },
+      "block_order": [
+        "e23b0ee0-51d3-4283-97c8-b3fa8b8a98c7",
+        "5d9538b1-5e9c-467b-aa36-3aecdeaa5e89",
+        "0951279f-73ca-4ea1-8d91-2f2189dcba8f",
+        "8699de7a-df2e-44e7-9045-ed25a9c40dd4",
+        "3d11c3e1-b5db-498f-913b-1d92c30a3b8f",
+        "1093b1ba-a3ae-4bae-9c0a-858ae0da757c",
+        "820dac87-ddeb-49a8-aa30-f3594f2980ee",
+        "efb7b947-5104-4e6e-b245-ade2cb10acfb",
+        "bab73d4f-8f8f-47bc-85ad-f5ab3f6f63ce",
+        "5754de49-cdf4-4d56-bbd4-e67428a1225a"
+      ],
+      "settings": {
+        "title": "THOUSANDS OF ATHLETES",
+        "subtitle": "AT OVER 500 PRO AND COLLEGE TEAMS USE VKS",
+        "show_money_back": true
+      }
+    },
+    "792f6235-5bb9-429e-a9dc-bcc1b6eb92b5": {
+      "type": "section-reviews",
+      "settings": {
+        "size": "large"
+      }
+    },
+    "cfd22080-56c6-4d7d-80ec-87be36339cc0": {
+      "type": "section-faq",
+      "blocks": {
+        "25cb4d24-4194-4d80-bc13-ae6ebc3f3267": {
+          "type": "item",
+          "settings": {
+            "question": "How do I know VKTRY Insoles will fit my shoes?",
+            "answer": "<p>VKTRY Insoles fit true to size. If you are a size 9 shoe, order a size 9\/9.5 insole. If any problems with fit once you receive your VKs, simply contact us and we will arrange for a free exchange. We get the size right about 98% of the time!<\/p>"
+          }
+        },
+        "c55824c3-8365-4e3a-813f-b42da41fd279": {
+          "type": "item",
+          "settings": {
+            "question": "How are VKTRY Insoles customized for each athlete?",
+            "answer": "<p>VKTRY Insoles are designed to be highly personalized based not only on shoe size, but also based on  body weight. VKs come in different levels of flexibility because a bigger athlete generates more ground force than a smaller athlete.<\/p>"
+          }
+        },
+        "dedfda37-b7dd-423d-8d8f-8c5e6ceb0c17": {
+          "type": "item",
+          "settings": {
+            "question": "Do VKTRY Insoles come in different widths or arch types?",
+            "answer": "<p><em>No, we do not make VKs in different widths or arch types.<\/em> They have been designed to be arch agnostic and our sizes are very generous in the width. Our VKs fit most foot types and sizes, but if any issues with comfort after trying, please contact us.<\/p>"
+          }
+        },
+        "d876e674-7bc9-4f43-bf31-8bc33122e003": {
+          "type": "item",
+          "settings": {
+            "question": "If I am on the border of a weight level, should I go up or down?",
+            "answer": "<p>We usually recommend going down. The weight level is a big factor in determining the VK’s Pro Level (flexibility). While a higher Pro Level may provide more spring, it’s very important that you are able to comfortably flex your feet for the insoles to be effective.<\/p>"
+          }
+        },
+        "2b5a6e7e-49d4-4f85-9925-bb8dce770288": {
+          "type": "item",
+          "settings": {
+            "question": "If I sometimes wear a 9.5 shoe size and in other shoes wear a 10, what size VK should I order?",
+            "answer": "<p>We recommend that you select the shoes you will be wearing your VKs in the most and choose <em>that<\/em> shoe size when selecting your VK size. Any issues with fit, please contact us and we can arrange an exchange.<\/p>"
+          }
+        },
+        "8cf17d50-3101-4f5a-aa33-6c6c1f7d8db9": {
+          "type": "item",
+          "settings": {
+            "question": "What is VKTRY’s warranty policy?",
+            "answer": "<p>We offer a 90-day Money Back Guarantee. If you are not satisfied with your VKs, please email us at info@vktrygear.com along with your full name and\/or order number and what you did not like about the VKs. With international returns, the customer will be responsible for shipping the VKs back to our office. We strive to make all VKTRY customers, happy customers!<\/p>"
+          }
+        },
+        "11cbf88e-32c2-4337-8ffb-2c2182cff587": {
+          "type": "item",
+          "settings": {
+            "question": "Do you offer product exchanges?",
+            "answer": "<p>Yes, about 5-10% of the time, we may need to alter the size or flexibility of the VKs you ordered. We try our best to ensure you get what you need. Please send us an email at info@vktrygear.com with your full name and order number along with the issue and we will get back to you with procedures on exchanging your VKs. We offer free exchanges within the USA. However, international customers will be responsible for shipping costs.<\/p>"
+          }
+        },
+        "2baf6f31-30ad-40aa-a4f5-6c90e9090f71": {
+          "type": "item",
+          "settings": {
+            "question": "Still have questions?",
+            "answer": "<p>Visit our <a href=\"\/pages\/faq\" target=\"_blank\" title=\"Frequently Asked Questions\">FAQ page<\/a> to learn more, and if you still have any questions contact us at <a href=\"mailto:info@VKTRYgear.com\" title=\"mailto:info@VKTRYgear.com\">info@VKTRYgear.com<\/a> or 1-844-468-5879.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "25cb4d24-4194-4d80-bc13-ae6ebc3f3267",
+        "c55824c3-8365-4e3a-813f-b42da41fd279",
+        "dedfda37-b7dd-423d-8d8f-8c5e6ceb0c17",
+        "d876e674-7bc9-4f43-bf31-8bc33122e003",
+        "2b5a6e7e-49d4-4f85-9925-bb8dce770288",
+        "8cf17d50-3101-4f5a-aa33-6c6c1f7d8db9",
+        "11cbf88e-32c2-4337-8ffb-2c2182cff587",
+        "2baf6f31-30ad-40aa-a4f5-6c90e9090f71"
+      ],
+      "settings": {
+        "title": "Frequently Asked Questions",
+        "background": "#F2F2F2"
+      }
+    },
+    "e32c5bb9-65de-496f-b0f3-d1ec81517d1a": {
+      "type": "section-press",
+      "disabled": true,
+      "blocks": {
+        "e0d20e1b-e9e0-4732-bec1-499d41293f9f": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/forbes-logo-gray_2x_cdac87d6-82ad-40fe-a1d8-3664e5d60ccb.png",
+            "copy": "VKTRY Performance Insoles Embrace Carbon Fiber For Energy Return"
+          }
+        }
+      },
+      "block_order": [
+        "e0d20e1b-e9e0-4732-bec1-499d41293f9f"
+      ],
+      "settings": {
+        "title": "CHANGING HOW ATHLETES TRAIN AND COMPETE IS BIG NEWS!"
+      }
+    },
+    "1689951126ffd364c8": {
+      "type": "apps",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main-product",
+    "cd84ffa9-381b-4cf8-9200-3575d5a8e20e",
+    "70f44b5c-d5ce-4081-b39b-cb1ed1f20b92",
+    "792f6235-5bb9-429e-a9dc-bcc1b6eb92b5",
+    "cfd22080-56c6-4d7d-80ec-87be36339cc0",
+    "e32c5bb9-65de-496f-b0f3-d1ec81517d1a",
+    "1689951126ffd364c8"
+  ]
+}

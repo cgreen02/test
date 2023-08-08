@@ -1,0 +1,62 @@
+{% form "customer_login", class: "form" %}
+    <h1 class="formTitle">Log In</h1>
+
+    {{ form.errors | default_errors }}
+
+    <label for="email">Email</label>
+    <input id="email" type="email" name="customer[email]">
+
+    <label for="password">Password</label>
+    <input id="password" type="password" name="customer[password]">
+
+    <button class="button">Login</button>
+
+    <button class="formLink toggle" type="button">Forgot Your Password?</button>
+{% endform %}
+
+
+{% form "recover_customer_password", class: "form hide" %}
+    <h1 class="formTitle">Reset Password</h1>
+
+    {% if form.errors %}
+        <div class="toggleNow">{{ form.errors | default_errors }}</div>
+    {% endif %}
+    {% if form.posted_successfully? %}
+        <div class="toggleNow">Please check your email shortly.</div>
+    {% endif %}
+
+    {% if form.errors or form.posted_successfully? %}
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                setTimeout(function () {
+                    toggleForms();
+                }, 100);
+            });
+        </script>
+    {% endif %}
+
+    <label for="reset-email">Email</label>
+    <input id="reset-email" type="email" name="email">
+
+    <button class="button">Submit</button>
+
+    <button class="formLink toggle" type="button">Login</button>
+{% endform %}
+
+<div class="formDivider"></div>
+
+<div class="form bottom">
+    <div class="formSubtitle">New Customers</div>
+    <a class="formLink" href="/account/register">Create Account</a>
+</div>
+
+<script>
+    function toggleForms() {
+        document.querySelector(`[action="/account/login"]`).classList.toggle("hide");
+        document.querySelector(`[action="/account/recover"]`).classList.toggle("hide");
+    }
+
+    document.querySelectorAll(".formLink.toggle").forEach(function (element) {
+        element.addEventListener("click", toggleForms);
+    });
+</script>

@@ -1,0 +1,31 @@
+{
+  "sections": {
+    "02c482e6-81f1-40ec-8474-46baeab46588": {
+      "type": "section-hero",
+      "settings": {
+        "hero_image": "shopify://shop_images/photo-feb.webp",
+        "hero_image_size": 2000,
+        "hero_title_large": "GAME CHANGING NEWS",
+        "hero_title_medium": "",
+        "hero_title_small_top": false,
+        "hero_title_small": "",
+        "hero_description": "Everyday, more people discover VKTRY insoles. Will your opponent be wearing VKs before you do?",
+        "hero_has_overlay": true,
+        "hero_scroll": true,
+        "hero_video_link": "",
+        "hero_video_text": "",
+        "hero_video_new_tab": false,
+        "hero_class": ""
+      }
+    },
+    "main-blog": {
+      "type": "main-blog",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "02c482e6-81f1-40ec-8474-46baeab46588",
+    "main-blog"
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "sections": {
+    "main-page": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "59589ee3-3884-4b22-a8c7-72bfb03cb065": {
+      "type": "section-sport-landing-header",
+      "blocks": {
+        "a149c0d3-0433-4020-810b-9b45ac5216af": {
+          "type": "button",
+          "settings": {
+            "link_label": "Shop Gold Insoles",
+            "link": "shopify://products/vktry-insoles-gold",
+            "color": "#f1c740"
+          }
+        },
+        "27eeb74f-30d2-49de-86f2-9e7a35bfaf8a": {
+          "type": "button",
+          "settings": {
+            "link_label": "Shop Silver Insoles",
+            "link": "shopify://products/vktry-insoles-silver",
+            "color": "#a3a3a2"
+          }
+        }
+      },
+      "block_order": [
+        "a149c0d3-0433-4020-810b-9b45ac5216af",
+        "27eeb74f-30d2-49de-86f2-9e7a35bfaf8a"
+      ],
+      "settings": {
+        "landing_hero_image": "shopify://shop_images/General-Sports-Header.webp",
+        "landing_hero_image_mobile": "shopify://shop_images/General-Sports-Header---Mobile.webp",
+        "title": "VKTRY INSOLES",
+        "subtitle": "VICTORY FOR EVERYONE",
+        "copy": "The only insoles proven to help you perform and protect at your very best, no matter what it is you call your passion."
+      }
+    },
+    "a0ec2496-f3f0-46de-854e-2161bc231551": {
+      "type": "section-sport-proven",
+      "blocks": {
+        "7d4b221b-1acc-4595-beea-c3838684156c": {
+          "type": "button",
+          "settings": {
+            "text": "Shop Gold Insoles",
+            "link": "shopify://products/vktry-insoles-gold",
+            "color": "#f1c740"
+          }
+        },
+        "a64c3ad1-1fc4-4ae6-acc0-ef8b5fc97887": {
+          "type": "button",
+          "settings": {
+            "text": "Shop Silver Insoles",
+            "link": "shopify://products/vktry-insoles-silver",
+            "color": "#a3a3a2"
+          }
+        },
+        "6f56328c-525f-4d0b-bb22-8074b2dd13c6": {
+          "type": "list_item",
+          "settings": {
+            "icon": "shopify://shop_images/check_box.svg",
+            "title": "RUN <span>FASTER</span>",
+            "text": "Run 40 Yards 0.12 seconds faster."
+          }
+        },
+        "254e3f67-762a-4f34-be80-9a1582297d3a": {
+          "type": "list_item",
+          "settings": {
+            "icon": "shopify://shop_images/check_box.svg",
+            "title": "JUMP <span>HIGHER</span>",
+            "text": "+1.6\" increased vertical jump."
+          }
+        },
+        "226519b4-1733-4e80-bd39-1d8cc0b7e9f7": {
+          "type": "list_item",
+          "settings": {
+            "icon": "shopify://shop_images/check_box.svg",
+            "title": "TRAIN <span>SMARTER</span>",
+            "text": "-41% less foot injuries, -22% less lower-leg injuries"
+          }
+        }
+      },
+      "block_order": [
+        "7d4b221b-1acc-4595-beea-c3838684156c",
+        "a64c3ad1-1fc4-4ae6-acc0-ef8b5fc97887",
+        "6f56328c-525f-4d0b-bb22-8074b2dd13c6",
+        "254e3f67-762a-4f34-be80-9a1582297d3a",
+        "226519b4-1733-4e80-bd39-1d8cc0b7e9f7"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/overlay_2x_1.jpg",
+        "title": "TESTED & PROVEN",
+        "copy": "<p>3rd party PhD led research proves that VKs improve performance by returning energy, explosively. Athletes are guaranteed to see faster sprint times (.12 secs off a 40 yard dash), higher verticals (+1.6 inches) and greater rate of force development (+9.3%). Get more out of what you put in with VKTRY Insoles. </p><p>Performance only comes second to one thing: protection. Clinical research shows that VKTRY’s carbon fiber base provides unmatched stability, support and shock absorption. This helps athletes protect and recover from injuries such as plantar fasciitis, high ankle sprains, shin splints and much more!</p>"
+      }
+    },
+    "6cb6b745-f8a3-495f-a9e9-da9dca8bc702": {
+      "type": "section-compare-gold",
+      "settings": {
+      }
+    },
+    "6c09fcb6-d107-4a88-b23b-8b0180169edf": {
+      "type": "section-compare-silver",
+      "settings": {
+      }
+    },
+    "fca86061-0dc0-4877-a202-04df4a17a38f": {
+      "type": "section-video",
+      "settings": {
+        "video_embed": "<iframe width=\"640\" height=\"360\" src=\"https://www.youtube.com/embed/fJVfJWrd-U0?&amp;wmode=opaque\" frameborder=\"0\" allowfullscreen=\"\" class=\"fr-draggable\"></iframe>"
+      }
+    },
+    "788cb2ac-4cee-4107-a26f-1befc5d961d4": {
+      "type": "section-reviews",
+      "settings": {
+        "size": "small"
+      }
+    }
+  },
+  "order": [
+    "main-page",
+    "59589ee3-3884-4b22-a8c7-72bfb03cb065",
+    "a0ec2496-f3f0-46de-854e-2161bc231551",
+    "6cb6b745-f8a3-495f-a9e9-da9dca8bc702",
+    "6c09fcb6-d107-4a88-b23b-8b0180169edf",
+    "fca86061-0dc0-4877-a202-04df4a17a38f",
+    "788cb2ac-4cee-4107-a26f-1befc5d961d4"
+  ]
+}

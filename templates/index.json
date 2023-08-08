@@ -1,0 +1,419 @@
+{
+  "sections": {
+    "188f0f7c-a357-4c96-a1f2-3a95f34b0c4b": {
+      "type": "section-index-hero",
+      "settings": {
+        "video": "shopify:\/\/files\/videos\/2707e52826234babb6739d363c69ce46.HD-1080p-7.2Mbps-15239783.mp4"
+      }
+    },
+    "6b41270a-c28c-4443-8dac-3cfd4c971881": {
+      "type": "section-outline-cards",
+      "blocks": {
+        "e820b9fc-aa3d-4f45-974f-657f803da04d": {
+          "type": "card",
+          "settings": {
+            "color": "#b2b2b4",
+            "decoration_title": "CASUAL ATHLETES",
+            "title": "VK Silver Performance Insoles",
+            "sub_title": "Not designed for cleats",
+            "content": "<ul><li>Worn by tens of thousands of amateur athletes<\/li><li>Baseplate is carbon fiber composite<\/li><li>Baseplate flexibility is less customized, but works well for over 90% of people<\/li><li>Top cover thickness of 5mm works well for most non-cleated shoes. For cleats, we recommend Gold VKs<\/li><\/ul>",
+            "button_label": "Shop Silver Insoles",
+            "button_url": "shopify:\/\/products\/vktry-insoles-silver"
+          }
+        },
+        "13ad43e3-8aa7-4166-aee2-56a2fcbb85a0": {
+          "type": "card",
+          "settings": {
+            "color": "#efc34f",
+            "decoration_title": "SERIOUS ATHLETES",
+            "title": "VK Gold Performance Insoles",
+            "sub_title": "For all sports",
+            "content": "<ul><li>Worn by thousands of pro and college athletes<\/li><li>Baseplate is 100% aerospace grade carbon fiber<\/li><li>Baseplate flexibility is customized based on age, gender, body weight and sport<\/li><li>Top cover is customized thickness based on sport and shoe type and fits all footwear and all sports<\/li><\/ul>",
+            "button_label": "Shop Gold Insoles",
+            "button_url": "shopify:\/\/products\/vktry-insoles-gold"
+          }
+        },
+        "cb80b9d0-77cb-4d47-884c-512edd00979e": {
+          "type": "card",
+          "settings": {
+            "color": "#b3c4d0",
+            "decoration_title": "ORTHOPEDIC NEEDS",
+            "title": "VK Custom Orthotics",
+            "sub_title": "For all types of shoes",
+            "content": "<ul><li>Provides all the benefits of custom orthotics - and more!<\/li><li>Molded to the exact shape of your foot for maximum comfort, support and stability<\/li><li>Has the performance and protection of our patented VK Gold carbon fiber baseplate built right in<\/li><\/ul>",
+            "button_label": "Shop Custom Orthotics",
+            "button_url": "shopify:\/\/products\/vktry-insoles-platinum"
+          }
+        }
+      },
+      "block_order": [
+        "e820b9fc-aa3d-4f45-974f-657f803da04d",
+        "13ad43e3-8aa7-4166-aee2-56a2fcbb85a0",
+        "cb80b9d0-77cb-4d47-884c-512edd00979e"
+      ],
+      "settings": {
+        "title": "Which VKTRY Insoles Are Best For You"
+      }
+    },
+    "188f0f7c-a357-4c96-a1f2-3a95f34b0c4b2": {
+      "type": "section-foam-compare-home",
+      "settings": {
+      }
+    },
+    "4c6c392f-8b69-476e-97de-b90962440f13": {
+      "type": "section-index-benefits",
+      "blocks": {
+        "bc9f92d8-2f28-442a-b14e-5f1a8c8b307d": {
+          "type": "benefit",
+          "settings": {
+            "title": "41% LESS",
+            "sub_title": "<p>foot injuries overthe course of a season<\/p>",
+            "image": "shopify:\/\/shop_images\/index-benefit-3_1e18f328-67d2-447a-a0cb-de62dffde2b1.jpg"
+          }
+        },
+        "8b32a586-e8e1-4bbd-a898-ae76e184e493": {
+          "type": "benefit",
+          "settings": {
+            "title": "22% LESS",
+            "sub_title": "<p>lower-leg injuries<br\/>over the entire season<\/p>",
+            "image": "shopify:\/\/shop_images\/index-benefit-4_0308529a-4cac-4d71-91f7-a2066566819e.jpg"
+          }
+        },
+        "d0827538-c9df-4331-83d0-ea72de05fca5": {
+          "type": "benefit",
+          "settings": {
+            "title": "1.6” HIGHER",
+            "sub_title": "<p>vertical jumps<\/p>",
+            "image": "shopify:\/\/shop_images\/index-benefit-1.webp"
+          }
+        },
+        "5937d5e3-c2eb-41be-b142-e0c663f6b19b": {
+          "type": "benefit",
+          "settings": {
+            "title": ".12 SECOND",
+            "sub_title": "<p>faster 40 yard dashes<\/p>",
+            "image": "shopify:\/\/shop_images\/index-benefit-2_de3fd7a4-ad91-47fc-966b-2b4c822c3bf9.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "bc9f92d8-2f28-442a-b14e-5f1a8c8b307d",
+        "8b32a586-e8e1-4bbd-a898-ae76e184e493",
+        "d0827538-c9df-4331-83d0-ea72de05fca5",
+        "5937d5e3-c2eb-41be-b142-e0c663f6b19b"
+      ],
+      "settings": {
+        "title": "",
+        "flip_cards": false,
+        "button_label": "",
+        "button_url": "",
+        "show_modal": false
+      }
+    },
+    "7f10757c-e62c-47a0-8cff-ddcdfd777824": {
+      "type": "section-reviews",
+      "settings": {
+        "size": "small"
+      }
+    },
+    "cd3300a4-2992-43f9-931e-d122ab3273ed": {
+      "type": "section-customer-review",
+      "disabled": true,
+      "blocks": {
+        "cbc3e271-26a5-42ee-9e2e-00c3f3140cf1": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/goldcleatedVKs_3d5941d7-99b6-4488-b29b-202145ab3fe8.jpg",
+            "star_image": "shopify:\/\/shop_images\/five_star_e016a1a3-268c-42f6-ac8d-8496161b227e.png",
+            "quote_tag": "Amazing Customer Service",
+            "quote": "Got these for Plantar Fasciitis and they didn't help, we are yet to find an insole that works so not the insoles issue. I was helped and we are trying another size. Thank you for getting back to me. Customer service was great. My other daughter with normal feet, loves her insoles!",
+            "date_added": "1 week ago",
+            "quote_author": "Amy T.",
+            "verified": true
+          }
+        },
+        "5477c108-db9d-4056-ba89-33f7a26ba47f": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/goldcleatedVKs_3d5941d7-99b6-4488-b29b-202145ab3fe8.jpg",
+            "star_image": "shopify:\/\/shop_images\/five_star_3e16e06c-13ce-4223-a481-53ae8f906753.png",
+            "quote_tag": "Wow",
+            "quote": "These are great! yay",
+            "date_added": "1 day ago",
+            "quote_author": "John. S",
+            "verified": false
+          }
+        },
+        "b98e7764-41ce-45e1-a43a-9bdeededecf9": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/goldcleatedVKs_3d5941d7-99b6-4488-b29b-202145ab3fe8.jpg",
+            "star_image": "shopify:\/\/shop_images\/five_star_bb086fba-4162-4410-bfe2-970f07f5e169.png",
+            "quote_tag": "Shoes and insoles!",
+            "quote": "Here is some review from a happy customer. See the 5 stars?",
+            "date_added": "4 week ago",
+            "quote_author": "Pope K.",
+            "verified": true
+          }
+        },
+        "82ad869b-4fb2-49cc-94bc-2812824ba511": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/goldcleatedVKs_3d5941d7-99b6-4488-b29b-202145ab3fe8.jpg",
+            "star_image": "shopify:\/\/shop_images\/five_star_148c14c9-c148-48e6-9006-f98ff6c5b037.png",
+            "quote_tag": "Insoles are soft!",
+            "quote": "Soft feet, soft toes, and inside my shoe they go!",
+            "date_added": "4 weeks ago",
+            "quote_author": "Lyle H",
+            "verified": true
+          }
+        },
+        "5acec592-2d69-4218-8c00-7bbb60e537c3": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/goldcleatedVKs_3d5941d7-99b6-4488-b29b-202145ab3fe8.jpg",
+            "star_image": "shopify:\/\/shop_images\/five_star_8d9be69d-37d5-462b-b43b-94d6efbae35e.png",
+            "quote_tag": "Shoes and insoles!",
+            "quote": "Here is some review from a happy customer. See the 5 stars?",
+            "date_added": "4 week ago",
+            "quote_author": "Pope K.",
+            "verified": true
+          }
+        },
+        "4caaa82a-70b1-4cb2-8d36-9a32d9d0da3e": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/goldcleatedVKs_3d5941d7-99b6-4488-b29b-202145ab3fe8.jpg",
+            "star_image": "shopify:\/\/shop_images\/five_star_75da9ca6-d86f-4fbe-ad16-39363299dfad.png",
+            "quote_tag": "Amazing Customer Service",
+            "quote": "Got these for Plantar Fasciitis and they didn't help, we are yet to find an insole that works so not the insoles issue. I was helped and we are trying another size. Thank you for getting back to me. Customer service was great. My other daughter with normal feet, loves her insoles!",
+            "date_added": "1 week ago",
+            "quote_author": "Amy T.",
+            "verified": true
+          }
+        },
+        "484d035e-a163-43c9-a203-309a318a8869": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/goldcleatedVKs_3d5941d7-99b6-4488-b29b-202145ab3fe8.jpg",
+            "star_image": "shopify:\/\/shop_images\/five_star_b8b01279-ed98-4752-a41d-b1b048230c03.png",
+            "quote_tag": "Amazing Customer Service",
+            "quote": "Got these for Plantar Fasciitis and they didn't help, we are yet to find an insole that works so not the insoles issue. I was helped and we are trying another size. Thank you for getting back to me. Customer service was great. My other daughter with normal feet, loves her insoles!",
+            "date_added": "1 week ago",
+            "quote_author": "Amy T.",
+            "verified": true
+          }
+        },
+        "28f40edf-aeea-493d-bf0a-f4b021955d72": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/goldcleatedVKs_3d5941d7-99b6-4488-b29b-202145ab3fe8.jpg",
+            "star_image": "shopify:\/\/shop_images\/five_star_5bad2241-f021-4675-906e-2b7ed3e763e9.png",
+            "quote_tag": "Insoles are soft!",
+            "quote": "Soft feet, soft toes, and inside my shoe they go!",
+            "date_added": "4 weeks ago",
+            "quote_author": "Lyle H",
+            "verified": true
+          }
+        }
+      },
+      "block_order": [
+        "cbc3e271-26a5-42ee-9e2e-00c3f3140cf1",
+        "5477c108-db9d-4056-ba89-33f7a26ba47f",
+        "b98e7764-41ce-45e1-a43a-9bdeededecf9",
+        "82ad869b-4fb2-49cc-94bc-2812824ba511",
+        "5acec592-2d69-4218-8c00-7bbb60e537c3",
+        "4caaa82a-70b1-4cb2-8d36-9a32d9d0da3e",
+        "484d035e-a163-43c9-a203-309a318a8869",
+        "28f40edf-aeea-493d-bf0a-f4b021955d72"
+      ],
+      "settings": {
+        "header": "customer",
+        "header_alt": "reviews",
+        "star_image": "shopify:\/\/shop_images\/four_half_stars_9ccc4f4a-0721-4d1b-bde1-965419c5f480.png",
+        "review_count": "2,910 Reviews"
+      }
+    },
+    "67bad5c0-3ed3-476b-9062-26d9cec7680e": {
+      "type": "section-index-sports",
+      "settings": {
+      }
+    },
+    "938ffa34-764d-4ee1-b189-074c79e0a703": {
+      "type": "section-support",
+      "settings": {
+        "lead_title": "NO OTHER BRAND RIVALS",
+        "title": "VK’S PERFORMANCE OR PROTECTION",
+        "subtitle": "ALL VKTRY INSOLES PROVIDE",
+        "showcase_title": "",
+        "showcase_title_two": "",
+        "background": "shopify:\/\/shop_images\/vk_diagram.webp"
+      }
+    },
+    "4fd21a8c-89ae-4685-9582-0c16e0f3a8b5": {
+      "type": "section-compare-gold",
+      "settings": {
+      }
+    },
+    "0c82e414-7c21-4fb3-9068-a48ccca480d6": {
+      "type": "section-compare-silver",
+      "settings": {
+      }
+    },
+    "3dee8098-449b-47ae-9a3e-bb028113b4d6": {
+      "type": "section-index-custom",
+      "settings": {
+      }
+    },
+    "f0b248d9-58c4-40cd-9a5c-ead8dc76f64b": {
+      "type": "section-reviews",
+      "settings": {
+        "size": "large"
+      }
+    },
+    "70f44b5c-d5ce-4081-b39b-cb1ed1f20b92": {
+      "type": "section-athletes",
+      "blocks": {
+        "e23b0ee0-51d3-4283-97c8-b3fa8b8a98c7": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/IMG_0897.webp",
+            "quote": "<p>\"In basketball, jumping a couple inches higher and having a more explosive first step, makes a huge difference in your game.\"<\/p>",
+            "quote_author": "<p>Tracy McGrady <\/p><p>Hall of Fame Basketball Player<\/p>"
+          }
+        },
+        "5d9538b1-5e9c-467b-aa36-3aecdeaa5e89": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/JT-high-def.webp",
+            "quote": "<p>\"When I first put VKTRY Insoles into my cleats, it was an instant boost of explosion, power & speed. Being able to explode out of my cuts with more power helps me separate from a defender. Having this high-tech product inside your cleats makes you feel like no one can stop you on the field.\"<\/p>",
+            "quote_author": "<p>Jonathan Taylor <\/p><p>All Pro Running Back, Indianapolis<\/p>"
+          }
+        },
+        "0951279f-73ca-4ea1-8d91-2f2189dcba8f": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Jordan_Larson_MVP.jpg",
+            "quote": "<p>\"I’ve been really impressed with how VKTRY insoles have helped me increase my vertical, even at my age....I felt the difference immediately when I put these insoles into my shoes – Wow!\"<\/p>",
+            "quote_author": "<p><strong>Jordan Larson<\/strong><\/p><p>3x World Champion Volleyball Player<\/p>"
+          }
+        },
+        "8699de7a-df2e-44e7-9045-ed25a9c40dd4": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/julio---insoles-into-shoes.webp",
+            "quote": "<p>\"With VKTRY, I feel a lot more explosive getting an initial jump. The spring you feel is next level. I really believe VKTRY Insoles are a secret weapon for anyone wearing them... they have really helped me run faster.\"<\/p>",
+            "quote_author": "<p>Julio Rodriguez<\/p><p>Outfielder, Seattle<\/p>"
+          }
+        },
+        "3d11c3e1-b5db-498f-913b-1d92c30a3b8f": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Padraig-Google.webp",
+            "quote": "<p>\"When you wear VKTRY, you know you have something that’s elite. It’s very important as an athlete that you don’t leave anything to chance. VKTRY brings confidence that you’ve got something that’s going to give maximum power & maximum stability.. as I always say, you can’t launch a rocket from a canoe.\"<\/p>",
+            "quote_author": "<p>Padraig Harrington<\/p><p>3x Major Champion<\/p>"
+          }
+        },
+        "1093b1ba-a3ae-4bae-9c0a-858ae0da757c": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Antonio-Gibson-x-VKTRY-Pic-Jun-2021.jpg",
+            "quote": "<p>\"VKTRY insoles were a key part of my return from a turf toe injury during my rookie season. I feel the added protection and power it gives me every time I step on the field.\"<\/p>",
+            "quote_author": "<p>Antonio Gibson<\/p><p>Running Back, Washington Football Team<\/p>"
+          }
+        },
+        "820dac87-ddeb-49a8-aa30-f3594f2980ee": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Angel_McCoughtry_MVP.jpg",
+            "quote": "<p>\"VKTRY insoles help me with shock absorption and allows me to play and train freely. That freeing of my mind is beyond valuable and I owe that to VKTRY Gear and their amazing insoles.\"<\/p>",
+            "quote_author": "<p><strong>Angel McCoughtry<\/strong><\/p><p>#1 overall pick in the 2009 WNBA Draft<\/p>"
+          }
+        },
+        "efb7b947-5104-4e6e-b245-ade2cb10acfb": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/jarryd-wallace-mvp.webp",
+            "quote": "<p>\"When you’re running with something like VKTRY in your spikes and you feel that power and explosiveness, that’s something you can’t argue against.\"<\/p>",
+            "quote_author": "<p>Jarryd Wallace<\/p><p><strong>2x World Champion Sprinter<\/strong><\/p>"
+          }
+        },
+        "bab73d4f-8f8f-47bc-85ad-f5ab3f6f63ce": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Jamia_Fields_MVP.jpg",
+            "quote": "<p>\"I love using VKTRY insoles, not only do I feel fast and explosive, but they fit perfectly inside my cleat.\"<\/p>",
+            "quote_author": "<p><strong>Jamia Fields<\/strong><\/p><p>Forward for the Houston Dash, NWSL<\/p>"
+          }
+        },
+        "4712ecf0-9b36-4253-b831-7ea99752da7d": {
+          "type": "link",
+          "settings": {
+            "link_label": "See VKTRY Athletes >",
+            "link_url": "shopify:\/\/pages\/vktry-athletes"
+          }
+        },
+        "25860df3-9b7d-4160-87d0-2294650bfb45": {
+          "type": "button",
+          "settings": {
+            "button_label": "Personalize Your Gold Insoles",
+            "button_link": "shopify:\/\/products\/vktry-insoles-gold"
+          }
+        },
+        "5754de49-cdf4-4d56-bbd4-e67428a1225a": {
+          "type": "button",
+          "settings": {
+            "button_label": "Personalize Your Silver Insoles",
+            "button_link": "shopify:\/\/products\/vktry-insoles-silver"
+          }
+        }
+      },
+      "block_order": [
+        "e23b0ee0-51d3-4283-97c8-b3fa8b8a98c7",
+        "5d9538b1-5e9c-467b-aa36-3aecdeaa5e89",
+        "0951279f-73ca-4ea1-8d91-2f2189dcba8f",
+        "8699de7a-df2e-44e7-9045-ed25a9c40dd4",
+        "3d11c3e1-b5db-498f-913b-1d92c30a3b8f",
+        "1093b1ba-a3ae-4bae-9c0a-858ae0da757c",
+        "820dac87-ddeb-49a8-aa30-f3594f2980ee",
+        "efb7b947-5104-4e6e-b245-ade2cb10acfb",
+        "bab73d4f-8f8f-47bc-85ad-f5ab3f6f63ce",
+        "4712ecf0-9b36-4253-b831-7ea99752da7d",
+        "25860df3-9b7d-4160-87d0-2294650bfb45",
+        "5754de49-cdf4-4d56-bbd4-e67428a1225a"
+      ],
+      "settings": {
+        "title": "THOUSANDS OF ATHLETES",
+        "subtitle": "AT OVER 500 PRO AND COLLEGE TEAMS USE VKS",
+        "show_money_back": false
+      }
+    },
+    "f2729fa9-72c8-49e5-8901-8bcd669a079e": {
+      "type": "section-story",
+      "settings": {
+      }
+    },
+    "c83ffde9-6395-4d5e-8271-8a2cd1c3516e": {
+      "type": "section-founder",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "188f0f7c-a357-4c96-a1f2-3a95f34b0c4b",
+    "6b41270a-c28c-4443-8dac-3cfd4c971881",
+    "188f0f7c-a357-4c96-a1f2-3a95f34b0c4b2",
+    "4c6c392f-8b69-476e-97de-b90962440f13",
+    "7f10757c-e62c-47a0-8cff-ddcdfd777824",
+    "cd3300a4-2992-43f9-931e-d122ab3273ed",
+    "67bad5c0-3ed3-476b-9062-26d9cec7680e",
+    "938ffa34-764d-4ee1-b189-074c79e0a703",
+    "4fd21a8c-89ae-4685-9582-0c16e0f3a8b5",
+    "0c82e414-7c21-4fb3-9068-a48ccca480d6",
+    "3dee8098-449b-47ae-9a3e-bb028113b4d6",
+    "f0b248d9-58c4-40cd-9a5c-ead8dc76f64b",
+    "70f44b5c-d5ce-4081-b39b-cb1ed1f20b92",
+    "f2729fa9-72c8-49e5-8901-8bcd669a079e",
+    "c83ffde9-6395-4d5e-8271-8a2cd1c3516e"
+  ]
+}

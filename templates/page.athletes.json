@@ -1,0 +1,531 @@
+{
+  "sections": {
+    "main-page": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "7d2fb5f2-2640-4910-b791-2a7221be7839": {
+      "type": "section-hero",
+      "settings": {
+        "hero_image": "shopify:\/\/shop_images\/ar-8-i-0438-1.jpg",
+        "hero_image_size": 2000,
+        "hero_title_large": "Athlete Stories & Sponsorships",
+        "hero_title_medium": "",
+        "hero_title_small_top": false,
+        "hero_title_small": "",
+        "hero_description": "",
+        "hero_has_overlay": true,
+        "hero_scroll": true,
+        "hero_video_link": "",
+        "hero_video_text": "",
+        "hero_video_new_tab": false,
+        "hero_class": ""
+      }
+    },
+    "c7436d2c-9805-4c5d-9005-afc12b9f5b20": {
+      "type": "section-description",
+      "settings": {
+        "description_title": "<p>THOUSANDS OF ATHLETES AT <span>OVER 500<\/span><br>PRO AND COLLEGE TEAMS USE VKS.<\/p>",
+        "description_copy": "",
+        "description_class": "section-description--padding-bottom",
+        "description_button_url": ""
+      }
+    },
+    "70f44b5c-d5ce-4081-b39b-cb1ed1f20b92": {
+      "type": "section-athletes",
+      "blocks": {
+        "e23b0ee0-51d3-4283-97c8-b3fa8b8a98c7": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/IMG_0897.webp",
+            "quote": "<p>\"In basketball, jumping a couple inches higher and having a more explosive first step, makes a huge difference in your game.\"<\/p>",
+            "quote_author": "<p>Tracy McGrady <\/p><p>Hall of Fame Basketball Player<\/p>"
+          }
+        },
+        "5d9538b1-5e9c-467b-aa36-3aecdeaa5e89": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/JT-high-def.webp",
+            "quote": "<p>\"When I first put VKTRY Insoles into my cleats, it was an instant boost of explosion, power & speed. Being able to explode out of my cuts with more power helps me separate from a defender. Having this high-tech product inside your cleats makes you feel like no one can stop you on the field.\"<\/p>",
+            "quote_author": "<p>Jonathan Taylor <\/p><p>All Pro Running Back, Indianapolis<\/p>"
+          }
+        },
+        "0951279f-73ca-4ea1-8d91-2f2189dcba8f": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Jordan_Larson_MVP.jpg",
+            "quote": "<p>\"I’ve been really impressed with how VKTRY insoles have helped me increase my vertical, even at my age....I felt the difference immediately when I put these insoles into my shoes – Wow!\"<\/p>",
+            "quote_author": "<p><strong>Jordan Larson<\/strong><\/p><p>3x World Champion Volleyball Player<\/p>"
+          }
+        },
+        "8699de7a-df2e-44e7-9045-ed25a9c40dd4": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/julio---insoles-into-shoes.webp",
+            "quote": "<p>\"With VKTRY, I feel a lot more explosive getting an initial jump. The spring you feel is next level. I really believe VKTRY Insoles are a secret weapon for anyone wearing them... they have really helped me run faster.\"<\/p>",
+            "quote_author": "<p>Julio Rodriguez<\/p><p>Outfielder, Seattle<\/p>"
+          }
+        },
+        "3d11c3e1-b5db-498f-913b-1d92c30a3b8f": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Padraig-Google.webp",
+            "quote": "<p>\"When you wear VKTRY, you know you have something that’s elite. It’s very important as an athlete that you don’t leave anything to chance. VKTRY brings confidence that you’ve got something that’s going to give maximum power & maximum stability.. as I always say, you can’t launch a rocket from a canoe.\"<\/p>",
+            "quote_author": "<p>Padraig Harrington<\/p><p>3x Major Champion<\/p>"
+          }
+        },
+        "1093b1ba-a3ae-4bae-9c0a-858ae0da757c": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Antonio-Gibson-x-VKTRY-Pic-Jun-2021.jpg",
+            "quote": "<p>\"VKTRY insoles were a key part of my return from a turf toe injury during my rookie season. I feel the added protection and power it gives me every time I step on the field.\"<\/p>",
+            "quote_author": "<p>Antonio Gibson<\/p><p>Running Back, Washington Football Team<\/p>"
+          }
+        },
+        "820dac87-ddeb-49a8-aa30-f3594f2980ee": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Angel_McCoughtry_MVP.jpg",
+            "quote": "<p>\"VKTRY insoles help me with shock absorption and allows me to play and train freely. That freeing of my mind is beyond valuable and I owe that to VKTRY Gear and their amazing insoles.\"<\/p>",
+            "quote_author": "<p><strong>Angel McCoughtry<\/strong><\/p><p>#1 overall pick in the 2009 WNBA Draft<\/p>"
+          }
+        },
+        "efb7b947-5104-4e6e-b245-ade2cb10acfb": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/jarryd-wallace-mvp.webp",
+            "quote": "<p>\"When you’re running with something like VKTRY in your spikes and you feel that power and explosiveness, that’s something you can’t argue against.\"<\/p>",
+            "quote_author": "<p>Jarryd Wallace<\/p><p><strong>2x World Champion Sprinter<\/strong><\/p>"
+          }
+        },
+        "bab73d4f-8f8f-47bc-85ad-f5ab3f6f63ce": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Jamia_Fields_MVP.jpg",
+            "quote": "<p>\"I love using VKTRY insoles, not only do I feel fast and explosive, but they fit perfectly inside my cleat.\"<\/p>",
+            "quote_author": "<p><strong>Jamia Fields<\/strong><\/p><p>Forward for the Houston Dash, NWSL<\/p>"
+          }
+        },
+        "99d4af79-6e69-4e66-adcb-f1fb3a5a933a": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Myles_Jones_MVP.webp",
+            "quote": "<p>\"VK Insoles help me to apply more force into the ground, making me more explosive. I also feel like I have more bounce and fresher legs late in the game because of VKs.\"<\/p>",
+            "quote_author": "<p><strong>Myles Jones<\/strong><\/p><p>3X Lacrosse All-American at Duke, PLL Chaos All-Star<\/p>"
+          }
+        },
+        "b114afa0-9eda-452c-8cfa-1d8015ccda66": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ezra.jpg",
+            "quote": "<p>\"The explosion and strength I felt with the VKTRY insoles helped me put up great testing numbers at the combine.\"<\/p>",
+            "quote_author": "<p><strong>Ezra Cleveland<\/strong><\/p><p>Offensive Linemen, Minnesota Vikings<\/p>"
+          }
+        },
+        "45257916-c97c-4604-b07b-3419a77a8552": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Danny_Pinter_MVP.jpg",
+            "quote": "<p>\"I love using VKTRY Insoles because I can feel a difference in how I move while training. I feel secure using them while I train and have noticed improvements. They are a great upgrade over the standard insole.\"<\/p>",
+            "quote_author": "<p><strong>Danny Pinter<\/strong><\/p><p>Offensive Tackle, Indianapolis Colts<\/p>"
+          }
+        },
+        "7ded5686-7d29-43f0-aea6-cf5c7baeb4a0": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Adam-Byrne-MVP-cropped.webp",
+            "quote": "<p>\"The VK insoles are a great piece of kit and have been a huge help to me on my road back from a foot\/ankle injury. They offer the right amount of support and that little bit of spring to reduce the stress on my foot.\"<\/p>",
+            "quote_author": "<p><strong>Adam Byrne<\/strong><\/p><p>Wing, Leinster Rugby<\/p>"
+          }
+        },
+        "2e499e00-c1ea-4ac2-9f64-a1d20bcbf6a7": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Joe_Reed_MVP.webp",
+            "quote": "<p>\"The comfort level and daily results are unmatched. VKTRY Insoles helped maximize my potential for the NFL combine and I am excited to continue using them throughout my career.\"<\/p>",
+            "quote_author": "<p><strong>Joe Reed<\/strong><\/p><p>Wide Receiver\/Punt Returner, LA Chargers<\/p>"
+          }
+        },
+        "2d563fc6-f2b1-40c1-8b09-2fad604fde91": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Drew-Waters-MVP.webp",
+            "quote": "<p>\"I wear VKTRY insoles because the comfort and support helps me hit from the ground up. I can definitely feel a difference when I wear them and feel more explosive!\"<\/p>",
+            "quote_author": "<p><strong>Drew Waters<\/strong><\/p><p>Atlanta Braves Organization<\/p>"
+          }
+        },
+        "9ad08250-7b4e-4943-9a11-f3b7fd0b2b4c": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/IMG_6979.webp",
+            "quote": "<p>\"As an athlete who has always deal with shin splits and foot pain, VKTRY has changed how I prepare. Not only have I become more explosive, my overall foot health is much better!\"<\/p>",
+            "quote_author": "<p><strong>Joe Nardella<\/strong><\/p><p>2x PLL Champion and FO Man of the Year<\/p>"
+          }
+        },
+        "cf10bb9c-dcc1-4a6a-b574-63003d6c61ca": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/rick_smith.webp",
+            "quote": "<p>\"I’ve been preaching ground force and explosiveness in the golf swing for 40+ years. I’ve never experienced anything like VKTRY’s Carbon Fiber Insoles...When I put these insoles in, they take the load off my body and put a spring in my step.\"<\/p>",
+            "quote_author": "<p><strong>Rick Smith<\/strong><\/p><p>Legendary PGA Instructor<\/p>"
+          }
+        },
+        "3f3cb238-dcc7-4fdb-9b1a-d60df54b23b0": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Arielle-Ship-MVP-cropped.png",
+            "quote": "<p>\"I love my VKTRY insoles! Since I’ve had them, I feel way quicker and much more explosive!\"<\/p>",
+            "quote_author": "<p><strong>Arielle Ship<\/strong><\/p><p>Forward, Utah Royals<\/p>"
+          }
+        },
+        "ce04520c-17bf-4677-a885-cd0fc7a5d0e8": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/IMG_9770.webp",
+            "quote": "<p>\"I noticed the difference VKTRY insoles made right away. I feel an increase in stability and speed, giving me that competitive edge I need on the field. Not only are the insoles super comfortable, but I've also experienced much less post-practice foot pain since wearing them.\"<\/p>",
+            "quote_author": "<p><strong>Ryan Anderson<\/strong><\/p><p>OLB, NY Giants<\/p>"
+          }
+        },
+        "590267b1-1395-468a-802b-302e3be266de": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Garrett-Bolles-MVP.webp",
+            "quote": "<p>\"VKTRY Insoles are the best out there! They keep me safe on and off the field, by keeping my body aligned along with making me explosive in the gym and on the field. They give me the strength and and balance that I need to preform day in and day out! \"<\/p>",
+            "quote_author": "<p><strong>Garrett Bolles<\/strong><\/p><p>Offensive Lineman, Denver Broncos<\/p>"
+          }
+        },
+        "6a69e129-861b-4f25-b4f5-caab63948c50": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/norman-insole.webp",
+            "quote": "<p>\"Speed kills in football. VKs provide that burst to beat opposing players. With VKs, you have that extra six inches that can be the difference between winning or losing.\"<\/p>",
+            "quote_author": "<p><strong>Josh Norman<\/strong><\/p><p>Cornerback, Buffalo Bills<\/p>"
+          }
+        },
+        "da1c8e94-4c39-431c-b8a4-c872f4e5d25c": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/amir_abedzadeh.webp",
+            "quote": "<p>\"I'm consistently working on my craft and looking for ways to become a better athlete. VKTRY has helped me get one step closer to where I want to be.\"<\/p>",
+            "quote_author": "<p><strong>Amir Abedzadeh<\/strong><\/p><p>Goalkeeper for C.S. Marítimo, Iran National Team<\/p>"
+          }
+        },
+        "f88014c8-8417-4c8a-a49e-d67926637599": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Jason_Moore_MVP.jpg",
+            "quote": "<p>\"I like my VKTRY Insoles cause they make transition between routes smoother than the standard insole\"<\/p>",
+            "quote_author": "<p><strong>Jason Moore<\/strong><\/p><p>Wide Receiver, Los Angeles Chargers<\/p>"
+          }
+        },
+        "b1ca59d5-6e02-4e4c-b4e6-4977576c5826": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Tianna_Bartolatta_MVP_d8b3ff3c-853a-45f4-8a9a-e36c722702d9.jpg",
+            "quote": "<p>\"The more I workout in VKs the more I’m convinced that they are a one of a kind product. ...more height at takeoff in the long jump...more explosive out of the starting blocks.\"<\/p>",
+            "quote_author": "<p><strong>Tianna Bartolatta<\/strong><\/p><p>3X World Champion Sprinter & Long-Jumper<\/p>"
+          }
+        },
+        "0ecc1c39-616f-4241-b764-24c44e936457": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Haleigh_Washington_MVP.webp",
+            "quote": "<p>\"I’ve struggled with good foot support for my entire athletic career, VKTRY has HIGH key made a difference in my comfort, my explosiveness, and how my feet feel when I play!\"<\/p>",
+            "quote_author": "<p><strong>Haleigh Washington<\/strong><\/p><p>All-American & National Champion Volleyball Player<\/p>"
+          }
+        },
+        "5825f46b-20ce-42a7-b236-60fb0b28a4cb": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Dayan_Lake_MVP.webp",
+            "quote": "<p>\"I love VKTRY insoles because they are comfortable and allow me to be more explosive on the field!\"<\/p>",
+            "quote_author": "<p><strong>Dayan Lake<\/strong><\/p><p>Defensive Back, Los Angeles Rams<\/p>"
+          }
+        },
+        "df67c3f0-10a7-4e57-b901-ef10acddb77b": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Josh_Koch_MVP.webp",
+            "quote": "<p>\"I wear VKTRY insoles because they help me swing faster, simple as that.\"<\/p>",
+            "quote_author": "<p><strong>Josh Koch<\/strong><\/p><p>World Long Driver<\/p>"
+          }
+        },
+        "295de48e-3977-4e71-a2c8-580f961de9de": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Jared_Oliva_MVP.webp",
+            "quote": "<p>\"I like to wear VKTRY insoles because, whether I'm baserunning or out in the outfield, they make me more explosive and help all facets of my game.\"<\/p>",
+            "quote_author": "<p><strong>Jared Oliva<\/strong><\/p><p>Outfielder, Pittsburgh Pirates<\/p>"
+          }
+        },
+        "4dd141f3-e06f-4703-b30c-b90e93d51460": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Jamell_Anderson_MVP.jpg",
+            "quote": "<p>\"I love wearing VKTRY insoles as they provide me with athleticism and comfort. When I'm on the court I just feel as if I have an extra bit of speed and vertical jump. I not only use them in my basketball shoes but also in my everyday trainers so that my body is supported correctly from the ground up.\"<\/p>",
+            "quote_author": "<p><strong>Jamell Anderson<\/strong><\/p><p>Forward, Leicester Roughriders<\/p>"
+          }
+        },
+        "95d59a04-0166-44ed-8366-cebc0351e55f": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Georgia-Jones-MVP-cropped.jpg",
+            "quote": "<p>\"I noticed a difference wearing the insoles straight away! Not only do they fit my feet perfectly, I'm also feeling lighter when moving in them. My first step feels a lot quicker and I love the advantage they give me, no matter what surface I am competing on!\"<\/p>",
+            "quote_author": "<p><strong>Georgia Jones<\/strong><\/p><p>Shooting Guard, Manchester Mystics<\/p>"
+          }
+        },
+        "db0a75e9-8eb5-42c0-aed2-c9b2d53eeab2": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Tiffeny_Parker_MVP.jpg",
+            "quote": "<p>\"With the amount of speed and power that it takes to push a sled as a bobsled athlete, finding a way to get the same reaction of speed and power on a grass surface during off season training as you would from ground reaction on a track... is a game changer!\"<\/p>",
+            "quote_author": "<p><strong>Tiffeny Parker<\/strong><\/p><p>World-Class Bobsled & Track Athlete<\/p>"
+          }
+        },
+        "36f9c417-bddf-4b24-ab70-8c415abf520d": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Justus_Nieschlag_MVP.webp",
+            "quote": "<p>\"I really enjoy the benefits of VKTRY. Running feels more stable without losing energy.\"<\/p>",
+            "quote_author": "<p><strong>Justus Nieschlag<\/strong><\/p><p>German Triathlete<\/p>"
+          }
+        },
+        "164267bd-2c44-4523-842e-0974346089f0": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Lina_Volker_MVP.webp",
+            "quote": "<p>\"With VKTRY I can use the extra kick of explosiveness while staying injury free!\"<\/p>",
+            "quote_author": "<p><strong>Lina Völker<\/strong><\/p><p>German Triathlete<\/p>"
+          }
+        },
+        "71ce8d60-9cb1-4a89-a8cc-c76ae58d243d": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/IMG_9771.webp",
+            "quote": "<p>\"VKTRY has changed my game all around. I experience significantly less pain on my muscles and joints when wearing the insoles. Additionally, my game has been more explosive allowing me to jump\/run\/cut much more effectively.\"<\/p>",
+            "quote_author": "<p><strong>Yodny Cajuste<\/strong><\/p><p>OT, New England Patriots<\/p>"
+          }
+        },
+        "c3b7a20d-3a1a-4ca7-a749-a20b45409eeb": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Jonas_Schomburg_MVP.webp",
+            "quote": "<p>\"I am absolutely impressed by the insoles from VKTRY. I am able to increase my performance by running way more agile especially during intense sessions where you need it the most!\"<\/p>",
+            "quote_author": "<p><strong>Jonas Schomburg<\/strong><\/p><p>German Triathlete<\/p>"
+          }
+        },
+        "870631c1-49e1-4cf6-a562-aac399e9764f": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Jojo-Romero-MVP.webp",
+            "quote": "<p>\"Since using VKTRY insoles I find myself performing with less pressure on my feet! They help keep me out on the mound longer, and give me extra comfort and explosiveness during my delivery. I love my VKTRY insoles!\"<\/p>",
+            "quote_author": "<p><strong>Jojo Romero<\/strong><\/p><p>Philadelphia Phillies Organization<\/p>"
+          }
+        },
+        "aa48d6d5-4faa-4be8-8d2e-c569fd474561": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Cedric_Osterholt_MVP.jpg",
+            "quote": "<p>\"Running in the VKTRY insoles I feel a special kind of lightness that allows me to train faster and better!\"<\/p>",
+            "quote_author": "<p><strong>Cedric Osterholt<\/strong><\/p><p>German Triathlete<\/p>"
+          }
+        },
+        "0767ab26-a2cc-4c4f-ae16-b4545ad1cae2": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Terrell_Bramwell_MVP_Program.jpg",
+            "quote": "<p>\"VKTRY Insoles have allowed me to take my game to another level! I can feel the response from the insoles through my feet whenever I take off. Being able to be more explosive on the court has helped my bunnies as well. Thank you guys, appreciate it!\"<\/p>",
+            "quote_author": "<p><strong>Terrell Bramwell<\/strong><\/p><p>Professional Volleyball Player, Riseleh Sarafand<\/p>"
+          }
+        },
+        "c3f2f663-c4ce-4b24-abe4-0f82da79c344": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Cole-Gordon-MVP.jpg",
+            "quote": "<p>\"Still in love. Wish I had them in every shoe.\"<\/p>",
+            "quote_author": "<p><strong>Cole Gordon<\/strong><\/p><p>Right Handed Pitcher, New York Mets Organization<\/p>"
+          }
+        },
+        "b7862be3-a8a8-43ec-978a-36f4227cf09b": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Boone-Niederhofer-MVP.webp",
+            "quote": "<p>\"..In the past, I have dealt with shin splints and foot arch tightness. However, ever since I have started training with VKRTY Insoles in my shoes, I have immediately noticed the shock absorption VKTRY Insoles provide. I no longer have pain in my shins and feet, and my legs are able to recover much faster post-workouts. Furthermore, the “springiness” I feel when sprinting with VKTRY Insoles gives me an edge in training and on the ice in competition. I would recommend wearing VKTRY Insoles.. it can benefit you!\"<\/p>",
+            "quote_author": "<p><strong>Boone Niederhofer<\/strong><\/p><p>Right Handed Pitcher, New York Mets Organization<\/p>"
+          }
+        },
+        "6cdd0aed-5924-4b55-b6de-bd265d682b28": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Logan-Rinehart-MVP.webp",
+            "quote": "<p>\"VKTRY insoles have blown me away. They have drastically impacted my game both in my training and on the mound. They really give me the feel of energy working from the ground up when I am on the mound. Truly the best in the business!\"<\/p>",
+            "quote_author": "<p><strong>Logan Rinehart<\/strong><\/p><p>Right Handed Pitcher, Seattle Mariners Organization<\/p>"
+          }
+        },
+        "b361c902-4305-42df-9173-6d96227b2947": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Timmy-Mehl-MVP-cropped.webp",
+            "quote": "<p>\"These insoles are so comfortable and give me the extra step I need on the soccer field when I get tired!” “I have struggled with shin splints throughout my soccer career and have tried everything out there. These insoles relieve me of my shin pain, which lets me focus on performing on the field!\"<\/p>",
+            "quote_author": "<p><strong>Timmy Mehl<\/strong><\/p><p>Defender, Loudon United<\/p>"
+          }
+        },
+        "d40bb1a2-af74-46b4-9104-8af6279186bc": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Ricky-Vanasco-MVP.webp",
+            "quote": "<p>\"VKTRY insoles have been a game changer for me. They help support my lower back and my landing leg while pitching. They also make me feel more explosive like there is a spring in my shoes.\"<\/p>",
+            "quote_author": "<p><strong>Ricky Vanasco<\/strong><\/p><p>Right Handed Pitcher, Texas Rangers Organization<\/p>"
+          }
+        },
+        "d3ccc09f-7397-4ad8-9438-58e7899b167d": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Stephen-Brown-MVP.webp",
+            "quote": "<p>\"In the last couple of weeks using VKTRY insoles, I’ve noticed a difference in my stability, speed, and decrease in foot pain. It gives me the capability to workout longer which is the edge I need to enhance my performance.\"<\/p>",
+            "quote_author": "<p><strong>Stephen Brown<\/strong><\/p><p>Point Guard, Giessen 46ers<\/p>"
+          }
+        },
+        "761bd81d-84f4-46a8-a3dd-36995f9715d8": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/David-Pindell-MVP.jpg",
+            "quote": "<p>\"VKTRY insoles give me a smooth feel when wearing my cleats and doing my drops. I would highly recommend to all athletes!\"<\/p>",
+            "quote_author": "<p><strong>David Pindell<\/strong><\/p><p>Quarterback, NFL Free Agent<\/p>"
+          }
+        },
+        "df8f840a-cbd0-43af-80bd-acc341870d2e": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Nick-Ward-MVP.jpg",
+            "quote": "<p>\"Only been wearing VKTRY insoles for a few days but I can already feel the added explosiveness to my game. These feel great on my feet and I plan on using them with my everyday trainers!\"<\/p>",
+            "quote_author": "<p><strong>Nick Ward<\/strong><\/p><p>Forward, College Park Skyhawks<\/p>"
+          }
+        },
+        "83294fb5-9ab7-489d-8d00-8c24f51bf94f": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Jennie-Rintala-MVP.webp",
+            "quote": "<p>\"I struggle with foot pain. It’s amazing how much Vktry insoles help me not only during sport but also my recovery time.\"<\/p>",
+            "quote_author": "<p><strong>Jennie Rintala<\/strong><\/p><p>Forward, Adelaide Lightning<\/p>"
+          }
+        },
+        "bf1cedbc-632c-4dfa-ae5e-ab317e2c977e": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/CJ-Gettys-MVP.webp",
+            "quote": "<p>\"Day 1 & VKTRY insoles already making a huge difference in my game. I feel added explosiveness & these are vertical game changers!\"<\/p>",
+            "quote_author": "<p><strong>CJ Gettys<\/strong><\/p><p>Center, Babitious Nara<\/p>"
+          }
+        },
+        "b2358bf4-a7ce-42fd-98e5-43f3092bf5a7": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Jaylen-Morris-MVP.webp",
+            "quote": "<p>\"I’ve used orthopedic insoles in the past but none that I feel comfortable playing in. VKTRY insoles bring added comfort on the court which is important for me to compete at the highest level. \"<\/p>",
+            "quote_author": "<p><strong>Jaylen Morris<\/strong><\/p><p>Guard, Aris Thessaloniki<\/p>"
+          }
+        },
+        "56168476-9feb-475c-a5dd-976a7459f132": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/605BFFB1-AE76-4A87-B89E-1DF89CC1D26B.jpg",
+            "quote": "<p>\"Thank you for hooking it up. You wanted a quote too. “These insoles are designed to increase power in the lower half and at the same time keep athletes on the field by protecting from lower leg injuries and that’s exactly what they’re done for me\"<\/p>",
+            "quote_author": "<p><strong>Andrew Gross<\/strong><\/p><p>RHP, Tampa Bay Rays Organization<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "e23b0ee0-51d3-4283-97c8-b3fa8b8a98c7",
+        "5d9538b1-5e9c-467b-aa36-3aecdeaa5e89",
+        "0951279f-73ca-4ea1-8d91-2f2189dcba8f",
+        "8699de7a-df2e-44e7-9045-ed25a9c40dd4",
+        "3d11c3e1-b5db-498f-913b-1d92c30a3b8f",
+        "1093b1ba-a3ae-4bae-9c0a-858ae0da757c",
+        "820dac87-ddeb-49a8-aa30-f3594f2980ee",
+        "efb7b947-5104-4e6e-b245-ade2cb10acfb",
+        "bab73d4f-8f8f-47bc-85ad-f5ab3f6f63ce",
+        "99d4af79-6e69-4e66-adcb-f1fb3a5a933a",
+        "b114afa0-9eda-452c-8cfa-1d8015ccda66",
+        "45257916-c97c-4604-b07b-3419a77a8552",
+        "7ded5686-7d29-43f0-aea6-cf5c7baeb4a0",
+        "2e499e00-c1ea-4ac2-9f64-a1d20bcbf6a7",
+        "2d563fc6-f2b1-40c1-8b09-2fad604fde91",
+        "9ad08250-7b4e-4943-9a11-f3b7fd0b2b4c",
+        "cf10bb9c-dcc1-4a6a-b574-63003d6c61ca",
+        "3f3cb238-dcc7-4fdb-9b1a-d60df54b23b0",
+        "ce04520c-17bf-4677-a885-cd0fc7a5d0e8",
+        "590267b1-1395-468a-802b-302e3be266de",
+        "6a69e129-861b-4f25-b4f5-caab63948c50",
+        "da1c8e94-4c39-431c-b8a4-c872f4e5d25c",
+        "f88014c8-8417-4c8a-a49e-d67926637599",
+        "b1ca59d5-6e02-4e4c-b4e6-4977576c5826",
+        "0ecc1c39-616f-4241-b764-24c44e936457",
+        "5825f46b-20ce-42a7-b236-60fb0b28a4cb",
+        "df67c3f0-10a7-4e57-b901-ef10acddb77b",
+        "295de48e-3977-4e71-a2c8-580f961de9de",
+        "4dd141f3-e06f-4703-b30c-b90e93d51460",
+        "95d59a04-0166-44ed-8366-cebc0351e55f",
+        "db0a75e9-8eb5-42c0-aed2-c9b2d53eeab2",
+        "36f9c417-bddf-4b24-ab70-8c415abf520d",
+        "164267bd-2c44-4523-842e-0974346089f0",
+        "71ce8d60-9cb1-4a89-a8cc-c76ae58d243d",
+        "c3b7a20d-3a1a-4ca7-a749-a20b45409eeb",
+        "870631c1-49e1-4cf6-a562-aac399e9764f",
+        "aa48d6d5-4faa-4be8-8d2e-c569fd474561",
+        "0767ab26-a2cc-4c4f-ae16-b4545ad1cae2",
+        "c3f2f663-c4ce-4b24-abe4-0f82da79c344",
+        "b7862be3-a8a8-43ec-978a-36f4227cf09b",
+        "6cdd0aed-5924-4b55-b6de-bd265d682b28",
+        "b361c902-4305-42df-9173-6d96227b2947",
+        "d40bb1a2-af74-46b4-9104-8af6279186bc",
+        "d3ccc09f-7397-4ad8-9438-58e7899b167d",
+        "761bd81d-84f4-46a8-a3dd-36995f9715d8",
+        "df8f840a-cbd0-43af-80bd-acc341870d2e",
+        "83294fb5-9ab7-489d-8d00-8c24f51bf94f",
+        "bf1cedbc-632c-4dfa-ae5e-ab317e2c977e",
+        "b2358bf4-a7ce-42fd-98e5-43f3092bf5a7",
+        "56168476-9feb-475c-a5dd-976a7459f132"
+      ],
+      "settings": {
+        "title": "",
+        "subtitle": "",
+        "show_money_back": false
+      }
+    },
+    "73d01170-d324-44d0-8c53-13da87076754": {
+      "type": "section-reviews",
+      "settings": {
+        "size": "small"
+      }
+    },
+    "65265977-3ce7-49e2-a778-625e332074f8": {
+      "type": "section-press",
+      "blocks": {
+        "85d04695-01ec-4042-8153-93e6b9e95c48": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/forbes-logo-gray_2x_cdac87d6-82ad-40fe-a1d8-3664e5d60ccb.png",
+            "copy": "VKTRY Performance Insoles Embrace Carbon Fiber For Energy Return"
+          }
+        }
+      },
+      "block_order": [
+        "85d04695-01ec-4042-8153-93e6b9e95c48"
+      ],
+      "settings": {
+        "title": "CHANGING HOW ATHLETES TRAIN AND COMPETE IS BIG NEWS!"
+      }
+    }
+  },
+  "order": [
+    "main-page",
+    "7d2fb5f2-2640-4910-b791-2a7221be7839",
+    "c7436d2c-9805-4c5d-9005-afc12b9f5b20",
+    "70f44b5c-d5ce-4081-b39b-cb1ed1f20b92",
+    "73d01170-d324-44d0-8c53-13da87076754",
+    "65265977-3ce7-49e2-a778-625e332074f8"
+  ]
+}

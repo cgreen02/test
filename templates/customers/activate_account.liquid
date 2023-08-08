@@ -1,0 +1,13 @@
+{% form "activate_customer_password", class: "form" %}
+    <div class="formTitle">Activate Account</div>
+
+    {{ form.errors | default_errors }}
+
+    <label for="password">Password</label>
+    <input id="password" type="password" name="customer[password]">
+
+    <label for="password_confirmation">Password Confirmation</label>
+    <input id="password_confirmation" type="password" name="customer[password_confirmation]">
+
+    <button class="button">Activate account</button>
+{% endform %}

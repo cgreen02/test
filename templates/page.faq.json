@@ -1,0 +1,370 @@
+{
+  "sections": {
+    "3db5adf9-ab17-4c33-ab6a-2b2bef55e9cb": {
+      "type": "section-faq-header",
+      "settings": {
+        "title": "Frequently Asked Questions",
+        "background": "#FFFFFF"
+      }
+    },
+    "ae35a7b0-3e5b-44c8-a5b4-364c2a1477b2": {
+      "type": "section-faq",
+      "blocks": {
+        "2685e43e-f034-437d-bca0-55843275393d": {
+          "type": "item",
+          "settings": {
+            "question": "Do I get one or two insoles when I order?",
+            "answer": "<p>We sell VKTRY Insoles as a pair, one for the left foot and one for the right.<\/p>"
+          }
+        },
+        "392ee1ed-581f-4015-8498-ab9a9a1593c8": {
+          "type": "item",
+          "settings": {
+            "question": "How do I know VKTRY Insoles will fit my shoes?",
+            "answer": "<p>VKTRY Insoles fit true to size. If you are a size 9 shoe, order a size 9\/9.5 insole. VKTRY takes into account that some sports shoes fit more tightly (cleats, spikes). That's why we also ask for the sport you are playing. If any problems with fit once you receive your VKs, simply contact us and we will arrange for a free exchange. We get the size right about 98% of the time!<\/p>"
+          }
+        },
+        "25278102-b167-4895-b578-7be5cca14b84": {
+          "type": "item",
+          "settings": {
+            "question": "How are VKTRY Insoles customized for each athlete?",
+            "answer": "<p>VKTRY Insoles are designed to be highly customized based not only on shoe size, but also based on sport and body weight. VKs come in 5 levels of flexibility because a bigger athlete needs more spring action than a smaller athlete.<\/p><p><\/p>"
+          }
+        },
+        "3cbb448b-99df-4fc7-89fc-01fc26425503": {
+          "type": "item",
+          "settings": {
+            "question": "Are VKTRY Insoles suitable for children?",
+            "answer": "<p>We do not recommend VKs for children under the age of 13 as their feet are still developing. If you have any concerns about your children using VKs, please consult your family physician<\/p>"
+          }
+        },
+        "07d7a219-7a23-4d65-b473-01483d995072": {
+          "type": "item",
+          "settings": {
+            "question": "Why do I need to enter my weight? What is the VKTRY Pro Level?",
+            "answer": "<p>VKs come in 5 different Pro Levels. This is the flexibility of the insoles… the strength of the “Spring”. The bigger the athlete, the more spring he or she will need, the higher the Pro Level. VKTRY uses an algorithm to determine the best Pro Level for the athlete so that the insoles deliver the best combination of performance, protection and comfort.<\/p>"
+          }
+        },
+        "cc2d5ec4-9c0f-4110-8b1d-d763a9a725a2": {
+          "type": "item",
+          "settings": {
+            "question": "What if I wear custom orthotics – can I still wear VKs?",
+            "answer": "<p>Our insoles are not designed to be used in conjunction with custom orthotics. Many people who have been prescribed orthotics (due to flat feet for example), actually find that VKs help sometimes more than the orthotics. If you are interested, we also offer Custom VKs – custom orthotics with the VKTRY carbon fiber plate built in. Email us to learn more (info@VKTRYgear.com)<\/p>"
+          }
+        },
+        "05e9f686-3467-4d87-a16b-b0bd12bc7c1f": {
+          "type": "item",
+          "settings": {
+            "question": "Do VKTRY Insoles come in different widths or arch types?",
+            "answer": "<p><em>No, we do not make VKs in different widths or arch types.<\/em> They have been designed to be arch agnostic and our sizes are very generous in the width. Our VKs fit most foot types and sizes, but if any issues with comfort after trying, please contact us.<\/p>"
+          }
+        },
+        "03de8445-57aa-4354-acd8-e0d012102038": {
+          "type": "item",
+          "settings": {
+            "question": "If I am on the border of a weight level, should I go up or down?",
+            "answer": "<p>We usually recommend going down. The weight level is a big factor in determining the VK’s Pro Level (flexibility). While a higher Pro Level may provide more spring, it’s very important that you are able to comfortably flex your feet for the insoles to be effective.<\/p>"
+          }
+        },
+        "cbe26279-c3d5-4784-bb0b-9103a54b2263": {
+          "type": "item",
+          "settings": {
+            "question": "Why do I need to enter my sport?",
+            "answer": "<p>Different shoe types fit differently. For example, soccer shoes fit much more tightly than basketball shoes. We accommodate for these differences by having different foam cushions: yellow is 7mm thick, black is 5mm and red is 3mm. Because of this, it may be difficult for an athlete who plays multiple sports to move their VKs from a loose fitting shoe to a tighter fitting shoe.<\/p>"
+          }
+        },
+        "e76805f2-9ed2-4928-b4fa-7e3422b76370": {
+          "type": "item",
+          "settings": {
+            "question": "How do I know which color VKs I am going to get – what’s the difference?",
+            "answer": "<p>The different colors correspond to the shoe type & shoe fit. Yellow is our thickest most comfortable top (7mm) and if you play a sport with a <em>non-cleated<\/em> shoe, you will receive this top. Black is slightly thinner (5mm) and designed for cleated shoes. Red is our thinnest top (3mm) used for tight fitting shoes (soccer and track).<\/p>"
+          }
+        },
+        "7d5a38b4-4eea-4e11-8087-47c7b29f6de0": {
+          "type": "item",
+          "settings": {
+            "question": "Are VKTRY insoles available as custom orthotics?",
+            "answer": "<p>Yes. VKTRY Gear now offers a full custom version. Schedule a free consultation with our inhouse pedorthist <a href=\"https:\/\/vktrygear.com\/products\/platinum-vks-vktry-custom-orthotics\">here<\/a>. They are fabricated from your foot impressions. We send you a foam impression box with instructions on how to make a perfect foot impression. Send the box back to us, postage paid and we will digitally scan your impressions and send your full custom VKTRY Insoles. Email us to learn more (info@VKTRYgear.com)<\/p>"
+          }
+        },
+        "6e9e79df-fa56-4184-b1c0-d7a39413528e": {
+          "type": "item",
+          "settings": {
+            "question": "Are the sizes shown on the VKTRY website in US sizes?",
+            "answer": "<p>Yes, all sizes are in US sizing – and you may also find a conversion chart to help you with international sizing. If you wear a size 9 or 9.5 shoe, then order our size 9\/9.5. Most of the time the fit is right the first time – but if not contact us and we can offer an exchange.<\/p>"
+          }
+        },
+        "b43fb5f4-3fd6-4435-b9f3-e2e5f2a8197f": {
+          "type": "item",
+          "settings": {
+            "question": "If I sometimes wear a 9.5 shoe size and in other shoes wear a 10, what size VK should I order?",
+            "answer": "<p>We recommend that you select the shoes you will be wearing your VKs in the most and choose <em>that<\/em> shoe size when selecting your VK size. Any issues with fit, please contact us and we can arrange an exchange.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "2685e43e-f034-437d-bca0-55843275393d",
+        "392ee1ed-581f-4015-8498-ab9a9a1593c8",
+        "25278102-b167-4895-b578-7be5cca14b84",
+        "3cbb448b-99df-4fc7-89fc-01fc26425503",
+        "07d7a219-7a23-4d65-b473-01483d995072",
+        "cc2d5ec4-9c0f-4110-8b1d-d763a9a725a2",
+        "05e9f686-3467-4d87-a16b-b0bd12bc7c1f",
+        "03de8445-57aa-4354-acd8-e0d012102038",
+        "cbe26279-c3d5-4784-bb0b-9103a54b2263",
+        "e76805f2-9ed2-4928-b4fa-7e3422b76370",
+        "7d5a38b4-4eea-4e11-8087-47c7b29f6de0",
+        "6e9e79df-fa56-4184-b1c0-d7a39413528e",
+        "b43fb5f4-3fd6-4435-b9f3-e2e5f2a8197f"
+      ],
+      "settings": {
+        "title": "Products",
+        "background": "#FFFFFF"
+      }
+    },
+    "44db0456-d7fa-4638-8600-9516ad706d6b": {
+      "type": "section-faq",
+      "blocks": {
+        "48be2e20-daf8-4bf9-9173-ee8af3e004ab": {
+          "type": "item",
+          "settings": {
+            "question": "Can I transfer the VKs from one pair of shoes to another?",
+            "answer": "<p>Yes, if they are the same shoe type. In other words, if you bought VKs for a cleated shoe, it's ok to move them to another cleated shoe. If you bought for a non-cleated shoe (eg-basketball), not a good idea to try to fit them into a soccer cleat. If you are moving the VKs, try to take them out by slipping your fingers under the carbon fiber plate - and not by pulling up on the foam, which can damage the VK.<\/p>"
+          }
+        },
+        "b2bdfdf8-66f8-45c1-aec0-5022dba7264d": {
+          "type": "item",
+          "settings": {
+            "question": "What if I cannot remove the insoles that came inside the shoes?",
+            "answer": "<p>If they are sewn into the shoes or glued down tight and you do not want to risk ruining the foam insoles from the factory, then stop. You can contact us and there is a chance that we can exchange your current pair of VKs for a thinner pair that may fit better.<\/p><p>We suggest you <a href=\"https:\/\/vktrygear.com\/blogs\/faq-brand\/how-to-remove-insoles-from-shoes\">click here<\/a> to read our blog on how to remove insoles from shoes.<\/p>"
+          }
+        },
+        "1ce87148-ccef-4c94-ba23-3c12b9116eb3": {
+          "type": "item",
+          "settings": {
+            "question": "What if my insoles are glued inside the shoe?",
+            "answer": "<p>Most insoles do come out. If they do are not easily removable, they are likely glued down. In most cases you can remove them by doing the following:<\/p><p>1. Carefully put your fingers underneath the insole, toward the heel \/ side is usually easiest.<\/p><p>2. Without ripping the insole, wiggle your fingers towards the front of the foot.<\/p><p>3. As you work your way up, gradually & gently pull your fingers up. You should begin to feel the insole start to come up. Repeat this process as many times necessary until the insole can be pulled out of the shoe in one piece.<\/p><p>See <a href=\"https:\/\/vktrygear.com\/blogs\/faq-brand\/how-to-remove-insoles-from-shoes\" title=\"How to remove insoles from shoes\">THIS PAGE<\/a> for a more in depth step by step instruction on removing insoles from sneakers, cleats & spikes.<\/p>"
+          }
+        },
+        "dc447eaf-8195-46c8-a048-21cb9303229b": {
+          "type": "item",
+          "settings": {
+            "question": "Do I need to remove the insoles that came with my shoes?",
+            "answer": "<p>Yes, to have the space needed for the VKs and your feet to fit comfortably inside your shoes, we recommend you remove the factory insoles from the shoes.<\/p><p><a href=\"https:\/\/vktrygear.com\/blogs\/faq-brand\/how-to-remove-insoles-from-shoes\">Click here<\/a> to read our blog on how to remove insoles from shoes.<\/p>"
+          }
+        },
+        "3e05fa39-d337-4b79-b983-4f7be91df1d7": {
+          "type": "item",
+          "settings": {
+            "question": "How do I clean my VKs?",
+            "answer": "<p>If your VKTRY Insoles get dirty, simply wipe them down with a damp cloth and allow them to air dry. Do not use harsh chemicals or soak the VKs. Do not put them in a clothes washing machine or dryer.<\/p><p><a href=\"https:\/\/vktrygear.com\/blogs\/faq-brand\/how-to-clean-and-take-care-of-your-insoles\" title=\"https:\/\/vktrygear.com\/blogs\/faq-brand\/how-to-clean-and-take-care-of-your-insoles\">Click here<\/a> to read our blog about how to clean your insoles<\/p>"
+          }
+        },
+        "760be228-2613-46ca-baa9-d7370b4d0a19": {
+          "type": "item",
+          "settings": {
+            "question": "How long will VKTRY Insoles last?",
+            "answer": "<p>That really depends on a number of factors: how hard you are on them, how well you take care of them, and how often you take them in and out of your shoes. Some people are using their VKs for over 3 years now while NFL athletes may wear out their VKs in 5-6 months. We usually advise people that your VKs will last a full season (9-12 months).<\/p>"
+          }
+        },
+        "a6410704-b113-440c-b4fe-26d1793afece": {
+          "type": "item",
+          "settings": {
+            "question": "Can I wear my VKs all day long?",
+            "answer": "<p>Yes, you can. VKs were designed for athletes to be worn for practice and competition. But some people wear their VKs comfortably all day and appreciate the bounce and shock absorption they feel.<\/p>"
+          }
+        },
+        "8508edd5-d9b3-4022-86eb-f5502a44d723": {
+          "type": "item",
+          "settings": {
+            "question": "Am I supposed to trim the insoles to get them to fit in the shoes?",
+            "answer": "<p>No, please do NOT attempt to trim the VKTRY Insoles. Carbon fiber is not meant to be trimmed. Our products are designed to fit by shoe size with no alterations. Any problems with fit, please contact us.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "48be2e20-daf8-4bf9-9173-ee8af3e004ab",
+        "b2bdfdf8-66f8-45c1-aec0-5022dba7264d",
+        "1ce87148-ccef-4c94-ba23-3c12b9116eb3",
+        "dc447eaf-8195-46c8-a048-21cb9303229b",
+        "3e05fa39-d337-4b79-b983-4f7be91df1d7",
+        "760be228-2613-46ca-baa9-d7370b4d0a19",
+        "a6410704-b113-440c-b4fe-26d1793afece",
+        "8508edd5-d9b3-4022-86eb-f5502a44d723"
+      ],
+      "settings": {
+        "title": "Usage & Care",
+        "background": "#FFFFFF"
+      }
+    },
+    "3eb3527e-91fa-4e13-90bc-4f4e2ea398a3": {
+      "type": "section-faq",
+      "blocks": {
+        "4b47e69d-60b4-4cbf-8864-fbf58b895a80": {
+          "type": "item",
+          "settings": {
+            "question": "How does the Superhero BOGO (Buy One Give One) promotion work?",
+            "answer": "<p>*The VKTRY Superhero Buy One, Give One promotion is for a limited time only.  The pair of VKTRY insoles gifted will be the same model (Gold or Silver) as the one purchased. At checkout customers will input the appropriate code during the applicable promotion.  VKTRY will supply the customer with a follow-up email that includes a unique one-time use code (valid for 30 days from date of issuance).  The customer must in turn forward this email to their Superhero.  The Superhero may then customize their free pair of VKs for direct delivery from the VKTRY Gear website.  In the event the originally purchased VKTRY insoles are returned and a free pair of insoles was redeemed from that customer account, VKTRY will credit half of the purchase price to the original purchaser: $99 for a pair of GOLD VKs or $49 for a pair of SILVER VKs.<\/p>"
+          }
+        },
+        "e1e07bef-1055-403c-ad95-6814314fe7ba": {
+          "type": "item",
+          "settings": {
+            "question": "How does a promotion code work on the VKTRY website?",
+            "answer": "<p>There are times where we will offer a discount. Simply enter the promo code at checkout and the sale price should show up. Promo codes will expire and cannot be combined.<\/p>"
+          }
+        },
+        "95c9c534-4a53-43ab-9fe2-966415461904": {
+          "type": "item",
+          "settings": {
+            "question": "Does VKTRY offer a payment plan?",
+            "answer": "<p>Yes, we utilize Affirm which is a 3-stage payment plan. Click on the Affirm tab at checkout to learn more.<\/p>"
+          }
+        },
+        "28657113-8093-42dd-85a2-0c3240b366f2": {
+          "type": "item",
+          "settings": {
+            "question": "Does VKTRY have a Referral Program?",
+            "answer": "<p>Yes, you can refer a friend and earn a $20 gift card if your friend purchases VKTRY Insoles through this program. We utilize FriendBuy and also offer a discount to your friend as well.<\/p>"
+          }
+        },
+        "bc1a0a4c-36b6-4917-aa7b-e08a3033d1c5": {
+          "type": "item",
+          "settings": {
+            "question": "How are VKTRY Insoles customized for each athlete?",
+            "answer": "<p>VKTRY Insoles are designed to be highly personalized based not only on shoe size, but also based on sport and body weight. VKs come in 5 levels of flexibility because a bigger athlete generates more ground force than a smaller athlete.<\/p>"
+          }
+        },
+        "d944f7c1-d3fe-4f81-8519-bf9bd0c06b12": {
+          "type": "item",
+          "settings": {
+            "question": "If I sometimes wear a 9.5 shoe size and in other shoes wear a 10, what size VK should I order?",
+            "answer": "<p>We recommend that you select the shoes you will be wearing your VKs in the most and choose <em>that<\/em> shoe size when selecting your VK size.<\/p>"
+          }
+        },
+        "503ea4e2-74c6-4cb1-8c21-7f0790d56c37": {
+          "type": "item",
+          "settings": {
+            "question": "If I am on the border of a weight level, should I go up or down?",
+            "answer": "<p>We usually recommend going down. The weight level is a big factor in determining the VK’s Pro Level (flexibility). While a higher Pro Level may provide more spring, it’s very important that you are able to comfortably flex your feet for the insoles to be effective.<\/p>"
+          }
+        },
+        "6681d2d1-239d-4431-b7fc-54da74022896": {
+          "type": "item",
+          "settings": {
+            "question": "How can I pay for VKTRY Insoles?",
+            "answer": "<p>We accept all major credit cards as well as PayPal.<\/p>"
+          }
+        },
+        "ea8a586b-12ba-414f-b312-93a284333741": {
+          "type": "item",
+          "settings": {
+            "question": "Can I find VKTRY Insoles at a retailer near me?",
+            "answer": "<p>Probably not. Because VKs are customized for each athlete, it would be very hard for a retailer to stock VKs<\/p>"
+          }
+        },
+        "223dd2c3-b39c-4b8c-b66f-1e3d6acc5406": {
+          "type": "item",
+          "settings": {
+            "question": "Do I get one or two insoles when I order?",
+            "answer": "<p>We sell VKTRY Insoles in pairs, one for the left foot and one for the right.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "4b47e69d-60b4-4cbf-8864-fbf58b895a80",
+        "e1e07bef-1055-403c-ad95-6814314fe7ba",
+        "95c9c534-4a53-43ab-9fe2-966415461904",
+        "28657113-8093-42dd-85a2-0c3240b366f2",
+        "bc1a0a4c-36b6-4917-aa7b-e08a3033d1c5",
+        "d944f7c1-d3fe-4f81-8519-bf9bd0c06b12",
+        "503ea4e2-74c6-4cb1-8c21-7f0790d56c37",
+        "6681d2d1-239d-4431-b7fc-54da74022896",
+        "ea8a586b-12ba-414f-b312-93a284333741",
+        "223dd2c3-b39c-4b8c-b66f-1e3d6acc5406"
+      ],
+      "settings": {
+        "title": "Ordering",
+        "background": "#FFFFFF"
+      }
+    },
+    "14207a92-dd96-42af-92f9-0f26b2664a54": {
+      "type": "section-faq",
+      "blocks": {
+        "8a8c9bde-2bcb-43f5-aa74-1384eb90bb12": {
+          "type": "item",
+          "settings": {
+            "question": "Do you ship internationally?",
+            "answer": "<p>We do ship internationally via DHL. Custom fees and taxes will differ with every country. You will receive a shipping cost estimate after you enter your shipping address and before you complete your purchase.<\/p>"
+          }
+        },
+        "36ccf05b-4799-4cca-bf1d-d3603226cb8f": {
+          "type": "item",
+          "settings": {
+            "question": "I have not received my VKs yet, can you help me?",
+            "answer": "<p>Please send an email to info@vktrygear.com with your full name and order number and we will provide an ETA and send you the tracking information. Please be advised that VKTRY is not open over the weekend, so if you place your order on Friday, it may not ship until Monday.<\/p>"
+          }
+        },
+        "b0758a5c-7417-4370-aabb-3d7f5ba319f7": {
+          "type": "item",
+          "settings": {
+            "question": "Does VKTRY offer free shipping?",
+            "answer": "<p>We do offer free shipping within the USA via the post office (USPS). Please allow up to 7 business days. Your order may arrive sooner depending on your location in the USA.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "8a8c9bde-2bcb-43f5-aa74-1384eb90bb12",
+        "36ccf05b-4799-4cca-bf1d-d3603226cb8f",
+        "b0758a5c-7417-4370-aabb-3d7f5ba319f7"
+      ],
+      "settings": {
+        "title": "Shipping",
+        "background": "#FFFFFF"
+      }
+    },
+    "bcacfba7-5ab1-445a-87d4-ea521efa2c20": {
+      "type": "section-faq",
+      "blocks": {
+        "7d3a1f2d-aba1-44b3-82ac-3a0dd3044d88": {
+          "type": "item",
+          "settings": {
+            "question": "Do you offer product exchanges?",
+            "answer": "<p>Yes, about 5-10% of the time, we may need to alter the size or flexibility of the VKs you ordered. We try our best to ensure you get what you need. Please send us an email at info@vktrygear.com with your full name and order number along with the issue and we will get back to you with procedures on exchanging your VKs. We offer free exchanges within the USA. However, international customers will be responsible for shipping costs.<\/p>"
+          }
+        },
+        "d78374d0-6631-45e4-9914-f39838c5c38c": {
+          "type": "item",
+          "settings": {
+            "question": "Can I return my VKs?",
+            "answer": "<p>Yes, you can return your VKs within the 90-day money back guarantee period. Please email us at info@vktrygear.com and tell us your full name and order number along with a brief explanation of why you’d like to make a return. Maybe we can assist you with an exchange instead of a refund.<\/p>"
+          }
+        },
+        "2e64019e-314a-4d87-bfd1-d9b5c068f889": {
+          "type": "item",
+          "settings": {
+            "question": "What is VKTRY’s warranty policy?",
+            "answer": "<p>We offer a 90-day Money Back Guarantee. If you are not satisfied with your VKs, please email us at info@vktrygear.com along with your full name and\/or order number and what you did not like about the VKs. With international returns, the customer will be responsible for shipping the VKs back to our office. We strive to make all VKTRY customers, happy customers!<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "7d3a1f2d-aba1-44b3-82ac-3a0dd3044d88",
+        "d78374d0-6631-45e4-9914-f39838c5c38c",
+        "2e64019e-314a-4d87-bfd1-d9b5c068f889"
+      ],
+      "settings": {
+        "title": "Exchanges & Returns",
+        "background": "#FFFFFF"
+      }
+    }
+  },
+  "order": [
+    "3db5adf9-ab17-4c33-ab6a-2b2bef55e9cb",
+    "ae35a7b0-3e5b-44c8-a5b4-364c2a1477b2",
+    "44db0456-d7fa-4638-8600-9516ad706d6b",
+    "3eb3527e-91fa-4e13-90bc-4f4e2ea398a3",
+    "14207a92-dd96-42af-92f9-0f26b2664a54",
+    "bcacfba7-5ab1-445a-87d4-ea521efa2c20"
+  ]
+}

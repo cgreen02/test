@@ -1,0 +1,156 @@
+{
+  "sections": {
+    "parents-slider": {
+      "type": "section-parents-slider",
+      "settings": {
+      }
+    },
+    "parents-quotes": {
+      "type": "section-parents-quotes",
+      "settings": {
+      }
+    },
+    "94bd5dce-cfba-41eb-9057-35b2d879c3ee": {
+      "type": "section-index-benefits",
+      "blocks": {
+        "bc9f92d8-2f28-442a-b14e-5f1a8c8b307d": {
+          "type": "benefit",
+          "settings": {
+            "title": "41% LESS",
+            "sub_title": "<p>foot injuries overthe course of a season<\/p>",
+            "image": "shopify:\/\/shop_images\/index-benefit-3_1e18f328-67d2-447a-a0cb-de62dffde2b1.jpg"
+          }
+        },
+        "8b32a586-e8e1-4bbd-a898-ae76e184e493": {
+          "type": "benefit",
+          "settings": {
+            "title": "22% LESS",
+            "sub_title": "<p>lower-leg injuries<br\/>over the entire season<\/p>",
+            "image": "shopify:\/\/shop_images\/index-benefit-4_0308529a-4cac-4d71-91f7-a2066566819e.jpg"
+          }
+        },
+        "d0827538-c9df-4331-83d0-ea72de05fca5": {
+          "type": "benefit",
+          "settings": {
+            "title": "1.6” HIGHER",
+            "sub_title": "<p>vertical jumps<\/p>",
+            "image": "shopify:\/\/shop_images\/index-benefit-1.webp"
+          }
+        },
+        "5937d5e3-c2eb-41be-b142-e0c663f6b19b": {
+          "type": "benefit",
+          "settings": {
+            "title": ".12 SECOND",
+            "sub_title": "<p>faster 40 yard dashes<\/p>",
+            "image": "shopify:\/\/shop_images\/index-benefit-2_de3fd7a4-ad91-47fc-966b-2b4c822c3bf9.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "bc9f92d8-2f28-442a-b14e-5f1a8c8b307d",
+        "8b32a586-e8e1-4bbd-a898-ae76e184e493",
+        "d0827538-c9df-4331-83d0-ea72de05fca5",
+        "5937d5e3-c2eb-41be-b142-e0c663f6b19b"
+      ],
+      "settings": {
+        "title": "",
+        "flip_cards": false,
+        "button_label": "",
+        "button_url": "",
+        "show_modal": false
+      }
+    },
+    "fa7bf74f-dcd6-420a-81ee-8e740cf2559d": {
+      "type": "section-the-science",
+      "blocks": {
+        "21687693-df2f-4a62-be2a-ffabdb653b87": {
+          "type": "numbered_item",
+          "settings": {
+            "number": "1",
+            "title": "VKs improve alignment to protect your knees from injuries.",
+            "link_label": "Learn More",
+            "dialog_content": "<p>The knee is considered especially vulnerable in the lower extremity kinetic chain. VKs decreased frontal plane knee joint excursion (lateral movement) with test subjects.<br\/><br\/>Less joint excursion equates to improved alignment during running and reduces abnormal knee joint load.<br\/><br\/>Even a small variation in knee alignment can result in stress on the ligaments and degenerative damage to the knee.<\/p>"
+          }
+        },
+        "b6471dec-bdab-47ee-b4d9-5baee1b617fa": {
+          "type": "numbered_item",
+          "settings": {
+            "number": "2",
+            "title": "VKs provide added stability and protection for the ankle joint, increase energy efficiency and protect against shin splints.",
+            "link_label": "Learn More",
+            "dialog_content": "<p>VKTRY Insoles allows the athlete to decrease the degree of dorsiflexion (loading up) in order to perform the necessary work in plantar flexion (push-off)<br\/><br\/>This allows the tibialis anterior tendon to work less thereby reducing the chances of shin splints, tibial stress syndrome and anterior compartment syndrome.<br\/><br\/>VKs allow the athlete to “load up” at the ankle less… yet generate more force. Essentially… less risk, more reward.<\/p>"
+          }
+        },
+        "b5f1a837-890c-4af9-801f-62ac56e07494": {
+          "type": "numbered_item",
+          "settings": {
+            "number": "3",
+            "title": "VKs reduce the risk of ankle injuries and increase protection against plantar fasciitis (currently 4M cases per year in the U.S.)",
+            "link_label": "Learn More",
+            "dialog_content": "<p>VKs reduced the degree of ankle plantarflexion necessary for running test subjects to exert a measured ground force.<br\/><br\/>VKs better control ankle eversion (rolling) resulting in improved joint stability reducing the risk of ankle injury.<br\/><br\/>By decreasing ankle excursion (lateral movement), VKs keeps the bones & joints of the foot within the normally accepted range of motion resulting in reduced stress on the Plantar Fascia.<\/p>"
+          }
+        },
+        "75d88d17-7d32-46f8-8de1-fe5522663a99": {
+          "type": "numbered_item",
+          "settings": {
+            "number": "4",
+            "title": "VKs provide a “spring-like” effect to improve shock absorption and reduce the load and stress on the athlete’s body.",
+            "link_label": "Learn More",
+            "dialog_content": "<p>Whether walking, running or jumping, athletes experience ground reaction forces (GRF)<br\/><br\/>Athletes experience significantly less GRF with VKTRY Insoles (10%), especially once the athlete was fatigued.<br\/><br\/>This indicates that VKs were able to absorb more shock and distribute the ground forces more evenly for the athlete.<\/p>"
+          }
+        },
+        "2d829284-ea4d-407f-ba6f-dd741628a78a": {
+          "type": "button",
+          "settings": {
+            "button_label": "Read Performance Research",
+            "button_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0072\/5568\/7283\/files\/VKTRY_Athletic_Performance_Research_Results_-_Sept_2020.pdf?v=6230691018279955679"
+          }
+        },
+        "b39228e8-9529-4c6a-8052-89be63d5a401": {
+          "type": "button",
+          "settings": {
+            "button_label": "Read Protection Research",
+            "button_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0072\/5568\/7283\/files\/VKTRY_Injury_Protection_Research_Results.pdf?v=7830786872403184438"
+          }
+        }
+      },
+      "block_order": [
+        "21687693-df2f-4a62-be2a-ffabdb653b87",
+        "b6471dec-bdab-47ee-b4d9-5baee1b617fa",
+        "b5f1a837-890c-4af9-801f-62ac56e07494",
+        "75d88d17-7d32-46f8-8de1-fe5522663a99",
+        "2d829284-ea4d-407f-ba6f-dd741628a78a",
+        "b39228e8-9529-4c6a-8052-89be63d5a401"
+      ],
+      "settings": {
+        "title": "<span>The<\/span> Science",
+        "background": "shopify:\/\/shop_images\/science-bg.webp",
+        "mobile_background": "shopify:\/\/shop_images\/science-mobile.webp"
+      }
+    },
+    "160276cb-6d30-407f-b071-05208d9fe35c": {
+      "type": "section-index-sports",
+      "settings": {
+      }
+    },
+    "ace57724-5f0d-4ef3-8834-1f9ab2454b86": {
+      "type": "section-compare-gold",
+      "settings": {
+      }
+    },
+    "dd14ded6-5278-4a01-b7c8-a939751557dc": {
+      "type": "section-compare-silver",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "parents-slider",
+    "94bd5dce-cfba-41eb-9057-35b2d879c3ee",
+    "fa7bf74f-dcd6-420a-81ee-8e740cf2559d",
+    "parents-quotes",
+    "160276cb-6d30-407f-b071-05208d9fe35c",
+    "ace57724-5f0d-4ef3-8834-1f9ab2454b86",
+    "dd14ded6-5278-4a01-b7c8-a939751557dc"
+  ]
+}

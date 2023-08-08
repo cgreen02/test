@@ -1,0 +1,304 @@
+{
+    "sections": {
+        "sport-hero": {
+            "type": "section-sport-hero",
+            "settings": {
+                "hero": "shopify:\/\/shop_images\/soccer_with_vktry_insoles.jpg",
+                "hero_mobile": "shopify:\/\/shop_images\/soccer_with_vktry_insoles.jpg",
+                "subtitle": "",
+                "subtitle_font_size": 2,
+                "title": "<p>VKTRY Soccer Insoles<\/p><p>The Only <strong>Insoles<\/strong><\/p><p>Proven to <strong>Increase Performance<\/strong><\/p>",
+                "title_font_size": 3.5,
+                "content_top": 37,
+                "content_left": 4,
+                "content_width": 68,
+                "sport": "Soccer",
+                "show_silver": false,
+                "buttons_bottom": 21,
+                "body": "Specifically designed for soccer boots, VKTRY’s carbon fiber insole helps you run faster, jump higher and stay explosive all match. No athlete needs to take better care of their feet than soccer players. VKs are the only sports insole on the market to provide heel-to-toe protection and stabilization to help reduce injuries such as turf toe, plantar fasciitis, heel pain and shin splints."
+            }
+        },
+        "021858a6-e044-44e7-969b-6699d26d0848": {
+            "type": "section-sport-why",
+            "blocks": {
+                "template--16152334237867__d1aa5ca6-a48d-4de8-8c57-37735c4d4184-168818708579c3a397-0": {
+                    "type": "item",
+                    "settings": {
+                        "icon": "shopify:\/\/shop_images\/icon_arrow.png",
+                        "title": "JUMP HIGHER",
+                        "body": "Proven average <strong>+1.6” vertical<\/strong> jump increase"
+                    }
+                },
+                "template--16152334237867__d1aa5ca6-a48d-4de8-8c57-37735c4d4184-168818708579c3a397-1": {
+                    "type": "item",
+                    "settings": {
+                        "icon": "shopify:\/\/shop_images\/icon_run.png",
+                        "title": "LAND SOFTER",
+                        "body": "<b>41% less<\/b> foot injuries and <b>22% less<\/b> lower leg injuries over the course of a season"
+                    }
+                },
+                "template--16152334237867__d1aa5ca6-a48d-4de8-8c57-37735c4d4184-168818708579c3a397-2": {
+                    "type": "item",
+                    "settings": {
+                        "icon": "shopify:\/\/shop_images\/icon_foot.png",
+                        "title": "INCREASED STABILITY",
+                        "body": "Get a <b>firm foundation<\/b> for crisp cutting"
+                    }
+                }
+            },
+            "block_order": [
+                "template--16152334237867__d1aa5ca6-a48d-4de8-8c57-37735c4d4184-168818708579c3a397-0",
+                "template--16152334237867__d1aa5ca6-a48d-4de8-8c57-37735c4d4184-168818708579c3a397-1",
+                "template--16152334237867__d1aa5ca6-a48d-4de8-8c57-37735c4d4184-168818708579c3a397-2"
+            ],
+            "settings": {
+                "image": "shopify:\/\/shop_images\/why-sport.jpg"
+            }
+        },
+        "76323fbe-abe2-443d-9299-37a07506f89b": {
+            "type": "section-reviews",
+            "settings": {
+                "size": "small"
+            }
+        },
+        "c2d0ee49-4ee9-4024-921a-8630045211b4": {
+            "type": "section-parent-videos",
+            "blocks": {
+                "5e9a03b0-163f-453f-bdb5-ef5bee930fff": {
+                    "type": "video",
+                    "disabled": true,
+                    "settings": {
+                        "poster": "shopify:\/\/shop_images\/4ea5d157668f49fbb554002865874bd1.thumbnail.0000000000.webp",
+                        "video": "shopify:\/\/files\/videos\/4ea5d157668f49fbb554002865874bd1.mp4",
+                        "title": "Some elite athletes jump +5\" higher with VKTRY Insoles"
+                    }
+                },
+                "773e738d-872b-4274-b508-47956e48c3c5": {
+                    "type": "video",
+                    "settings": {
+                        "poster": "shopify:\/\/shop_images\/Pro_Soccer_Player_Arielle_Ship_Discusses_Why_She_Loves_Her_VKTRY_Insoles.png",
+                        "video": "shopify:\/\/files\/videos\/Pro Soccer Player Arielle Ship Discusses Why She Loves Her VKTRY Insoles.mp4",
+                        "title": "Pro Soccer Player Arielle Ship Discusses Why She Loves Her VKTRY Insoles"
+                    }
+                },
+                "f8cbbb25-e032-40b2-807a-1643e3a1a335": {
+                    "type": "video",
+                    "settings": {
+                        "poster": "shopify:\/\/shop_images\/insoles_for_performance.png",
+                        "video": "shopify:\/\/files\/videos\/We invented insoles that give you ACTUAL energy return with every step ⚡️.mp4",
+                        "title": "We invented insoles that give you ACTUAL energy return with every step ⚡️"
+                    }
+                },
+                "814f4cae-4c3c-4467-91f4-801f42a3aef2": {
+                    "type": "video",
+                    "settings": {
+                        "poster": "shopify:\/\/shop_images\/Amir_Abedzadeh_discusses_his_experience_with_VKTRY_Insoles.png",
+                        "video": "shopify:\/\/files\/videos\/Amir Abedzadeh discusses his experience with VKTRY Insoles.mp4",
+                        "title": "Amir Abedzadeh discusses his experience with VKTRY Insoles"
+                    }
+                },
+                "2c16576b-1750-4734-9281-3cb5c6a50945": {
+                    "type": "video",
+                    "settings": {
+                        "poster": "shopify:\/\/shop_images\/foam_insoles_are_wasting_your_energy.png",
+                        "video": "shopify:\/\/files\/videos\/Athletes_ Your Foam Insoles are Wasting Energy.mp4",
+                        "title": "Athletes: Your Foam Insoles are Wasting Energy"
+                    }
+                },
+                "26a77a74-2e6d-41e1-9827-f3a9f522fd96": {
+                    "type": "video",
+                    "settings": {
+                        "poster": "shopify:\/\/shop_images\/vktry_insoles_return_energy_like_a_spring.png",
+                        "video": "shopify:\/\/files\/videos\/Elite Athletes Choose VKTRY Insoles.mp4",
+                        "title": "Elite Athletes Choose VKTRY Insoles"
+                    }
+                },
+                "7b9e0fed-dbd6-4013-9557-860585a3ee02": {
+                    "type": "video",
+                    "settings": {
+                        "poster": "shopify:\/\/shop_images\/b7053731258d4e8c9ccdae7d0e9da707.thumbnail.0000000000.webp",
+                        "video": "shopify:\/\/files\/videos\/b7053731258d4e8c9ccdae7d0e9da707.mp4",
+                        "title": "See VKTRY Energy\nStorage and Return"
+                    }
+                },
+                "5fd9ed69-de0a-4db3-9852-477a387aa2e1": {
+                    "type": "video",
+                    "disabled": true,
+                    "settings": {
+                        "poster": "shopify:\/\/shop_images\/athlete_jumps_5_inches_higher_with_vktry_insoles.png",
+                        "video": "shopify:\/\/files\/videos\/athlete-jumps-5-higher-after-trying-vktry-carbon-fiber-insoles-for-the-first-time-1280-ytshorts.savetube.me.mp4",
+                        "title": "Athlete jumps 5” higher after trying VKTRY Carbon Fiber Insoles for the first time 🤯"
+                    }
+                },
+                "260556c4-c736-4710-b6ca-080543720ffc": {
+                    "type": "video",
+                    "disabled": true,
+                    "settings": {
+                        "poster": "shopify:\/\/shop_images\/high_school_football_atheletes_vktry_insoles.png",
+                        "video": "shopify:\/\/files\/videos\/high-school-football-players-react-to-vktry-performance-insoles-1280-ytshorts.savetube.me.mp4",
+                        "title": "High School Football Players React to VKTRY Performance Insoles"
+                    }
+                },
+                "488755b7-67d1-4134-a7b0-27e686a5135a": {
+                    "type": "video",
+                    "disabled": true,
+                    "settings": {
+                        "poster": "shopify:\/\/shop_images\/jonathan_taylor_vktry_insoles.png",
+                        "video": "shopify:\/\/files\/videos\/Jonathan Taylor Joins Team VKTRY.mp4",
+                        "title": "Jonathan Taylor Joins Team VKTRY"
+                    }
+                },
+                "8e2eea79-9b43-4e25-b5fe-bbf08580b207": {
+                    "type": "video",
+                    "disabled": true,
+                    "settings": {
+                        "poster": "shopify:\/\/shop_images\/e9d076113256473891ba8965032ea9ce.thumbnail.0000000000.webp",
+                        "video": "shopify:\/\/files\/videos\/e9d076113256473891ba8965032ea9ce.mp4",
+                        "title": "Team USA\nand VKs"
+                    }
+                },
+                "122e2e9d-8013-42b7-9dc0-2dacb4268c3d": {
+                    "type": "video",
+                    "disabled": true,
+                    "settings": {
+                        "poster": "shopify:\/\/shop_images\/b08a7cbdbd1e4ed0bad83666898f7d0d.thumbnail.0000000000.webp",
+                        "video": "shopify:\/\/files\/videos\/b08a7cbdbd1e4ed0bad83666898f7d0d.mp4",
+                        "title": "I just got my first\ndunk with VKTRY"
+                    }
+                },
+                "2e6c838c-cd16-404f-a65e-8aae615e90c9": {
+                    "type": "video",
+                    "disabled": true,
+                    "settings": {
+                        "poster": "shopify:\/\/shop_images\/cdn.shopify.com_videos_c_o_v_1f432e86ff044570a47c9fa4fd394b39.mp4.webp",
+                        "video": "shopify:\/\/files\/videos\/1f432e86ff044570a47c9fa4fd394b39.mp4",
+                        "title": "VKTRY at\nPerfect Game ‘22"
+                    }
+                },
+                "a27996c2-8977-4bb3-b706-2ee3cb7b0401": {
+                    "type": "video",
+                    "disabled": true,
+                    "settings": {
+                        "poster": "shopify:\/\/shop_images\/17150.jpg",
+                        "video": "shopify:\/\/files\/videos\/Wheeler1_1.mp4",
+                        "title": "High School Basketball Players React to VKTRY Insoles"
+                    }
+                },
+                "e93d3d00-846e-454a-b459-4018ffa94483": {
+                    "type": "video",
+                    "disabled": true,
+                    "settings": {
+                        "poster": "shopify:\/\/shop_images\/IMG_1398.jpg",
+                        "video": "shopify:\/\/files\/videos\/Brandon Beloti Nov.mp4",
+                        "title": "VKTRY Insoles are the Vert Secret"
+                    }
+                },
+                "3da09cfb-9095-407b-8ef3-da02726d2cd7": {
+                    "type": "video",
+                    "disabled": true,
+                    "settings": {
+                        "poster": "shopify:\/\/shop_images\/31284.jpg",
+                        "video": "shopify:\/\/files\/videos\/Barrera Original.mp4",
+                        "title": ""
+                    }
+                }
+            },
+            "block_order": [
+                "5e9a03b0-163f-453f-bdb5-ef5bee930fff",
+                "773e738d-872b-4274-b508-47956e48c3c5",
+                "f8cbbb25-e032-40b2-807a-1643e3a1a335",
+                "814f4cae-4c3c-4467-91f4-801f42a3aef2",
+                "2c16576b-1750-4734-9281-3cb5c6a50945",
+                "26a77a74-2e6d-41e1-9827-f3a9f522fd96",
+                "7b9e0fed-dbd6-4013-9557-860585a3ee02",
+                "5fd9ed69-de0a-4db3-9852-477a387aa2e1",
+                "260556c4-c736-4710-b6ca-080543720ffc",
+                "488755b7-67d1-4134-a7b0-27e686a5135a",
+                "8e2eea79-9b43-4e25-b5fe-bbf08580b207",
+                "122e2e9d-8013-42b7-9dc0-2dacb4268c3d",
+                "2e6c838c-cd16-404f-a65e-8aae615e90c9",
+                "a27996c2-8977-4bb3-b706-2ee3cb7b0401",
+                "e93d3d00-846e-454a-b459-4018ffa94483",
+                "3da09cfb-9095-407b-8ef3-da02726d2cd7"
+            ],
+            "settings": {
+            }
+        },
+        "e9161fa9-1658-4cec-8733-4ee9b8ccf7e9": {
+            "type": "section-compare-gold",
+            "settings": {
+            }
+        },
+        "1c40171c-83a4-4494-b1b2-90b7f1faae77": {
+            "type": "section-foam-compare",
+            "settings": {
+            }
+        },
+        "8a85a323-a0fb-42fe-9b29-11e492f94ab3": {
+            "type": "section-compare-silver",
+            "disabled": true,
+            "settings": {
+            }
+        },
+        "4955306a-ebdc-4f41-9128-416ad1400e4e": {
+            "type": "section-sport-faq",
+            "blocks": {
+                "6e5d2c35-69f2-40d8-8498-8564b422a3aa": {
+                    "type": "FAQ",
+                    "settings": {
+                        "question": "Are VKTRY Insoles comfortable?",
+                        "answer": "Yes, VKTRY Insoles are very comfortable. Although the base is made of carbon fiber, the top portion of the insole is made with a softer EVA foam that supports & cushions the foot. It's important to note that every pair needs to be broken in, which typically takes a few short days of light training. Instructions on the break-in process come inside the packaging with your order."
+                    }
+                },
+                "90adef8d-ffe5-46bf-bde0-249b646f0b6b": {
+                    "type": "FAQ",
+                    "settings": {
+                        "question": "Are VKTRY Insoles good for my feet?",
+                        "answer": "VKTRY Insoles are clinically proven to help you protect & recover from many common foot & lower-leg injuries. They are totally safe for your feet, and absorb more shock than a standard foam insole upon impact. Not only that, but they also support & stabilize the lower-body, which translates to better protection."
+                    }
+                },
+                "7b359090-7886-4f33-9e07-7ae83fd41a6e": {
+                    "type": "FAQ",
+                    "settings": {
+                        "question": "How do VKTRY Insoles work?",
+                        "answer": "VKTRY Insoles are made with a full-length carbon fiber base plate, in which the flexibility (we call \"Pro Level) comes personalized to your sport & weight. When you bend your foot to walk, run or jump, your foot is putting energy into the ground. A standard foam or plastic insole would disperse (and waste) that energy. VKTRY Insoles absorb that energy and then return back to you, similar to how a diving board or trampoline would. Athletes are proven to see greater explosiveness & ground force when wearing VKTRY, resulting in higher verticals and faster sprints."
+                    }
+                },
+                "71f8a9dc-a8e3-4d72-a16d-08837c039fa3": {
+                    "type": "FAQ",
+                    "settings": {
+                        "question": "Are VKTRY Insoles legal?",
+                        "answer": "We have not heard from any governing body on VKTRY Insoles being banned in any sport or league. VKTRY Insoles are worn by amateur and professional athletes alike all over the world. It's important to note that VKTRY Insoles are also proven to protect from injury, and no governing body would have it in their best interest to ban something that's proven to protect their players. It's not cheating, it's just better technology!"
+                    }
+                },
+                "5f432b22-af89-4194-a4e8-0c57fc0a88c2": {
+                    "type": "FAQ",
+                    "settings": {
+                        "question": "What if VKTRY Insoles don't fit after ordering?",
+                        "answer": "Every order comes with a 90-day money back guarantee. If there's any issues with the fitment, comfort or performance of your product, we will handle an exchange free of charge (customers outside of the USA must pay for postage).  To get in contact, either chat with us by clicking on the question mark at the bottom right of the screen, call us by clicking on the phone at the top right of the screen, or email us at info@vktrygear.com."
+                    }
+                }
+            },
+            "block_order": [
+                "6e5d2c35-69f2-40d8-8498-8564b422a3aa",
+                "90adef8d-ffe5-46bf-bde0-249b646f0b6b",
+                "7b359090-7886-4f33-9e07-7ae83fd41a6e",
+                "71f8a9dc-a8e3-4d72-a16d-08837c039fa3",
+                "5f432b22-af89-4194-a4e8-0c57fc0a88c2"
+            ],
+            "settings": {
+                "sport": "Soccer"
+            }
+        }
+    },
+    "order": [
+        "sport-hero",
+        "021858a6-e044-44e7-969b-6699d26d0848",
+        "76323fbe-abe2-443d-9299-37a07506f89b",
+        "c2d0ee49-4ee9-4024-921a-8630045211b4",
+        "e9161fa9-1658-4cec-8733-4ee9b8ccf7e9",
+        "1c40171c-83a4-4494-b1b2-90b7f1faae77",
+        "8a85a323-a0fb-42fe-9b29-11e492f94ab3",
+        "4955306a-ebdc-4f41-9128-416ad1400e4e"
+    ]
+}

@@ -1,0 +1,297 @@
+{
+  "sections": {
+    "main-page": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "dd430851-a864-4e40-b3d3-71baaa07d75b": {
+      "type": "section-hero",
+      "disabled": true,
+      "settings": {
+        "hero_image": "shopify:\/\/shop_images\/new-homepage-_1.webp",
+        "hero_image_size": 1000,
+        "hero_title_large": "INJURY PROTECTION TECHNOLOGY",
+        "hero_title_medium": "",
+        "hero_title_small_top": false,
+        "hero_title_small": "The Number One Way to Treat an Injury is to Avoid One in the First Place",
+        "hero_description": "",
+        "hero_has_overlay": false,
+        "hero_scroll": true,
+        "hero_video_link": "",
+        "hero_video_text": "",
+        "hero_video_new_tab": false,
+        "hero_class": ""
+      }
+    },
+    "dd374dc6-999e-48d4-99c3-6febdbd01293": {
+      "type": "section-sport-hero",
+      "settings": {
+        "hero": "shopify:\/\/shop_images\/new-homepage-_1.png",
+        "hero_mobile": "shopify:\/\/shop_images\/new-homepage-_1.png",
+        "subtitle": "The Best Way to Treat an Injury is to Avoid One",
+        "subtitle_font_size": 1.7,
+        "title": "<p><strong>INJURY PROTECTION TECHNOLOGY<\/strong><\/p>",
+        "title_font_size": 7.4,
+        "content_top": 33,
+        "content_left": 7,
+        "content_width": 91,
+        "sport": "",
+        "show_silver": true,
+        "buttons_bottom": 4,
+        "body": ""
+      }
+    },
+    "a5db5bc4-2d6d-4bf8-860a-7c5f3aeeb728": {
+      "type": "section-bounce-feature",
+      "blocks": {
+        "92286b5f-db01-431d-b56a-901d8ff07ccc": {
+          "type": "feature",
+          "settings": {
+            "title": "ENJOY THE RIDE",
+            "description": "<p>Most insoles are a simple, thin layer of foam. VKTRY’s carbon fiber design absorbs shock (like a spring) and more evenly distributes ground force, giving you a smooth, comfortable ride.<\/p>"
+          }
+        },
+        "1a4812c7-493e-4538-ac69-d3ac3c63978d": {
+          "type": "feature",
+          "settings": {
+            "title": "PAIN RELIEF",
+            "description": "<p>Athletes around the world have reported that VKs have reduced their suffering from injuries like plantar fasciitis, turf toe, shin splints, knee and back pain. Since all athletes and injuries are unique, we recommend consulting with your doctor.<\/p>"
+          }
+        },
+        "278532a9-e396-4d4b-8640-571d2618d2b1": {
+          "type": "feature",
+          "settings": {
+            "title": "CUSTOM ORTHOTICS",
+            "description": "<p>This is a premium product specifically designed from your custom foot mold. We can build our patented carbon fiber plate into this specialized custom orthotic. Custom-made VKs are $495. If interested, please schedule a brief consultation with our in house board certified pedorthist <a href=\"https:\/\/vktrygear.com\/products\/platinum-vks-vktry-custom-orthotics\">HERE <\/a>or contact us at 877-858-7979 or info@vktrygear.com.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "92286b5f-db01-431d-b56a-901d8ff07ccc",
+        "1a4812c7-493e-4538-ac69-d3ac3c63978d",
+        "278532a9-e396-4d4b-8640-571d2618d2b1"
+      ],
+      "settings": {
+        "left_bg": "shopify:\/\/shop_images\/shutterstock-1021104340.webp",
+        "right_bg": "shopify:\/\/shop_images\/vktry-yellow.webp",
+        "image": "shopify:\/\/shop_images\/soccer-player_2ea5872c-c7b6-40e2-aa21-aff6b81ea1f7.png"
+      }
+    },
+    "9664d8cc-1e36-4cb3-802d-886ade07b0bc": {
+      "type": "section-stat-header",
+      "blocks": {
+        "48ac9c1e-4897-485a-9c62-8ed9b3492159": {
+          "type": "stat",
+          "settings": {
+            "title": "41%",
+            "description": "Less foot\/toe\ninjuries"
+          }
+        },
+        "1ec0e77e-0a37-4641-8665-f15896af3854": {
+          "type": "stat",
+          "settings": {
+            "title": "22%",
+            "description": "Less lower leg injuries\n(knee and ankle)"
+          }
+        }
+      },
+      "block_order": [
+        "48ac9c1e-4897-485a-9c62-8ed9b3492159",
+        "1ec0e77e-0a37-4641-8665-f15896af3854"
+      ],
+      "custom_css": [
+
+      ],
+      "settings": {
+        "title": "TESTED ON THE PLAYING FIELD OVER A FULL SEASON",
+        "description": "263 D1 Athletes at 4 major universities. Why did athletes experience less injuries with VKs? See the independent clinical research below."
+      }
+    },
+    "4a1d7f2b-bece-4eb2-8bbe-c3a97ab23f6e": {
+      "type": "section-science-accordion",
+      "blocks": {
+        "899dd5fb-19c5-46b7-b0de-43715d79c40f": {
+          "type": "item",
+          "settings": {
+            "title": "VKs improve alignment to protect your knees from injuries.",
+            "description": "<p>The knee is considered especially vulnerable in the lower extremity kinetic chain. VKs decreased frontal plane knee joint excursion (lateral movement) with test subjects.<\/p><p><br\/><\/p><p>Less joint excursion equates to improved alignment during running and reduces abnormal knee joint load.<\/p><p><br\/><\/p><p>Even a small variation in knee alignment can result in stress on the ligaments and degenerative damage to the knee.<\/p>",
+            "image": "shopify:\/\/shop_images\/runner-girl.jpg"
+          }
+        },
+        "507360f6-43de-48b4-9c87-6140cd9a320f": {
+          "type": "item",
+          "settings": {
+            "title": "VKs provide added stability and protection for the ankle joint, increase energy efficiency and protect against shin splints.",
+            "description": "<p>VKTRY Insoles allowed the test subjects to decrease the degree of dorsiflexion (loading up) in order to perform the necessary work in plantar flexion (push-off)<\/p><p><br\/><\/p><p>This allows the tibialis anterior tendon to work less thereby reducing the chances of shin splints, tibial stress syndrome and anterior compartment syndrome.<\/p><p><br\/><\/p><p>VKs allowed the test subjects to “load up” at the ankle less… yet generate more force. Essentially… less risk, more reward.<\/p>",
+            "image": "shopify:\/\/shop_images\/shin-splint.jpg"
+          }
+        },
+        "e8a28036-6e12-498e-9836-31c827854f05": {
+          "type": "item",
+          "settings": {
+            "title": "VKs reduce the risk of ankle injuries and increase protection against plantar fasciitis (currently 4M cases per year in the U.S.)",
+            "description": "<p>VKs reduced the degree of ankle plantarflexion necessary for running test subjects to exert a measured ground force.<\/p><p><br\/><\/p><p>VKs better control ankle eversion (rolling) resulting in improved joint stability reducing the risk of ankle injury.<\/p><p><br\/><\/p><p>By decreasing ankle excursion (lateral movement), VKs keeps the bones & joints of the foot within the normally accepted range of motion resulting in reduced stress on the Plantar Fascia.<\/p>",
+            "image": "shopify:\/\/shop_images\/plantar_e8fe87b6-56c2-4a8e-9450-da5813b54f3f.jpg"
+          }
+        },
+        "f6de834f-80a0-4584-a396-5474ae157dfc": {
+          "type": "item",
+          "settings": {
+            "title": "VKs provide a “spring-like” effect to improve shock absorption and reduce the load and stress on the athlete’s body.",
+            "description": "<p>Whether walking, running or jumping, athletes experience ground reaction forces (GRF)<\/p><p><br\/><\/p><p>Test subjects experienced significantly less GRF with VKTRY Insoles (10%), especially once the athlete was fatigued.<\/p><p><br\/><\/p><p>This indicates that VKs were able to absorb more shock and distribute the ground forces more evenly for the athlete.<\/p>",
+            "image": "shopify:\/\/shop_images\/VK-base-profile.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "899dd5fb-19c5-46b7-b0de-43715d79c40f",
+        "507360f6-43de-48b4-9c87-6140cd9a320f",
+        "e8a28036-6e12-498e-9836-31c827854f05",
+        "f6de834f-80a0-4584-a396-5474ae157dfc"
+      ],
+      "settings": {
+        "title": "THE SCIENCE"
+      }
+    },
+    "765d5cd7-7f2e-4f4b-ad94-3a51eeea1408": {
+      "type": "section-research-cta",
+      "settings": {
+        "title": "WANT THE FULL REPORT?",
+        "cta_label": "KSI Study",
+        "cta_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0072\/5568\/7283\/files\/VKTRY_Injury_Protection_Research_Results.pdf?v=1594404910"
+      }
+    },
+    "988e8f96-0800-4034-b967-6a94584ebec1": {
+      "type": "section-research-cta",
+      "settings": {
+        "title": "",
+        "cta_label": "Mass General Study",
+        "cta_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0072\/5568\/7283\/files\/Mass_General_White_Paper_-_Using_VKTRY_Insoles_to_Treat_Foot_Arthritis.pdf?v=1619198174"
+      }
+    },
+    "dbcfdafa-897d-4877-9007-ed7913933b28": {
+      "type": "section-description",
+      "settings": {
+        "description_title": "<p>SPORTS MEDICINE EXPERTS <br>RECOMMEND VKTRY INSOLES<\/p>",
+        "description_copy": "",
+        "description_class": "section-description--padding-bottom",
+        "description_button_url": ""
+      }
+    },
+    "58ec5a25-0652-46b4-8cfd-fe408458e343": {
+      "type": "section-full-width-feature",
+      "settings": {
+        "title": "",
+        "subtitle": "",
+        "subtitle_class": "",
+        "description": "",
+        "quote": "\"After an extensive 6-month research study by the Korey Stringer Institute at the University of Connecticut, it is clear that VKTRY Insoles improve lower body biomechanics, stability of the ankle and knee during running, and shock absorption during landing. These improvements can help safeguard athletes by providing injury protection.\"",
+        "reference": "<p><strong>Dr. Douglas Casa<\/strong> | PhD, ATC,<\/p><p>Professor of Kinesiology, CEO of KSI<\/p>",
+        "image": "shopify:\/\/shop_images\/image-_15.webp",
+        "background": "#c1c1e1",
+        "class": "",
+        "flip": true
+      }
+    },
+    "1fa6c919-034b-47c1-9410-109251654511": {
+      "type": "section-full-width-feature",
+      "settings": {
+        "title": "",
+        "subtitle": "",
+        "subtitle_class": "",
+        "description": "",
+        "quote": "\"The VK is the best combination of shock absorption while maintaining stability that I have ever seen on the orthotic market. Shock absorption to reduce load and stability to disperse load biomechanically to enhance performance.\"",
+        "reference": "<p><strong>Gary Vitti<\/strong> | former Head Athletic Trainer for<\/p><p>LA Lakers (32 years)<\/p>",
+        "image": "shopify:\/\/shop_images\/la-times-gary-vitti.webp",
+        "background": "#e9e9e9",
+        "class": "full-width-feature--margin-top",
+        "flip": false
+      }
+    },
+    "88174ba1-8abe-4a90-8920-a9fa2af18492": {
+      "type": "section-full-width-feature",
+      "settings": {
+        "title": "",
+        "subtitle": "",
+        "subtitle_class": "",
+        "description": "",
+        "quote": "\"Because of the VKTRY Insole design, I can reduce sports injuries. The benefits of VKs are valid and undeniable.\"",
+        "reference": "<p><strong>Jack Marucci<\/strong> | LSU Director of Athletic<\/p><p>Training for over 20 years<\/p>",
+        "image": "shopify:\/\/shop_images\/jack-marucci.webp",
+        "background": "#c1c1e1",
+        "class": "full-width-feature--margin-top",
+        "flip": true
+      }
+    },
+    "657c4118-8c53-4b14-acd6-9c11d996352f": {
+      "type": "section-full-width-feature",
+      "settings": {
+        "title": "",
+        "subtitle": "",
+        "subtitle_class": "",
+        "description": "",
+        "quote": "\"VKs represent a quantum leap in the world of performance insoles providing many of the benefits of custom made orthotics in an over the counter device. For the first time, athletes can experience stabilization, shock absorption, and propulsion in a device that is specifically tailored to their size and weight. This is a game changer.\"",
+        "reference": "<p><strong>Dr. Jamie Creps <\/strong>| Senior Physical Therapist, Boston Red Sox<\/p>",
+        "image": "shopify:\/\/shop_images\/jamie-creps.webp",
+        "background": "#e9e9e9",
+        "class": "full-width-feature--margin-top",
+        "flip": false
+      }
+    },
+    "2b81073e-6ed1-4ce5-8ecb-5ba36ea503f5": {
+      "type": "section-footer-cta",
+      "blocks": {
+        "9790dcac-5602-47e9-90a3-382a0fa7da13": {
+          "type": "button",
+          "settings": {
+            "label": "BUY",
+            "link": "shopify:\/\/collections\/insoles"
+          }
+        },
+        "e34f6ac7-53fa-45ac-a4d3-366187bbf2e6": {
+          "type": "button",
+          "settings": {
+            "label": "Learn More",
+            "link": "shopify:\/\/pages\/how-it-works"
+          }
+        },
+        "71f6c374-b021-4120-ab90-4793b32ff385": {
+          "type": "button",
+          "settings": {
+            "label": "FAQ",
+            "link": "shopify:\/\/pages\/faq"
+          }
+        }
+      },
+      "block_order": [
+        "9790dcac-5602-47e9-90a3-382a0fa7da13",
+        "e34f6ac7-53fa-45ac-a4d3-366187bbf2e6",
+        "71f6c374-b021-4120-ab90-4793b32ff385"
+      ],
+      "settings": {
+        "desktop_image": "shopify:\/\/shop_images\/Carbon-Fiber-background.webp",
+        "mobile_image": "shopify:\/\/shop_images\/Carbon-Fiber-background.webp",
+        "subtitle": "READY TO CLAIM",
+        "title": "YOUR VKTRY?"
+      }
+    }
+  },
+  "order": [
+    "main-page",
+    "dd430851-a864-4e40-b3d3-71baaa07d75b",
+    "dd374dc6-999e-48d4-99c3-6febdbd01293",
+    "a5db5bc4-2d6d-4bf8-860a-7c5f3aeeb728",
+    "9664d8cc-1e36-4cb3-802d-886ade07b0bc",
+    "4a1d7f2b-bece-4eb2-8bbe-c3a97ab23f6e",
+    "765d5cd7-7f2e-4f4b-ad94-3a51eeea1408",
+    "988e8f96-0800-4034-b967-6a94584ebec1",
+    "dbcfdafa-897d-4877-9007-ed7913933b28",
+    "58ec5a25-0652-46b4-8cfd-fe408458e343",
+    "1fa6c919-034b-47c1-9410-109251654511",
+    "88174ba1-8abe-4a90-8920-a9fa2af18492",
+    "657c4118-8c53-4b14-acd6-9c11d996352f",
+    "2b81073e-6ed1-4ce5-8ecb-5ba36ea503f5"
+  ]
+}

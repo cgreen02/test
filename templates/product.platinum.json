@@ -1,0 +1,399 @@
+{
+  "sections": {
+    "main-product2": {
+      "type": "main-product-platinum",
+      "settings": {
+      }
+    },
+    "main-product": {
+      "type": "main-product-insoles",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "6b41270a-c28c-4443-8dac-3cfd4c971881": {
+      "type": "section-outline-cards",
+      "blocks": {
+        "e820b9fc-aa3d-4f45-974f-657f803da04d": {
+          "type": "card",
+          "settings": {
+            "color": "#b2b2b4",
+            "decoration_title": "CASUAL ATHLETES",
+            "title": "VK Silver Performance Insoles",
+            "sub_title": "Not designed for cleats",
+            "content": "<ul><li>Worn by tens of thousands of amateur athletes<\/li><li>Baseplate is carbon fiber composite<\/li><li>Baseplate flexibility is less customized, but works well for over 90% of people<\/li><li>Top cover thickness of 5mm works well for most non-cleated shoes. For cleats, we recommend Gold VKs<\/li><\/ul>",
+            "button_label": "Shop Silver Insoles",
+            "button_url": "shopify:\/\/products\/vktry-insoles-silver"
+          }
+        },
+        "13ad43e3-8aa7-4166-aee2-56a2fcbb85a0": {
+          "type": "card",
+          "settings": {
+            "color": "#efc34f",
+            "decoration_title": "SERIOUS ATHLETES",
+            "title": "VK Gold Performance Insoles",
+            "sub_title": "For all sports",
+            "content": "<ul><li>Worn by thousands of pro and college athletes<\/li><li>Baseplate is 100% aerospace grade carbon fiber<\/li><li>Baseplate flexibility is customized based on age, gender, body weight and sport<\/li><li>Top cover is customized thickness based on sport and shoe type and fits all footwear and all sports<\/li><\/ul>",
+            "button_label": "Shop Gold Insoles",
+            "button_url": "shopify:\/\/products\/vktry-insoles-gold"
+          }
+        },
+        "cb80b9d0-77cb-4d47-884c-512edd00979e": {
+          "type": "card",
+          "settings": {
+            "color": "#b3c4d0",
+            "decoration_title": "ORTHOPEDIC NEEDS",
+            "title": "VK Custom Orthotics",
+            "sub_title": "For all types of shoes",
+            "content": "<ul><li>Provides all the benefits of custom orthotics - and more!<\/li><li>Molded to the exact shape of your foot for maximum comfort, support and stability<\/li><li>Has the performance and protection of our patented VK Gold carbon fiber baseplate built right in<\/li><\/ul>",
+            "button_label": "Shop Custom Orthotics",
+            "button_url": "shopify:\/\/products\/custom-orthotics-platinum"
+          }
+        }
+      },
+      "block_order": [
+        "e820b9fc-aa3d-4f45-974f-657f803da04d",
+        "13ad43e3-8aa7-4166-aee2-56a2fcbb85a0",
+        "cb80b9d0-77cb-4d47-884c-512edd00979e"
+      ],
+      "settings": {
+        "title": "Which VKTRY Insoles Are Best For You"
+      }
+    },
+    "3d399def-0179-4554-b25d-2b0b0db4a176": {
+      "type": "section-index-benefits",
+      "blocks": {
+        "262ee683-f889-4fa5-bb83-1bbc389c8ef1": {
+          "type": "benefit",
+          "settings": {
+            "title": "1.6” HIGHER",
+            "sub_title": "<p>vertical jumps<\/p>",
+            "image": "shopify:\/\/shop_images\/leg_injury_2x_9ca146b2-a267-4bc6-aa0a-d5581921c280.png"
+          }
+        },
+        "15447b02-91cc-4b1b-9398-806888e95f40": {
+          "type": "benefit",
+          "settings": {
+            "title": ".12 SECOND",
+            "sub_title": "<p>faster 40 yard dashes<\/p>",
+            "image": "shopify:\/\/shop_images\/dash_2x_fc0d38f0-0e80-4d4f-9845-9b1d0ffde831.png"
+          }
+        },
+        "13cbab6d-1b7e-410d-9478-9343069fc33f": {
+          "type": "benefit",
+          "settings": {
+            "title": "41% LESS",
+            "sub_title": "<p>foot injuries over the course of a season<\/p>",
+            "image": "shopify:\/\/shop_images\/foot_injury_2x_cd31ca69-c2b0-4cb6-b3d6-c7a56c030f85.png"
+          }
+        },
+        "99a1acd9-58aa-4f80-b853-cbf71217bc69": {
+          "type": "benefit",
+          "settings": {
+            "title": "22% LESS",
+            "sub_title": "<p>less lower-leg injuries over the entire season<\/p>",
+            "image": "shopify:\/\/shop_images\/leg_injury_2x_37fb2fed-fedc-4d82-8e68-ffe02870f819.png"
+          }
+        }
+      },
+      "block_order": [
+        "262ee683-f889-4fa5-bb83-1bbc389c8ef1",
+        "15447b02-91cc-4b1b-9398-806888e95f40",
+        "13cbab6d-1b7e-410d-9478-9343069fc33f",
+        "99a1acd9-58aa-4f80-b853-cbf71217bc69"
+      ],
+      "settings": {
+        "title": "THE MOST RESEARCHED <span>INSOLES IN THE WORLD<\/span>",
+        "flip_cards": true,
+        "button_label": "See How VKs Are Made",
+        "button_url": "shopify:\/\/pages\/how-it-s-made",
+        "show_modal": true
+      }
+    },
+    "2204e239-c74d-42e3-b4f5-edb6e28427b6": {
+      "type": "section-the-science",
+      "blocks": {
+        "21687693-df2f-4a62-be2a-ffabdb653b87": {
+          "type": "numbered_item",
+          "settings": {
+            "number": "1",
+            "title": "VKs improve alignment to protect your knees from injuries.",
+            "link_label": "Learn More",
+            "dialog_content": "<p>The knee is considered especially vulnerable in the lower extremity kinetic chain. VKs decreased frontal plane knee joint excursion (lateral movement) with test subjects.<br\/><br\/>Less joint excursion equates to improved alignment during running and reduces abnormal knee joint load.<br\/><br\/>Even a small variation in knee alignment can result in stress on the ligaments and degenerative damage to the knee.<\/p>"
+          }
+        },
+        "b6471dec-bdab-47ee-b4d9-5baee1b617fa": {
+          "type": "numbered_item",
+          "settings": {
+            "number": "2",
+            "title": "VKs provide added stability and protection for the ankle joint, increase energy efficiency and protect against shin splints.",
+            "link_label": "Learn More",
+            "dialog_content": "<p>VKTRY Insoles allows the athlete to decrease the degree of dorsiflexion (loading up) in order to perform the necessary work in plantar flexion (push-off)<br\/><br\/>This allows the tibialis anterior tendon to work less thereby reducing the chances of shin splints, tibial stress syndrome and anterior compartment syndrome.<br\/><br\/>VKs allow the athlete to “load up” at the ankle less… yet generate more force. Essentially… less risk, more reward.<\/p>"
+          }
+        },
+        "b5f1a837-890c-4af9-801f-62ac56e07494": {
+          "type": "numbered_item",
+          "settings": {
+            "number": "3",
+            "title": "VKs reduce the risk of ankle injuries and increase protection against plantar fasciitis (currently 4M cases per year in the U.S.)",
+            "link_label": "Learn More",
+            "dialog_content": "<p>VKs reduced the degree of ankle plantarflexion necessary for running test subjects to exert a measured ground force.<br\/><br\/>VKs better control ankle eversion (rolling) resulting in improved joint stability reducing the risk of ankle injury.<br\/><br\/>By decreasing ankle excursion (lateral movement), VKs keeps the bones & joints of the foot within the normally accepted range of motion resulting in reduced stress on the Plantar Fascia.<\/p>"
+          }
+        },
+        "75d88d17-7d32-46f8-8de1-fe5522663a99": {
+          "type": "numbered_item",
+          "settings": {
+            "number": "4",
+            "title": "VKs provide a “spring-like” effect to improve shock absorption and reduce the load and stress on the athlete’s body.",
+            "link_label": "Learn More",
+            "dialog_content": "<p>Whether walking, running or jumping, athletes experience ground reaction forces (GRF)<br\/><br\/>Athletes experience significantly less GRF with VKTRY Insoles (10%), especially once the athlete was fatigued.<br\/><br\/>This indicates that VKs were able to absorb more shock and distribute the ground forces more evenly for the athlete.<\/p>"
+          }
+        },
+        "9962f600-2d4c-408e-b7ca-442520d2f1f0": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/shoe_1_2x_589689e1-54d1-4751-883e-c54745c6afdd.png",
+            "text": "Shock Absorption"
+          }
+        },
+        "ec51dd5a-29ed-47da-8676-a4aa9fa21a5e": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/shoe_2_2x_c9d688cf-6c96-4508-a5c9-e2944c791cab.png",
+            "text": "Support & Stability"
+          }
+        },
+        "0bc221ad-dc00-455a-8eef-7623cc8f3ad4": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/shoe3_2x_7f5cdd7f-4885-4980-9978-5b3eb9487def.png",
+            "text": "Energy Storage"
+          }
+        },
+        "2a6a346c-7413-48be-8c5c-05d4b97ddbab": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/shoe_4_2x_921d08af-6dd2-401f-a68b-ca4aae11c25b.png",
+            "text": "Energy Return"
+          }
+        },
+        "2d829284-ea4d-407f-ba6f-dd741628a78a": {
+          "type": "button",
+          "settings": {
+            "button_label": "Read Performance Research",
+            "button_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0072\/5568\/7283\/files\/VKTRY_Athletic_Performance_Research_Results_-_Sept_2020.pdf?v=6230691018279955679"
+          }
+        },
+        "b39228e8-9529-4c6a-8052-89be63d5a401": {
+          "type": "button",
+          "settings": {
+            "button_label": "Read Protection Research",
+            "button_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0072\/5568\/7283\/files\/VKTRY_Injury_Protection_Research_Results.pdf?v=7830786872403184438"
+          }
+        }
+      },
+      "block_order": [
+        "21687693-df2f-4a62-be2a-ffabdb653b87",
+        "b6471dec-bdab-47ee-b4d9-5baee1b617fa",
+        "b5f1a837-890c-4af9-801f-62ac56e07494",
+        "75d88d17-7d32-46f8-8de1-fe5522663a99",
+        "9962f600-2d4c-408e-b7ca-442520d2f1f0",
+        "ec51dd5a-29ed-47da-8676-a4aa9fa21a5e",
+        "0bc221ad-dc00-455a-8eef-7623cc8f3ad4",
+        "2a6a346c-7413-48be-8c5c-05d4b97ddbab",
+        "2d829284-ea4d-407f-ba6f-dd741628a78a",
+        "b39228e8-9529-4c6a-8052-89be63d5a401"
+      ],
+      "settings": {
+        "title": "<span>The<\/span> Science",
+        "background": "shopify:\/\/shop_images\/bg_science_platinum_m.png",
+        "mobile_background": "shopify:\/\/shop_images\/bg_science_platinum_m.png"
+      }
+    },
+    "29638072-6335-4c39-9b9e-054b5abdf271": {
+      "type": "section-faq",
+      "blocks": {
+        "2766a297-d183-409c-987b-58922c728307": {
+          "type": "item",
+          "settings": {
+            "question": "What is a custom orthotic?",
+            "answer": "<p>A custom orthotic is a shoe insert that is made to exactly fit the contours of your feet. Orthotics are used for a variety of foot conditions including heel pain, flat feet, pain in the ball of the foot, high arched feet, various ligament and tendon issues, arthritis etc.<\/p>"
+          }
+        },
+        "53eb5652-69a7-4e55-96d4-c7f93993a139": {
+          "type": "item",
+          "settings": {
+            "question": "How do custom orthotics work?",
+            "answer": "<p>Orthotics work by decreasing high pressure areas, stabilizing the foot alignment, and cushioning the foot. They also help to cushion and support the foot while walking, running, or playing a sport that requires lateral stability. Only VKTRY Platinum orthotics add the benefits of carbon fiber to custom orthotics.<\/p>"
+          }
+        },
+        "5381bbbc-f8f4-4112-826c-64a6b62340aa": {
+          "type": "item",
+          "settings": {
+            "question": "What is the cost of VKTRY Platinums?",
+            "answer": "<p>$495, any second pair $395<\/p>"
+          }
+        },
+        "41b2e865-801d-44d2-a294-0115a34d0e0e": {
+          "type": "item",
+          "settings": {
+            "question": "Can you use coupon codes on VKTRY Platniums?",
+            "answer": "<p>Coupon codes cannot be used on the purchase of Platinum VKs<\/p>"
+          }
+        },
+        "755c1a5d-944e-4854-b094-f461cb2c7276": {
+          "type": "item",
+          "settings": {
+            "question": "Where can I order Custom Orthotics from?",
+            "answer": "<p>Platinum Orthotics can only be shipped to addresses located within the United States. For more details on how the Custom Orthotic shipping process works, please email us at <a href=\"mailto:custom@vktrygear.com\">custom@vktrygear.com<\/a>.<\/p>"
+          }
+        },
+        "e36d4229-7355-4fb1-9b9d-22801dd33b90": {
+          "type": "item",
+          "settings": {
+            "question": "How are VKTRY Orthotics different than others?",
+            "answer": "<p>VKTRY custom orthotics are made using the latest material technology. They are made of ultra-soft EVA foam molded to the exact shape of your foot for maximum comfort, cushioning and stability. Only VKTRY Platinum orthotics add patented aerospace-grade carbon fiber plate technology.<\/p>"
+          }
+        },
+        "a68f9758-de91-4d38-b5fd-7202136a4473": {
+          "type": "item",
+          "settings": {
+            "question": "How do I get you my foot impressions?",
+            "answer": "<p>We will send you a foam impression box with directions on how to make an accurate foot impression. Send it back to our labs, postage paid. And we will scan your foot impressions with our proprietary laser scanning system and fabricate your custom orthotics with VKTRY’s patented carbon fiber plate built right in.<\/p>"
+          }
+        },
+        "07730b08-eca4-4edc-a26e-b935507681b9": {
+          "type": "item",
+          "settings": {
+            "question": "Do I need Custom Orthotics?",
+            "answer": "<p>Custom orthotics are often recommended for individuals with chronic foot and leg pain caused by injuries, flat feet, high arches or other foot conditions.<\/p>"
+          }
+        },
+        "b77188ea-e00d-49fe-919d-34fe346aea1a": {
+          "type": "item",
+          "settings": {
+            "question": "How long do custom orthotics last?",
+            "answer": "<p>The lifespan of custom orthotics depends on many factors such as how often they are worn, in what type of shoe are they going to be used in and for what activity. Generally, custom orthotics will last 2-3 years.<\/p>"
+          }
+        },
+        "7e95e254-32d4-45b8-84e4-efead973efbe": {
+          "type": "item",
+          "settings": {
+            "question": "Are custom orthotics washable?",
+            "answer": "<p>VKTRY Custom Orthotics are made of top quality materials that include a hand washable top cover that is anti-microbial to prevent odor. Our top covers can be hand washed with a mild soap and water and air-dried at room temperature.<\/p>"
+          }
+        },
+        "99f702a0-7c9b-493a-879f-05595dbfa815": {
+          "type": "item",
+          "settings": {
+            "question": "Do I need to break in my custom orthotics?",
+            "answer": "<p>Custom orthotics should be broken in a little at a time. The normal break in time can be anywhere from a week or two. Initially you may feel some heel slippage, but this will resolve in a short time. If there is any new pain or discomfort after the break in period, please contact us immediately and we will arrange an adjustment or replacement.<\/p>"
+          }
+        },
+        "f9edb697-0b05-4b8b-8334-8925c39a1630": {
+          "type": "item",
+          "settings": {
+            "question": "What types of shoes can they be worn in?",
+            "answer": "<p>VKTRY makes two types of custom orthotics. The first type is our standard Platinum Orthotic designed for trainers or casual walking shoes. This style has a deep heel cup, thicker profile for maximum cushioning and works best in running shoes, walking shoes, basketball, volleyball, or other types of footwear for sports that require a lot of jumping.<br\/><br\/>Our second type of orthotic is Slimfit. This style is designed to fit into shoes with a narrower design such as cleats, spikes, golf or tennis shoes. This style has a shallow heel cup and thinner profile to ensure a great fit and prevent heel slippage.<\/p>"
+          }
+        },
+        "b8a41b98-8327-4c06-adc8-40a5d5a84f81": {
+          "type": "item",
+          "settings": {
+            "question": "What types of Custom Orthotics do you make?",
+            "answer": "<p>VK Platinums are available in 2 different models.<br\/><br\/>- The first is our Standard Custom designed to fit into sneakers such as running shoes (trainers) or any footwear that has a little extra room.<br\/><br\/>- The second type is our Thinfit version. Thinfit is designed for footwear that has a little less room such as golf, tennis, hiking, skiing or cleated footwear.<br\/><br\/>Both types are full custom and provide exceptional support.<\/p>"
+          }
+        },
+        "25a100e6-5ca1-46c0-b734-34d44693bfa9": {
+          "type": "item",
+          "settings": {
+            "question": "How long do custom orthotics take to make?",
+            "answer": "<p>Custom orthotics usually take about 2 weeks to make after we receive your impressions back to our labs. Timing may vary based on order volume, holidays and\/or shipping delays. The quicker you return your foam impression box, the quicker we can get started.<\/p>"
+          }
+        },
+        "9b06758e-e888-413c-b0b9-4a862a954ed5": {
+          "type": "item",
+          "settings": {
+            "question": "Are my custom orthotics trimmable?",
+            "answer": "<p>Yes. You may trim the soft foam material on your orthotics if they are a bit too long or wide however <strong>never <\/strong>trim the carbon fiber. This will void any warranty of materials.<\/p>"
+          }
+        },
+        "9c39ca4e-9b18-4769-be39-ca11c232cf82": {
+          "type": "item",
+          "settings": {
+            "question": "Are my custom orthotics guaranteed?",
+            "answer": "<p>VKTRY Platinum orthotics are guaranteed against defects in materials or workmanship. All adjustments or remakes, if necessary, are free of charge. As your orthotics are fully customized for you, there are no refunds.<\/p>"
+          }
+        },
+        "25157062-a9c7-4f68-b060-7677df9c7894": {
+          "type": "item",
+          "settings": {
+            "question": "Does my health insurance cover my custom orthotics?",
+            "answer": "<p>It may. VKTRY does not accept any insurance plans, but you are free to submit the claim yourself.<\/p>"
+          }
+        },
+        "b28fa6ba-e4a8-4eba-92ba-062cfbce7c2d": {
+          "type": "item",
+          "settings": {
+            "question": "Do VKTRY Platinum Orthotics qualify for HSA\/FSA reimbursement?",
+            "answer": "<p>Yes! VKTRY custom orthotics qualify for health savings and flex spending accounts.<\/p>"
+          }
+        },
+        "333885e5-e8c3-4827-bc26-5ba1b60e865c": {
+          "type": "item",
+          "settings": {
+            "question": "Can I pay over time?",
+            "answer": "<p>Yes! If you qualify, you can finance your custom orthotics over 3 months using the “Shop Pay Installments” payment plan on our website.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "2766a297-d183-409c-987b-58922c728307",
+        "53eb5652-69a7-4e55-96d4-c7f93993a139",
+        "5381bbbc-f8f4-4112-826c-64a6b62340aa",
+        "41b2e865-801d-44d2-a294-0115a34d0e0e",
+        "755c1a5d-944e-4854-b094-f461cb2c7276",
+        "e36d4229-7355-4fb1-9b9d-22801dd33b90",
+        "a68f9758-de91-4d38-b5fd-7202136a4473",
+        "07730b08-eca4-4edc-a26e-b935507681b9",
+        "b77188ea-e00d-49fe-919d-34fe346aea1a",
+        "7e95e254-32d4-45b8-84e4-efead973efbe",
+        "99f702a0-7c9b-493a-879f-05595dbfa815",
+        "f9edb697-0b05-4b8b-8334-8925c39a1630",
+        "b8a41b98-8327-4c06-adc8-40a5d5a84f81",
+        "25a100e6-5ca1-46c0-b734-34d44693bfa9",
+        "9b06758e-e888-413c-b0b9-4a862a954ed5",
+        "9c39ca4e-9b18-4769-be39-ca11c232cf82",
+        "25157062-a9c7-4f68-b060-7677df9c7894",
+        "b28fa6ba-e4a8-4eba-92ba-062cfbce7c2d",
+        "333885e5-e8c3-4827-bc26-5ba1b60e865c"
+      ],
+      "settings": {
+        "title": "FAQ",
+        "background": "#F2F2F2"
+      }
+    },
+    "7705c7fe-706b-4acc-8ee1-631962cc2ef1": {
+      "type": "section-order",
+      "settings": {
+      }
+    },
+    "a789d787-2841-42eb-8096-095cdbdb1819": {
+      "type": "section-reviews",
+      "disabled": true,
+      "settings": {
+        "size": "large"
+      }
+    }
+  },
+  "order": [
+    "main-product2",
+    "main-product",
+    "6b41270a-c28c-4443-8dac-3cfd4c971881",
+    "3d399def-0179-4554-b25d-2b0b0db4a176",
+    "2204e239-c74d-42e3-b4f5-edb6e28427b6",
+    "29638072-6335-4c39-9b9e-054b5abdf271",
+    "7705c7fe-706b-4acc-8ee1-631962cc2ef1",
+    "a789d787-2841-42eb-8096-095cdbdb1819"
+  ]
+}

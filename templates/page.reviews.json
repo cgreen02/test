@@ -1,0 +1,50 @@
+{
+  "sections": {
+    "shogun-helper": {
+      "type": "shogun-helper",
+      "settings": {
+      }
+    },
+    "da1ff236-2c7f-4795-ada4-9e3e22c8dc60": {
+      "type": "section-sport-hero",
+      "settings": {
+        "hero": "shopify:\/\/shop_images\/VKTRY_reviews.webp",
+        "hero_mobile": "shopify:\/\/shop_images\/VKTRY_reviews.webp",
+        "subtitle": "",
+        "subtitle_font_size": 1,
+        "title": "",
+        "title_font_size": 1,
+        "content_top": 20,
+        "content_left": 20,
+        "content_width": 50,
+        "sport": "",
+        "show_silver": true,
+        "buttons_bottom": 20,
+        "body": ""
+      }
+    },
+    "192905aa-0690-42fe-8b67-5f2ca1f1779b": {
+      "type": "section-reviews",
+      "settings": {
+        "size": "large"
+      }
+    },
+    "ee0bb64f-4bf9-43ab-bf6e-dab215391241": {
+      "type": "section-compare-gold",
+      "settings": {
+      }
+    },
+    "7e8bfeda-66ae-4f14-9420-aaafcc75cb3e": {
+      "type": "section-compare-silver",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "shogun-helper",
+    "da1ff236-2c7f-4795-ada4-9e3e22c8dc60",
+    "192905aa-0690-42fe-8b67-5f2ca1f1779b",
+    "ee0bb64f-4bf9-43ab-bf6e-dab215391241",
+    "7e8bfeda-66ae-4f14-9420-aaafcc75cb3e"
+  ]
+}

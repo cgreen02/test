@@ -1,0 +1,143 @@
+{
+  "sections": {
+    "main-page": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "7d2fb5f2-2640-4910-b791-2a7221be7839": {
+      "type": "section-hero",
+      "settings": {
+        "hero_image": "shopify:\/\/shop_images\/Carbon_Fiber_Background_3b7cf0a1-0793-4f92-98c1-ce9a021ddcd1.png",
+        "hero_image_size": 500,
+        "hero_title_large": "VKTRY4Heroes",
+        "hero_title_medium": "",
+        "hero_title_small_top": true,
+        "hero_title_small": "Nominate An Everyday Hero Below",
+        "hero_description": "",
+        "hero_has_overlay": false,
+        "hero_scroll": true,
+        "hero_video_link": "",
+        "hero_video_text": "",
+        "hero_video_new_tab": false,
+        "hero_class": ""
+      }
+    },
+    "c7436d2c-9805-4c5d-9005-afc12b9f5b20": {
+      "type": "section-description",
+      "settings": {
+        "description_title": "<p>HONORING THOSE WHO SERVE OTHERS<\/p>",
+        "description_copy": "<p>VKTRY4Heroes honors the everyday hero, the ones who dedicate themselves to the health, safety and well-being of others.  The first responders, healthcare workers, military, teachers, supply chain personnel – anyone who works in the service of others.  Since launching in the Spring of 2020, our program has donated over 500 pairs of VKs.  We believe our Heroes deserve to stay injury free – and VKs provide that much needed support, stability and shock absorption necessary for those who are working long, exhausting hours to help others.<\/p><p> <\/p><p>To nominate someone special, please contact us at <a href=\"mailto:MyHero@vktrygear.com\"><span style=\"text-decoration:underline\"><strong>MyHero@vktrygear.com<\/strong><\/span><\/a>.  At this time we can only accept applicants in the United States. Please include their name, employer name, shoe size (specify male or female), body weight, and mailing address (USA Only). If you include their email address, we will send them a confirmation with details on the shipment and your recommendation for this program.<\/p>",
+        "description_class": "section-description--padding-bottom",
+        "description_button_url": ""
+      }
+    },
+    "2f4d79cd-69d1-4d2f-9c9e-7b8c20af3b9c": {
+      "type": "section-athletes",
+      "blocks": {
+        "e586a8c5-7422-4cd4-8d8d-e51ebfed57de": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/vktry_4_heroes_in_the_healthcare_industry.jpg",
+            "quote": "<p>\"Milford, CT Police Dept. and Trumbull, CT EMS\"<\/p>",
+            "quote_author": "<p><strong>Local First Responders<\/strong><\/p><p>VKTRY4Heroes Honorees<\/p>"
+          }
+        },
+        "1cbe9622-155f-487b-b8aa-9afe631046e3": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/vktry_4_heroes_US_Marine_and_Unit_Members.webp",
+            "quote": "<p>\"Will S.\"<\/p>",
+            "quote_author": "<p><strong>U.S. Marine and Unit Members <\/strong>VKTRY4Heroes Honoree<\/p>"
+          }
+        },
+        "38742761-0415-4dc8-82f0-5b0c71686f89": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/vktry_4_heroes_with_nurse.jpg",
+            "quote": "<p>\"Andrew F.\"<\/p>",
+            "quote_author": "<p><strong>Frontline Healthcare Worker <\/strong>VKTRY4Heroes Honoree<\/p>"
+          }
+        },
+        "d0accbee-2309-495c-a208-91f6e5ce75da": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/vktry_4_heroes_Healthcare_Worker.webp",
+            "quote": "<p>\"Nick D.\"<\/p>",
+            "quote_author": "<p><strong>Frontline Healthcare Worker <\/strong>VKTRY4Heroes Honoree<\/p>"
+          }
+        },
+        "f63513c2-8508-46f7-8f47-1c68b2d1f017": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/vktry_4_heroes_with_fire_department.jpg",
+            "quote": "<p>\"Milford, CT Fire Department\"<\/p>",
+            "quote_author": "<p><strong>Local First Responders<\/strong><\/p><p>VKTRY4Heroes Honorees<\/p>"
+          }
+        },
+        "d130270f-2827-4f20-bda7-37ebf100d561": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/healthcare_vktry_4_heroes_honoree.png",
+            "quote": "<p>\"Kelly R.\"<\/p>",
+            "quote_author": "<p><strong>Frontline Healthcare Worker <\/strong>VKTRY4Heroes Honoree<\/p>"
+          }
+        },
+        "df157fc6-1fa9-49b4-8708-bbfcb280612d": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Angel_McCoughtry_vktry_spokesperson.png",
+            "quote": "<p>\"Angel McCoughtry\"<\/p>",
+            "quote_author": "<p><strong>Forward, WNBA Las Vegas Aces, 2x Olympic Gold Medalist <\/strong>VKTRY4Heroes Spokesperson<\/p>"
+          }
+        },
+        "127339a6-96d8-4471-a56c-f60754c7e8e5": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/vktry_4_heroes_with_first_responders.webp",
+            "quote": "<p>\"Milford, CT Police Dept.\"<\/p>",
+            "quote_author": "<p><strong>Local First Responders<\/strong><\/p><p>VKTRY4Heroes Honorees<\/p>"
+          }
+        },
+        "82263405-7cf8-4656-889a-7862205b6ce2": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/vktry_4_heroes_for_nurses.webp",
+            "quote": "<p>\"Marc Louie Ibanez\"<\/p>",
+            "quote_author": "<p><strong>ICU Nurse<\/strong><\/p><p>VKTRY4Heroes Honoree<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "e586a8c5-7422-4cd4-8d8d-e51ebfed57de",
+        "1cbe9622-155f-487b-b8aa-9afe631046e3",
+        "38742761-0415-4dc8-82f0-5b0c71686f89",
+        "d0accbee-2309-495c-a208-91f6e5ce75da",
+        "f63513c2-8508-46f7-8f47-1c68b2d1f017",
+        "d130270f-2827-4f20-bda7-37ebf100d561",
+        "df157fc6-1fa9-49b4-8708-bbfcb280612d",
+        "127339a6-96d8-4471-a56c-f60754c7e8e5",
+        "82263405-7cf8-4656-889a-7862205b6ce2"
+      ],
+      "settings": {
+        "title": "",
+        "subtitle": "",
+        "show_money_back": false
+      }
+    },
+    "73d01170-d324-44d0-8c53-13da87076754": {
+      "type": "section-reviews",
+      "settings": {
+        "size": "small"
+      }
+    }
+  },
+  "order": [
+    "main-page",
+    "7d2fb5f2-2640-4910-b791-2a7221be7839",
+    "c7436d2c-9805-4c5d-9005-afc12b9f5b20",
+    "2f4d79cd-69d1-4d2f-9c9e-7b8c20af3b9c",
+    "73d01170-d324-44d0-8c53-13da87076754"
+  ]
+}

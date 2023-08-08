@@ -1,0 +1,22 @@
+{
+  "sections": {
+    "1c1e3854-4668-466f-beed-08b247a89881": {
+      "type": "section-contact-hero",
+      "settings": {
+        "bg_img": "shopify://shop_images/contact-header.jpg",
+        "title": "Contact Us",
+        "copy": "Don’t hesitate to contact us if you have any questions. We are here to help. Please contact us at info@VKTRYgear.com or 1-844-468-5879. We can normally respond to you within 24 hours (Mon-Fri, 9am – 5pm EST)."
+      }
+    },
+    "section-contact": {
+      "type": "section-contact",
+      "disabled": true,
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "1c1e3854-4668-466f-beed-08b247a89881",
+    "section-contact"
+  ]
+}

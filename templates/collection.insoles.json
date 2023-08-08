@@ -1,0 +1,32 @@
+{
+  "sections": {
+    "main-collection": {
+      "type": "main-collection",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "5eedab0b-fc47-4b6a-a024-a5911dbacb1f": {
+      "type": "section-collection-insoles",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "a1d38e6f-0891-4a50-9d47-46c325c5d14d": {
+      "type": "section-compare-gold",
+      "settings": {
+      }
+    },
+    "90a2b0d8-b00f-4450-babd-1322a110cb23": {
+      "type": "section-compare-silver",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main-collection",
+    "5eedab0b-fc47-4b6a-a024-a5911dbacb1f",
+    "a1d38e6f-0891-4a50-9d47-46c325c5d14d",
+    "90a2b0d8-b00f-4450-babd-1322a110cb23"
+  ]
+}

@@ -1,0 +1,224 @@
+{
+  "sections": {
+    "main-page": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "26f97982-8ff8-464b-877b-cc12dd1c8420": {
+      "type": "section-image",
+      "settings": {
+        "desktop_image": "shopify://shop_images/foam-desktop.webp",
+        "mobile_image": "shopify://shop_images/foam-mobile.webp"
+      }
+    },
+    "c2d0ee49-4ee9-4024-921a-8630045211b4": {
+      "type": "section-video-slider",
+      "blocks": {
+        "6495c054-83c2-48c8-b724-70a928c35a51": {
+          "type": "video",
+          "settings": {
+            "poster": "shopify://shop_images/www.dropbox.com_s_60dvx9x968r6ta7_foam_20vs_20vktry_20explained.mp4_dl_0.png",
+            "video": "shopify://files/videos/foam vs vktry explained.mp4",
+            "title": ""
+          }
+        },
+        "4b7c3b81-fbe8-45b1-8528-72aa62ca7f69": {
+          "type": "video",
+          "settings": {
+            "poster": "shopify://shop_images/www.dropbox.com_s_142f7345hlkq0qo_Brandon_20Beloti_20Nov.mp4_dl_0.png",
+            "video": "shopify://files/videos/Brandon Beloti Nov_3dface55-c3d9-4d45-a03b-249c7eeb518a.mp4",
+            "title": ""
+          }
+        },
+        "6a708750-ac13-41a9-9d46-6996f94d31ac": {
+          "type": "video",
+          "settings": {
+            "poster": "shopify://shop_images/www.dropbox.com_s_vcbyr8ux3fu3n6c_Phel1.mp4_dl_0.png",
+            "video": "shopify://files/videos/Phel1.mp4",
+            "title": ""
+          }
+        },
+        "3da09cfb-9095-407b-8ef3-da02726d2cd7": {
+          "type": "video",
+          "settings": {
+            "poster": "shopify://shop_images/31284.jpg",
+            "video": "shopify://files/videos/Barrera Original.mp4",
+            "title": ""
+          }
+        },
+        "122e2e9d-8013-42b7-9dc0-2dacb4268c3d": {
+          "type": "video",
+          "disabled": true,
+          "settings": {
+            "poster": "shopify://shop_images/b08a7cbdbd1e4ed0bad83666898f7d0d.thumbnail.0000000000.webp",
+            "video": "shopify://files/videos/b08a7cbdbd1e4ed0bad83666898f7d0d.mp4",
+            "title": "I just got my first\ndunk with VKTRY"
+          }
+        },
+        "7b9e0fed-dbd6-4013-9557-860585a3ee02": {
+          "type": "video",
+          "disabled": true,
+          "settings": {
+            "poster": "shopify://shop_images/b7053731258d4e8c9ccdae7d0e9da707.thumbnail.0000000000.webp",
+            "video": "shopify://files/videos/b7053731258d4e8c9ccdae7d0e9da707.mp4",
+            "title": "See VKTRY Energy\nStorage and Return"
+          }
+        },
+        "a27996c2-8977-4bb3-b706-2ee3cb7b0401": {
+          "type": "video",
+          "disabled": true,
+          "settings": {
+            "poster": "shopify://shop_images/17150.jpg",
+            "video": "shopify://files/videos/Wheeler1_1.mp4",
+            "title": "High School Basketball Players React to VKTRY Insoles"
+          }
+        },
+        "e93d3d00-846e-454a-b459-4018ffa94483": {
+          "type": "video",
+          "disabled": true,
+          "settings": {
+            "poster": "shopify://shop_images/IMG_1398.jpg",
+            "video": "shopify://files/videos/Brandon Beloti Nov.mp4",
+            "title": "VKTRY Insoles are the Vert Secret"
+          }
+        },
+        "2c16576b-1750-4734-9281-3cb5c6a50945": {
+          "type": "video",
+          "disabled": true,
+          "settings": {
+            "poster": "shopify://shop_images/b22c137d5cc64852abbd239a3d568bff.thumbnail.0000000000.webp",
+            "video": "shopify://files/videos/b22c137d5cc64852abbd239a3d568bff.mp4",
+            "title": "Jonathan Taylor on\nWhat He Thinks of VKs"
+          }
+        },
+        "2e6c838c-cd16-404f-a65e-8aae615e90c9": {
+          "type": "video",
+          "disabled": true,
+          "settings": {
+            "poster": "shopify://shop_images/cdn.shopify.com_videos_c_o_v_1f432e86ff044570a47c9fa4fd394b39.mp4.webp",
+            "video": "shopify://files/videos/1f432e86ff044570a47c9fa4fd394b39.mp4",
+            "title": "VKTRY at\nPerfect Game ‘22"
+          }
+        },
+        "5e9a03b0-163f-453f-bdb5-ef5bee930fff": {
+          "type": "video",
+          "disabled": true,
+          "settings": {
+            "poster": "shopify://shop_images/4ea5d157668f49fbb554002865874bd1.thumbnail.0000000000.webp",
+            "video": "shopify://files/videos/4ea5d157668f49fbb554002865874bd1.mp4",
+            "title": "Some elite athletes jump +5\" higher with VKTRY Insoles"
+          }
+        },
+        "8e2eea79-9b43-4e25-b5fe-bbf08580b207": {
+          "type": "video",
+          "disabled": true,
+          "settings": {
+            "poster": "shopify://shop_images/e9d076113256473891ba8965032ea9ce.thumbnail.0000000000.webp",
+            "video": "shopify://files/videos/e9d076113256473891ba8965032ea9ce.mp4",
+            "title": "Team USA\nand VKs"
+          }
+        }
+      },
+      "block_order": [
+        "6495c054-83c2-48c8-b724-70a928c35a51",
+        "4b7c3b81-fbe8-45b1-8528-72aa62ca7f69",
+        "6a708750-ac13-41a9-9d46-6996f94d31ac",
+        "3da09cfb-9095-407b-8ef3-da02726d2cd7",
+        "122e2e9d-8013-42b7-9dc0-2dacb4268c3d",
+        "7b9e0fed-dbd6-4013-9557-860585a3ee02",
+        "a27996c2-8977-4bb3-b706-2ee3cb7b0401",
+        "e93d3d00-846e-454a-b459-4018ffa94483",
+        "2c16576b-1750-4734-9281-3cb5c6a50945",
+        "2e6c838c-cd16-404f-a65e-8aae615e90c9",
+        "5e9a03b0-163f-453f-bdb5-ef5bee930fff",
+        "8e2eea79-9b43-4e25-b5fe-bbf08580b207"
+      ],
+      "settings": {
+      }
+    },
+    "b1016104-1c6d-45cd-ac54-15f1c670cf6b": {
+      "type": "section-compare-gold",
+      "settings": {
+      }
+    },
+    "7a9dc9a9-bc8f-4a9c-9c37-c343999e4ae9": {
+      "type": "section-compare-silver",
+      "settings": {
+      }
+    },
+    "70dc07e8-f3ae-4a23-9ab1-9e3e7d1ddb5d": {
+      "type": "section-reviews",
+      "settings": {
+        "size": "small"
+      }
+    },
+    "4955306a-ebdc-4f41-9128-416ad1400e4e": {
+      "type": "section-sport-faq",
+      "blocks": {
+        "51bcdbec-01a8-4c6e-9f0b-cd0fc9d2e37b": {
+          "type": "FAQ",
+          "settings": {
+            "question": "Are These Suitable For All Track & Field Events?",
+            "answer": "Yes, but since VKTRY Insoles are customized to the shoes/cleats that you wear, it depends on the event you are participating in.  Power events, like the shot put and discus use a bigger type of shoe, for those events use our version of VKs that come with additional grip tape on the toes for added support (choose a sport like baseball or football when customizing your pair). For any other event that deals with the track, use our Track Spike VKTRY Insoles."
+          }
+        },
+        "6e5d2c35-69f2-40d8-8498-8564b422a3aa": {
+          "type": "FAQ",
+          "settings": {
+            "question": "Are VKTRY Insoles comfortable?",
+            "answer": "Yes, VKTRY Insoles are very comfortable. Although the base is made of carbon fiber, the top portion of the insole is made with a softer EVA foam that supports & cushions the foot. It's important to note that every pair needs to be broken in, which typically takes a few short days of light training. Instructions on the break-in process come inside the packaging with your order."
+          }
+        },
+        "90adef8d-ffe5-46bf-bde0-249b646f0b6b": {
+          "type": "FAQ",
+          "settings": {
+            "question": "Are VKTRY Insoles good for my feet?",
+            "answer": "VKTRY Insoles are clinically proven to help you protect & recover from many common foot & lower-leg injuries. They are totally safe for your feet, and absorb more shock than a standard foam insole upon impact. Not only that, but they also support & stabilize the lower-body, which translates to better protection."
+          }
+        },
+        "7b359090-7886-4f33-9e07-7ae83fd41a6e": {
+          "type": "FAQ",
+          "settings": {
+            "question": "How do VKTRY Insoles work?",
+            "answer": "VKTRY Insoles are made with a full-length carbon fiber base plate, in which the flexibility (we call \"Pro Level) comes personalized to your sport & weight. When you bend your foot to walk, run or jump, your foot is putting energy into the ground. A standard foam or plastic insole would disperse (and waste) that energy. VKTRY Insoles absorb that energy and then return back to you, similar to how a diving board or trampoline would. Athletes are proven to see greater explosiveness & ground force when wearing VKTRY, resulting in higher verticals and faster sprints."
+          }
+        },
+        "71f8a9dc-a8e3-4d72-a16d-08837c039fa3": {
+          "type": "FAQ",
+          "settings": {
+            "question": "Are VKTRY Insoles legal?",
+            "answer": "We have not heard from any governing body on VKTRY Insoles being banned in any sport or league. VKTRY Insoles are worn by amateur and professional athletes alike all over the world. It's important to note that VKTRY Insoles are also proven to protect from injury, and no governing body would have it in their best interest to ban something that's proven to protect their players. It's not cheating, it's just better technology!"
+          }
+        },
+        "5f432b22-af89-4194-a4e8-0c57fc0a88c2": {
+          "type": "FAQ",
+          "settings": {
+            "question": "What if VKTRY Insoles don't fit after ordering?",
+            "answer": "Every order comes with a 90-day money back guarantee. If there's any issues with the fitment, comfort or performance of your product, we will handle an exchange free of charge (customers outside of the USA must pay for postage).  To get in contact, either chat with us by clicking on the question mark at the bottom right of the screen, call us by clicking on the phone at the top right of the screen, or email us at info@vktrygear.com."
+          }
+        }
+      },
+      "block_order": [
+        "51bcdbec-01a8-4c6e-9f0b-cd0fc9d2e37b",
+        "6e5d2c35-69f2-40d8-8498-8564b422a3aa",
+        "90adef8d-ffe5-46bf-bde0-249b646f0b6b",
+        "7b359090-7886-4f33-9e07-7ae83fd41a6e",
+        "71f8a9dc-a8e3-4d72-a16d-08837c039fa3",
+        "5f432b22-af89-4194-a4e8-0c57fc0a88c2"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main-page",
+    "26f97982-8ff8-464b-877b-cc12dd1c8420",
+    "c2d0ee49-4ee9-4024-921a-8630045211b4",
+    "b1016104-1c6d-45cd-ac54-15f1c670cf6b",
+    "7a9dc9a9-bc8f-4a9c-9c37-c343999e4ae9",
+    "70dc07e8-f3ae-4a23-9ab1-9e3e7d1ddb5d",
+    "4955306a-ebdc-4f41-9128-416ad1400e4e"
+  ]
+}

@@ -1,0 +1,212 @@
+{
+  "sections": {
+    "main-page": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "e3197b42-adaa-4d39-8224-241464571bb1": {
+      "type": "section-sport-hero",
+      "settings": {
+        "hero": "shopify:\/\/shop_images\/Padraig_VKTRY_insoles.jpg",
+        "hero_mobile": "shopify:\/\/shop_images\/Padraig-Google.webp",
+        "subtitle": "VKTRY Golf Insoles",
+        "subtitle_font_size": 2,
+        "title": "<p>The Official <strong>Insoles<\/strong><\/p><p>of Three-Time <\/p><p><strong>Major Champion<\/strong><\/p><p>Pádraig <strong>Harrington<\/strong><\/p>",
+        "title_font_size": 3.5,
+        "content_top": 18,
+        "content_left": 5,
+        "content_width": 60,
+        "sport": "Golf",
+        "show_silver": true,
+        "buttons_bottom": 20,
+        "body": "With VKTRY Insoles you can increase clubhead speed (+2mph) and weight transfer while increasing stability during the golf swing. Put a spring in your step & enjoy all day comfort with our patented carbon fiber insole."
+      }
+    },
+    "7deca2db-ffa5-44c0-8f66-f401678aa07b": {
+      "type": "section-sport-proven",
+      "blocks": {
+        "f50f125a-9267-4495-9218-03d52042dd41": {
+          "type": "button",
+          "settings": {
+            "text": "SHOP GOLD INSOLES",
+            "link": "shopify:\/\/products\/vktry-insoles-gold",
+            "color": "#f1c740"
+          }
+        },
+        "399aada4-809a-4d7e-af9d-b4a32f68ae62": {
+          "type": "button",
+          "settings": {
+            "text": "SHOP SILVER INSOLES",
+            "link": "shopify:\/\/products\/vktry-insoles-silver",
+            "color": "#a3a3a2"
+          }
+        },
+        "1028f7c6-fa3e-47ce-8dc3-110b6a0394a6": {
+          "type": "list_item",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/check_box.svg",
+            "title": "SWING <span>FASTER<\/span>",
+            "text": "Add +2mph Clubhead Speed"
+          }
+        },
+        "4f55dbe7-b0b7-48c5-a3c5-58c52e75a06f": {
+          "type": "list_item",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/check_box.svg",
+            "title": "INCREASED <span>STABILITY<\/span>",
+            "text": "Custom Carbon Fiber Base"
+          }
+        },
+        "e675cd2d-b45f-42f2-8aef-abbcf65dfabe": {
+          "type": "list_item",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/check_box.svg",
+            "title": "ALL-DAY <span>COMFORT<\/span>",
+            "text": "Shock Absorption & Energy Return"
+          }
+        }
+      },
+      "block_order": [
+        "f50f125a-9267-4495-9218-03d52042dd41",
+        "399aada4-809a-4d7e-af9d-b4a32f68ae62",
+        "1028f7c6-fa3e-47ce-8dc3-110b6a0394a6",
+        "4f55dbe7-b0b7-48c5-a3c5-58c52e75a06f",
+        "e675cd2d-b45f-42f2-8aef-abbcf65dfabe"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/overlay_2x_1.webp",
+        "title": "TEE OFF WITH VKTRY INSOLES",
+        "copy": "<p>“I heard some PGA players were wearing VKTRY Insoles, so I went online and bought a pair. With VKs, I immediately achieved my personal best ever in ball speed… 196 MPH. These insoles help give me more stability and improve the ground force I can generate. I learned a long time ago that you can’t launch a rocket from a canoe. For me, using VKs is a no brainer.”<br\/><br\/>— Pádraig Harrington, Three-time Major Winner and Ryder Cup Captain<\/p>"
+      }
+    },
+    "2467450d-9d98-4883-ad60-b5e459b51d31": {
+      "type": "section-reviews",
+      "settings": {
+        "size": "small"
+      }
+    },
+    "126e1215-3f1b-4c44-9b12-bfde8bde0466": {
+      "type": "section-parent-videos",
+      "blocks": {
+        "cf027b83-a12b-449a-a03f-55311e2740f3": {
+          "type": "video",
+          "settings": {
+            "poster": "shopify:\/\/shop_images\/Padraig_Harrington_on_Why_He_Uses_VKTRY_Insoles_38396f65-40e8-4183-baf4-d650de517c1a.png",
+            "video": "shopify:\/\/files\/videos\/Padraig Harrington on Why He Uses VKTRY Insoles.mp4",
+            "title": "Padraig Harrington on Why He Uses VKTRY Insoles"
+          }
+        },
+        "0e17d6d6-d88a-4d60-a602-cb3aa6197dd9": {
+          "type": "video",
+          "settings": {
+            "poster": "shopify:\/\/shop_images\/Rick_Smith_Joins_Team_VKTRY_ae27fb52-7647-43f1-a3ea-ed0514301689.png",
+            "video": "shopify:\/\/files\/videos\/Legendary Golf Instructor Rick Smith Joins Team VKTRY.mp4",
+            "title": "Legendary Golf Instructor Rick Smith Joins Team VKTRY"
+          }
+        },
+        "5119d0e2-6667-491f-ad0e-064d4769ea75": {
+          "type": "video",
+          "settings": {
+            "poster": "shopify:\/\/shop_images\/World_Class_Long_Driver_Josh_Koch_Loves_his_VKTRY_Insoles_d80aef9e-a7d0-4634-8e98-9f44d2cc05db.png",
+            "video": "shopify:\/\/files\/videos\/World Class Long Driver Josh Koch Loves his VKTRY Insoles.mp4",
+            "title": "World Class Long Driver Josh Koch Loves his VKTRY Insoles"
+          }
+        },
+        "9c684e28-9738-4350-a159-f1355406035e": {
+          "type": "video",
+          "settings": {
+            "poster": "shopify:\/\/shop_images\/insoles_for_performance.png",
+            "video": "shopify:\/\/files\/videos\/We invented insoles that give you ACTUAL energy return with every step ⚡️.mp4",
+            "title": "We invented insoles that give you ACTUAL energy return with every step ⚡️"
+          }
+        }
+      },
+      "block_order": [
+        "cf027b83-a12b-449a-a03f-55311e2740f3",
+        "0e17d6d6-d88a-4d60-a602-cb3aa6197dd9",
+        "5119d0e2-6667-491f-ad0e-064d4769ea75",
+        "9c684e28-9738-4350-a159-f1355406035e"
+      ],
+      "settings": {
+      }
+    },
+    "2df3c317-2e4c-4109-8076-7b068851776a": {
+      "type": "section-compare-gold",
+      "settings": {
+      }
+    },
+    "8aea54f4-4bcf-4839-900a-5351ad1cc416": {
+      "type": "section-compare-silver",
+      "settings": {
+      }
+    },
+    "0c59e923-703c-4150-b3ed-a42cfe48dcd8": {
+      "type": "section-foam-compare",
+      "settings": {
+      }
+    },
+    "de785a70-ebc5-4e12-8774-62fbdd04f573": {
+      "type": "section-sport-faq",
+      "blocks": {
+        "f790281e-592b-420c-b22b-f0e10c6fa0b8": {
+          "type": "FAQ",
+          "settings": {
+            "question": "Are VKTRY Insoles comfortable?",
+            "answer": "Yes, VKTRY Insoles are very comfortable. Although the base is made of carbon fiber, the top portion of the insole is made with a softer EVA foam that supports & cushions the foot. It's important to note that every pair needs to be broken in, which typically takes a few short days of light training. Instructions on the break-in process come inside the packaging with your order."
+          }
+        },
+        "701dac80-d3c2-4389-801d-812d7cad5fa2": {
+          "type": "FAQ",
+          "settings": {
+            "question": "Are VKTRY Insoles good for my feet?",
+            "answer": "VKTRY Insoles are clinically proven to help you protect & recover from many common foot & lower-leg injuries. They are totally safe for your feet, and absorb more shock than a standard foam insole upon impact. Not only that, but they also support & stabilize the lower-body, which translates to better protection."
+          }
+        },
+        "f6f4a928-0f21-4d6c-8bbd-9fb6507e19ba": {
+          "type": "FAQ",
+          "settings": {
+            "question": "How do VKTRY Insoles work?",
+            "answer": "VKTRY Insoles are made with a full-length carbon fiber base plate, in which the flexibility (we call \"Pro Level) comes personalized to your sport & weight. When you bend your foot to walk, run or jump, your foot is putting energy into the ground. A standard foam or plastic insole would disperse (and waste) that energy. VKTRY Insoles absorb that energy and then return back to you, similar to how a diving board or trampoline would. Athletes are proven to see greater explosiveness & ground force when wearing VKTRY, resulting in higher verticals and faster sprints."
+          }
+        },
+        "f7912e5c-57d9-4581-b915-f259004f29fb": {
+          "type": "FAQ",
+          "settings": {
+            "question": "Are VKTRY Insoles legal?",
+            "answer": "We have not heard from any governing body on VKTRY Insoles being banned in any sport or league. VKTRY Insoles are worn by amateur and professional athletes alike all over the world. It's important to note that VKTRY Insoles are also proven to protect from injury, and no governing body would have it in their best interest to ban something that's proven to protect their players. It's not cheating, it's just better technology!"
+          }
+        },
+        "3e2ddadc-e312-45fe-a51f-00483d67fa29": {
+          "type": "FAQ",
+          "settings": {
+            "question": "What if VKTRY Insoles don't fit after ordering?",
+            "answer": "Every order comes with a 90-day money back guarantee. If there's any issues with the fitment, comfort or performance of your product, we will handle an exchange free of charge (customers outside of the USA must pay for postage).  To get in contact, either chat with us by clicking on the question mark at the bottom right of the screen, call us by clicking on the phone at the top right of the screen, or email us at info@vktrygear.com."
+          }
+        }
+      },
+      "block_order": [
+        "f790281e-592b-420c-b22b-f0e10c6fa0b8",
+        "701dac80-d3c2-4389-801d-812d7cad5fa2",
+        "f6f4a928-0f21-4d6c-8bbd-9fb6507e19ba",
+        "f7912e5c-57d9-4581-b915-f259004f29fb",
+        "3e2ddadc-e312-45fe-a51f-00483d67fa29"
+      ],
+      "settings": {
+        "sport": "Golf"
+      }
+    }
+  },
+  "order": [
+    "main-page",
+    "e3197b42-adaa-4d39-8224-241464571bb1",
+    "7deca2db-ffa5-44c0-8f66-f401678aa07b",
+    "2467450d-9d98-4883-ad60-b5e459b51d31",
+    "126e1215-3f1b-4c44-9b12-bfde8bde0466",
+    "2df3c317-2e4c-4109-8076-7b068851776a",
+    "8aea54f4-4bcf-4839-900a-5351ad1cc416",
+    "0c59e923-703c-4150-b3ed-a42cfe48dcd8",
+    "de785a70-ebc5-4e12-8774-62fbdd04f573"
+  ]
+}

@@ -1,0 +1,22 @@
+<div id="account">
+    <h1 id="accountTitle">My Account</h1>
+    <a id="accountLogout" href="/account/logout">Log Out</a>
+    <a id="accountRewards" class="button center" href="/pages/rewards">My Rewards</a>
+    {% if customer.orders.size > 0 %}
+        <div id="accountOrders">
+            {% for order in customer.orders %}
+                <div class="accountOrder">
+                    <div class="accountOrderTitle">Order #{{ order.name }}</div>
+                    <p class="accountOrderInfo">Placed on {{ order.created_at | date: "%B %d, %Y" }}</p>
+                    <p class="accountOrderInfo">Total: {{ order.total_price | money }}</p>
+                    <p class="accountOrderInfo">Status: {{ order.financial_status }}</p>
+                    <a class="accountOrderButton button" href="{{ order.order_status_url }}" target="_blank">View Order</a>
+                </div>
+            {% endfor %}
+        </div>
+    {% else %}
+        <div id="accountEmpty">
+            <p>You have no orders yet.</p>
+        </div>
+    {% endif %}
+</div>

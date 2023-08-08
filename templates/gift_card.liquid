@@ -1,0 +1,124 @@
+<style>
+    #announcementBar,
+    nav,
+    .quickMenu,
+    footer,
+    #shopNow {
+        display: none !important;
+    }
+
+    #giftCard {
+        text-align: center;
+        max-width: 420px;
+        margin: auto;
+        padding: 40px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #giftCardTitle {
+        font-weight: 600;
+        text-align: center;
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    #giftCardSubtitle {
+        font-size: 14px;
+        color: #807c7c;
+        margin-bottom: 20px;
+    }
+
+    #giftCardInfo {
+        padding: 10px 20px;
+        margin-bottom: 20px;
+        width: 100%;
+        font-size: 14px;
+    }
+
+    #giftCardInfo.success {
+        background: #d2e4c4;
+        color: #307a07;
+    }
+
+    #giftCardInfo.error {
+        background: #e4c4c4;
+        color: #cb2b2b;
+    }
+
+    #giftCardImgContainer {
+        position: relative;
+        margin-bottom: 20px;
+    }
+
+    #giftCardImg {
+        width: 100%;
+    }
+
+    #giftCardCode {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        white-space: nowrap;
+        padding: 12px 20px;
+        background: #ffffff;
+        border-radius: 3px;
+        transform: translateX(-50%);
+        text-align: center;
+        font-size: 16px;
+    }
+
+    #shopNow {
+        display: inline-block;
+    }
+</style>
+
+<div id="giftCard">
+    <div id="giftCardTitle">Here's your gift card!</div>
+    <div id="giftCardSubtitle">Use this code at checkout to redeem your gift card.</div>
+    <div id="giftCardInfo"></div>
+    <div id="giftCardImgContainer">
+        <img id="giftCardImg" src="{{ 'giftCard.jpg' | file_url }}">
+        <input id="giftCardCode" value="{{ gift_card.code | format_code }}" readonly>
+    </div>
+    <a id="shopNow" href="{{ shop.url }}/collections/all" class="button">Shop Now</a>
+</div>
+
+<script>
+    const giftCard = {
+        inital: {{ gift_card.initial_value }} / 100,
+        balance: {{ gift_card.balance }} / 100,
+        enabled: {{ gift_card.enabled }},
+        expired: {{ gift_card.expired }},
+        expiresOn: `{{ gift_card.expires_on | date: "%a, %b %d, %Y" }}`
+    };
+    console.log(giftCard)
+
+    if (giftCard.enabled == false) {
+        document.querySelector("#giftCardInfo").innerHTML = `Your gift card is disabled.`;
+        document.querySelector("#giftCardInfo").classList.add("error");
+    } else if (giftCard.expired == true) {
+        document.querySelector("#giftCardInfo").innerHTML = `Your gift card expired on ${giftCard.expiresOn}.`;
+        document.querySelector("#giftCardInfo").classList.add("error");
+    } else {
+        document.querySelector("#giftCardInfo").classList.add("success");
+
+        if (giftCard.expiresOn) {
+            document.querySelector("#giftCardInfo").innerHTML = `<div>Amount: $${giftCard.inital}</div><div>Your gift card expires on ${giftCard.expiresOn}</div>`;
+        } else {
+            document.querySelector("#giftCardInfo").innerHTML = `<div>Amount: $${giftCard.inital}</div>`;
+        }
+
+        //check if giftcard has been used
+        if (giftCard.balance < giftCard.inital) {
+            document.querySelector("#giftCardInfo").innerHTML += `<div>Balance: $${giftCard.balance}</div>`;
+        }
+    }
+
+    //highlight input text
+    document.querySelector("#giftCardCode").addEventListener("click", function () {
+        this.select();
+        document.execCommand("copy");
+    });
+</script>

@@ -1,0 +1,156 @@
+{
+  "sections": {
+    "main-page": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "538b9000-3e2f-4cb0-974f-24907e2d38f1": {
+      "type": "section-hiw-highlights",
+      "settings": {
+      }
+    },
+    "f00b98ba-2168-4ae7-8802-7cb4324a1c94": {
+      "type": "section-hiw-features",
+      "settings": {
+      }
+    },
+    "f7226f02-1ff7-4e79-b5f4-2e4bb72d38fd": {
+      "type": "section-hiw-features-alt",
+      "settings": {
+      }
+    },
+    "b9ea710c-f36f-4e51-a4e6-82c649c13974": {
+      "type": "section-hiw-cta",
+      "settings": {
+      }
+    },
+    "dbcfdafa-897d-4877-9007-ed7913933b28": {
+      "type": "section-description",
+      "settings": {
+        "description_title": "<p>SPORTS MEDICINE EXPERTS <br/>RECOMMEND VKTRY INSOLES</p>",
+        "description_copy": "",
+        "description_class": "section-description--padding-bottom",
+        "description_button_url": ""
+      }
+    },
+    "58ec5a25-0652-46b4-8cfd-fe408458e343": {
+      "type": "section-full-width-feature",
+      "settings": {
+        "title": "",
+        "subtitle": "",
+        "subtitle_class": "",
+        "description": "",
+        "quote": "\"After an extensive 6-month research study by the Korey Stringer Institute at the University of Connecticut, it is clear that VKTRY Insoles improve lower body biomechanics, stability of the ankle and knee during running, and shock absorption during landing. These improvements can help safeguard athletes by providing injury protection.\"",
+        "reference": "<p><strong>Dr. Douglas Casa</strong> | PhD, ATC,</p><p>Professor of Kinesiology, CEO of KSI</p>",
+        "image": "shopify://shop_images/image-_15.webp",
+        "background": "#c1c1e1",
+        "class": "",
+        "flip": true
+      }
+    },
+    "1fa6c919-034b-47c1-9410-109251654511": {
+      "type": "section-full-width-feature",
+      "settings": {
+        "title": "",
+        "subtitle": "",
+        "subtitle_class": "",
+        "description": "",
+        "quote": "\"The VK is the best combination of shock absorption while maintaining stability that I have ever seen on the orthotic market. Shock absorption to reduce load and stability to disperse load biomechanically to enhance performance.\"",
+        "reference": "<p><strong>Gary Vitti</strong> | former Head Athletic Trainer for</p><p>LA Lakers (32 years)</p>",
+        "image": "shopify://shop_images/la-times-gary-vitti.webp",
+        "background": "#e9e9e9",
+        "class": "full-width-feature--margin-top",
+        "flip": false
+      }
+    },
+    "88174ba1-8abe-4a90-8920-a9fa2af18492": {
+      "type": "section-full-width-feature",
+      "settings": {
+        "title": "",
+        "subtitle": "",
+        "subtitle_class": "",
+        "description": "",
+        "quote": "\"Because of the VKTRY Insole design, I can reduce sports injuries. The benefits of VKs are valid and undeniable.\"",
+        "reference": "<p><strong>Jack Marucci</strong> | LSU Director of Athletic</p><p>Training for over 20 years</p>",
+        "image": "shopify://shop_images/jack-marucci.webp",
+        "background": "#c1c1e1",
+        "class": "full-width-feature--margin-top",
+        "flip": true
+      }
+    },
+    "657c4118-8c53-4b14-acd6-9c11d996352f": {
+      "type": "section-full-width-feature",
+      "settings": {
+        "title": "",
+        "subtitle": "",
+        "subtitle_class": "",
+        "description": "",
+        "quote": "\"VKs represent a quantum leap in the world of performance insoles providing many of the benefits of custom made orthotics in an over the counter device. For the first time, athletes can experience stabilization, shock absorption, and propulsion in a device that is specifically tailored to their size and weight. This is a game changer.\"",
+        "reference": "<p><strong>Dr. Jamie Creps </strong>| Senior Physical Therapist, Boston Red Sox</p>",
+        "image": "shopify://shop_images/jamie-creps.webp",
+        "background": "#e9e9e9",
+        "class": "full-width-feature--margin-top",
+        "flip": false
+      }
+    },
+    "e4be4add-d454-45b1-ba35-6bbb51f826fe": {
+      "type": "section-reviews",
+      "settings": {
+        "size": "small"
+      }
+    },
+    "2b81073e-6ed1-4ce5-8ecb-5ba36ea503f5": {
+      "type": "section-footer-cta",
+      "blocks": {
+        "9790dcac-5602-47e9-90a3-382a0fa7da13": {
+          "type": "button",
+          "settings": {
+            "label": "BUY",
+            "link": "shopify://collections/insoles"
+          }
+        },
+        "e34f6ac7-53fa-45ac-a4d3-366187bbf2e6": {
+          "type": "button",
+          "settings": {
+            "label": "Learn More",
+            "link": "shopify://pages/how-it-works"
+          }
+        },
+        "71f6c374-b021-4120-ab90-4793b32ff385": {
+          "type": "button",
+          "settings": {
+            "label": "Questions",
+            "link": "shopify://pages/help-center"
+          }
+        }
+      },
+      "block_order": [
+        "9790dcac-5602-47e9-90a3-382a0fa7da13",
+        "e34f6ac7-53fa-45ac-a4d3-366187bbf2e6",
+        "71f6c374-b021-4120-ab90-4793b32ff385"
+      ],
+      "settings": {
+        "desktop_image": "shopify://shop_images/Carbon-Fiber-background.webp",
+        "mobile_image": "shopify://shop_images/Carbon-Fiber-background.webp",
+        "subtitle": "READY TO CLAIM",
+        "title": "YOUR VKTRY?"
+      }
+    }
+  },
+  "order": [
+    "main-page",
+    "538b9000-3e2f-4cb0-974f-24907e2d38f1",
+    "f00b98ba-2168-4ae7-8802-7cb4324a1c94",
+    "f7226f02-1ff7-4e79-b5f4-2e4bb72d38fd",
+    "b9ea710c-f36f-4e51-a4e6-82c649c13974",
+    "dbcfdafa-897d-4877-9007-ed7913933b28",
+    "58ec5a25-0652-46b4-8cfd-fe408458e343",
+    "1fa6c919-034b-47c1-9410-109251654511",
+    "88174ba1-8abe-4a90-8920-a9fa2af18492",
+    "657c4118-8c53-4b14-acd6-9c11d996352f",
+    "e4be4add-d454-45b1-ba35-6bbb51f826fe",
+    "2b81073e-6ed1-4ce5-8ecb-5ba36ea503f5"
+  ]
+}
