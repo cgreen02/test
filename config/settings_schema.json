@@ -1,0 +1,56 @@
+[
+  {
+    "name": "theme_info",
+    "theme_name": "MalterTech",
+    "theme_version": "1.0",
+    "theme_author": "MalterTech LLC",
+    "theme_documentation_url": "https://maltertech.com",
+    "theme_support_url": "https://maltertech.com/"
+  },
+  {
+    "name": "Socials",
+    "settings": [
+      {
+        "type": "text",
+        "id": "socials_facebook",
+        "label": "Facebook URL"
+      },
+      {
+        "type": "text",
+        "id": "socials_twitter",
+        "label": "Twitter URL"
+      },
+      {
+        "type": "text",
+        "id": "socials_instagram",
+        "label": "Instagram URL"
+      },
+      {
+        "type": "text",
+        "id": "socials_youtube",
+        "label": "YouTube URL"
+      }
+    ]
+  },
+  {
+    "name": "Sale",
+    "settings": [
+      {
+        "id": "multi_buy",
+        "label": "Enable Multi Buy",
+        "type": "checkbox",
+        "default": true
+      }
+    ]
+  },
+  {
+    "name": "Cart",
+    "settings": [
+      {
+        "id": "shipping_delay",
+        "label": "Shipping Delay",
+        "type": "text"
+      }
+    ]
+  }
+]

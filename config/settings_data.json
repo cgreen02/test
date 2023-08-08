@@ -1,0 +1,156 @@
+{
+  "current": {
+    "multi_buy": true,
+    "shipping_delay": "",
+    "checkout_header_image": "",
+    "checkout_logo_image": "shopify:\/\/shop_images\/image_1.png",
+    "checkout_logo_position": "left",
+    "checkout_logo_size": "small",
+    "checkout_body_background_image": "",
+    "checkout_body_background_color": "#ffffff",
+    "checkout_input_background_color_mode": "white",
+    "checkout_sidebar_background_image": "",
+    "checkout_sidebar_background_color": "#e8f3f6",
+    "checkout_heading_font": "Roboto",
+    "checkout_body_font": "Source Sans Pro",
+    "checkout_accent_color": "#1990c6",
+    "checkout_button_color": "#23314e",
+    "checkout_error_color": "#ff6d6d",
+    "favicon": "shopify:\/\/shop_images\/Logo-Color-On-White.png",
+    "sections": {
+      "theme-header": {
+        "type": "theme-header",
+        "settings": {
+        }
+      },
+      "theme-quick-menu": {
+        "type": "theme-quick-menu",
+        "settings": {
+        }
+      },
+      "theme-announcement": {
+        "type": "theme-announcement",
+        "settings": {
+          "background_color": "#900000",
+          "bold_color": "#f1c740",
+          "announcement_desktop": "<p><strong>New Lower Prices + Free Shipping + 90 Day Money Back Guarantee<\/strong><\/p>",
+          "announcement_mobile": "<p><strong>New Lower Prices + Free Shipping + 90 Day Money Back Guarantee<\/strong><\/p>"
+        }
+      },
+      "theme-footer": {
+        "type": "theme-footer",
+        "settings": {
+          "product_menu_title": "Product",
+          "company_menu_title": "Company",
+          "resources_menu_title": "Resources",
+          "footer_logo": "shopify:\/\/shop_images\/vktry-logo-compressed.png",
+          "copyright": "VKTRY. All Rights Reserved.",
+          "social_title": "LET'S STAY IN TOUCH"
+        }
+      }
+    },
+    "content_for_index": [
+
+    ],
+    "blocks": {
+      "855628211100114053": {
+        "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "10008203421340698720": {
+        "type": "shopify:\/\/apps\/g-translate\/blocks\/dropdown\/408a74ac-f92d-43cf-a1b1-a044341e66bd",
+        "disabled": true,
+        "settings": {
+          "horizontal_position": "left",
+          "vertical_position": "bottom",
+          "select_language_label": "Select Language",
+          "native_language_names": true,
+          "wrapper_selector": "",
+          "custom_css": ""
+        }
+      },
+      "14032133030156696076": {
+        "type": "shopify:\/\/apps\/g-translate\/blocks\/flags\/408a74ac-f92d-43cf-a1b1-a044341e66bd",
+        "disabled": true,
+        "settings": {
+          "horizontal_position": "left",
+          "vertical_position": "bottom",
+          "native_language_names": true,
+          "flag_size": "32",
+          "flag_style": "2d",
+          "wrapper_selector": "",
+          "custom_css": ""
+        }
+      },
+      "4730719560732683355": {
+        "type": "shopify:\/\/apps\/g-translate\/blocks\/float\/408a74ac-f92d-43cf-a1b1-a044341e66bd",
+        "disabled": false,
+        "settings": {
+          "horizontal_position": "left",
+          "vertical_position": "bottom",
+          "open_direction": "top",
+          "native_language_names": true,
+          "flag_style": "2d",
+          "wrapper_selector": "",
+          "custom_css": ""
+        }
+      },
+      "11354984448963461329": {
+        "type": "shopify:\/\/apps\/g-translate\/blocks\/dropdown_with_flags\/408a74ac-f92d-43cf-a1b1-a044341e66bd",
+        "disabled": true,
+        "settings": {
+          "horizontal_position": "left",
+          "vertical_position": "bottom",
+          "open_direction": "bottom",
+          "native_language_names": true,
+          "flag_size": "32",
+          "flag_style": "2d",
+          "switcher_text_color": "#666666",
+          "switcher_arrow_color": "#666666",
+          "switcher_border_color": "#cccccc",
+          "switcher_background_color": "#ffffff",
+          "switcher_background_shadow_color": "#efefef",
+          "switcher_background_hover_color": "#ffffff",
+          "dropdown_text_color": "#000000",
+          "dropdown_hover_color": "#ffffff",
+          "dropdown_background_color": "#eeeeee",
+          "wrapper_selector": "",
+          "custom_css": ""
+        }
+      },
+      "733389323033596483": {
+        "type": "shopify:\/\/apps\/okendo-product-reviews-ugc\/blocks\/theme-settings\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+        "disabled": false,
+        "settings": {
+          "show_preview_data": true
+        }
+      },
+      "11468047240823483236": {
+        "type": "shopify:\/\/apps\/sezzle-widget\/blocks\/checkout-embed\/f3a53793-e118-4764-a86b-a79bfedb0d5f",
+        "disabled": true,
+        "settings": {
+          "heading": "Sezzle Checkout Button",
+          "template": "Checkout with %%logo%%",
+          "mode": "light"
+        }
+      },
+      "12608439564960700138": {
+        "type": "shopify:\/\/apps\/sezzle-widget\/blocks\/widget-embed\/f3a53793-e118-4764-a86b-a79bfedb0d5f",
+        "disabled": true,
+        "settings": {
+          "heading": "Sezzle Widget",
+          "font_size": 14,
+          "font_family": "inherit"
+        }
+      },
+      "6406956604159796213": {
+        "type": "shopify:\/\/apps\/smart-seo\/blocks\/smartseo\/7b0a6064-ca2e-4392-9a1d-8c43c942357b",
+        "disabled": false,
+        "settings": {
+        }
+      }
+    }
+  }
+}
