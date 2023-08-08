@@ -1,0 +1,16 @@
+<a class="collectionItem" href="{% if collection %}{{ collection.url }}{% endif %}{{ product.url }}">
+    <img class="collectionImage {% if product.available == false %}soldOut{% endif %}" src="{{ product.featured_image | image_url: width: 480, height: 480 }}" alt="{{ product.featured_image.alt }}">
+    <div class="collectionItemTitle">{{ product.title }}</div>
+    <div class="collectionItemPrice">
+        <span class="{% if product.price < product.compare_at_price %}sale{% endif %}">{{ product.price | money_without_trailing_zeros }}</span>
+        {% if product.price < product.compare_at_price %}
+            <span>{{ product.compare_at_price | money_without_trailing_zeros }}</span>
+        {% endif %}
+    </div>
+
+    {% if product.available == false %}
+        <div class="collectionItemBanner soldOut">Sold Out</div>
+    {% elsif product.price < product.compare_at_price %}
+        <div class="collectionItemBanner sale">Sale</div>
+    {% endif %}
+</a>

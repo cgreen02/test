@@ -1,0 +1,67 @@
+{% if page.handle == "rewards" and customer.email %}
+
+    <script>
+
+        function waitForElm(selector) {
+            return new Promise(resolve => {
+                if (document.querySelector(selector)) {
+                    return resolve(document.querySelector(selector));
+                }
+
+                const observer = new MutationObserver(mutations => {
+                    if (document.querySelector(selector)) {
+                        resolve(document.querySelector(selector));
+                        observer.disconnect();
+                    }
+                });
+
+                observer.observe(document.body, {
+                    childList: true,
+                    subtree: true
+                });
+            });
+        }
+
+        (async function () {
+
+            // wait for element
+            await waitForElm(`[data-rule-id="190637"]`);
+
+            // determine if item is complete
+            let tiktokComplete = false;
+            document.querySelectorAll(".lion-history-table__row-cell").forEach(function (element) {
+                if (element.textContent.includes("TikTok")) {
+                    tiktokComplete = true;
+                }
+            });
+
+            // complete/not action
+            if (tiktokComplete) {
+                document.querySelector(`[data-rule-id="190637"] .lion-rule-item__actions`).insertAdjacentHTML("beforeend", `
+                    <button class="lion-action-button lion-action-button--tile lion-action-button--disabled lion-action-button--completed" data-testid="rule-item-button"><span class="lion-rule-item__completed" data-i18n-key="ui.general.completed">Completed</span></button>
+                `);
+            } else {
+
+                // add html
+                document.querySelector(`[data-rule-id="190637"] .lion-rule-item__actions`).insertAdjacentHTML("beforeend", `
+                    <a id="followTikTok" class="lion-action-button lion-action-button--tile" href="https://www.tiktok.com/@teamvktry" target="_blank">Complete activity</a>
+                `);
+
+                // add event listener
+                document.querySelector("#followTikTok").addEventListener("click", async function () {
+                    let formData = new FormData();
+                    formData.set("email", `{{ customer.email }}`);
+                    await fetch("https://api.maltertech.com/vktrygear/follow-tiktok.php", {
+                        method: "POST",
+                        body: formData
+                    });
+
+                    window.location.reload();
+                });
+
+            }
+
+        }());
+    </script>
+
+{% endif %}

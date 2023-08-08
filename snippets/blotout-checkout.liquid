@@ -1,0 +1,370 @@
+{% comment %}Copyright (c) Blotout, Inc.{% endcomment %}
+{% capture init %}
+<script>
+  !function(u){window.edgetag=window.edgetag||function(){(edgetag.stubs=edgetag.stubs||[]).push(arguments)};const t=document.createElement("script");t.type="text/javascript",t.src=u,t.async=!0;const e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(t,e)}('https://fmgbe.vktrygear.com/load');
+
+  edgetag('init', {
+    edgeURL: 'https://fmgbe.vktrygear.com',
+    disableConsentCheck: true
+  });
+</script>
+{% endcapture %}
+{{ init | strip_newlines  | replace: '  ', '' | replace: '  ', '' }}
+
+{% capture code %}
+<script>
+!function() {
+  const sendUser = (user) => {
+    if (!user || !Object.keys(user).length) {
+      return;
+    }
+
+    edgetag('data', user);
+  };
+
+  const getAddress = (address1, address2) => {
+    let address = address1;
+    if (address2) {
+      address = address ? address + ', ' + address2 : address2;
+    }
+    return address;
+  };
+
+  const getUser = () => {
+    const userData = {};
+
+    const email = '{{customer.email}}' || '{{checkout.email}}';
+    if (email) {
+      userData['email'] = email;
+    }
+
+    const phone = '{{customer.phone}}' || '{{checkout.billing_address.phone}}' || '{{checkout.shipping_address.phone}}' || '{{customer.default_address.phone}}';
+    if (phone) {
+      userData['phone'] = phone;
+    }
+
+    const firstName = '{{customer.first_name}}' || '{{checkout.billing_address.first_name}}' || '{{checkout.shipping_address.first_name}}' || '{{customer.default_address.first_name}}';
+    if (firstName) {
+      userData['firstName'] = firstName;
+    }
+
+    const lastName = '{{customer.last_name}}' || '{{checkout.billing_address.last_name}}' || '{{checkout.shipping_address.last_name}}' || '{{customer.default_address.last_name}}';
+    if (lastName) {
+      userData['lastName'] = lastName;
+    }
+
+    const country = '{{checkout.billing_address.country_code}}' || '{{checkout.shipping_address.country_code}}' || '{{customer.default_address.country_code}}';
+    if (country) {
+      userData['country'] = country;
+    }
+
+    const state = '{{checkout.billing_address.province_code}}' || '{{checkout.shipping_address.province_code}}' || '{{customer.default_address.province_code}}';
+    if (state) {
+      userData['state'] = state;
+    }
+
+    const city = '{{checkout.billing_address.city}}' || '{{checkout.shipping_address.city}}' || '{{customer.default_address.city}}';
+    if (city) {
+      userData['city'] = city;
+    }
+
+    const zip = '{{checkout.billing_address.zip}}' || '{{checkout.shipping_address.zip}}' || '{{customer.default_address.zip}}';
+    if (zip) {
+      userData['zip'] = zip;
+    }
+
+    const address1 = '{{checkout.billing_address.address1}}' || '{{checkout.shipping_address.address1}}' || '{{customer.default_address.address1}}';
+    const address2 = '{{checkout.billing_address.address2}}' || '{{checkout.shipping_address.address2}}' || '{{customer.default_address.address2}}';
+    const address = getAddress(address1, address2);
+    if (address) {
+      userData['address'] = address;
+    }
+
+    sendUser(userData);
+  };
+
+  const getUserThankYou = () => {
+    if (!Shopify || !Shopify.checkout) {
+      return;
+    }
+
+    const userData = {};
+    const email = Shopify.checkout.email;
+    if (email) {
+      userData['email'] = email;
+    }
+
+    let phone = Shopify.checkout.phone;
+    let firstName, lastName, country, state, city, zip, address;
+    if (Shopify.checkout.billing_address) {
+      if (Shopify.checkout.billing_address.phone) {
+        phone = Shopify.checkout.billing_address.phone;
+      }
+      firstName = Shopify.checkout.billing_address.first_name;
+      lastName = Shopify.checkout.billing_address.last_name;
+      country = Shopify.checkout.billing_address.country_code;
+      state = Shopify.checkout.billing_address.province_code;
+      city = Shopify.checkout.billing_address.city;
+      zip = Shopify.checkout.billing_address.zip;
+      address = getAddress(Shopify.checkout.billing_address.address1, Shopify.checkout.billing_address.address2);
+    }
+
+    if (Shopify.checkout.shipping_address) {
+      if (!phone) {
+        phone = Shopify.checkout.shipping_address.phone;
+      }
+
+      if (!firstName) {
+        firstName = Shopify.checkout.shipping_address.first_name;
+      }
+
+      if (!lastName) {
+        lastName = Shopify.checkout.shipping_address.last_name;
+      }
+
+      if (!country) {
+        country = Shopify.checkout.shipping_address.country_code;
+      }
+
+      if (!state) {
+        state = Shopify.checkout.shipping_address.province_code;
+      }
+
+      if (!city) {
+        city = Shopify.checkout.shipping_address.city;
+      }
+
+      if (!zip) {
+        zip = Shopify.checkout.shipping_address.zip;
+      }
+
+      if (!address) {
+        address = getAddress(Shopify.checkout.shipping_address.address1, Shopify.checkout.shipping_address.address2);
+      }
+    }
+
+    if (phone) {
+      userData['phone'] = phone;
+    }
+
+    if (firstName) {
+      userData['firstName'] = firstName;
+    }
+
+    if (lastName) {
+      userData['lastName'] = lastName;
+    }
+
+    if (country) {
+      userData['country'] = country;
+    }
+
+    if (state) {
+      userData['state'] = state;
+    }
+
+    if (city) {
+      userData['city'] = city;
+    }
+
+    if (zip) {
+      userData['zip'] = zip;
+    }
+
+    if (address) {
+      userData['address'] = address;
+    }
+
+    sendUser(userData);
+  };
+
+  const getUserPostPurchase = () => {
+    if (!Shopify || !Shopify.customer) {
+      return;
+    }
+
+    const userData = {};
+    const email = Shopify.customer.email;
+    if (email) {
+      userData['email'] = email;
+    }
+
+    const firstName = Shopify.customer.firstName;
+    if (firstName) {
+      userData['firstName'] = firstName;
+    }
+
+    const lastName = Shopify.customer.lastName;
+    if (lastName) {
+      userData['lastName'] = lastName;
+    }
+
+    const phone = Shopify.customer.phone;
+    if (phone) {
+      userData['phone'] = phone;
+    }
+
+    const country = Shopify.customer.default_address.country_code;
+    if (country) {
+      userData['country'] = country;
+    }
+
+    const state = Shopify.customer.default_address.province_code;
+    if (state) {
+      userData['state'] = state;
+    }
+
+    const city = Shopify.customer.default_address.city;
+    if (city) {
+      userData['city'] = city;
+    }
+
+    const zip = Shopify.customer.default_address.zip;
+    if (zip) {
+      userData['zip'] = zip;
+    }
+
+    const address = getAddress(Shopify.customer.default_address.address1, Shopify.customer.default_address.address2);
+    if (address) {
+      userData['address'] = address;
+    }
+
+    sendUser(userData);
+  };
+
+  getUser();
+  edgetag('tag', 'PageView');
+
+  window.addEventListener('load', () => {
+    if (!Shopify || !Shopify.Checkout) {
+      return;
+    }
+
+    if (Shopify.Checkout.step === 'review') {
+      edgetag('tag', 'Review step', {}, { blotoutCloud: true, emotive: true });
+    }
+
+    if (Shopify.Checkout.step === 'contact_information') {
+      edgetag('tag', 'Customer Information step', {}, { blotoutCloud: true, emotive: true });
+    }
+
+    if (Shopify.Checkout.step === 'shipping_method') {
+      const user = {};
+      const email = '{{checkout.email}}';
+      if (email) {
+        user.email = email;
+      }
+
+      const firstName = '{{checkout.billing_address.first_name}}' || '{{checkout.shipping_address.first_name}}';
+      if (firstName) {
+        user['firstName'] = firstName;
+      }
+
+      const lastName = '{{checkout.billing_address.last_name}}' || '{{checkout.shipping_address.last_name}}';
+      if (lastName) {
+        user['lastName'] = lastName;
+      }
+
+      const phone = '{{checkout.billing_address.phone}}' || '{{checkout.shipping_address.phone}}';
+      if (phone) {
+        user['phone'] = phone;
+      }
+
+      const country = '{{checkout.billing_address.country_code}}' || '{{checkout.shipping_address.country_code}}';
+      if (country) {
+        user['country'] = country;
+      }
+
+      const state = '{{checkout.billing_address.province_code}}' || '{{checkout.shipping_address.province_code}}';
+      if (state) {
+        user['state'] = state;
+      }
+
+      const city = '{{checkout.billing_address.city}}' || '{{checkout.shipping_address.city}}';
+      if (city) {
+        user['city'] = city;
+      }
+
+      const zip = '{{checkout.billing_address.zip}}' || '{{checkout.shipping_address.zip}}';
+      if (zip) {
+        user['zip'] = zip;
+      }
+
+      const address1 = '{{checkout.billing_address.address1}}' || '{{checkout.shipping_address.address1}}';
+      const address2 = '{{checkout.billing_address.address2}}' || '{{checkout.shipping_address.address2}}';
+      const address = getAddress(address1, address2);
+      if (address) {
+        user['address'] = address;
+      }
+
+      sendUser(user);
+      edgetag('tag', 'AddShippingInfo');
+    }
+
+    if (Shopify.Checkout.step === 'processing') {
+      edgetag('tag', 'AddPaymentInfo', {
+        currency: '{{checkout.currency}}',
+        value: '{{checkout.total_price | divided_by: 100}}'
+      });
+    }
+
+    if (Shopify.Checkout.step === 'post_purchase' && Shopify.order) {
+      getUserPostPurchase();
+
+      const order = window.Shopify.order;
+      const contents = [];
+      order.lineItems.forEach((item) => {
+        contents.push({
+          id: item.product.id,
+          variantId: item.variant ? item.variant.id : '',
+          quantity: item.quantity,
+          brand: item.vendor,
+          item_price: parseFloat(item.price),
+          title: item.title,
+          category: item.product_type,
+          type: 'product',
+        });
+      });
+
+      edgetag('tag', 'Purchase', {
+        contents,
+        currency: order.currency,
+        value: order.totalPrice,
+        eventId: order.id.toString(),
+        orderId: order.id.toString()
+      });
+    }
+
+    if (Shopify.checkout && Shopify.Checkout && Shopify.Checkout.step === 'thank_you') {
+      getUserThankYou();
+
+      const contents = [];
+      Shopify.checkout.line_items.forEach((item) => {
+        contents.push({
+          id: item.product_id,
+          variantId: item.variant_id,
+          quantity: item.quantity,
+          item_price: parseFloat(item.line_price),
+          title: item.title,
+          category: item.product_type,
+          brand: item.vendor,
+          image: item.image_url,
+          type: 'product',
+        });
+      });
+
+      edgetag('tag', 'Purchase', {
+        contents,
+        currency: Shopify.Checkout.currency,
+        value: Shopify.checkout.total_price,
+        eventId: Shopify.checkout.order_id.toString(),
+        orderId: Shopify.checkout.order_id.toString()
+      });
+    }
+  });
+
+  
+}();
+</script>
+{% endcapture %}
+{{ code | strip_newlines  | replace: '  ', '' | replace: '  ', '' }}
