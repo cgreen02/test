@@ -1,0 +1,28 @@
+#collections {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 40px;
+    column-gap: 30px;
+    padding: 60px 20px;
+}
+
+.collectionsItem {
+
+}
+
+.collectionsItemImage {
+    margin-bottom: 20px;
+}
+
+.collectionsItemTitle {
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+@media (max-width: 800px) {
+    #collections {
+        grid-template-columns: 1fr 1fr;
+    }
+}

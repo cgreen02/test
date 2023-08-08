@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="36.183" height="25.317" viewBox="0 0 36.183 25.317">
+    <g id="icon-email" transform="translate(1.047 0.75)" opacity="0.505">
+        <g id="Layer_1" data-name="Layer 1" transform="translate(0 0)">
+            <rect id="Rectangle_22" data-name="Rectangle 22" width="34.029" height="23.817" rx="2.26"
+                  transform="translate(0.03)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"
+                  stroke-width="1.5"/>
+            <path id="Path_51" data-name="Path 51" d="M34.839,3.09,17.794,15.375.75,3.09"
+                  transform="translate(-0.75 -1.345)" fill="none" stroke="#fff" stroke-linecap="round"
+                  stroke-linejoin="round" stroke-width="1.5"/>
+            <line id="Line_1" data-name="Line 1" x2="10.182" y2="10.652" transform="translate(22.885 12.584)"
+                  fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+            <line id="Line_2" data-name="Line 2" y1="10.719" x2="10.249" transform="translate(1.022 12.517)" fill="none"
+                  stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,286 @@
+#header {
+    padding: 19px 20px 10px;
+    max-width: 1025px;
+    margin: auto;
+}
+
+#header svg {
+    width: 100%;
+    height: auto;
+    color: black;
+    display: block;
+}
+
+#headerTop {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#headerPhone {
+    font-size: 14px;
+    line-height: 21px;
+    text-decoration: none;
+    color: black;
+}
+
+#headerLogo {
+    max-width: 210px;
+    margin: 0 auto;
+}
+
+#headerIcons {
+    display: flex;
+    justify-content: end;
+    gap: 15px;
+    align-items: center;
+}
+
+#headerPhoneMobile {
+    display: none;
+}
+
+#headerAccount {
+    max-width: 20px;
+}
+
+#headerCart {
+    max-width: 25px;
+    position: relative;
+    color: black;
+}
+
+#headerCartCount {
+    position: absolute;
+    top: -9px;
+    right: -9px;
+    background-color: var(--gold);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+}
+
+#headerMenu {
+    display: none;
+}
+
+#headerNav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    position: relative;
+}
+
+.headerNavItem {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    font-size: 16px;
+    line-height: 21px;
+    white-space: nowrap;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+}
+
+.headerNavDropdown {
+    display: none;
+}
+
+.headerNavItem:hover + .headerNavDropdown,
+.headerNavDropdown:hover {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 400px;
+    padding: 22px 34px;
+    z-index: 999;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10px;
+    row-gap: 4px;
+}
+
+.headerNavDropdownItem {
+    font-size: 16px;
+    line-height: 36px;
+    color: black;
+    text-decoration: none;
+}
+
+@media (max-width: 950px) {
+    #header {
+        padding: 12px 21px;
+    }
+
+    #headerTop {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 0;
+    }
+
+    #headerPhone {
+        display: none
+    }
+
+    #headerLogo {
+        max-width: 146px;
+        margin: 0;
+    }
+
+    #headerIcons {
+        gap: 20px;
+    }
+
+    #headerPhoneMobile {
+        display: block;
+        max-width: 18px;
+    }
+
+    #headerMenu {
+        display: block;
+        max-width: 23px;
+    }
+
+    #headerNav {
+        display: none;
+    }
+}
+
+
+/*************
+Mobile Nav
+**************/
+
+#slider {
+    position: fixed;
+    left: -100%;
+    top: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: 0.4s;
+    z-index: 25;
+}
+
+#slider.active {
+    left: 0;
+}
+
+#sliderNav {
+    background-color: white;
+    width: 100%;
+    max-width: 85%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 5px;
+}
+
+#sliderNavExit {
+    font-size: 16px;
+    line-height: 21px;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.sliderNavItem {
+    padding: 15px 32px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 1px solid #DBDBDB;
+    color: black;
+    position: relative;
+}
+
+.sliderNavItem:last-child {
+    border-bottom: none;
+}
+
+.sliderNavItem.dropdown::after {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    content: "+";
+    font-size: 21px;
+    font-weight: bold;
+    right: 15px;
+}
+
+.sliderNavItem.dropdown.active::after {
+    content: "-";
+}
+
+.sliderNavDropdown {
+    display: none;
+}
+
+.sliderNavItem.active {
+    border-bottom: none;
+}
+
+.sliderNavItem.active + .sliderNavDropdown {
+    border-bottom: 1px solid #DBDBDB;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10px;
+    padding: 0 32px 15px;
+}
+
+.sliderNavDropdownItem {
+    font-size: 14px;
+    line-height: 36px;
+    color: black;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+#sliderExit {
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    background-color: black;
+    flex-grow: 1;
+}
+
+#slider.active #sliderExit {
+    opacity: 0.5;
+    transition: 0.4s;
+    transition-delay: 0.4s;
+    visibility: visible;
+}
+
+/**** Quick Menu ****/
+#quickMenu {
+    display: none;
+}
+
+@media (max-width: 950px) {
+    #quickMenu {
+        background-color: var(--gold);
+        padding: 19px 5px 16px;
+        display: flex;
+        justify-content: space-evenly;
+        gap: 10px;
+    }
+
+    .quickMenuItem {
+        color: black;
+        text-decoration: none;
+        font-size: 16px;
+        line-height: 21px;
+        font-weight: bold;
+        text-align: center;
+    }
+}

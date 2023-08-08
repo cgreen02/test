@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="61" height="64.489" viewBox="0 0 61 64.489">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.396" y1="9.469" x2="1.081" y2="8.979" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#cb9a2b"/>
+      <stop offset="0.46" stop-color="#e1bf52"/>
+    </linearGradient>
+  </defs>
+  <g id="logo_info_modal" transform="translate(-609 -47)">
+    <circle id="Ellipse_11" data-name="Ellipse 11" cx="30.5" cy="30.5" r="30.5" transform="translate(609 47)" fill="#fff"/>
+    <g id="vk_symbol" transform="translate(613.914 56.116)">
+      <circle id="Ellipse_10" data-name="Ellipse 10" cx="6.28" cy="6.28" r="6.28" transform="translate(19.964 14.786)" fill="#010101"/>
+      <path id="Path_111" data-name="Path 111" d="M13.84,1.25,20.605,8.5V22.516s2.413,10.627,9.184,14.015C33.657,34.6,36.554,25.9,37.524,23l.485-14.5,6.765-7.25V22.516c-1.934,5.311-3.383,14.015-14.985,24.648C25.922,45.23,14.81,31.215,13.84,23V1.25Z" transform="translate(-3.544)" fill="url(#linear-gradient)"/>
+      <path id="Path_112" data-name="Path 112" d="M6.924,27.11c0,1.928-.056,3.856.011,5.779.22,6.376,2.965,11.755,6.7,16.727A87.911,87.911,0,0,0,24.875,61.551c.823.755,1.432.992,2.424.13a67.536,67.536,0,0,0,14.6-16.9c2.644-4.521,3.185-9.539,3.445-14.624a10.058,10.058,0,0,1,.378-2.6,29.883,29.883,0,0,1-.107,13.621C43.237,50.1,37.667,56.905,30.89,62.774c-5.745,4.978-3.693,5.474-9.855-.321C15.516,57.261,10.707,51.459,7.612,44.384,5.148,38.752,5.549,33,6.248,27.195Z" transform="translate(0 -11.281)" fill="#020202"/>
+    </g>
+  </g>
+</svg>

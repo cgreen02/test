@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.46 26.82" height="21">
+    <g id="Layer_2" data-name="Layer 2">
+        <g id="Layer_1-2" data-name="Layer 1">
+            <path class="cls-1" fill="none" stroke="#0398c5" stroke-linecap="round" stroke-width="1.5px"
+                  stroke-linejoin="round"
+                  d="M.93,6.57h22.6a.18.18,0,0,1,.18.18V24.95a1.12,1.12,0,0,1-1.12,1.12H1.87A1.12,1.12,0,0,1,.75,24.95V6.75A.18.18,0,0,1,.93,6.57Z"></path>
+            <path class="cls-1" fill="none" stroke="#0398c5" stroke-linecap="round" stroke-width="1.5px"
+                  stroke-linejoin="round" d="M8,6.5V5A4.25,4.25,0,0,1,12.23.75h0A4.26,4.26,0,0,1,16.49,5V6.57"></path>
+        </g>
+    </g>
+</svg>
