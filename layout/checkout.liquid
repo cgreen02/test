@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="{{ locale }}" dir="{{ direction }}" class="{{ checkout_html_classes }}">
+<head>
+    {% include 'blotout-checkout' %}
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height, minimum-scale=1.0, user-scalable=0">
+    <meta name="referrer" content="origin">
+    <meta name="facebook-domain-verification" content="746k24eeouu4eet639meku4onwsree"/>
+
+    <!-- Intelligems -->
+    <script src="https://cdn.intelligems.io/a0e838b5dd1c.js"></script>
+
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PFNQKR');</script>
+    <!-- End Google Tag Manager -->
+
+    <title>{{ page_title }}</title>
+
+    {{ content_for_header }}
+
+    {{ checkout_stylesheets }}
+    {{ checkout_scripts }}
+    <!-- ADDRESS VALIDATOR -->
+    <script async src="https://d3ox8tdk614ykk.cloudfront.net/pobox_checker.js"></script>
+    <script src="https://socialsnowball.io/js/leaked-discount-code-detect.js" async></script>
+
+    <!-- Taboola Pixel Code -->
+    <script type='text/javascript'>
+        window._tfa = window._tfa || [];
+        window._tfa.push({notify: 'event', name: 'page_view', id: 1360071});
+        !function (t, f, a, x) {
+            if (!document.getElementById(x)) {
+                t.async = 1;
+                t.src = a;
+                t.id = x;
+                f.parentNode.insertBefore(t, f);
+            }
+        }(document.createElement('script'),
+            document.getElementsByTagName('script')[0],
+            '//cdn.taboola.com/libtrc/unip/1360071/tfa.js',
+            'tb_tfa_script');
+    </script>
+    <noscript>
+        <img src='https://trc.taboola.com/1360071/log/3/unip?en=page_view'
+             width='0' height='0' style='display: none;'/>
+    </noscript>
+    <!-- End of Taboola Pixel Code -->
+
+    {% render 'shogun-head' %}
+
+    <script type="text/javascript">
+        (function (c, l, a, r, i, t, y) {
+            c[a] = c[a] || function () {
+                (c[a].q = c[a].q || []).push(arguments)
+            };
+            t = l.createElement(r);
+            t.async = 1;
+            t.src = "https://www.clarity.ms/tag/" + i;
+            y = l.getElementsByTagName(r)[0];
+            y.parentNode.insertBefore(t, y);
+        })(window, document, "clarity", "script", "hiuljau8t7");
+    </script>
+</head>
+<body>
+{{ skip_to_content_link }}
+
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PFNQKR"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<header class="banner" data-header role="banner">
+    <div class="wrap">
+        {{ content_for_logo }}
+    </div>
+</header>
+
+{{ order_summary_toggle }}
+<div class="content" data-content>
+    <div class="wrap">
+        <div class="main">
+            <header class="main__header" role="banner">
+                {{ content_for_logo }}
+                {{ breadcrumb }}
+                {{ alternative_payment_methods }}
+            </header>
+            <main class="main__content" role="main">
+                {{ content_for_layout }}
+            </main>
+
+
+            <footer class="main__footer" role="contentinfo">
+                {{ content_for_footer }}
+            </footer>
+        </div>
+        <aside class="sidebar" role="complementary">
+            <div class="sidebar__header">
+                {{ content_for_logo }}
+            </div>
+            <div class="sidebar__content">
+                {{ content_for_order_summary }}
+            </div>
+        </aside>
+    </div>
+</div>
+
+<script>
+    /* GA Progression Tracking */
+    if (document.querySelector(".breadcrumb__item--current")) {
+        let currentStep = document.querySelector(".breadcrumb__item--current").textContent.trim().toLowerCase();
+        document.querySelector("#continue_button").classList.add(`checkout-${currentStep}-done`);
+    }
+</script>
+
+{{ tracking_code }}
+
+
+<style>
+    .cart__ctas {
+        flex-direction: column-reverse;
+    }
+</style>
+<script>
+    (function () {
+        var cartContainer = document.getElementById("CartContainer");
+        var checkouts = document.getElementsByClassName('order-summary__section--discount')
+        var checkout = checkouts[checkouts.length - 1];
+
+        var idme = `<div class="idme">
+    <div class="idme-shopify">
+      <p class='idme-btn-affinity'>Medical Providers, Military, Nurses, and First Responders receive a discount</p>
+      <a class="idme-btn-unify" href="https://discountify.id.me/oauth/checkpoint/vktry-gear" >
+        <img src="https://s3.amazonaws.com/idme/developer/idme-buttons/assets/img/verify.svg" alt="ID.me" style="height:42px"/>
+      </a>
+    </div>
+  </div>`;
+
+
+        checkout && checkout.insertAdjacentHTML("afterend", idme);
+    })();
+</script>
+
+  <!-- navidium script starts -->
+<script>
+    let nvdShop = 'vktry-gear.myshopify.com';
+    let nvdShopCurrency = '{{ shop.money_format | strip_html }}';
+ </script>
+ <script src='https://navidium-static-assets.s3.amazonaws.com/navidium-widgets/plus/navidium-checkout.min.js' defer></script>
+<!-- navidium script ends -->
+
+</body>
+</html>
