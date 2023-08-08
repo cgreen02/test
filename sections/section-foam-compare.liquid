@@ -1,0 +1,36 @@
+<style>
+    .foam {
+        background-color: #171717;
+    }
+
+    .foamImage {
+        display: block;
+        width: 100%;
+        height: auto;
+        max-width: 1250px;
+        margin: auto;
+    }
+
+</style>
+
+<div class="foam">
+    <picture class="foamImage">
+        <source media="(max-width: 800px)" srcset="{{ 'foam-mobile.png' | file_url }}">
+        <source srcset="{{ 'foam-desktop.png' | file_url }}">
+        <img class="foamImage" src="{{ 'foam-desktop.png' | file_url }}" alt="Carbon Fiber vs Foam Insoles" loading="lazy">
+    </picture>
+</div>
+
+{% schema %}
+{
+  "name": "Carbon Fiber vs Foam",
+  "settings": [
+
+  ],
+  "presets": [
+    {
+      "name": "Carbon Fiber vs Foam"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,129 @@
+<style>
+
+    .hiw-features-alt .hiw-features-left {
+        order: 2;
+    }
+
+    .hiw-features-alt .hiw-features-right {
+        order: 1;
+    }
+
+
+    .hiw-features-alt .hiw-features__container {
+        background-color: var(--gold);
+        color: #000 !important;
+    }
+
+    .hiw-features-alt .hiv-feature-bg-wrap {
+        clip-path: polygon(0 0, 100% 0, 75% 100%, 0% 100%)
+    }
+
+    .hiw-features-alt .hiv-feature-bg-wrap img {
+        object-position: top right;
+        object-fit: 100% auto;
+    }
+
+    .hiw-features-alt .hiv-feature-bg-wrap {
+        top: 0;
+        left: 0;
+        right: auto;
+    }
+
+    .hiw-features-alt .hiw-features-left {
+        padding-left: 6rem;
+    }
+
+    @media screen and (max-width: 800px) {
+        .hiw-features-alt .hiw-features-left {
+            padding-left: 0;
+        }
+
+    }
+
+
+</style>
+
+<section class="hiw-features hiw-features-alt">
+    <div class="hiw-features__container">
+
+        <div class="hiw-features-wrap container">
+
+            <div class="hiw-features-left">
+
+                <h2>Proven Protection & Recovery</h2>
+                <h3 class="hiw-heading">Added shock absoption, stability & support</h3>
+
+                <div class="hiw-feature">
+
+
+                    <div class="hiw-feature-desc">
+                        <h3>less foot & lower-leg injuries</h3>
+                        <p>41% reduction in common foot injuries such as turf toe, plantar fasciitis, Lisfranc fracture,
+                            jones fracture & others</p>
+                    </div>
+                </div>
+
+                <div class="hiw-feature">
+
+
+                    <div class="hiw-feature-desc">
+                        <h3>less lower-leg injuries</h3>
+                        <p>22% reduction in common lower leg injuries such as high ankle sprains, knee sprains, A
+                            chilles tendinitis, shin splints & others</p>
+                    </div>
+                </div>
+
+                <div class="hiw-feature">
+
+
+                    <div class="hiw-feature-desc">
+                        <h3>softer landings</h3>
+                        <p>The carbon fiber base of the insole takes on the impact that your body normally would take
+                            on, reducing joint load & increasing support</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="hiw-features-right">
+
+
+            </div>
+
+        </div>
+
+        <div class="hiv-feature-bg-wrap">
+
+            <img src="{{ 'running-man.jpg' | file_url }}" alt="">
+
+        </div>
+
+        <div class="hiv-feature-bg-wrap-mobile">
+            <img src="{{ 'running-man.jpg' | file_url }}" alt="">
+        </div>
+
+    </div>
+</section>
+
+{% schema %}
+{
+  "name": "HIW - Features Alt",
+  "settings": [
+
+  ],
+  "blocks": [
+
+  ],
+  "presets": [
+    {
+      "name": "HIW - Features Alt",
+      "settings": {
+      },
+      "blocks": [
+
+      ]
+    }
+  ]
+}
+{% endschema %}

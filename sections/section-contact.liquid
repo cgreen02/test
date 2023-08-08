@@ -1,0 +1,80 @@
+<style>
+    .contact {
+        padding: 60px 20px;
+        max-width: 540px;
+        margin: auto;
+    }
+
+    .contactForm {
+    }
+
+    .contactForm [name] {
+        margin-bottom: 14px;
+    }
+
+    .contactTitle {
+        text-align: center;
+    }
+
+    .contactInfo {
+        line-height: 24px;
+        margin-bottom: 24px;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .contactInfo a {
+        text-decoration: underline;
+    }
+
+    .contactFormErrors {
+        color: var(--sale);
+    }
+
+    @media (max-width: 800px) {
+        .contactInfo br {
+            display: none;
+        }
+    }
+</style>
+
+<div class="contact">
+    {% form "contact", class: "contactForm" %}
+
+        {% if form.posted_successfully? %}
+
+            <h1 class="contactTitle">Thank You!</h1>
+            <div class="contactInfo">
+                We have received your request and will be in touch shortly.
+            </div>
+            <img class="contactSuccess" src="{{ 'contact.png' | asset_url }}" alt="Success splash image">
+
+        {% else %}
+            <div class="contactTitle">Contact Us</div>
+            <div class="contactInfo">
+                Have questions or need help setting up your Sense?
+                <br>Complete the form below and submit,<br> or call
+                <a href="tel:18449894878">1-844-989-GURU (4878)</a> M-F 9am-6pm PST.
+            </div>
+
+            <div class="contactFormErrors">
+                {{ form.errors | default_errors }}
+            </div>
+
+            <label for="name">Name</label>
+            <input id="name" type="text" name="contact[name]" required>
+
+            <label for="email">Email</label>
+            <input id="email" type="email" name="contact[email]" required>
+
+            <label for="subject">Subject</label>
+            <input id="subject" type="tel" name="contact[subject]" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="contact[body]" rows="5" required></textarea>
+
+            <button class="button">Submit</button>
+        {% endif %}
+
+    {% endform %}
+</div>

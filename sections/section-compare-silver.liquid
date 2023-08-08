@@ -1,0 +1,189 @@
+<style>
+    .compare {
+        padding: 35px 20px;
+    }
+
+    .compareProductImage {
+        max-width: 330px;
+        display: block;
+        width: 100%;
+        margin: 21px auto 13px;
+    }
+
+    .compareProduct {
+        max-width: 1000px;
+        margin: 0 auto 40px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+
+    .compareProductBody {
+        padding: 20px;
+    }
+
+    .compareProductHeader {
+        font-size: 24px;
+        line-height: 28px;
+        font-weight: bold;
+        margin-bottom: 4px;
+    }
+
+    .compareProductTitle {
+        font-size: 16px;
+        line-height: 21px;
+        font-style: italic;
+        margin-bottom: 16px;
+    }
+
+    .compareProductSubtitle {
+        font-size: 21px;
+        line-height: 24px;
+        font-weight: bold;
+        max-width: 400px;
+        color: var(--gold);
+        margin-bottom: 20px;
+    }
+
+    .compareProductList {
+        display: grid;
+        grid-template-columns: 20px auto;
+        column-gap: 7px;
+        font-size: 16px;
+        line-height: 21px;
+        row-gap: 21px;
+        margin-bottom: 21px;
+    }
+
+    .compareProductList svg {
+        position: relative;
+        top: 3px;
+    }
+
+    .compareProduct.gold .compareProductList svg {
+        color: var(--gold);
+    }
+
+    .compareProduct.silver .compareProductList svg {
+        color: var(--silver);
+    }
+
+    .compareProductPrice {
+        font-size: 21px;
+        line-height: 28px;
+        margin-bottom: 23px;
+    }
+
+    .compareProductPrice span {
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 28px;
+        color: var(--gold)
+    }
+
+    .compareProductPrice span.sale {
+        color: darkred;
+        font-weight: 600;
+        margin-right: 4px;
+    }
+
+    .compareProductPrice span.sale + span {
+        text-decoration: line-through;
+        color: black;
+    }
+
+    .compareProductButton {
+    }
+
+    @media (max-width: 800px) {
+        .compare {
+            padding: 20px 0;
+        }
+
+        .compareProduct {
+            grid-template-columns: 1fr;
+            margin-bottom: 20px;
+        }
+
+        .compareProductImage {
+            order: -1;
+            max-width: 260px;
+
+        }
+
+
+    }
+</style>
+
+<div class="compare">
+
+    <div class="compareProduct silver">
+        <div class="compareProductBody">
+            <div class="compareProductHeader">VK Silver Performance Insoles</div>
+            <div class="compareProductTitle">Not designed for cleats</div>
+            <div class="compareProductSubtitle">For casual athletes of all ages and the best performance insole for the
+                price
+            </div>
+            <div class="compareProductList">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20.063" height="15.883" viewBox="0 0 20.063 15.883">
+                    <path id="checkmark_yellow" d="M16.957,2,7.523,11.669,3.1,7.48,0,10.587l7.523,7.3L20.063,5.106Z"
+                          transform="translate(0 -2)" fill="currentColor"/>
+                </svg>
+                <div>Baseplate is carbon fiber composite</div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20.063" height="15.883" viewBox="0 0 20.063 15.883">
+                    <path id="checkmark_yellow" d="M16.957,2,7.523,11.669,3.1,7.48,0,10.587l7.523,7.3L20.063,5.106Z"
+                          transform="translate(0 -2)" fill="currentColor"/>
+                </svg>
+                <div>Baseplate flexibility is less customized, but works well for over 90% of people</div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20.063" height="15.883" viewBox="0 0 20.063 15.883">
+                    <path id="checkmark_yellow" d="M16.957,2,7.523,11.669,3.1,7.48,0,10.587l7.523,7.3L20.063,5.106Z"
+                          transform="translate(0 -2)" fill="currentColor"/>
+                </svg>
+                <div>Top cover thickness of 5mm works well for most non-cleated shoes. For cleats, we recommend Gold
+                    VKs
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20.063" height="15.883" viewBox="0 0 20.063 15.883">
+                    <path id="checkmark_yellow" d="M16.957,2,7.523,11.669,3.1,7.48,0,10.587l7.523,7.3L20.063,5.106Z"
+                          transform="translate(0 -2)" fill="currentColor"/>
+                </svg>
+                <div>Worn by tens of thousands of amateur athletes</div>
+            </div>
+            <div class="compareProductPrice">
+                {% assign product = all_products["vktry-insoles-silver"] %}
+                <span class="{% if product.price < product.compare_at_price %}sale{% endif %}">
+                {{ product.price | money_without_trailing_zeros }}
+                </span>
+                {% if product.price < product.compare_at_price %}
+                    <span>{{ product.compare_at_price | money_without_trailing_zeros }}</span>
+                {% endif %}
+                {% if settings.multi_buy %} buy 2 or more pairs & save{% endif %}
+            </div>
+            {% if template == "page.parent-refer" %}
+                <a class="compareProductButton button openParents" style="background-color: var(--silver)">Tell Your
+                    Parents About VKTRY</a>
+            {% else %}
+                <a class="compareProductButton button" style="background-color: var(--silver)"
+                   href="/products/vktry-insoles-silver">Shop Silver Insoles</a>
+            {% endif %}
+        </div>
+        <img class="compareProductImage" src="{{ 'index-compare-silver.png' | file_img_url: '400x' }}" alt="silver insole" loading="lazy">
+    </div>
+
+</div>
+
+{% schema %}
+{
+  "name": "Compare - Silver",
+  "settings": [
+
+  ],
+  "blocks": [
+
+  ],
+  "presets": [
+    {
+      "name": "Compare - Silver"
+    }
+  ]
+}
+{% endschema %}

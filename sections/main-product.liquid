@@ -1,0 +1,116 @@
+<section id="product">
+
+    <div id="productMobile">
+        <div id="productTitleMobile">{{ product.title }}</div>
+        <div id="productStarsMobile">
+            <!-- TrustBox widget - Micro Star -->
+            <div class="trustpilot-widget" data-locale="en-US" data-template-id="5419b732fbfb950b10de65e5"
+                 data-businessunit-id="58a311480000ff00059cac9e" data-style-height="24px" data-style-width="100%"
+                 data-theme="light">
+                <a href="https://www.trustpilot.com/review/vktrygear.com" target="_blank" rel="noopener">Trustpilot</a>
+            </div>
+            <!-- End TrustBox widget -->
+        </div>
+        <img id="productGuaranteeMobile" src="{{ 'money-back.svg' | file_url }}">
+    </div>
+
+    <div id="productVisual">
+
+        <div id="productSwiper" class="swiper">
+            <div id="productSwiperWrapper" class="swiper-wrapper">
+                {% for media in product.media %}
+                    {% if media.media_type == "video" %}
+                        <video class="productSwiperImage swiper-slide" src="{{ media.sources[1].url }}" poster="{{ media.preview_image | image_url }}" controls></video>
+                    {% else %}
+                        <img class="productSwiperImage swiper-slide" src="{{ media | image_url: width: 1000, height: 1000 }}">
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+
+        <div id="productThumbnails">
+            {% for media in product.media %}
+                {% if media.media_type == "video" %}
+                    <img id="thumbnail-{{ media.id }}" index="{{ forloop.index | minus: 1 }}" class="productThumbnail" src="{{ media.preview_image | image_url }}">
+                {% else %}
+                    <img id="thumbnail-{{ media.id }}" index="{{ forloop.index | minus: 1 }}" class="productThumbnail {% if forloop.index == 2 %}active{% endif %}" src="{{ media | image_url: width: 1000, height: 1000 }}">
+                {% endif %}
+            {% endfor %}
+        </div>
+
+    </div>
+
+    <div id="productContent">
+        <img id="productGuarantee" src="{{ 'money-back.svg' | file_url }}">
+
+        <div id="productTitle">{{ product.title }}</div>
+
+        <div id="productStars">
+            <!-- TrustBox widget - Micro Star -->
+            <div class="trustpilot-widget" data-locale="en-US" data-template-id="5419b732fbfb950b10de65e5"
+                 data-businessunit-id="58a311480000ff00059cac9e" data-style-height="24px" data-style-width="100%"
+                 data-theme="light">
+                <a href="https://www.trustpilot.com/review/vktrygear.com" target="_blank" rel="noopener">Trustpilot</a>
+            </div>
+            <!-- End TrustBox widget -->
+        </div>
+
+        <div id="productOptions">
+
+            {% if product.has_only_default_variant == false %}
+                {% for option in product.options_with_values %}
+                    <div class="option">
+                        <div class="optionTitle">{{ option.name }}</div>
+                        <select class="optionDropdown">
+                            {% for value in option.values %}
+                                <option value="{{ value | escape }}"
+                                        {% if option.selected_value == value %}selected{% endif %}>{{ value }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                {% endfor %}
+            {% endif %}
+
+        </div>
+
+        <div id="productPrice">
+            <span class="{% if product.price < product.compare_at_price %}sale{% endif %}">
+                {{ product.price | money_without_trailing_zeros }}
+            </span>
+            {% if product.price < product.compare_at_price %}
+                <span>{{ product.compare_at_price | money_without_trailing_zeros }}</span>
+            {% endif %}
+
+            {% if product.handle == "vk-booster-strap" %}per pair
+            {% endif %}
+
+            - Free Shipping in the US
+        </div>
+
+        <div id="productTerms">
+            {% form 'product', product %}
+                {{ form | payment_terms }}
+            {% endform %}
+        </div>
+
+        <button id="productATC" class="button active {% unless product.available %}disabled{% endunless %}">
+            {% if product.available %}
+                Add To Cart
+            {% else %}
+                Sold Out
+            {% endif %}
+        </button>
+
+        <div id="productDescription">
+            {{ product.description }}
+        </div>
+
+    </div>
+</section>
+
+{% schema %}
+{
+    "name": "Product"
+}
+{% endschema %}
+{% render 'cross-sell' %}

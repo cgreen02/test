@@ -1,0 +1,184 @@
+<style>
+    #support {
+        background-image: url({{ 'index-compare-bg1.svg' | file_url }});
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 70px 20px;
+    }
+
+    #supportInner {
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    .supportTitle {
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+    }
+
+    .supportTitle hr {
+        height: 2px;
+        flex-grow: 1;
+    }
+
+    .supportTitleInner {
+        margin: 0 10px;
+        font-size: 36px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .supportTitleInner br {
+        display: none;
+    }
+
+    .supportTitleInner span {
+        color: var(--gold);
+    }
+
+    .supportTitleInner.mb {
+        margin-bottom: 30px;
+    }
+
+    #supportSubtitle {
+        font-size: 21px;
+        line-height: 30px;
+        margin-bottom: 23px;
+        font-weight: bold;
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    .showcaseTitle {
+        text-align: center;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 36px;
+        display: flex;
+        flex-direction: column;
+        max-width: 725px;
+        margin: 0 auto 40px;
+    }
+
+    .showcaseTitle span {
+        color: var(--gold);
+    }
+
+    .showcaseTitleTwo {
+        margin-top: 75px;
+    }
+
+    .supportHero {
+        display: block;
+        width: 100%;
+        height: auto;
+        max-width: 800px;
+        margin: auto;
+    }
+
+    #supportHeroImage {
+        padding: 0 20px;
+    }
+
+    @media (max-width: 800px) {
+        #support {
+            padding: 70px 0;
+        }
+
+        .supportTitleInner {
+            font-size: 20px;
+        }
+
+        .supportTitleInner br {
+            display: unset;
+        }
+
+        .showcaseTitle {
+            font-size: 24px;
+            line-height: 28px;
+            max-width: 290px;
+            margin-bottom: 15px;
+            padding: 0 20px;
+        }
+    }
+</style>
+
+<div id="support">
+    <div id="supportInner">
+        {% if section.settings.lead_title != blank %}
+            <div class="supportTitle">
+                <hr>
+                <div class="supportTitleInner"><span>{{ section.settings.lead_title }}</span></div>
+                <hr>
+            </div>
+        {% endif %}
+
+        {% if section.settings.title != blank %}
+            <div id="supportTitle">
+                <div class="supportTitleInner mb">{{ section.settings.title }}</div>
+            </div>
+        {% endif %}
+
+        {% if section.settings.subtitle != blank %}
+            <div id="supportSubtitle">{{ section.settings.subtitle }}</div>
+        {% endif %}
+
+        {% if section.settings.showcase_title != blank %}
+            <div class="showcaseTitle">{{ section.settings.showcase_title }}</div>
+        {% endif %}
+
+        <picture class="supportHero">
+            <source media="(max-width: 800px)" srcset="{{ section.settings.background_mobile | image_url: width: 600 }}">
+            <source srcset="{{ section.settings.background | image_url: width: 2000 }}">
+            <img id="supportHeroImage" class="supportHero" src="{{ section.settings.background | image_url: width: 2000 }}" alt="{{ section.settings.background.alt }}" loading="lazy">
+        </picture>
+
+        {% if section.settings.showcase_title_two != blank %}
+            <div class="showcaseTitle showcaseTitleTwo">{{ section.settings.showcase_title_two }}</div>
+        {% endif %}
+    </div>
+</div>
+
+{% schema %}
+{
+  "name": "Support",
+  "settings": [
+    {
+      "type": "text",
+      "id": "lead_title",
+      "label": "Lead Title"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Sub Title"
+    },
+    {
+      "type": "html",
+      "id": "showcase_title",
+      "label": "Showcase Title"
+    },
+    {
+      "type": "html",
+      "id": "showcase_title_two",
+      "label": "Showcase Title Two"
+    },
+    {
+      "type": "image_picker",
+      "id": "background",
+      "label": "Background"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Support"
+    }
+  ]
+}
+{% endschema %}

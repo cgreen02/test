@@ -1,0 +1,110 @@
+<style>
+
+    /***************
+    Hero
+     */
+
+    #heroSwiper {
+        border-top: 2px solid var(--gold);
+    }
+
+    .heroSlide {
+        position: relative;
+    }
+
+    .heroSlide,
+    .heroSlide img {
+    }
+
+    .heroGold,
+    .heroSilver {
+        position: absolute;
+        -webkit-tap-highlight-color: transparent;
+        cursor: pointer;
+    }
+
+    .heroGold {
+        width: 28%;
+        height: 9%;
+        top: 60%;
+        left: 19%;
+    }
+
+    .heroSilver {
+        width: 28%;
+        height: 9%;
+        top: 71.5%;
+        left: 19%;
+    }
+
+    @media (max-width: 800px) {
+        .heroSlide,
+        .heroSlide img {
+            max-height: none;
+        }
+
+        .heroGold {
+            width: 89%;
+            height: 7.5%;
+            top: 80.5%;
+            left: 6%;
+        }
+
+        .heroSilver {
+            width: 89%;
+            height: 7.5%;
+            top: 89.5%;
+            left: 6%;
+        }
+    }
+
+</style>
+
+<div id="heroSwiper" class="swiper">
+    <div class="swiper-wrapper">
+        {% assign sports = "basketball,volleyball,football,soccer,track" | split: "," %}
+        {% for sport in sports %}
+            {% capture mobileURL %}jump-higher-mobile-{{ sport }}.jpg{% endcapture %}
+            {% capture dekstopURL %}jump-higher-{{ sport }}.jpg{% endcapture %}
+            <picture class="heroSlide swiper-slide">
+                <a class="heroGold" href="/products/vktry-insoles-gold"></a>
+                <a class="heroSilver" href="/products/vktry-insoles-silver"></a>
+                <source media="(max-width: 800px)" srcset="{{ mobileURL | file_url }}">
+                <source srcset="{{ dekstopURL | file_url }}">
+                <img src="{{ dekstopURL | file_url }}" alt="The only insoles proven to help you jump higher">
+            </picture>
+        {% endfor %}
+    </div>
+</div>
+
+<script>
+    new Swiper("#heroSwiper", {
+        loop: true,
+        autoplay: {
+            delay: 2000
+        },
+        effect: "fade"
+    });
+</script>
+
+{% schema %}
+{
+  "name": "Jump Higher",
+  "settings": [
+
+  ],
+  "blocks": [
+
+  ],
+  "presets": [
+    {
+      "name": "Jump Higher",
+      "settings": {
+      },
+      "blocks": [
+
+      ]
+    }
+  ]
+}
+{% endschema %}

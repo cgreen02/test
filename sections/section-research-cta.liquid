@@ -1,0 +1,83 @@
+<style>
+    .research-cta {
+        background-color: #e9e9e9
+    }
+
+    .research-cta__container {
+        padding-top: 3.8rem;
+        padding-bottom: 2.8rem;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center
+    }
+
+    @media (max-width: 767px) {
+        .research-cta__container {
+            padding-top: 2.9rem;
+            padding-bottom: 2.9rem
+        }
+    }
+
+    .research-cta__title {
+        margin-bottom: 2rem;
+        text-align: center
+    }
+</style>
+
+<section class="research-cta" data-module="research-cta">
+    <div class="research-cta__container container">
+        {% if section.settings.title != blank %}
+            <h3 class="research-cta__title h3">{{- section.settings.title -}}</h3>
+        {% endif %}
+        {% if section.settings.cta_label != blank %}
+            <a href="{{ section.settings.cta_link }}" class="button"
+               target="_blank">{{ section.settings.cta_label }}</a>
+        {% endif %}
+    </div>
+</section>
+
+{% schema %}
+{
+  "name": "Research CTA",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "text",
+      "id": "cta_label",
+      "label": "CTA Label"
+    },
+    {
+      "type": "url",
+      "id": "cta_link",
+      "label": "CTA Link"
+    }
+  ],
+  "blocks": [
+
+  ],
+  "presets": [
+    {
+      "name": "Research CTA",
+      "settings": {
+      },
+      "blocks": [
+
+      ]
+    }
+  ]
+}
+{% endschema %}

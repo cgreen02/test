@@ -1,0 +1,408 @@
+<style>
+    [id="{{ section.id }}"] {
+        background: black;
+        padding: 65px 20px;
+    }
+
+    .theScienceInner {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .theScienceTitle {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .theScienceTitle hr {
+        height: 1px;
+        flex-grow: 1;
+        opacity: .2;
+    }
+
+    .theScienceTitleInner {
+        margin: 0 10px;
+        font-size: 36px;
+        font-weight: bold;
+        text-align: center;
+        color: white;
+        text-transform: uppercase;
+    }
+
+    .theScienceTitleInner > span {
+        color: var(--gold);
+    }
+
+    .theScienceNumberedItems {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 32px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        max-width: 1200px;
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .theScienceNumberedItem {
+        display: flex;
+        align-items: center;
+        column-gap: 32px;
+    }
+
+    .theScienceNumberedItemNumber {
+        opacity: 0.2;
+        font-size: 120px;
+        font-weight: bold;
+        line-height: 141px;
+        color: white;
+    }
+
+    .theScienceNumberedItemTitle {
+        color: var(--gold);
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 21px;
+        margin-bottom: 12px;
+    }
+
+    .theScienceNumberedItemLink {
+        color: white;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 21px;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    .theScienceImage {
+        width: 100%;
+        height: 100%;
+    }
+
+    .theScienceImageMobile {
+        display: none;
+    }
+
+    .theScienceImageWithTextItems {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        padding-top: 76px;
+    }
+
+    .theScienceImageWithTextImage {
+        max-width: 200px;
+        margin: 0 auto;
+    }
+
+    .theScienceWithImageTextContent {
+        color: var(--gold);
+        font-size: 14px;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .theScienceButtons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        column-gap: 50px;
+        row-gap: 20px;
+        padding-top: 84px;
+    }
+
+    .theScienceButton {
+        width: 361px;
+        text-transform: none;
+    }
+
+    .theScienceDialog {
+        width: fit-content;
+        height: fit-content;
+        background: white;
+        overflow: visible;
+        max-width: 450px;
+    }
+
+    .theScienceDialog[open] {
+        display: block;
+    }
+
+    .theScienceDialogLogo {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 60px;
+        top: -30px;
+        height: auto;
+    }
+
+    .theScienceDialogClose {
+        text-align: right;
+        margin-bottom: 10px;
+        cursor: pointer;
+        font-size: 14px;
+    }
+
+    .theScienceDialogContent {
+        border: 1px solid var(--gold);
+        font-size: 16px;
+        line-height: 21px;
+        padding: 14px;
+    }
+
+    @media (max-width: 800px) {
+        .theScienceTitle hr {
+            width: 19%;
+            flex-grow: unset;
+        }
+
+        .theScienceTitleInner {
+            font-size: 20px;
+        }
+
+        .theScienceNumberedItems {
+            position: static;
+            transform: none;
+            grid-template-columns: 1fr;
+        }
+
+        .theScienceNumberedItem {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .theScienceNumberedItemLink {
+            text-align: center;
+        }
+
+        .theScienceImage {
+            display: none;
+        }
+
+        .theScienceImageMobile {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+        .theScienceImageWithTextItems {
+            grid-template-columns: 1fr;
+            row-gap: 30px;
+        }
+    }
+
+</style>
+
+<section id="{{ section.id }}" class="theScience">
+    <div class="theScienceInner">
+        {% if section.settings.title != blank %}
+            <div class="theScienceTitle">
+                <hr>
+                <div class="theScienceTitleInner">
+                    {{ section.settings.title }}
+                </div>
+                <hr>
+            </div>
+        {% endif %}
+
+        <div class="theScienceNumberedItems">
+            {% for block in section.blocks %}
+                {% if block.type == "numbered_item" and forloop.index <= 2 %}
+                    <div class="theScienceNumberedItem">
+                        <div class="theScienceNumberedItemNumber">
+                            {{ block.settings.number }}
+                        </div>
+                        <div>
+                            <div class="theScienceNumberedItemTitle">
+                                {{ block.settings.title }}
+                            </div>
+                            <button
+                                    class="theScienceNumberedItemLink"
+                                    data-dialog-content="{{ block.settings.dialog_content }}">{{ block.settings.link_label }}
+                                >
+                            </button>
+                        </div>
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+
+        <img class="theScienceImage" src="{{ section.settings.background | image_url: width: 1200 }}" alt="{{ section.settings.background.alt }}">
+        <img class="theScienceImageMobile" src="{{ section.settings.mobile_background | image_url: width: 1200 }}" alt="{{ section.settings.mobile_background.alt }}">
+
+        <div class="theScienceNumberedItems">
+            {% for block in section.blocks %}
+                {% if block.type == "numbered_item" and forloop.index >= 3 %}
+                    <div class="theScienceNumberedItem">
+                        <div class="theScienceNumberedItemNumber">
+                            {{ block.settings.number }}
+                        </div>
+                        <div>
+                            <div class="theScienceNumberedItemTitle">
+                                {{ block.settings.title }}
+                            </div>
+                            <button
+                                    class="theScienceNumberedItemLink"
+                                    data-dialog-content="{{ block.settings.dialog_content }}">{{ block.settings.link_label }}
+                                >
+                            </button>
+                        </div>
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+        <div class="theScienceImageWithTextItems">
+            {% for block in section.blocks %}
+                {% if block.type == "image_with_text" %}
+                    <div class="theScienceImageWithText">
+                        <img src="{{ block.settings.image | image_url: width: 300 }}"
+                             alt="{{ block.settings.image.alt }}" class="theScienceImageWithTextImage">
+                        <div class="theScienceWithImageTextContent">
+                            {{ block.settings.text }}
+                        </div>
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+
+        <div class="theScienceButtons">
+            {% for block in section.blocks %}
+                {% if block.type == "button" %}
+                    <a href="{{ block.settings.button_link }}"
+                       class="button theScienceButton">{{ block.settings.button_label }}</a>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+
+    <dialog class="theScienceDialog">
+        <img src="{{ "dialog_logo.svg" | asset_url }}" alt="dialog logo" class="theScienceDialogLogo" inert>
+        <div class="theScienceDialogClose">
+            close X
+        </div>
+        <div class="theScienceDialogContent">
+
+        </div>
+    </dialog>
+</section>
+
+<script>
+    (function () {
+        const dialog = document.querySelector(`[id="{{ section.id }}"] .theScienceDialog`);
+
+        /*** Learn More Button Event Listeners to open Dialog ***/
+        document.querySelectorAll(`[id="{{ section.id }}"] .theScienceNumberedItemLink`)
+            .forEach(learnMoreButton => {
+                learnMoreButton.addEventListener("click", function () {
+                    dialog.querySelector(".theScienceDialogContent").innerHTML = this.dataset.dialogContent;
+                    dialog.showModal();
+                })
+            });
+
+        /*** Dialog Close Event Listener ***/
+        dialog.querySelector(".theScienceDialogClose").addEventListener("click", function () {
+            dialog.close();
+            dialog.querySelector(".theScienceDialogContent").innerHTML = "";
+        })
+    })();
+</script>
+
+{% schema %}
+{
+  "name": "The Science",
+  "settings": [
+    {
+      "type": "html",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "image_picker",
+      "id": "background",
+      "label": "Background"
+    },
+    {
+      "type": "image_picker",
+      "id": "mobile_background",
+      "label": "Mobile Background"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Numbered Item",
+      "type": "numbered_item",
+      "limit": 4,
+      "settings": [
+        {
+          "type": "text",
+          "id": "number",
+          "label": "Number"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "text",
+          "id": "link_label",
+          "label": "Link Label"
+        },
+        {
+          "type": "richtext",
+          "id": "dialog_content",
+          "label": "Modal Content"
+        }
+      ]
+    },
+    {
+      "name": "Image With Text",
+      "type": "image_with_text",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Text"
+        }
+      ]
+    },
+    {
+      "name": "Button",
+      "type": "button",
+      "settings": [
+        {
+          "type": "text",
+          "id": "button_label",
+          "label": "Button Label"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Button Link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "The Science",
+      "settings": {
+      },
+      "blocks": [
+
+      ]
+    }
+  ]
+}
+{% endschema %}

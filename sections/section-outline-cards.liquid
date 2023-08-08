@@ -1,0 +1,258 @@
+<style>
+    .outlineCards {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 37px 20px 40px;
+    }
+
+    .outlineCardsTitle {
+        font-size: 32px;
+        font-weight: bold;
+        line-height: 36px;
+        margin-bottom: 75px;
+        text-align: center;
+    }
+
+    .outlineCardItems {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 23px;
+    }
+
+    .outlineCard {
+        padding: 0 26px 45px 26px;
+        position: relative;
+    }
+
+    .outlineCard::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 1px;
+        width: 100%;
+        background: black;
+    }
+
+    .outlineCardDecoration {
+        position: absolute;
+        left: 0;
+        top: -25px;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .outlineCardDecorationInner {
+        position: relative;
+        padding: 15px 50px;
+        white-space: nowrap;
+        font-size: 16px;
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;
+        width: 100%;
+    }
+
+    .outlineCardDecorationInner::before, .outlineCardDecorationInner::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 60px;
+        background: white;
+        transform: skew(-14deg, 0);
+    }
+
+    .outlineCardDecorationInner::before {
+        left: -26px;
+    }
+
+    .outlineCardDecorationInner::after {
+        right: -26px;
+    }
+
+    .outlineCardDecorationText {
+        position: relative;
+        z-index: 2;
+    }
+
+    .outlineCardInner {
+        padding-top: 59px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .outlineCardTitle {
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 21px;
+        margin-bottom: 5px;
+    }
+
+    .outlineCardSubtitle {
+        font-size: 14px;
+        color: var(--gold);
+        line-height: 16px;
+    }
+
+    .outlineCardContent {
+        padding: 22px 0 50px 0;
+    }
+
+    .outlineCardContent ul {
+        padding-left: 20px;
+    }
+
+    .outlineCardContent ul li {
+        font-weight: lighter;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .outlineCardButton {
+        margin: auto auto 0 auto;
+        border-radius: 6px;
+        width: 257px;
+        height: 56px;
+        text-transform: none;
+    }
+
+
+    {% for block in section.blocks %}
+    .outlineCard[id="{{ block.id }}"] {
+        border: 1px solid{{ block.settings.color }};
+        border-top-color: transparent;
+    }
+
+    .outlineCard[id="{{ block.id }}"] .outlineCardDecorationInner {
+        background: {{ block.settings.color }};
+    }
+
+    .outlineCard[id="{{ block.id }}"]::after {
+        background: {{ block.settings.color }};
+    }
+
+    .outlineCard[id="{{ block.id }}"] .outlineCardContent ul li::marker {
+        color: {{ block.settings.color }}
+    }
+
+    .outlineCard[id="{{ block.id }}"] .outlineCardButton {
+        background: {{ block.settings.color }};
+        border-color: {{ block.settings.color }};
+    }
+
+    {% endfor %}
+
+    @media (max-width: 1200px) {
+        .outlineCardItems {
+            grid-template-columns: repeat(2, 1fr);
+            row-gap: 50px;
+        }
+    }
+
+    @media (max-width: 700px) {
+        .outlineCardItems {
+            grid-template-columns: 1fr;
+        }
+
+        .outlineCardButton {
+            width: 100%
+        }
+    }
+</style>
+
+<section class="outlineCards">
+    <div class="outlineCardsTitle">{{ section.settings.title }}</div>
+    <div class="outlineCardItems">
+        {% for block in section.blocks %}
+            <div id="{{ block.id }}" class="outlineCard">
+                <div class="outlineCardDecoration">
+                    <div class="outlineCardDecorationInner">
+                        <span class="outlineCardDecorationText">
+                            {{ block.settings.decoration_title }}
+                        </span>
+                    </div>
+                </div>
+                <div class="outlineCardInner">
+                    <div class="outlineCardTitle">{{ block.settings.title }}</div>
+                    <div class="outlineCardSubtitle">{{ block.settings.sub_title }}</div>
+                    <div class="outlineCardContent">
+                        {{ block.settings.content }}
+                    </div>
+                    {% if block.settings.button_label != blank and block.settings.button_url != blank %}
+                        <a href="{{ block.settings.button_url }}" class="button outlineCardButton">
+                            {{ block.settings.button_label }}
+                        </a>
+                    {% endif %}
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</section>
+
+{% schema %}
+{
+    "name": "Outline Cards",
+    "settings": [
+        {
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+        }
+    ],
+    "blocks": [
+        {
+            "name": "Card",
+            "type": "card",
+            "settings": [
+                {
+                    "type": "color",
+                    "id": "color",
+                    "label": "Color",
+                    "default": "#EFC34F"
+                },
+                {
+                    "type": "text",
+                    "id": "decoration_title",
+                    "label": "Decoration Title"
+                },
+                {
+                    "type": "text",
+                    "id": "title",
+                    "label": "Title"
+                },
+                {
+                    "type": "text",
+                    "id": "sub_title",
+                    "label": "Sub Title"
+                },
+                {
+                    "type": "richtext",
+                    "id": "content",
+                    "label": "Content"
+                },
+                {
+                    "type": "text",
+                    "id": "button_label",
+                    "label": "Button Label"
+                },
+                {
+                    "type": "url",
+                    "id": "button_url",
+                    "label": "Button Link"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "Outline Cards",
+            "settings": {
+            },
+            "blocks": [
+            ]
+        }
+    ]
+}
+{% endschema %}

@@ -1,0 +1,39 @@
+<section class="imageSection">
+    <picture class="imageSectionImage">
+        <source media="(max-width: 800px)"
+                srcset="{{ section.settings.mobile_image | image_url: width: 2000 }}">
+        <source srcset="{{ section.settings.desktop_image | image_url: width: 2000 }}">
+        <img class="imageSectionImage" src="{{ section.settings.desktop_image | image_url: width: 2000 }}">
+    </picture>
+</section>
+
+{% schema %}
+{
+  "name": "Image",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "desktop_image",
+      "label": "Desktop Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "mobile_image",
+      "label": "Mobile Image"
+    }
+  ],
+  "blocks": [
+
+  ],
+  "presets": [
+    {
+      "name": "Image",
+      "settings": {
+      },
+      "blocks": [
+
+      ]
+    }
+  ]
+}
+{% endschema %}

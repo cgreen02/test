@@ -1,0 +1,526 @@
+<style>
+    .highlights {
+        position: relative;
+        padding: 0;
+    }
+
+    .highlights-header {
+        background-repeat: no-repeat;
+        background-color: #000;
+        height: 700px;
+    }
+
+    .highlights__copy {
+        max-width: 530px;
+        width: 100%;
+        margin: 10px auto 0 0
+    }
+
+    .card-highlight__title__container {
+        padding: 0
+    }
+
+    .card-highlight .h6 {
+        font-family: titling-gothic-fb-compressed, sans-serif;
+        font-weight: normal;
+    }
+
+    .b1 {
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: 400;
+    }
+
+    .card-title {
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+
+    .card-highlight__title {
+        text-align: center;
+        margin: 35px 0 0
+    }
+
+    @media (max-width: 991px) {
+        .card-highlight__title {
+            display: none
+        }
+    }
+
+    .card-highlight__container {
+        max-width: 1400px;
+        transform: translateY(-10rem);
+    }
+
+    @media (min-width: 992px) {
+        .card-highlight__container {
+            margin-top: -45px
+        }
+    }
+
+    @media (max-width: 991px) {
+        .card-highlight__container {
+            margin-top: 40px
+        }
+    }
+
+    .highlight__swiper-button-next,
+    .highlight__swiper-button-prev {
+        background-color: hsla(0, 0%, 91%, .75);
+        height: 35px;
+        width: 35px;
+        border-radius: 18px;
+        display: none
+    }
+
+    .swiper-container-initialized .highlight__swiper-button-next,
+    .swiper-container-initialized .highlight__swiper-button-prev {
+        display: block
+    }
+
+    .highlight__swiper-button-next:after,
+    .highlight__swiper-button-prev:after {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        font-size: 16px;
+        color: #fff;
+        font-weight: 900
+    }
+
+    .highlight__swiper-wrapper {
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center
+    }
+
+    .swiper-container-initialized .highlight__swiper-wrapper {
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between
+    }
+
+    .hiw-highlight-card-wrap {
+        display: flex;
+    }
+
+    .highlights-header .container {
+        height: 100%;
+        width: 100%;
+    }
+
+    .highlights-header-content {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+    }
+
+    .highlights-header.hiw-highlights-hesder .highlights-header-content {
+        align-items: flex-end;
+    }
+
+
+    .highlights-header.hiw-highlights-hesder {
+        background-image: url('{{ 'hiw-banner.png' | file_url }}');
+        background-size: cover;
+        background-position: right;
+    }
+
+    .image-mask {
+        border: .4rem solid #fff;
+    }
+
+    .hiw-highlight-mask {
+        background-color: #000;
+
+    }
+
+    .hiw-highlight-bg {
+        background-size: 90% auto;
+        background-position: 50% -75%;
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 100%;
+    }
+
+    h1.highlights__title {
+        color: var(--gold);
+        font-family: titling-gothic-fb-compressed, sans-serif;
+        font-weight: normal;
+        font-size: 58px;
+        text-align: right;
+        text-transform: uppercase;
+        line-height: 72px;
+    }
+
+    h1.highlights__title .h1-small {
+        color: #fff;
+        font-size: 28px;
+        text-transform: none;
+    }
+
+    .hiw-highlights-mobile-bg {
+        display: none;
+    }
+
+    .hiw-highlights-mobile-bg img {
+        width: 100%;
+        height: auto;
+    }
+
+    @media screen and (max-width: 1400px) {
+        .highlights-header.hiw-highlights-hesder {
+            background-position: 75%;
+        }
+    }
+
+
+    @media screen and (max-width: 1024px) {
+
+
+        .hiw-highlights-mobile-bg {
+            display: block;
+        }
+
+        .hiw-highlight-card-wrap {
+            display: block;
+        }
+
+        .hiw-highlight-card-wrap .card-highlight {
+
+            width: 300px;
+            margin: 1rem auto !important;
+        }
+
+        .highlights-header.hiw-highlights-hesder {
+            background-image: none;
+            background-color: #fff;
+            height: auto;
+            padding: 3rem 0;
+        }
+
+        .highlights-header.hiw-highlights-hesder .h1-small {
+            color: #000;
+        }
+
+        .highlights-header.hiw-highlights-hesder .highlights-header-content {
+            align-items: center;
+        }
+
+        .highlights-header.hiw-highlights-hesder .highlights-header-content .highlights__title {
+            text-align: center;
+        }
+
+
+        .hiw-card-container.card-highlight__container {
+            transform: none;
+        }
+    }
+
+    @media (min-width: 1200px) {
+
+        .card-highlight,
+        .highlight__swiper-slide {
+            width: 340px
+        }
+    }
+
+    @media (min-width: 992px) and (max-width: 1199px) {
+
+        .card-highlight,
+        .highlight__swiper-slide {
+            width: calc(100% / 3 - 7px)
+        }
+    }
+
+    @media (max-width: 991px) {
+
+        .card-highlight,
+        .highlight__swiper-slide {
+            width: 300px
+        }
+
+        .card-highlight.no-copy,
+        .highlight__swiper-slide.no-copy {
+            width: 205px
+        }
+    }
+
+    @media (min-width: 992px) {
+
+        .swiper-container-initialized .card-highlight,
+        .swiper-container-initialized .highlight__swiper-slide {
+            width: calc(25% - 7.5px)
+        }
+    }
+
+    @media (max-width: 991px) and (min-width: 768px) {
+
+        .swiper-container-initialized .card-highlight,
+        .swiper-container-initialized .highlight__swiper-slide {
+            width: calc(100% / 3 - 6.6667px)
+        }
+    }
+
+    @media (max-width: 767px) and (min-width: 400px) {
+
+        .swiper-container-initialized .card-highlight,
+        .swiper-container-initialized .highlight__swiper-slide {
+            width: calc(50% - 5px)
+        }
+    }
+
+    @media (max-width: 399px) {
+
+        .swiper-container-initialized .card-highlight,
+        .swiper-container-initialized .highlight__swiper-slide {
+            width: 100%
+        }
+    }
+
+    @media (min-width: 992px) {
+        .highlight__swiper-container:not(.swiper-container-initialized) .card-highlight:not(:last-of-type) {
+            margin-right: 10.5px
+        }
+    }
+
+    .image-mask-wrapper {
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        cursor: default
+    }
+
+    .image-mask {
+        width: 100%;
+        -webkit-transform: skewY(-12deg);
+        -ms-transform: skewY(-12deg);
+        transform: skewY(-12deg);
+        height: 100%;
+        overflow: hidden;
+        position: absolute;
+        bottom: -39px;
+        -webkit-backface-visibility: hidden
+    }
+
+    .image-mask-wrapper:after {
+        content: "";
+        padding-top: 118%;
+        display: block
+    }
+
+    .image-mask__img-box {
+        max-width: 100%;
+        display: block;
+        -webkit-transform: skewY(12deg);
+        -ms-transform: skewY(12deg);
+        transform: skewY(12deg);
+        position: absolute;
+        top: -39px;
+        left: 0;
+        width: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        z-index: 1
+    }
+
+    .image-content {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 0 30px 30px;
+        opacity: 0;
+        z-index: 3;
+        color: #fff;
+        -webkit-transition: all .3s cubic-bezier(.06, .305, 0, 1);
+        -o-transition: all .3s cubic-bezier(.06, .305, 0, 1);
+        transition: all .3s cubic-bezier(.06, .305, 0, 1)
+    }
+
+    @media (min-width: 992px) {
+        .image-mask-wrapper:hover .image-content {
+            opacity: 1
+        }
+    }
+
+    .image-mask:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        background-color: #3b3899;
+        opacity: 0;
+        -webkit-transition: all .3s cubic-bezier(.06, .305, 0, 1);
+        -o-transition: all .3s cubic-bezier(.06, .305, 0, 1);
+        transition: all .3s cubic-bezier(.06, .305, 0, 1)
+    }
+
+    @media (min-width: 992px) {
+        .image-mask-wrapper:hover .image-mask:before {
+            opacity: .75
+        }
+
+        .no-copy .image-mask-wrapper:hover .image-mask:before {
+            opacity: 0
+        }
+    }
+
+    .highlight__slide-title {
+        margin: 20px 0 0
+    }
+
+    @media (max-width: 991px) {
+        .highlight__slide-title {
+            margin: 10px 0
+        }
+    }
+
+    @media (min-width: 992px) {
+        .highlight__mobile-copy {
+            display: none
+        }
+    }
+</style>
+
+<section class="highlights" data-module="highlights">
+
+    <div class="hiw-highlights-mobile-bg">
+        <img src="{{ 'mobile-header-hiw.jpg' | file_url }}" alt="VKTRY Insoles"/>
+
+    </div>
+
+    <div class="highlights-header hiw-highlights-hesder">
+
+        <div class="container">
+
+            <div class="highlights-header-content">
+
+                <h1 class="highlights__title">
+                    <div class="h1-small">How do VKTRY Insoles work?</div>
+                    Proprietary Carbon<br/>Fiber Technology
+                </h1>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <div class="container card-highlight__container hiw-card-container">
+        <div class="highlight__swiper-container">
+            <div class="highlight__swiper-wrapper hiw-highlight-card-wrap">
+
+                <div class="card-highlight highlight__swiper-slide" style="margin-right: 10px;">
+                    <div class="image-mask-wrapper">
+                        <div class="image-mask">
+                            <div class="image-mask__img-box hiw-highlight-mask">
+                                <div class="image image-mask__image img-loaded hiw-highlight-bg"
+                                     style="background-image:url({{ 'shock.jpg' | file_url }})">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="image-content"><p class="b1"></p></div>
+                    </div>
+                    <p class="card-title h6 highlight__slide-title">Shock Absorption</p>
+                    <p class="b1">At heel strike, the carbon fiber absorbs impact, reducing the joint load on the lower
+                        extremities</p>
+                </div>
+
+
+                <div class="card-highlight highlight__swiper-slide" style="margin-right: 10px;">
+                    <div class="image-mask-wrapper">
+                        <div class="image-mask">
+                            <div class="image-mask__img-box hiw-highlight-mask">
+                                <div class="image image-mask__image img-loaded hiw-highlight-bg"
+                                     style="background-image: url({{ 'support-stabilty.jpg' | file_url }})">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="image-content"><p class="b1"></p></div>
+                    </div>
+                    <p class="card-title h6 highlight__slide-title">Support & Stability</p>
+                    <p class="b1">At “ footflat ”, VKs provide improved support and stability. Torquing or twisting of
+                        the foot can lead to injury VKTRY Insoles help to reduce the chance of that happening</p>
+                </div>
+
+
+                <div class="card-highlight highlight__swiper-slide" style="margin-right: 10px;">
+                    <div class="image-mask-wrapper">
+                        <div class="image-mask">
+                            <div class="image-mask__img-box hiw-highlight-mask">
+                                <div class="image image-mask__image img-loaded hiw-highlight-bg"
+                                     style="background-image:url({{ 'energy-storage.jpg' | file_url }})">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="image-content"><p class="b1"></p></div>
+                    </div>
+                    <p class="card-title h6 highlight__slide-title">Energy Storage</p>
+                    <p class="b1">When you prepare to push off the ground, you bend your foot and “load” the VKTRY
+                        Insole. Passive energy will soon turn to kinetic</p>
+                </div>
+
+
+                <div class="card-highlight highlight__swiper-slide" style="margin-right: 10px;">
+                    <div class="image-mask-wrapper">
+                        <div class="image-mask">
+                            <div class="image-mask__img-box hiw-highlight-mask">
+                                <div class="image image-mask__image img-loaded hiw-highlight-bg"
+                                     style="background-image: url({{ 'energy-return.jpg' | file_url }})">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="image-content"><p class="b1"></p></div>
+                    </div>
+                    <p class="card-title h6 highlight__slide-title">Energy Return</p>
+                    <p class="b1">Like a spring, the deflected VKTRY carbon fiber insole wants to return to it's natural
+                        shape.
+                        As you push off, the VK returns the energy that you had stored, propelling you forward or upward
+                        with greater force. </p>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+{% schema %}
+{
+  "name": "How It Works Highlights",
+  "settings": [
+
+  ],
+  "blocks": [
+
+  ],
+  "presets": [
+    {
+      "name": "How It Works Highlights",
+      "settings": {
+      },
+      "blocks": [
+
+      ]
+    }
+  ]
+}
+{% endschema %}

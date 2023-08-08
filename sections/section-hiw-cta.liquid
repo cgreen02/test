@@ -1,0 +1,75 @@
+<style>
+    .hiw-cta-white {
+        background-color: #fff;
+        border-color: #fff;
+    }
+
+    .hiw-cta-primary {
+        background-color: var(--gold) !important;
+        border-color: var(--gold) !important;
+    }
+
+    .hiw-cta-primary:hover {
+        background-color: transparent !important;
+
+    }
+
+    .hiw-cta-primary:hover span {
+        color: var(--gold) !important;
+    }
+
+    .hiw-cta-white:hover span {
+        color: #fff !important;
+    }
+
+</style>
+
+
+<section class="footer-cta" data-module="footer-cta">
+    <div class="container footer-cta__container z2">
+
+        <h2 class="h2 footer-cta__title">READ THE RESEARCH</h2>
+
+
+        <div class="footer-cta__links">
+
+            <div class="footer-cta__links hiw-cta-links">
+
+                <a href="{{ 'VKTRY_Athletic_Performance_Research_Results_-_Sept_2020.pdf' | file_url }}" target="_blank"
+                   class="button button--secondary footer-cta__link hiw-cta ">
+                    See the Performance Research
+                </a>
+
+                <a href="https://cdn.shopify.com/s/files/1/0072/5568/7283/files/VKTRY_Injury_Protection_Research_Results.pdf?v=1594404910"
+                   target="_blank" class="button footer-cta__link hiw-cta hiw-cta-white">
+                    See the Protection Research
+                </a>
+
+                <a href="/collections/insoles" class="button footer-cta__link hiw-cta">
+                    Shop Insoles
+                </a>
+            </div>
+        </div>
+</section>
+
+{% schema %}
+{
+  "name": "HIW - CTA",
+  "settings": [
+
+  ],
+  "blocks": [
+
+  ],
+  "presets": [
+    {
+      "name": "HIW - CTA",
+      "settings": {
+      },
+      "blocks": [
+
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,249 @@
+<style>
+    {% if section.settings.flip_cards %}
+    .benefit[id="{{ section.id }}"] .benefitItem {
+        flex-direction: column-reverse;
+    }
+
+    {% endif %}
+
+    .benefit {
+        max-width: 1200px;
+        margin: auto;
+        padding: 37px 20px 80px;
+    }
+
+    .benefitsTitle {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .benefitsTitle hr {
+        height: 2px;
+        flex-grow: 1;
+    }
+
+    .benefitsTitleInner {
+        margin: 0 10px;
+        font-size: 36px;
+        font-weight: bold;
+        text-align: center;
+        color: var(--gold);
+    }
+
+    .benefitsTitleInner > span {
+        color: black;
+    }
+
+    @media (max-width: 800px) {
+        .benefitsTitle hr {
+            width: 19%;
+            flex-grow: unset;
+        }
+
+        .benefitsTitleInner {
+            font-size: 20px;
+        }
+    }
+
+    .benefitItems {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 15px;
+    }
+
+    .benefitItem {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .benefitImage {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .benefitTitleWrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .benefitTitle {
+        font-size: 36px;
+        line-height: 42px;
+        font-weight: bold;
+        color: var(--gold);
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 1px;
+    }
+
+    .benefitSubtitle {
+        text-align: center;
+        min-height: 46px;
+        margin-bottom: 18px;
+    }
+
+    .benefitSubtitle p {
+        margin: 0;
+    }
+
+    .benefitsButton {
+        margin: 36px auto 0 auto;
+        min-width: 361px;
+    }
+
+    .benefitsHowItsMadeDialogClose {
+        font-size: 14px;
+        text-align: right;
+        line-height: 21px;
+        cursor: pointer;
+        margin-bottom: 10px;
+    }
+
+    @media (max-width: 800px) {
+        .benefitItems {
+            grid-template-columns: 1fr 1fr;
+            row-gap: 20px;
+            padding: 20px;
+        }
+
+        .benefitTitle {
+            font-size: 24px;
+            line-height: 28px;
+        }
+
+        .benefitSubtitle {
+            font-size: 16px;
+            line-height: 19px;
+            min-height: 38px;
+        }
+    }
+</style>
+
+<div id="{{ section.id }}" class="benefit">
+    {% if section.settings.title != blank %}
+        <div class="benefitsTitle">
+            <hr>
+            <div class="benefitsTitleInner">
+                {{ section.settings.title }}
+            </div>
+            <hr>
+        </div>
+    {% endif %}
+
+    <div class="benefitItems">
+        {% for block in section.blocks %}
+            <div class="benefitItem">
+                <div class="benefitTitleWrapper">
+                    <div class="benefitTitle">{{ block.settings.title }}</div>
+                    <div class="benefitSubtitle">{{ block.settings.sub_title }}</div>
+                </div>
+                <img class="benefitImage" src="{{ block.settings.image | image_url: width: 500 }}" alt="{{ block.settings.image.alt }}" loading="lazy">
+            </div>
+        {% endfor %}
+    </div>
+
+    {% if section.settings.show_modal %}
+        <button class="button benefitsButton">{{ section.settings.button_label }}</button>
+        <dialog class="benefitsHowItsMadeDialog">
+            <div class="benefitsHowItsMadeDialogClose">
+                close X
+            </div>
+            <div class="benefitsHowItsMadeDialogContent">
+                <video class="benefitsHowItsMadeDialogContentVideo"
+                       src="https://cdn.shopify.com/videos/c/o/v/b2732288f7374f7aa12a24a4f02fb840.mp4"
+                       poster="https://cdn.shopify.com/s/files/1/0072/5568/7283/files/cdn.shopify.com_videos_c_o_v_984d1f47f5c147b786086389a259d5c0.mp4.png?v=1654137088"
+                       controls></video>
+            </div>
+        </dialog>
+    {% else %}
+        {% if section.settings.button_label != blank and section.settings.button_url != blank %}
+            <a href="{{ section.settings.button_url }}"
+               class="button benefitsButton">{{ section.settings.button_label }}</a>
+        {% endif %}
+    {% endif %}
+</div>
+
+<script>
+    (function () {
+        const dialog = document.querySelector(`[id="{{ section.id }}"] .benefitsHowItsMadeDialog`);
+
+        if (dialog) {
+            /*** Show The Dialog ***/
+            document.querySelector(`[id="{{ section.id }}"] .benefitsButton`).addEventListener("click", function () {
+                dialog.showModal();
+                dialog.querySelector(".benefitsHowItsMadeDialogContentVideo").play();
+            });
+
+            /*** Close The Dialog ***/
+            dialog.querySelector(".benefitsHowItsMadeDialogClose").addEventListener("click", function () {
+                dialog.close();
+                dialog.querySelector(".benefitsHowItsMadeDialogContentVideo").pause();
+            });
+        }
+    })();
+</script>
+
+{% schema %}
+{
+  "name": "Benefits",
+  "settings": [
+    {
+      "type": "html",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "checkbox",
+      "id": "flip_cards",
+      "label": "Flip Cards",
+      "default": false
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button Label"
+    },
+    {
+      "type": "url",
+      "id": "button_url",
+      "label": "Button Link"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_modal",
+      "label": "Show Modal On Button Click",
+      "default": false
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Benefit",
+      "type": "benefit",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "richtext",
+          "id": "sub_title",
+          "label": "Sub Title"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Benefits"
+    }
+  ]
+}
+{% endschema %}

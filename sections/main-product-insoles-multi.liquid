@@ -1,0 +1,491 @@
+{% if product.handle == "vktry-insoles-gold" %}
+    {% assign title = "Gold VK Carbon Fiber Performance Insoles" %}
+    {% assign sports = "Baseball/Softball,Basketball,Biking/Cycling,Boxing/Wrestling,Cheerleading,Fitness,Golf,Hiking,Football,Lacrosse,Rugby,Running,Soccer,Tennis/Pickleball,Track & Field,Volleyball,Walking,Other" | split: "," %}
+    {% assign sizes = "2-2.5,3-3.5,4-4.5,5-5.5,6-6.5,7-7.5,8-8.5,9-9.5,10-10.5,11-11.5,12-12.5,13-13.5,14-14.5,15-15.5,16-16.5,17-17.5" | split: "," %}
+    {% assign weights = "99 - 120lbs,121 - 150lbs,151 - 180lbs,181 - 210lbs,211 - 230lbs,231 - 260lbs,261lbs - Up" | split: "," %}
+    {% assign ages = "15 and Under,16 - 20,21 - 30,31 - 40,41 - 49,50 and Up" | split: "," %}
+{% elsif product.handle == "vktry-insoles-silver" %}
+    <style>
+        .oke-w-review-product {
+            display: none !important;
+        }
+    </style>
+    {% assign title = product.title %}
+    {% assign sports = "Basketball,Biking/Cycling,Boxing/Wrestling,Cheerleading,Fitness,Golf,Hiking,Running,Tennis/Pickleball,Volleyball,Walking,Other" | split: "," %}
+    {% assign sizes = "5-5.5,6-6.5,7-7.5,8-8.5,9-9.5,10-10.5,11-11.5,12-12.5,13-13.5" | split: "," %}
+    {% assign weights = "99 - 120lbs,121 - 150lbs,151 - 180lbs,181 - 210lbs,211 - 230lbs,231 - 260lbs,261lbs - Up" | split: "," %}
+    {% assign ages = "15 and Under,16 - 20,21 - 30,31 - 40,41 - 49,50 and Up" | split: "," %}
+{% elsif product.handle == "vktry-insoles-platinum" %}
+    {% assign title = "Platinum VK Custom Orthotics" %}
+    {% assign sports = "Baseball/Softball,Basketball,Biking/Cycling,Boxing/Wrestling,Cheerleading,Fitness,Golf,Hiking,Football,Lacrosse,Rugby,Running,Soccer,Tennis/Pickleball,Track & Field,Volleyball,Walking,Other" | split: "," %}
+    {% assign sizes = "4-4.5,5-5.5,6-6.5,7-7.5,8-8.5,9-9.5,10-10.5,11-11.5,12-12.5,13-13.5,14-14.5,15-15.5,16-16.5,17-17.5" | split: "," %}
+    {% assign weights = "99 - 120lbs,121 - 150lbs,151 - 180lbs,181 - 210lbs,211 - 230lbs,231 - 260lbs,261lbs - Up" | split: "," %}
+    {% assign ages = "15 and Under,16 - 20,21 - 30,31 - 40,41 - 49,50 and Up" | split: "," %}
+{% endif %}
+
+<section id="product">
+
+    <div id="productMobile">
+        <div id="productTitleMobile">{{ title }}</div>
+        <div id="productStarsMobile">
+            <div data-oke-star-rating data-oke-reviews-product-id="shopify-{{ product.id }}"></div>
+        </div>
+        {% if product.handle == "vktry-insoles-gold" or product.handle == "vktry-insoles-silver" %}
+            <img id="productGuaranteeMobile" src="{{ 'money-back.svg' | file_url }}">
+        {% endif %}
+    </div>
+
+    <div id="productVisual">
+
+        <div id="productSwiper" class="swiper">
+            <div id="productSwiperWrapper" class="swiper-wrapper">
+                {% for media in product.media %}
+                    {% if forloop.index > 1 %}
+                        {% if media.media_type == "video" %}
+                            <video class="productSwiperImage swiper-slide" src="{{ media.sources[1].url }}" poster="{{ media.preview_image | image_url }}" controls></video>
+                        {% else %}
+                            <img class="productSwiperImage swiper-slide" src="{{ media | image_url: width: 1000 }}" alt="{{ media.alt }}">
+                        {% endif %}
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+
+        <div id="productThumbnails">
+            {% for media in product.media %}
+                {% if forloop.index > 1 %}
+                    {% if media.media_type == "video" %}
+                        <img id="thumbnail-{{ media.id }}" index="{{ forloop.index | minus: 1 }}" class="productThumbnail" src="{{ media.preview_image | image_url }}" alt="{{ media.preview_image.alt }}">
+                    {% else %}
+                        <img id="thumbnail-{{ media.id }}" index="{{ forloop.index | minus: 1 }}" class="productThumbnail {% if forloop.index == 2 %}active{% endif %}" src="{{ media | image_url: width: 1000 }}" alt="{{ media.alt }}">
+                    {% endif %}
+                {% endif %}
+            {% endfor %}
+        </div>
+
+    </div>
+
+    <div id="productContent">
+        {% if product.handle == "vktry-insoles-gold" or product.handle == "vktry-insoles-silver" %}
+            <img id="productGuarantee" src="{{ 'money-back.svg' | file_url }}" alt="90 day money back guarantee">
+        {% endif %}
+        <div id="productTitle">{{ title }}</div>
+
+        <div id="productStars">
+            <div data-oke-star-rating data-oke-reviews-product-id="shopify-{{ product.id }}"></div>
+        </div>
+
+        {% if product.handle == "vktry-insoles-gold" or product.handle == "vktry-insoles-silver" %}
+            <div id="productSubtitle">
+                <span>RUN</span>
+                FASTER,
+                <br>
+                <span>JUMP</span>
+                HIGHER AND
+                <br>
+                <span>PROTECT</span>
+                FROM INJURY
+            </div>
+        {% elsif product.handle == "vktry-insoles-platinum" %}
+            <div id="productSubtitle">
+                <span>For Sports, Work or Play</span>
+            </div>
+            <div id="productDescription">VKTRY Platinum Orthotics provide the cushion and support of full-custom orthotics with the performance and protection of our patented VKTRY carbon baseplate built right in.</div>
+        {% endif %}
+
+        <div id="productChecklist">
+            {% if product.handle == "vktry-insoles-gold" %}
+                <div class="productChecklistItem">
+                    {% render 'product-check' %}
+                    Energy return for maximum athletic performance
+                </div>
+                <div class="productChecklistItem">
+                    {% render 'product-check' %}
+                    Superior shock absorption, support & stability
+                </div>
+                <div class="productChecklistItem">
+                    {% render 'product-check' %}
+                    Proven protection: 41% less foot & toe injuries
+                </div>
+            {% elsif product.handle == "vktry-insoles-silver" %}
+                <div class="productChecklistItem">
+                    {% render 'product-check' %}
+                    Energy return for maximum athletic performance
+                </div>
+                <div class="productChecklistItem">
+                    {% render 'product-check' %}
+                    Superior shock absorption, support & stability
+                </div>
+                <div class="productChecklistItem">
+                    {% render 'product-check' %}
+                    Proven protection: Less foot & lower-leg injuries
+                </div>
+            {% elsif product.handle == "vktry-insoles-platinum" %}
+                <div class="productChecklistItem">
+                    {% render 'product-check' %}
+                    Energy return & propulsion in every step
+                </div>
+                <div class="productChecklistItem">
+                    {% render 'product-check' %}
+                    Superior shock absorption, support & stability
+                </div>
+                <div class="productChecklistItem">
+                    {% render 'product-check' %}
+                    Proven protection: 41% less foot & toe injuries
+                </div>
+            {% endif %}
+        </div>
+
+        <div id="productDescription">
+            {% if product.handle == "vktry-insoles-gold" %}
+                <b>Made from aerospace-grade carbon fiber, VKs are
+                    <span>customized</span>
+                    for your sport, gender, age and weight.
+                </b>
+                You will experience faster sprint times, more explosive movement, and less injuries with VKTRY Performance
+                Insoles. See why full length, heel-to-toe carbon fiber beats foam and plastic insoles.
+            {% elsif product.handle == "vktry-insoles-silver" %}
+                <b>Made with a full-length carbon fiber base, Silver VKs
+                    <span>maximize</span> your performance and injury
+                    protection by returning & absorbing energy with every step.</b> See why carbon fiber beats foam and
+                plastic with our 90 day money back guarantee.
+            {% elsif product.handle == "vktry-insoles-platinum" %}
+                We ship an impression kit to your door, you make your impression and mail it back to us. When done, we ship your custom orthotics back to you.
+            {% endif %}
+        </div>
+
+        <div id="productLinks">
+            <a href="#benefit" class="scrollTo" title="learn more about {{ product.title }}">Learn More ></a>
+            <a href="#athletes" class="scrollTo">VKTRY Pro & College Athletes ></a>
+            <a href="/pages/sizing-chart" target="_blank">Shoe Sizing Chart ></a>
+        </div>
+
+        <div id="productCustomize">
+            Customize your pair - {{ product.price | money_without_trailing_zeros }}
+        </div>
+
+        <div id="productTerms">
+            {% form 'product', product %}
+                {{ form | payment_terms }}
+            {% endform %}
+        </div>
+
+        {% capture slideNav %}
+            <div class="productOptionSlideNav">
+                <button class="productOptionSlideNavBack">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="M512 256A256 256 0 1 0 0 256a256 256 0 1 0 512 0zM167 239L271 135l17-17L321.9 152l-17 17-87 87 87 87 17 17L288 393.9l-17-17L167 273l-17-17 17-17z"/>
+                    </svg>
+                    back
+                </button>
+                <button class="productOptionSlideNavNext">
+                    next
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path fill-rule="evenodd" d="m75 75c48-48 113.1-75 181-75 67.9 0 133 27 181 75 48 48 75 113.1 75 181 0 67.9-27 133-75 181-48 48-113.1 75-181 75-67.9 0-133-27-181-75-48-48-75-113.1-75-181 0-67.9 27-133 75-181zm287 181l-17-17-104-103.9-17-17-33.9 33.9 104 104-104 104 33.9 34z"/>
+                    </svg>
+                </button>
+            </div>
+        {% endcapture %}
+
+        <div id="productOptionSwiper" class="swiper active">
+            <div class="swiper-wrapper">
+                <div class="productOptionSlide swiper-slide">
+                    <div class="productOptionSlideTitle long">
+                        {% render 'tool-tip', info: "We customize the foam cover to your style of footwear - unique for sneakers, cleats and spikes." %}
+                        Are you buying for an athlete that
+                    </div>
+                    <div class="productOptionSlideLabels">
+                        <label class="productOptionSlideLabel">
+                            <input class="productOptionSlideLabelInput" type="radio" name="athlete" value="single" autocomplete="off">
+                            <span class="productOptionSlideLabelSpan">Plays One Sport</span>
+                        </label>
+
+                        <label class="productOptionSlideLabel">
+                            <input class="productOptionSlideLabelInput" type="radio" name="athlete" value="multi" autocomplete="off">
+                            <span class="productOptionSlideLabelSpan">Plays Multiple Sports</span>
+                        </label>
+
+                        <div class="productOptionSlideNav">
+                            <button class="productOptionSlideNavNext">
+                                next
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path fill-rule="evenodd" d="m75 75c48-48 113.1-75 181-75 67.9 0 133 27 181 75 48 48 75 113.1 75 181 0 67.9-27 133-75 181-48 48-113.1 75-181 75-67.9 0-133-27-181-75-48-48-75-113.1-75-181 0-67.9 27-133 75-181zm287 181l-17-17-104-103.9-17-17-33.9 33.9 104 104-104 104 33.9 34z"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="productOptionSlide swiper-slide">
+                    <div class="productOptionSlideTitle">
+                        {% render 'tool-tip', info: "We customize the foam cover to your style of footwear - unique for sneakers, cleats and spikes." %}
+                        choose sport
+                    </div>
+                    <div class="productOptionSlideLabels">
+                        {% for sport in sports %}
+                            <label class="productOptionSlideLabel">
+                                <input class="productOptionSlideLabelInput" type="radio" name="sport" value="{{ sport }}" autocomplete="off">
+                                <span class="productOptionSlideLabelSpan">
+                                    {% if sport == "Football" %}
+                                        Football (American)
+                                    {% elsif sport == "Running" %}
+                                        Running (Distance)
+                                    {% elsif sport == "Track & Field" %}
+                                        Track Spikes
+                                    {% else %}
+                                        {{ sport | replace: "/", " " }}
+                                    {% endif %}
+                                </span>
+                            </label>
+                        {% endfor %}
+
+                        {{ slideNav }}
+                    </div>
+                </div>
+
+                <div class="productOptionSlide swiper-slide">
+                    <div class="productOptionSlideTitle">
+                        {% render 'tool-tip', info: "Men's & Women's shoes fit differently." %}
+                        gender
+                    </div>
+                    <div class="productOptionSlideLabels">
+                        <label class="productOptionSlideLabel">
+                            <input class="productOptionSlideLabelInput" type="radio" name="gender" value="Male" autocomplete="off">
+                            <span class="productOptionSlideLabelSpan">Male</span>
+                        </label>
+
+                        <label class="productOptionSlideLabel">
+                            <input class="productOptionSlideLabelInput" type="radio" name="gender" value="Female" autocomplete="off">
+                            <span class="productOptionSlideLabelSpan">Female</span>
+                        </label>
+
+                        {{ slideNav }}
+                    </div>
+                </div>
+
+                <div class="productOptionSlide swiper-slide">
+                    <div class="productOptionSlideTitle">
+                        {% render 'tool-tip', info: "We customize the foam cover to your style of footwear - unique for sneakers, cleats and spikes." %}
+                        shoe size
+                        <a href="/pages/sizing-chart" target="_blank">size chart</a>
+                    </div>
+                    <div class="productOptionSlideLabels">
+                        {% for size in sizes %}
+                            <label class="productOptionSlideLabel">
+                                <input class="productOptionSlideLabelInput" type="radio" name="size" value="{{ size }}" autocomplete="off">
+                                <span class="productOptionSlideLabelSpan">{{ size }}</span>
+                            </label>
+                        {% endfor %}
+                        {{ slideNav }}
+                    </div>
+                </div>
+
+                <div class="productOptionSlide swiper-slide">
+                    <div class="productOptionSlideTitle">
+                        {% render 'tool-tip', info: "Our proprietary algorithm selects an insole base plate from 5 stiffness levels based on body weight & age to optimize comfort, energy return & shock absorption." %}
+                        weight
+                    </div>
+                    <div class="productOptionSlideLabels">
+                        {% for weight in weights %}
+                            <label class="productOptionSlideLabel">
+                                <input class="productOptionSlideLabelInput" type="radio" name="weight" value="{{ weight }}" autocomplete="off">
+                                <span class="productOptionSlideLabelSpan">{{ weight }}</span>
+                            </label>
+                        {% endfor %}
+                        {{ slideNav }}
+                    </div>
+                </div>
+
+                <div class="productOptionSlide swiper-slide">
+                    <div class="productOptionSlideTitle">
+                        {% render 'tool-tip', info: "Our proprietary algorithm selects an insole base plate from 5 stiffness levels based on body weight & age to optimize comfort, energy return & shock absorption." %}
+                        age
+                    </div>
+                    <div class="productOptionSlideLabels">
+                        {% for age in ages %}
+                            <label class="productOptionSlideLabel">
+                                <input class="productOptionSlideLabelInput" type="radio" name="age" value="{{ age }}" autocomplete="off">
+                                <span class="productOptionSlideLabelSpan">{{ age }}</span>
+                            </label>
+                        {% endfor %}
+                        {{ slideNav }}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="productForm">
+            <div id="productPairs">
+                {% for i in (1..10) %}
+                    <div class="productPair">
+                        <div class="productPairTitle">PAIR {{ i }}</div>
+                        <div class="productPairActions">
+                            <div class="productPairEdit">edit</div>
+                            |
+                            <div class="productPairRemove">remove</div>
+                        </div>
+                        <dialog class="productPairModal">
+                            <form class="productPairModalContent">
+                                <div class="productPairModalTitle">Pair {{ i }}</div>
+
+                                <label class="productPairModalLabel">
+                                    gender
+                                    <select class="productPairModalLabelSelect optionDropdown" name="gender" required>
+                                        <option disabled selected>Choose gender</option>
+                                        <option value="Male">Male</option>
+                                        <option value="Female">Female</option>
+                                    </select>
+                                </label>
+
+                                <label class="productPairModalLabel">
+                                    shoe type
+                                    <select class="productPairModalLabelSelect optionDropdown" name="sport" required>
+                                        <option disabled selected>Choose sport</option>
+                                        {% for sport in sports %}
+                                            <option value="{{ sport }}">
+                                                {% if sport == "Football" %}
+                                                    Football (American)
+                                                {% elsif sport == "Running" %}
+                                                    Running (Distance)
+                                                {% elsif sport == "Track & Field" %}
+                                                    Track Spikes
+                                                {% else %}
+                                                    {{ sport }}
+                                                {% endif %}
+                                            </option>
+                                        {% endfor %}
+                                    </select>
+                                </label>
+
+                                <label class="productPairModalLabel">
+                                    shoe size
+                                    <select class="productPairModalLabelSelect optionDropdown" name="size" required>
+                                        <option disabled selected>Choose size</option>
+                                        {% for size in sizes %}
+                                            <option value="{{ size }}">{{ size }}</option>
+                                        {% endfor %}
+                                    </select>
+                                </label>
+
+                                <label class="productPairModalLabel">
+                                    weight
+                                    <select class="productPairModalLabelSelect optionDropdown" name="weight" required>
+                                        <option disabled selected>Choose weight</option>
+                                        {% for weight in weights %}
+                                            <option value="{{ weight }}">{{ weight }}</option>
+                                        {% endfor %}
+                                    </select>
+                                </label>
+
+
+                                <label class="productPairModalLabel">
+                                    age
+                                    <select class="productPairModalLabelSelect optionDropdown" name="age" required>
+                                        <option disabled selected>Choose age</option>
+                                        {% for age in ages %}
+                                            <option value="{{ age }}">{{ age }}</option>
+                                        {% endfor %}
+                                    </select>
+                                </label>
+
+                                <button class="productPairModalUpdate button" disabled>Update</button>
+                                <button class="productPairModalCancel" type="button">cancel</button>
+
+                                <button class="productPairModalExit" type="button">close</button>
+                            </form>
+                        </dialog>
+                    </div>
+                {% endfor %}
+            </div>
+
+            <div id="productAction">
+                <button id="productActionSame"><span>+</span> same as first</button>
+                <button id="productActionNew"><span>+</span> add a new pair</button>
+            </div>
+
+            <button id="productATC" class="button disabled">
+                Configure Your Insole Above
+            </button>
+
+            {% if product.handle == "vktry-insoles-gold" or product.handle == "vktry-insoles-platinum" %}
+                <div id="productShipping">Free Shipping in the US</div>
+            {% endif %}
+
+            {% unless product.handle == "vktry-insoles-platinum" %}
+                <div id="productBulk">For 11+ pairs or bulk/team orders call 1.844.468.5879</div>
+            {% endunless %}
+        </div>
+
+        {% if settings.multi_buy %}
+            {% if product.handle == "vktry-insoles-gold" or product.handle == "vktry-insoles-silver" %}
+                <div id="productSavings">
+                    <div>Buy 2
+                        <span>Save {{ cart.currency.symbol }}{{ product.price | times: 0.15 | divided_by: 100 | round }}</span> per pair
+                    </div>
+                    <div>Buy 3
+                        <span>Save {{ cart.currency.symbol }}{{ product.price | times: 0.20 | divided_by: 100 | round }}+</span> per pair
+                    </div>
+                    <div>Buy 5+
+                        <span>Save {{ cart.currency.symbol }}{{ product.price | times: 0.25 | divided_by: 100 | round }}+</span> per pair
+                    </div>
+                </div>
+            {% elsif product.handle == "vktry-insoles-platinum" %}
+                <div id="productSavings">
+                    <div></div>
+                    <div>Buy 2 <span>Save $50</span> per pair</div>
+                </div>
+            {% endif %}
+        {% endif %}
+
+        {% if product.handle == "vktry-insoles-platinum" %}
+            <div id="productQuestions">
+                <b>Have Questions?</b>
+                <br>
+                <a href="tel:18778587979">Call for a Free Consultation</a> with our Board Certified Pedorthist
+            </div>
+        {% endif %}
+    </div>
+</section>
+
+
+<dialog id="ankle">
+    <div id="ankleContent">
+        <img id="ankleHero" src="https://cdn.shopify.com/s/files/1/0072/5568/7283/products/DSCF2270_2_5c892390-680b-4324-8832-4183fc7ffdc0_large.jpg?v=1651012605">
+        <div id="ankleTitle">
+            <span>When used with VKTRY Insoles,</span>
+            <br>
+            our Ankle Booster Strap is designed to
+        </div>
+        <div id="ankleGrid">
+            <div class="ankleCol">
+                <img class="ankleIcon" src="{{ 'run.png' | file_url }}">
+                <div class="ankleText">improve
+                    <br>
+                    atheltic
+                    <br>
+                    efficiency
+                </div>
+            </div>
+            <div class="ankleCol">
+                <img class="ankleIcon" src="{{ 'up.png' | file_url }}">
+                <div class="ankleText">maximize energy return up to +25% more</div>
+            </div>
+            <div class="ankleCol">
+                <img class="ankleIcon" src="{{ 'shoe.png' | file_url }}">
+                <div class="ankleText">reinforce
+                    <br>
+                    ankle
+                    <br>
+                    stability
+                </div>
+            </div>
+        </div>
+        <div id="anklePrice">
+            <b>Only {{ all_products["vk-boost-ankle-booster-strap-sale"].price | money_without_trailing_zeros }} for Pair |
+            </b>
+            <s>reg price {{ all_products["vk-boost-ankle-booster-strap-sale"].compare_at_price | money_without_trailing_zeros }}</s>
+        </div>
+        <button id="ankleCheckout" class="cta">Add to Cart - {{ all_products["vk-boost-ankle-booster-strap-sale"].price | money_without_trailing_zeros }}/pair</button>
+        <button id="ankleClose">no thanks</button>
+    </div>
+</dialog>

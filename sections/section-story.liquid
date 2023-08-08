@@ -1,0 +1,129 @@
+<style>
+    #story {
+        margin: auto;
+        padding: 40px 20px;
+        max-width: 1200px;
+    }
+
+    #storyTitle {
+        display: flex;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    #storyTitle hr {
+        height: 2px;
+        flex-grow: 1;
+    }
+
+    #storyTitleInner {
+        margin: 0 10px;
+        font-size: 36px;
+        font-weight: bold;
+        text-align: center;
+        color: var(--gold)
+    }
+
+    #storyTitleInner > span {
+        color: black;
+    }
+
+    #storyGrid {
+        display: grid;
+        grid-template-columns: 510fr 366fr;
+        column-gap: 62px;
+        max-width: 960px;
+        padding: 0 20px;
+        margin: auto;
+    }
+
+    #storyContent {
+    }
+
+    #storyContentTitle {
+        font-size: 24px;
+        line-height: 32px;
+        font-weight: bold;
+        margin-bottom: 18px;
+    }
+
+    #storyContentBody {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    #storyImage {
+        display: block;
+        width: 100%;
+    }
+
+    @media (max-width: 800px) {
+        #storyTitle {
+            margin-bottom: 30px;
+        }
+
+        #storyTitle hr {
+            width: 19%;
+            flex-grow: unset;
+        }
+
+        #storyTitleInner {
+            font-size: 20px;
+        }
+
+        #storyGrid {
+            grid-template-columns: 1fr;
+            row-gap: 30px;
+            padding: 0;
+        }
+
+        #storyContentTitle {
+            font-size: 18px;
+            line-height: 26px;
+            text-align: center;
+            max-width: 325px;
+            margin: 0 auto 15px;
+        }
+
+        #storyContentBody {
+            font-size: 16px;
+            line-height: 30px;
+        }
+    }
+</style>
+
+<div id="story">
+    <div id="storyTitle">
+        <hr>
+        <div id="storyTitleInner">FOUNDER'S <span>STORY</span></div>
+        <hr>
+    </div>
+
+    <div id="storyGrid">
+        <div id="storyContent">
+            <div id="storyContentTitle">VKTRY Insoles were originally invented for the USA Bobsled Team.</div>
+            <div id="storyContentBody">Our Founder Matt Arciuolo worked as the Certified Pedorthist for the USA Team for
+                over 10 years. He invented VKs to help the team increase their explosiveness at the start of the race.
+                <b>His goal was to help the team win more gold medals – and they did!</b>
+            </div>
+        </div>
+        <img id="storyImage" src="{{ 'index-story.jpg' | file_url }}" alt="athletes using vktry insoles" loading="lazy">
+    </div>
+</div>
+
+{% schema %}
+{
+  "name": "Story",
+  "settings": [
+
+  ],
+  "blocks": [
+
+  ],
+  "presets": [
+    {
+      "name": "Story"
+    }
+  ]
+}
+{% endschema %}

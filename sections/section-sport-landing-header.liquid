@@ -1,0 +1,271 @@
+<style>
+    .sport-landing-header {
+        overflow: hidden;
+        position: relative;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: end;
+        -webkit-align-items: flex-end;
+        -ms-flex-align: end;
+        align-items: flex-end;
+        -webkit-box-pack: end;
+        -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+        justify-content: flex-end
+    }
+
+    @media (min-width: 992px) {
+        .sport-landing-header {
+            height: calc(100vh - 150px)
+        }
+    }
+
+    @media (max-width: 991px) {
+        .sport-landing-header {
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column
+        }
+    }
+
+    .sport-landing-header__container {
+        position: relative
+    }
+
+    @media (min-width: 992px) {
+        .sport-landing-header__container {
+            margin: auto auto 70px
+        }
+    }
+
+    .sport-landing-header__container__inner {
+        width: 100%
+    }
+
+    @media (min-width: 992px) {
+        .sport-landing-header__container__inner {
+            max-width: 700px;
+            margin: auto 0 0 auto
+        }
+    }
+
+    @media (max-width: 991px) {
+        .sport-landing-header__container__inner {
+            margin: 40px 0 50px
+        }
+    }
+
+    .sport-landing-header__copy {
+        margin-top: 15px
+    }
+
+    .sport-landing-header__copy p:not(:last-of-type) {
+        margin-bottom: 20px
+    }
+
+    @media (min-width: 992px) {
+        .sport-landing-header__copy {
+            width: 75%
+        }
+    }
+
+    .sport-landing-header__cta {
+        margin-top: 25px
+    }
+
+    .sport-landing-header__overlay {
+        position: absolute;
+        opacity: .9;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 70vw;
+        background: #fff;
+        background: -webkit-gradient(linear, left top, right top, from(hsla(0, 0%, 100%, 0)), color-stop(10%, hsla(0, 0%, 100%, .3)), color-stop(20%, hsla(0, 0%, 100%, .4)), color-stop(45%, hsla(0, 0%, 100%, .8)), color-stop(75%, hsla(0, 0%, 100%, .9)), to(hsla(0, 0%, 100%, .9)));
+        background: -o-linear-gradient(left, hsla(0, 0%, 100%, 0) 0, hsla(0, 0%, 100%, .3) 10%, hsla(0, 0%, 100%, .4) 20%, hsla(0, 0%, 100%, .8) 45%, hsla(0, 0%, 100%, .9) 75%, hsla(0, 0%, 100%, .9) 100%);
+        background: linear-gradient(90deg, hsla(0, 0%, 100%, 0) 0, hsla(0, 0%, 100%, .3) 10%, hsla(0, 0%, 100%, .4) 20%, hsla(0, 0%, 100%, .8) 45%, hsla(0, 0%, 100%, .9) 75%, hsla(0, 0%, 100%, .9) 100%);
+        -webkit-filter: progid:dximagetransform.microsoft.gradient(startColorstr="#fff", endColorstr="#fff", GradientType=1);
+        filter: progid:dximagetransform.microsoft.gradient(startColorstr="#ffffff", endColorstr="#ffffff", GradientType=1)
+    }
+
+    @media (max-width: 1199px) {
+        .sport-landing-header__overlay {
+            width: 80vw
+        }
+    }
+
+    @media (max-width: 991px) {
+        .sport-landing-header__overlay {
+            display: none
+        }
+    }
+
+    .sport-landing-header__image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%
+    }
+
+    .sport-landing-header__image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    @media (max-width: 991px) {
+        .sport-landing-header__image {
+            position: relative
+        }
+    }
+
+    .sport-landing-header__image .image__img {
+        -o-object-position: left center;
+        object-position: left center
+    }
+
+    @media (max-width: 767px) {
+        .sport-landing-header__image .image__img {
+            -o-object-position: center;
+            object-position: center
+        }
+    }
+
+    @media (min-width: 768px) {
+        .sport-landing-header__image--mobile {
+            display: none
+        }
+    }
+
+    @media (max-width: 767px) {
+        .sport-landing-header__image--desktop {
+            display: none
+        }
+    }
+
+    .button-split {
+        display: flex;
+        gap: 10px;
+    }
+
+    {% for block in section.blocks %}
+    .button[id="{{ block.id }}"] {
+        background: {{ block.settings.color }};
+    }
+
+    {% endfor %}
+</style>
+
+<section class="sport-landing-header" data-module="sport-landing-header">
+    <div class="sport-landing-header__image sport-landing-header__image--desktop z1">
+        <img src="{{ section.settings.landing_hero_image | image_url: width: 2000 }}"
+             alt="{{ section.settings.landing_hero_image.alt }}">
+    </div>
+    <div class="sport-landing-header__image sport-landing-header__image--mobile z1">
+        <img src="{{ section.settings.landing_hero_image_mobile | image_url: width: 2000 }}"
+             alt="{{ section.settings.landing_hero_image.alt }}">
+    </div>
+    <div class="z2 sport-landing-header__overlay"></div>
+    <div class="container sport-landing-header__container z3">
+        <div class="sport-landing-header__container__inner">
+            {% if section.settings.subtitle %}<p class="h3">{{ section.settings.subtitle }}</p>{% endif %}
+            {% if section.settings.title %}<p class="h2">{{ section.settings.title }}</p>{% endif %}
+            {% if section.settings.copy %}
+                <div class="sport-landing-header__copy">
+                    {{ section.settings.copy }}
+                </div>
+            {% endif %}
+
+            <div class="button-split">
+                {% for block in section.blocks %}
+                    {% if block.type == "button" %}
+                        <a id="{{ block.id }}" href="{{ block.settings.link }}"
+                           class="button sport-landing-header__cta">
+                            {{ block.settings.link_label }}
+                        </a>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+
+{% schema %}
+{
+  "name": "Sport Heading",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "landing_hero_image",
+      "label": "Hero Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "landing_hero_image_mobile",
+      "label": "Hero Image Mobile"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Sub Title"
+    },
+    {
+      "type": "textarea",
+      "id": "copy",
+      "label": "Copy"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Button",
+      "type": "button",
+      "settings": [
+        {
+          "type": "text",
+          "id": "link_label",
+          "label": "Link Label"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link"
+        },
+        {
+          "type": "color",
+          "id": "color",
+          "label": "Color",
+          "default": "#F1C740"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Sport Heading",
+      "settings": {
+      },
+      "blocks": [
+
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+{%- assign landing_hero_image = landing_hero_image | default: false -%}
+{%- assign landing_hero_image_mobile = landing_hero_image_mobile | default: false -%}
+{%- assign subtitle = subtitle | default: false -%}
+{%- assign title = title | default: false -%}
+{%- assign copy = copy | default: false -%}
+{%- assign hero_link = hero_link | default: false -%}
+{%- assign hero_link_text = hero_link_text | default: false -%}

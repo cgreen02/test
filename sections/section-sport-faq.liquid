@@ -1,0 +1,128 @@
+<style>
+    .sportFAQ {
+        background-color: black;
+        color: white;
+        display: grid;
+        row-gap: 38px;
+        padding: 70px 20px 0;
+    }
+
+    .sportFAQTitle {
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 33px;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+
+    .sportFAQTitle span {
+        color: var(--gold);
+    }
+
+    .sportFAQItem {
+        max-width: 840px;
+        margin: auto;
+    }
+
+    .sportFAQItemQuestion {
+        font-size: 21px;
+        line-height: 25px;
+        font-weight: bold;
+        margin-bottom: 8px;
+        color: var(--gold);
+    }
+
+    .sportFAQItemAnswer {
+        font-size: 16px;
+        line-height: 21px;
+        color: white;
+    }
+
+    .sportFAQButtons {
+        width: 100%;
+        padding: 0 20px;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .sportFAQImage {
+        display: block;
+        height: auto;
+        width: 100%;
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    @media (max-width: 800px) {
+        .sportFAQItemQuestion {
+            font-size: 18px;
+            line-height: 21px;
+        }
+
+        .sportFAQButtons {
+            flex-direction: column;
+        }
+    }
+</style>
+
+<div class="sportFAQ">
+    <div class="sportFAQTitle"><span>Frequently</span> Asked Questions</div>
+    {% for block in section.blocks %}
+        <div class="sportFAQItem">
+            <div class="sportFAQItemQuestion">{{ block.settings.question }}</div>
+            <div class="sportFAQItemAnswer">{{ block.settings.answer }}</div>
+        </div>
+    {% endfor %}
+    <div class="sportFAQButtons">
+        <a class="button"
+           href="/products/vktry-insoles-gold{% if section.settings.sport != "" %}?sport={{ section.settings.sport }}{% endif %}">Shop
+            Gold Insoles</a>
+        {% if section.settings.show_silver %}
+            <a class="button silver"
+               href="/products/vktry-insoles-silver{% if section.settings.sport != "" %}?sport={{ section.settings.sport }}{% endif %}">Shop
+                Silver Insoles</a>
+        {% endif %}
+    </div>
+    <img class="sportFAQImage" src="{{ 'sport-faq.jpg' | file_url }}">
+</div>
+
+{% schema %}
+{
+  "name": "Sport FAQ",
+  "settings": [
+    {
+      "type": "text",
+      "id": "sport",
+      "label": "Sport",
+      "info": "Used to pre-select sport on CTA",
+      "default": "Basketball"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "FAQ",
+      "name": "FAQ",
+      "settings": [
+        {
+          "type": "text",
+          "id": "question",
+          "label": "Question"
+        },
+        {
+          "type": "textarea",
+          "id": "answer",
+          "label": "Answer"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Sport FAQ"
+    }
+  ]
+}
+{% endschema %}

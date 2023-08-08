@@ -1,0 +1,157 @@
+<style>
+    .sportWhy {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 12px;
+        align-items: center;
+        max-width: 1040px;
+        margin: 40px auto;
+        padding: 0 20px;
+    }
+
+    .sportWhyImage {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .sportWhyContent {
+        display: grid;
+        row-gap: 25px;
+    }
+
+    .sportWhyItem {
+        display: flex;
+        align-items: center;
+        gap: 13px;
+    }
+
+    .sportWhyItemIcon {
+        display: block;
+        width: 100%;
+        height: auto;
+        max-width: 100px;
+    }
+
+    .sportWhyItemTitle {
+        font-size: 28px;
+        line-height: 33px;
+        margin-bottom: 3px;
+        color: var(--gold);
+        font-weight: bold;
+    }
+
+    .sportWhyItemBody {
+        font-size: 18px;
+        line-height: 21px;
+    }
+
+    @media (max-width: 800px) {
+        .sportWhy {
+            grid-template-columns: 1fr;
+        }
+
+        .sportWhyContent {
+            row-gap: 20px;
+        }
+
+        .sportWhyItemIcon {
+            max-width: 75px;
+        }
+
+        .sportWhyItemTitle {
+            font-size: 23px;
+            line-height: 28px;
+        }
+
+        .sportWhyItemBody {
+            font-size: 15px;
+            line-height: 19px;
+        }
+    }
+</style>
+
+<div class="sportWhy">
+    <img class="sportWhyImage" src="{{ section.settings.image | image_url: width: 600 }}">
+    <div class="sportWhyContent">
+        {% for block in section.blocks %}
+            <div class="sportWhyItem">
+                <img class="sportWhyItemIcon" src="{{ block.settings.icon | image_url: width: 200 }}">
+                <div>
+                    <div class="sportWhyItemTitle">{{ block.settings.title }}</div>
+                    <div class="sportWhyItemBody">{{ block.settings.body }}</div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% schema %}
+{
+    "name": "Sport Why",
+    "settings": [
+        {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Main image"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "item",
+            "name": "Item",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "icon",
+                    "label": "Icon"
+                },
+                {
+                    "type": "text",
+                    "id": "title",
+                    "label": "Title"
+                },
+                {
+                    "type": "inline_richtext",
+                    "id": "body",
+                    "label": "Body text"
+                }
+            ]
+        }
+    ],
+  "presets": [
+        {
+            "name": "Sport Why",
+            "settings": {
+                "image": "shopify://shop_images/why-sport.jpg"
+            },
+            "blocks": [
+                {
+                    "type": "item",
+                    "settings": {
+                        "icon": "shopify://shop_images/icon_arrow.png",
+                        "title": "JUMP HIGHER",
+                        "body": "Proven average <b>+1.6” vertical</b> jump increase"
+                    }
+                },
+                {
+                    "type": "item",
+                    "settings": {
+                        "icon": "shopify://shop_images/icon_run.png",
+                        "title": "LAND SOFTER",
+                        "body": "<b>41% less</b> foot injuries and <b>22% less</b> lower leg injuries over the course of a season"
+                    }
+                },
+                {
+                    "type": "item",
+                    "settings": {
+                        "icon": "shopify://shop_images/icon_foot.png",
+                        "title": "INCREASED STABILITY",
+                        "body": "Get a <b>firm foundation</b> for crisp cutting"
+                    }
+                }
+            ]
+        }
+    ]
+}
+{% endschema %}

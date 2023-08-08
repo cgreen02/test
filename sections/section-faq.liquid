@@ -1,0 +1,172 @@
+<style>
+    [id="{{ section.id }}"] {
+        background: {{ section.settings.background }};
+    }
+
+    .faq {
+    }
+
+    .faqInner {
+        max-width: 875px;
+        margin: auto;
+        padding: 52px 20px 100px;
+    }
+
+    .faqTitle {
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 34px;
+        margin-bottom: 34px;
+        text-align: center;
+    }
+
+    .faqTitle {
+        margin-bottom: 40px;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    .faqItem {
+        border-bottom: 1px solid black;
+        padding: 20px 20px 20px 10px;
+        cursor: pointer;
+    }
+
+    .faqItemTitle {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 34px;
+    }
+
+    .faqItemTitle:after {
+        content: "+";
+        font-size: 34px;
+        margin-left: auto;
+        padding-left: 20px;
+        position: relative;
+        top: -6px;
+    }
+
+    .faqItem.active .faqItemTitle:after {
+        content: "-";
+    }
+
+    .faqItemBody {
+        overflow: hidden;
+        height: 0;
+        font-size: 14px;
+        line-height: 21px;
+        transition: 0.5s;
+    }
+
+    .faqItemBody p {
+        padding: 10px 0;
+    }
+
+    .faqItemBody p:first-child {
+        margin-top: 0;
+    }
+
+    .faqItemBody a {
+        text-decoration: underline
+    }
+
+    @media (max-width: 800px) {
+        .faq {
+            padding: 30px 20px 20px;
+        }
+
+        .faqTitle {
+        }
+
+        .faqItemTitle {
+            padding: 6px 0;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .faqItemTitle::after {
+            font-size: 28px;
+        }
+    }
+</style>
+
+<div id="{{ section.id }}" class="faq" data-faq="{{ section.settings.title }}">
+    <div class="faqInner">
+        <h2 class="faqTitle">{{ section.settings.title }}</h2>
+
+        <div id="faqContent">
+            {% for block in section.blocks %}
+                <div class="faqItem">
+                    <button class="faqItemTitle">{{ block.settings.question }}</button>
+                    <div class="faqItemBody">{{ block.settings.answer }}</div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+<script>
+    document.querySelectorAll(`[id="{{ section.id }}"] .faqItem`).forEach(function (element) {
+        element.addEventListener("click", function () {
+            if (this.classList.contains("active")) {
+                this.classList.remove("active");
+                this.children[1].removeAttribute("style");
+            } else {
+                //check if there is a question already active, click on it
+                if (document.querySelector(`[id="{{ section.id }}"] .faqItem.active`)) {
+                    document.querySelector(`[id="{{ section.id }}"] .faqItem.active`).click();
+                }
+                this.classList.add("active");
+                this.children[1].style.height = `${this.children[1].scrollHeight}px`;
+            }
+        });
+    });
+</script>
+
+{% schema %}
+{
+  "name": "FAQ",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "color_background",
+      "id": "background",
+      "label": "Background",
+      "default": "#F2F2F2"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Item",
+      "type": "item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "question",
+          "label": "Question"
+        },
+        {
+          "type": "richtext",
+          "id": "answer",
+          "label": "Answer"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "FAQ"
+    }
+  ]
+}
+{% endschema %}

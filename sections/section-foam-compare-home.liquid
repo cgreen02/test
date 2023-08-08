@@ -1,0 +1,29 @@
+<style>
+    .foamCompareHome {
+        max-width: 1000px;
+        display: block;
+        width: 100%;
+        margin: 20px auto 0;
+    }
+
+    @media (max-width: 800px) {
+        .foamCompareHome {
+            margin-top: 0;
+        }
+    }
+</style>
+<picture class="foamCompareHome">
+    <source media="(max-width: 800px)" srcset="{{ 'carbon_fiber_vs_foam_insoles_m.png' | file_url }}">
+    <source srcset="{{ 'carbon_fiber_vs_foam_insoles.png' | file_url }}">
+    <img class="foamCompareHome" src="{{ 'carbon_fiber_vs_foam_insoles.png' | file_url }}" alt="carbon fibre vs foam insole comparison" loading="lazy">
+</picture>
+{% schema %}
+{
+    "name": "Homepage Foam Compare",
+    "presets": [
+        {
+            "name": "Homepage Foam Compare"
+        }
+    ]
+}
+{% endschema %}

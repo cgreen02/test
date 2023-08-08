@@ -1,0 +1,59 @@
+<style>
+    .video {
+        width: 100%;
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow: hidden;
+        max-width: 100%;
+    }
+
+    .sport-landing-video {
+        width: 100%;
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow: hidden;
+        max-width: 100%
+    }
+
+    .video embed,
+    .video iframe,
+    .video object {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important
+    }
+</style>
+
+<section class="video">
+    {{ section.settings.video_embed }}
+</section>
+
+{% schema %}
+{
+  "name": "Video",
+  "settings": [
+    {
+      "type": "html",
+      "id": "video_embed",
+      "label": "Video Embed"
+    }
+  ],
+  "blocks": [
+
+  ],
+  "presets": [
+    {
+      "name": "Video",
+      "settings": {
+      },
+      "blocks": [
+
+      ]
+    }
+  ]
+}
+{% endschema %}

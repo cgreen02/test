@@ -1,0 +1,116 @@
+<style>
+    [id="{{ section.id }}"] {
+        background: {{ section.settings.background }};
+    }
+
+    [id="{{ section.id }}"] .quoteGridInner {
+        grid-template-columns: repeat({{ section.settings.per_row }}, 1fr);
+    }
+
+    [id="{{ section.id }}"] .quoteGridItem {
+        display: grid;
+        column-gap: 60px;
+        row-gap: 60px;
+    }
+
+    {% if section.settings.per_row < 2 %}
+    [id="{{ section.id }}"] .quoteGridItem {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    {% endif %}
+
+    @media (max-width: 800px) {
+        [id="{{ section.id }}"] .quoteGridInner {
+            grid-template-columns: 1fr;
+            row-gap: 40px;
+        }
+
+        [id="{{ section.id }}"] .quoteGridItem {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+
+<section id="{{ section.id }}" class="quoteGrid align-center">
+    <div class="quoteGridInner">
+        {% for block in section.blocks %}
+            <div class="quoteGridItem">
+                {% if block.settings.image %}
+                    <img class="quoteGridImage" src="{{ block.settings.image | image_url: width: 1000 }}">
+                {% endif %}
+                <div>
+                    <div class="quoteGridTitle">
+                        <img class="quoteImage" src="{{ 'quote-up.png' | file_url }}">
+                        {{ block.settings.title }}
+                    </div>
+                    <div class="quoteGridBody">
+                        {{ block.settings.body }}
+                    </div>
+                    <div class="quoteBy">
+                        {{ block.settings.author }}
+                        <img class="quoteImage" src="{{ 'quote-down.png' | file_url }}">
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</section>
+
+{% schema %}
+{
+  "name": "Quote Grid",
+  "settings": [
+    {
+      "type": "color_background",
+      "id": "background",
+      "label": "Background",
+      "default": "#fff"
+    },
+    {
+      "type": "number",
+      "id": "per_row",
+      "label": "Items Per Row",
+      "default": 1
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Item",
+      "type": "item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "richtext",
+          "id": "body",
+          "label": "Body"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "author",
+          "label": "Author"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Quote Grid",
+      "settings": {
+      },
+      "blocks": [
+
+      ]
+    }
+  ]
+}
+{% endschema %}

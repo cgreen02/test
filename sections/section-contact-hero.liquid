@@ -1,0 +1,95 @@
+<style>
+    .hero-text {
+        position: relative;
+        max-height: 600px;
+        min-height: 380px;
+        overflow: hidden
+    }
+
+    .hero-text:after {
+        content: "";
+        display: block;
+        padding-bottom: 32.75%
+    }
+
+    .hero-text__bg-img {
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+    }
+
+    @media (max-width: 767px) {
+        .hero-text:after {
+            padding-bottom: 105%
+        }
+    }
+
+    .hero-text-content__copy {
+        max-width: 600px;
+        margin: 20px auto 0
+    }
+
+    .hero-text-content {
+        color: #fff;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%)
+    }
+</style>
+
+<section class="hero-text" data-module="hero-text">
+    {% if section.settings.bg_img %}
+        <img src="{{ section.settings.bg_img | image_url: width: 2000 }}" alt="{{ section.settings.bg_img }}"
+             class="hero-text__bg-img z1">
+    {% endif %}
+    {% if section.settings.title != blank or section.settings.copy != blank %}
+        <div class="hero-text-content container z2">
+            {% if section.settings.title != blank %}
+                <h1 class="h3 hero-text-content__title">{{- section.settings.title -}}</h1>
+            {% endif %}
+            {% if section.settings.copy != blank %}
+                <div class="b1 hero-text-content__copy">{{- section.settings.copy -}}</div>
+            {% endif %}
+        </div>
+    {% endif %}
+</section>
+
+{% schema %}
+{
+  "name": "Contact Header",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "bg_img",
+      "label": "Background Image"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "textarea",
+      "id": "copy",
+      "label": "Copy"
+    }
+  ],
+  "blocks": [
+
+  ],
+  "presets": [
+    {
+      "name": "Contact Header",
+      "settings": {
+      },
+      "blocks": [
+
+      ]
+    }
+  ]
+}
+{% endschema %}

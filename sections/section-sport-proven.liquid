@@ -1,0 +1,349 @@
+<style>
+    .sport-landing-content {
+        background-color: #000;
+        padding: 100px 0;
+        position: relative;
+        overflow: hidden;
+        color: #fff
+    }
+
+    .sport-landing-content .sport-copy-yellow {
+        color: #f1c740
+    }
+
+    .sport-landing-content__container {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        position: relative;
+        z-index: 200;
+    }
+
+    @media (max-width: 991px) {
+        .sport-landing-content__container {
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column
+        }
+    }
+
+    .sport-landing-content__left,
+    .sport-landing-content__right {
+        width: calc(50% - 120px)
+    }
+
+    .sport-landing-content__left .h3 {
+        margin: 0;
+    }
+
+
+    @media (max-width: 991px) {
+
+        .sport-landing-content__left,
+        .sport-landing-content__right {
+            width: 100%
+        }
+    }
+
+    .sport-landing-content__right {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: end;
+        -webkit-align-items: flex-end;
+        -ms-flex-align: end;
+        align-items: flex-end;
+        -webkit-box-pack: end;
+        -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+        justify-content: flex-end
+    }
+
+    @media (max-width: 991px) {
+        .sport-landing-content__right {
+            margin-top: 45px;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center
+        }
+    }
+
+    .sport-landing-content__copy {
+        margin-top: 15px;
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: 400;
+    }
+
+    .sport-landing-content__copy p {
+        margin: 0;
+    }
+
+    .sport-landing-content__copy p:not(:last-of-type) {
+        margin-bottom: 20px
+    }
+
+    .sport-landing-content__checkbox {
+        position: relative;
+        height: 35px;
+        width: 35px
+    }
+
+    .sport-landing-content__list {
+        display: -webkit-inline-box;
+        display: -webkit-inline-flex;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column
+    }
+
+    .sport-landing-content__list-item {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row
+    }
+
+    .sport-landing-content__list-item:not(:last-of-type) {
+        margin-bottom: 23px
+    }
+
+    .sport-landing-content__list__copy {
+        width: 315px;
+        margin-left: 20px
+    }
+
+    .sport-landing-content__list__copy .h4 {
+        margin: 0;
+    }
+
+    .sport-landing-content__list__copy .h4 span {
+        color: var(--gold);
+    }
+
+    .sport-landing-content__list__copy .b1 {
+        margin: 0;
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: 400;
+    }
+
+    .sport-landing-content__overlay {
+        position: absolute
+    }
+
+    .sport-landing-content__overlay img {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .sport-landing-content__overlay:after {
+        content: "";
+        display: block;
+        position: absolute;
+        background-color: #000;
+        z-index: 2
+    }
+
+    @media (min-width: 992px) {
+        .sport-landing-content__overlay {
+            height: 100%;
+            width: 60%;
+            top: 0;
+            right: 0
+        }
+
+        .sport-landing-content__overlay:after {
+            width: 40%;
+            height: 200%;
+            left: -32.5%;
+            top: -30%;
+            -webkit-transform: rotate(25deg);
+            -ms-transform: rotate(25deg);
+            transform: rotate(25deg)
+        }
+    }
+
+    @media (max-width: 991px) {
+        .sport-landing-content__overlay {
+            height: 90%;
+            bottom: 0;
+            left: 0;
+            width: 100%
+        }
+
+        .sport-landing-content__overlay:after {
+            height: 200%;
+            width: 200%;
+            top: -150%;
+            left: -50%;
+            -webkit-transform: rotate(-5deg);
+            -ms-transform: rotate(-5deg);
+            transform: rotate(-5deg)
+        }
+    }
+
+    .sport-landing-header__cta {
+        margin-top: 25px
+    }
+
+    {% for block in section.blocks %}
+    {% if block.type == "button" %}
+    .button[id="{{ block.id }}"] {
+        background: {{ block.settings.color }};
+    }
+
+    {% endif %}
+    {% endfor %}
+</style>
+
+<section class="sport-landing-content" data-module="sport-landing-content">
+    {% if section.settings.image %}
+        <div class="sport-landing-content__overlay z1">
+            <img src="{{ section.settings.image | image_url: width: 2000 }}" alt="{{ section.settings.image.alt }}">
+        </div>
+    {% endif %}
+    <div class="container sport-landing-content__container z2">
+        <div class="sport-landing-content__left">
+            {% if section.settings.title %}<p class="h3">{{ section.settings.title }}</p>{% endif %}
+            {% if section.settings.copy %}
+                <div class="b1 sport-landing-content__copy">
+                    {{ section.settings.copy }}
+                </div>
+            {% endif %}
+            <div class="button-split">
+                {% for block in section.blocks %}
+                    {% if block.type == "button" %}
+                        <a id="{{ block.id }}" href="{{ block.settings.link }}"
+                           class="button sport-landing-header__cta">{{ block.settings.text }}</a>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+        <div class="sport-landing-content__right">
+            <div class="sport-landing-content__list">
+                {% for block in section.blocks %}
+                    {% if block.type == "list_item" %}
+                        <div class="sport-landing-content__list-item">
+                            <div class="sport-landing-content__checkbox">
+                                <img src="{{ block.settings.icon | image_url: width: 100 }}"
+                                     alt="{{ block.settings.icon.alt }}">
+                            </div>
+                            <div class="sport-landing-content__list__copy">
+                                <p class="h4">{{ block.settings.title }}
+                                </p>
+                                <p class="b1"><b>{{ block.settings.text }}</b></p>
+                            </div>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+
+{% schema %}
+{
+    "name": "Sport Proven",
+    "settings": [
+        {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+        },
+        {
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+        },
+        {
+            "type": "richtext",
+            "id": "copy",
+            "label": "Copy"
+        }
+    ],
+    "blocks": [
+        {
+            "name": "Button",
+            "type": "button",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "text",
+                    "label": "Button Label"
+                },
+                {
+                    "type": "url",
+                    "id": "link",
+                    "label": "Button Link"
+                },
+                {
+                    "type": "color",
+                    "id": "color",
+                    "label": "Color",
+                    "default": "#F1C740"
+                }
+            ]
+        },
+        {
+            "name": "List Item",
+            "type": "list_item",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "icon",
+                    "label": "Icon"
+                },
+                {
+                    "type": "html",
+                    "id": "title",
+                    "label": "Title"
+                },
+                {
+                    "type": "textarea",
+                    "id": "text",
+                    "label": "Text"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "Sport Proven",
+            "settings": {
+            },
+            "blocks": [
+            ]
+        }
+    ]
+}
+{% endschema %}

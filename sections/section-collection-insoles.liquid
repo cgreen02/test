@@ -1,0 +1,529 @@
+<style>
+
+    /* styles for product-hero-grid */
+    .product-hero-grid {
+        padding: 70px 0 50px
+    }
+
+    .product-hero-grid__cards {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-top: 40px
+    }
+
+    @media (max-width: 767px) {
+        .product-hero-grid__cards {
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            gap: 30px;
+        }
+    }
+
+    .product-hero-grid__card {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        padding: 40px;
+        position: relative;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: start;
+        -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+        -webkit-box-pack: end;
+        -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+        height: 720px;
+        margin-bottom: 20px
+    }
+
+    @media (min-width: 768px) {
+        .product-hero-grid__card {
+            width: calc(50% - 10px)
+        }
+
+        .product-hero-grid__card:nth-of-type(2n) {
+            margin-left: 20px
+        }
+    }
+
+    @media (max-width: 991px) and (min-width: 768px) {
+        .product-hero-grid__card {
+            height: 620px
+        }
+    }
+
+    @media (max-width: 767px) and (min-width: 576px) {
+        .product-hero-grid__card {
+            height: 500px
+        }
+    }
+
+    @media (max-width: 575px) {
+        .product-hero-grid__card {
+            height: 385px
+        }
+    }
+
+    .product-hero-grid__overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #000;
+        background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, .88139006)), color-stop(40%, rgba(0, 0, 0, .6544993)), to(rgba(0, 0, 0, .0382528)));
+        background: -o-linear-gradient(bottom, rgba(0, 0, 0, .88139006) 0, rgba(0, 0, 0, .6544993) 40%, rgba(0, 0, 0, .0382528) 100%);
+        background: linear-gradient(0deg, rgba(0, 0, 0, .88139006) 0, rgba(0, 0, 0, .6544993) 40%, rgba(0, 0, 0, .0382528) 100%)
+    }
+
+    .product-hero-grid__card__details {
+        color: #fff;
+        position: relative;
+        width: 100%
+    }
+
+    .product-hero-grid__price {
+        position: absolute;
+        top: 0;
+        right: 0
+    }
+
+    .product-hero-grid__title {
+        width: 100%;
+        padding-right: 80px;
+        margin-bottom: 10px
+    }
+
+    .image, .image:after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .product-hero-grid__link {
+        margin-top: 20px
+    }
+
+    .product-hero-grid__description {
+        color: #fff
+    }
+
+    /* styles for the product-sub-nav module go in this file */
+    .product-sub-nav {
+        padding: 10px 0;
+        background-color: #000;
+        position: fixed;
+        top: 65px;
+        left: 0;
+        width: 100%
+    }
+
+    .has-promo-bar .product-sub-nav {
+        top: 115px
+    }
+
+    @media (max-width: 1199px) {
+        .has-promo-bar .product-sub-nav {
+            top: 99px
+        }
+    }
+
+    @media (max-width: 1199px) {
+        .product-sub-nav {
+            top: 49px
+        }
+    }
+
+    @media (max-width: 767px) {
+        .product-sub-nav {
+            display: none
+        }
+    }
+
+    .product-sub-nav__list {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-pack: start;
+        -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center
+    }
+
+    .product-sub-nav__list-item {
+        color: #fff;
+        text-decoration: none
+    }
+
+    .product-sub-nav__list-item--link {
+        padding-bottom: 2px
+    }
+
+    .product-sub-nav__list-item:not(:first-child) {
+        margin-left: 40px
+    }
+
+    .product-sub-nav__container {
+        position: relative;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center
+    }
+
+    @media (max-width: 767px) {
+        .product-sub-nav__container {
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column
+        }
+    }
+
+    .product-sub-nav__left {
+        display: inline
+    }
+
+    .product-sub-nav__right {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center
+    }
+
+    .product-sub-nav__copy {
+        color: #fff;
+        margin-right: 20px
+    }
+
+    .product-sub-nav__overlay {
+        background-color: rgba(0, 0, 0, .55);
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%
+    }
+
+
+    /* styles for product-hero-grid */
+    .product-hero-grid {
+        padding: 70px 0 50px
+    }
+
+    .product-hero-grid__cards {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-top: 40px
+    }
+
+    @media (max-width: 767px) {
+        .product-hero-grid__cards {
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column
+        }
+    }
+
+    .product-hero-grid__card {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        padding: 40px;
+        position: relative;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: start;
+        -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+        -webkit-box-pack: end;
+        -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+        height: 720px;
+        margin-bottom: 20px
+    }
+
+    @media (min-width: 768px) {
+        .product-hero-grid__card {
+            width: calc(50% - 10px)
+        }
+
+        .product-hero-grid__card:nth-of-type(2n) {
+            margin-left: 20px
+        }
+    }
+
+    @media (max-width: 991px) and (min-width: 768px) {
+        .product-hero-grid__card {
+            height: 620px
+        }
+    }
+
+    @media (max-width: 767px) and (min-width: 576px) {
+        .product-hero-grid__card {
+            height: 500px
+        }
+    }
+
+    @media (max-width: 575px) {
+        .product-hero-grid__card {
+            height: 385px
+        }
+    }
+
+    .product-hero-grid__overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #000;
+        background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, .88139006)), color-stop(40%, rgba(0, 0, 0, .6544993)), to(rgba(0, 0, 0, .0382528)));
+        background: -o-linear-gradient(bottom, rgba(0, 0, 0, .88139006) 0, rgba(0, 0, 0, .6544993) 40%, rgba(0, 0, 0, .0382528) 100%);
+        background: linear-gradient(0deg, rgba(0, 0, 0, .88139006) 0, rgba(0, 0, 0, .6544993) 40%, rgba(0, 0, 0, .0382528) 100%)
+    }
+
+    .product-hero-grid__card__details {
+        color: #fff;
+        position: relative;
+        width: 100%
+    }
+
+    .product-hero-grid__price {
+        position: absolute;
+        top: 0;
+        right: 0
+    }
+
+    .product-hero-grid__title {
+        width: 100%;
+        padding-right: 80px;
+        margin-bottom: 10px
+    }
+
+    .product-hero-grid__link {
+        margin-top: 20px
+    }
+
+    .product-hero-grid__description {
+        color: #fff
+    }
+
+    .product-hero-grid__overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #000;
+        background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, .88139006)), color-stop(40%, rgba(0, 0, 0, .6544993)), to(rgba(0, 0, 0, .0382528)));
+        background: -o-linear-gradient(bottom, rgba(0, 0, 0, .88139006) 0, rgba(0, 0, 0, .6544993) 40%, rgba(0, 0, 0, .0382528) 100%);
+        background: linear-gradient(0deg, rgba(0, 0, 0, .88139006) 0, rgba(0, 0, 0, .6544993) 40%, rgba(0, 0, 0, .0382528) 100%)
+    }
+
+    .product-hero-grid__card__details {
+        color: #fff;
+        position: relative;
+        width: 100%
+    }
+
+    .product-hero-grid__price {
+        position: absolute;
+        top: 0;
+        right: 0
+    }
+
+    @media (max-width: 767px) {
+
+        .b1,
+        .wysiwyg blockquote,
+        .wysiwyg li,
+        .wysiwyg p,
+        form .errors,
+        input,
+        select,
+        textarea {
+            font-size: 14px;
+            line-height: 18px
+        }
+    }
+
+    @media (max-width: 1199px) and (min-width: 992px) {
+        .b1--xl-small {
+            font-size: 12px
+        }
+    }
+
+
+    .product-hero-grid__title {
+        width: 100%;
+        padding-right: 80px;
+        margin-bottom: 10px
+    }
+
+    .product-hero-grid__link {
+        margin-top: 20px
+    }
+
+    .product-hero-grid__description {
+        color: #fff
+    }
+
+</style>
+<section class="product-hero-grid" data-module="product-hero-grid">
+    <div class="container">
+
+        <h1 class="h3 h3--small">Carbon Fiber Performance Insoles</h1>
+
+        <div class="product-hero-grid__cards">
+            <div class="product-hero-grid__card">
+                <div class="product-hero-grid__card__image z1">
+
+
+                    <picture class="image" data-module="image">
+                        <source type="image/webp" srcset="" media="(min-width: 1199px)">
+                        <img class="image__img loaded" data-src="https://cdn.accentuate.io/163659743347/1603219792649/jt-collections.jpg?v=1654722709088" src="https://cdn.accentuate.io/163659743347/1603219792649/jt-collections.jpg?v=1654722709088" alt="">
+                    </picture>
+
+
+                </div>
+                <div class="product-hero-grid__overlay z2"></div>
+                <div class="product-hero-grid__card__details z3">
+                    <p class="h4 product-hero-grid__title">GOLD VKTRY INSOLES</p>
+                    <div class="b1 product-hero-grid__description">
+                        The original VK. 100% Aerospace-grade Carbon Fiber. Simply the best performance insole on the market.
+                    </div>
+                    <p class="h4 product-hero-grid__price">$169</p>
+
+
+                    <a href="https://vktrygear.com/products/vktry-performance-insoles" class="button product-hero-grid__link">
+                        <span class="button-text  b2">Shop Gold</span>
+                    </a>
+
+
+                </div>
+            </div>
+            <div class="product-hero-grid__card">
+                <div class="product-hero-grid__card__image z1">
+
+
+                    <picture class="image" data-module="image">
+                        <source type="image/webp" srcset="" media="(min-width: 1199px)">
+                        <img class="image__img loaded" data-src="https://cdn.accentuate.io/163659743347/1603231491947/drew-silver.jpg?v=0" src="https://cdn.accentuate.io/163659743347/1603231491947/drew-silver.jpg?v=0" alt="">
+                    </picture>
+
+
+                </div>
+                <div class="product-hero-grid__overlay z2"></div>
+                <div class="product-hero-grid__card__details z3">
+                    <p class="h4 product-hero-grid__title">SILVER VKTRY INSOLES</p>
+                    <div class="b1 product-hero-grid__description">
+                        A more affordable evolution of the original Gold VK. Made with a high quality carbon fiber composite.
+                    </div>
+                    <p class="h4 product-hero-grid__price">$99</p>
+
+
+                    <a href="https://vktrygear.com/products/silver-insoles" class="button product-hero-grid__link">
+                        <span class="button-text  b2">Shop Silver</span>
+                    </a>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% schema %}
+{
+  "name": "Collection Insoles",
+  "settings": [
+
+  ],
+  "blocks": [
+
+  ],
+  "presets": [
+    {
+      "name": "Collection Insoles"
+    }
+  ]
+}
+{% endschema %}

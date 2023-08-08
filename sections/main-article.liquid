@@ -1,0 +1,13 @@
+<div class="article">
+    <h1 class="articleTitle">{{ article.title }}</h1>
+    <div class="articleSubtitle"><a href="{{ blog.url }}">{{ blog.title }}</a></div>
+    <div class="articleBody">{{ article.content }} </div>
+</div>
+
+{% schema %}
+{
+    "name": "Article",
+    "settings": [
+    ]
+}
+{% endschema %}

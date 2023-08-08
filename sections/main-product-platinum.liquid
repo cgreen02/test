@@ -1,0 +1,289 @@
+<style>
+
+    /*******
+    Hero
+    */
+
+    #hero {
+        background-color: black;
+    }
+
+    #heroInner {
+        max-width: 1100px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        column-gap: 40px;
+        padding: 0 20px;
+    }
+
+    #heroContent {
+        padding: 50px 0;
+    }
+
+    #heroContentTitle {
+        font-size: 36px;
+        line-height: 38px;
+        font-weight: bold;
+        color: white;
+        max-width: 315px;
+        margin-bottom: 14px;
+    }
+
+    #heroContentTitle span {
+        color: var(--gold);
+    }
+
+    #heroContentSubtitle {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 28px;
+        color: white;
+        margin-bottom: 20px;
+    }
+
+    #heroContentSubtitle span {
+        color: var(--gold);
+    }
+
+    #heroContentButton {
+    }
+
+    #heroImage {
+        display: block;
+        width: 100%;
+    }
+
+    @media (max-width: 1000px) {
+        #heroInner {
+            grid-template-columns: 1fr;
+        }
+
+        #heroContent {
+            padding: 0 0 20px;
+            text-align: center;
+        }
+
+        #heroContentTitle {
+            max-width: none;
+        }
+
+        #heroContentButton {
+            max-width: none;
+        }
+
+        #heroImage {
+            order: -1;
+        }
+    }
+
+    /******
+    Signup
+     */
+
+
+    #signup {
+        position: fixed;
+        z-index: 9999999999;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 30px 20px;
+        display: none;
+    }
+
+    #signup.active {
+        display: block;
+    }
+
+    #signupContent {
+        max-width: 650px;
+        width: 100%;
+        margin: auto;
+        background-color: white;
+        padding: 70px 50px;
+        position: relative;
+    }
+
+    #signupClose {
+        position: absolute;
+        top: 7px;
+        right: 10px;
+        font-size: 14px;
+        line-height: 21px;
+        cursor: pointer;
+    }
+
+    #signupTitle {
+        font-size: 21px;
+        line-height: 32px;
+        margin-bottom: 18px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    #signupTitle span {
+        color: var(--gold);
+    }
+
+    #signupSuccess {
+        display: none
+    }
+
+    #signupSuccess.active {
+        display: block;
+        font-size: 16px;
+        line-height: 21px;
+        margin-bottom: 14px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    #signupSuccess [href*=tel] {
+        font-weight: bold;
+        color: var(--gold);
+    }
+
+    #signupLegal {
+        font-size: 14px;
+        line-height: 21px;
+        font-style: italic;
+        margin-bottom: 14px;
+        text-align: center;
+    }
+
+    .signupLabel {
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: bold;
+        margin-bottom: 5px
+    }
+
+    .signupInput {
+        border: 1px solid #808080;
+        padding: 13px 16px 12px;
+        margin-bottom: 12px;
+        display: block;
+        width: 100%;
+    }
+
+    #signupSubmit {
+        margin: 30px auto 0;
+    }
+
+    @media (max-width: 800px) {
+        #signupContent {
+            padding: 30px 20px;
+        }
+
+        #signupTitle {
+            line-height: 26px;
+        }
+    }
+</style>
+
+<div id="hero">
+    <div id="heroInner">
+        <div id="heroContent">
+            <div id="heroContentTitle">Platinum VK <span>Custom Orthotics</span></div>
+            <div id="heroContentSubtitle">
+                Molded to the exact shape of your foot for maximum comfort, support, and stability with the performance & protection of our patented VK Gold carbon fiber baseplate built right in.
+            </div>
+            <div id="heroContentButton" class="button">Get Started</div>
+        </div>
+        <img id="heroImage" src="{{ 'platinum-hero.jpg' | file_url }}">
+    </div>
+</div>
+
+<div id="signup">
+    <form id="signupContent">
+        <div id="signupClose">close x</div>
+        <div id="signupTitle">
+            Please Complete and Submit this Form
+        </div>
+        <div id="signupSuccess">
+            Please call
+            <a href="tel:18778587979">1-877-858-7979</a> from 10 am - 5 pm EST Monday through Saturday to speak with our Board Certified Pedorthist.
+        </div>
+        <div id="signupLegal">Must be 18 years or older or accompanied by parent/guardian on the call.</div>
+        <div class="signupLabel">name</div>
+        <input class="signupInput" placeholder="name" required name="name">
+        <div class="signupLabel">email</div>
+        <input class="signupInput" placeholder="email" type="email" required name="email">
+        <div class="signupLabel">phone</div>
+        <input class="signupInput" placeholder="phone" type="tel" required name="phone">
+        <button id="signupSubmit" class="button">Submit</button>
+    </form>
+</div>
+
+<script>
+
+    /*******
+     * Popup
+     */
+
+    // sign up
+    document.querySelector("#heroContentButton").addEventListener("click", openSignup);
+
+    // open signup upsell
+    function openSignup() {
+        document.querySelector("#signup").classList.add("active");
+        document.querySelector("body").style.overflow = "hidden";
+    }
+
+    // close signup upsell
+    function closeSignup() {
+        document.querySelector("#signup").classList.remove("active");
+        document.querySelector("body").removeAttribute("style");
+    }
+
+    // close signup event listener
+    document.querySelector("#signupClose").addEventListener("click", closeSignup);
+    document.querySelector("#signup").addEventListener("click", function (e) {
+        if (e.target == this) {
+            closeSignup();
+        }
+    })
+
+    // add to cart event listener
+    document.querySelector("#signupContent").addEventListener("submit", async function (e) {
+        e.preventDefault();
+
+        if (!this.classList.contains("sending")) {
+            this.classList.add("sending");
+
+            document.querySelector("#signupSubmit").classList.add("loading");
+
+            let formData = new FormData(this);
+            let response = await fetch("https://api.maltertech.com/vktrygear/platinum.php", {
+                method: "POST",
+                body: formData
+            })
+                .then(function (data) {
+                    return data.json();
+                })
+
+            if (response.error) {
+                alert(response.error);
+            } else {
+                document.querySelector("#signupTitle").textContent = `Thank you for submitting your information.`;
+                document.querySelectorAll(".signupLabel").forEach(function (element) {
+                    element.remove();
+                });
+                document.querySelectorAll(".signupInput").forEach(function (element) {
+                    element.remove();
+                });
+                document.querySelector("#signupSuccess").classList.add("active");
+                document.querySelector("#signupSubmit").outerHTML = ` <div id="signupSubmit" class="button">Close</div>`;
+                document.querySelector("#signupSubmit").addEventListener("click", closeSignup);
+            }
+
+            setTimeout(() => {
+                this.classList.remove("loading");
+            }, 500);
+        }
+    });
+</script>

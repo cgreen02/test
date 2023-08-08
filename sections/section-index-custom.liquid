@@ -1,0 +1,90 @@
+{% if localization.country == "United States" %}
+    <style>
+        #custom {
+            padding: 0 20px
+        }
+
+        #customTitle {
+            font-size: 24px;
+            line-height: 34px;
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 11px;
+        }
+
+        #customTitle span {
+            color: var(--gold);
+        }
+
+        #customButton {
+            margin: 0 auto 30px;
+        }
+
+        #customSubtitle {
+            font-size: 21px;
+            line-height: 30px;
+            margin-bottom: 10px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        #customDescription {
+            max-width: 500px;
+            text-align: center;
+            margin: 0 auto 40px;
+            font-size: 16px;
+            line-height: 21px;
+        }
+
+        #customDescription a {
+            color: black;
+        }
+
+        #customGuarantee {
+            width: 120px;
+            display: block;
+            margin: auto;
+        }
+
+        @media (max-width: 800px) {
+            #customSubtitle {
+                max-width: 235px;
+                margin: 0 auto 10px;
+            }
+
+            #customDescription br {
+                display: none;
+            }
+        }
+    </style>
+
+    <div id="custom">
+        <div id="customTitle">Try Our <span>VKTRY Platinum </span> Custom Orthotics</div>
+        <a id="customButton" class="button" href="/products/vktry-insoles-platinum">Learn About Custom Orthotics</a>
+
+        <div id="customSubtitle">Still Not Sure Which VK to Choose?</div>
+        <div id="customDescription">
+            We’d be happy to explain the difference and help you choose the VKTRY Insole that’s right for you!
+            <br>
+            Contact us at <a href="tel:8444685879">(844)-468-5879</a> or
+            <a href="mailto:info@vktrygear.com">info@vktrygear.com</a>
+        </div>
+
+        <img id="customGuarantee" src="{{ 'money-back.svg' | file_url }}" alt="90 day money back guarantee">
+    </div>
+{% endif %}
+
+{% schema %}
+{
+    "name": "Index Custom",
+    "settings": [
+    ],
+    "blocks": [
+    ],
+    "presets": [
+        {
+            "name": "Index Custom"
+        }
+    ]
+}
+{% endschema %}

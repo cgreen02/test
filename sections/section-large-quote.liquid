@@ -1,0 +1,119 @@
+<style>
+    .quoteLarge {
+        position: relative;
+        max-width: 1000px;
+        margin: 0 auto 60px;
+    }
+
+    .quoteLargeImage {
+        display: block;
+        width: 100%;
+        background-color: white;
+    }
+
+    .quoteLargeContent {
+        padding: 10px;
+        width: 52%;
+        height: 49%;
+        position: absolute;
+        top: 17%;
+        left: 48%;
+    }
+
+    .quoteLargeTitle {
+        font-weight: bold;
+        font-size: 21px;
+        line-height: 32px;
+        margin-bottom: 10px;
+    }
+
+    .quoteLargeBody {
+        font-size: 16px;
+        line-height: 32px;
+        margin-bottom: 20px;
+    }
+
+    @media (max-width: 800px) {
+        .quoteLarge {
+            margin-bottom: 20px;
+        }
+
+        .quoteLargeContent {
+            position: relative;
+            top: -35px;
+            left: 0;
+            width: 100%;
+            padding: 20px 40px 0;
+            height: auto;
+        }
+    }
+</style>
+
+<section class="quoteLarge">
+    <picture class="quoteLargeImage">
+        <source media="(max-width: 800px)"
+                srcset="{{ section.settings.mobile_image | image_url: width: 2000 }}">
+        <source srcset="{{ section.settings.image | image_url: width: 2000 }}">
+        <img class="quoteLargeImage"
+             src="{{ section.settings.image | image_url: width: 2000 }}">
+    </picture>
+    <div class="quoteLargeContent">
+        <img class="quoteImage" src="{{ 'quote-up.png' | file_url }}">
+        <div class="quoteLargeTitle">
+            {{ section.settings.title }}
+        </div>
+        <div class="quoteLargeBody">
+            {{ section.settings.body }}
+        </div>
+        <div class="quoteBy">
+            {{ section.settings.author }}
+            <img class="quoteImage" src="{{ 'quote-down.png' | file_url }}">
+        </div>
+    </div>
+</section>
+
+{% schema %}
+{
+  "name": "Large Quote",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "richtext",
+      "id": "body",
+      "label": "Body"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "author",
+      "label": "Author"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "mobile_image",
+      "label": "Mobile Image"
+    }
+  ],
+  "blocks": [
+
+  ],
+  "presets": [
+    {
+      "name": "Large Quote",
+      "settings": {
+      },
+      "blocks": [
+
+      ]
+    }
+  ]
+}
+{% endschema %}

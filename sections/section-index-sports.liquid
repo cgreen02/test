@@ -1,0 +1,256 @@
+<style>
+    #sports {
+        background-color: black;
+        padding: 150px 20px 55px;
+    }
+
+    {% if template == "index" %}
+    #sports {
+        padding-top: 90px;
+    }
+
+    {% endif %}
+
+    #sportsInner {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    #sportsTitle {
+        display: flex;
+        align-items: center;
+        margin-bottom: 40px;
+        justify-content: center;
+    }
+
+    #sportsTitle hr {
+        height: 2px;
+        flex-grow: 1;
+    }
+
+    #sportsTitleInner {
+        margin: 0 10px;
+        font-size: 36px;
+        font-weight: bold;
+        text-align: center;
+        color: white;
+    }
+
+    #sportsTitleInner span {
+        color: var(--gold)
+    }
+
+    .sportsSubtitle {
+        font-size: 21px;
+        line-height: 30px;
+        font-weight: bold;
+        color: white;
+        text-align: center;
+    }
+
+    .sportsSubtitle span {
+        color: var(--gold);
+    }
+
+    #sportsGrid {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1100px;
+        margin: 38px auto 28px;
+    }
+
+    .sportImage {
+        max-width: 160px;
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    #sportsList {
+        margin: 24px auto 25px;
+        display: flex;
+        justify-content: space-between;
+        color: white;
+        max-width: 800px;
+        line-height: 37px;
+        font-size: 18px;
+    }
+
+    #sportsList a {
+        color: white;
+        text-decoration: none;
+    }
+
+    #sportsButton {
+        margin: 37px auto 0;
+    }
+
+    #sportsButtonGrid {
+        margin: 37px auto 0;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+
+    @media (max-width: 800px) {
+        #sportsTitle {
+            margin-bottom: 21px;
+        }
+
+        #sportsTitle hr {
+            width: 27%;
+            flex-grow: unset;
+        }
+
+        #sportsTitleInner {
+            font-size: 20px;
+            min-width: 250px;
+        }
+
+        .sportsSubtitle {
+            font-size: 18px;
+            line-height: 24px;
+        }
+
+        .sportsSubtitle br {
+            display: none;
+        }
+
+        #sportsGrid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 16px;
+            row-gap: 1px;
+        }
+
+        .sportImage {
+            max-width: 150px;
+        }
+
+        .sportImage:last-of-type {
+            display: none;
+        }
+
+        #sportsList {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 20px;
+            font-size: 16px;
+            line-height: 34px;
+            max-width: 85%;
+        }
+
+        #sportsButtonGrid {
+            gap: 20px
+        }
+
+    }
+
+    {% if template == "page.parents" %}
+    #sports {
+        padding: 60px 20px;
+    }
+
+    {% endif %}
+</style>
+
+<div id="sports">
+    <div id="sportsInner">
+        {% if template == "page.parents" %}
+            <div id="sportsTitle">
+                <div id="sportsTitleInner">
+                    VKs are <span>customized</span> for your sport, gender, age and weight.
+                </div>
+            </div>
+        {% else %}
+            <div id="sportsTitle">
+                <hr>
+                <div id="sportsTitleInner">
+                    <span>THE MOST RESEARCHED</span>
+                    INSOLES IN THE WORLD
+                </div>
+                <hr>
+            </div>
+            <div class="sportsSubtitle">
+                Made from aerospace-grade carbon fiber, <br>VKs are
+                <span>customized</span> for your sport, gender, age and weight.
+            </div>
+        {% endif %}
+
+        <div id="sportsGrid">
+            <img class="sportImage" src="{{ 'index-sport-vollyball.png' | file_img_url: "200x" }}" loading="lazy" alt="volleyball">
+            <img class="sportImage" src="{{ 'index-sport-football.png' | file_img_url: "200x" }}" loading="lazy" alt="football">
+            <img class="sportImage" src="{{ 'index-sport-basketball.png' | file_img_url: "200x" }}" loading="lazy" alt="basketball">
+            <img class="sportImage" src="{{ 'index-sport-baseball.png' | file_img_url: "200x" }}" loading="lazy" alt="baseball">
+            <img class="sportImage" src="{{ 'index-sport-soccerball.png' | file_img_url: "200x" }}" loading="lazy" alt="soccer ball">
+        </div>
+        <div class="sportsSubtitle">
+            <span>See What VKs Could Do For Your Sport</span>
+        </div>
+        <div id="sportsList">
+            <div>
+                <a href="/pages/baseball">Baseball/Softball</a>
+                <br>
+                <a href="/pages/basketball">Basketball</a>
+                <br>
+                <a href="/pages/general-sports">Boxing</a>
+                <br>
+                <a href="/pages/general-sports">Cheerleading</a>
+            </div>
+            <div>
+                <a href="/pages/general-sports">Cycling</a>
+                <br>
+                <a href="/pages/fitness">Fitness</a>
+                <br>
+                <a href="/pages/football">Football</a>
+                <br>
+                <a href="/pages/golf">Golf</a>
+            </div>
+            <div>
+                <a href="/pages/general-sports">Lacrosse</a>
+                <br>
+                <a href="/pages/general-sports">Racquet Sports</a>
+                <br>
+                <a href="/pages/general-sports">Rugby</a>
+                <br>
+                <a href="/pages/running">Running Sports</a>
+            </div>
+            <div>
+                <a href="/pages/soccer">Soccer</a>
+                <br>
+                <a href="/pages/track-field">Track & Field</a>
+                <br>
+                <a href="/pages/volleyball">Volleyball</a>
+                <br>
+                <a href="/pages/general-sports">Walking & Hiking</a>
+            </div>
+        </div>
+
+        <div class="sportsSubtitle"><span>And More...</span></div>
+        {% if template == "page.parent-refer" %}
+            <div id="sportsButton" class="button openParents">Tell Your Parents About VKTRY</div>
+        {% elsif template == "page.parents" %}
+            <div id="sportsButtonGrid">
+                <a class="button" href="/products/vktry-insoles-gold/">Insoles For Serious Athletes</a>
+                <a class="button" href="/products/vktry-insoles-silver/">Insoles For Casual Athletes</a>
+            </div>
+        {% else %}
+            <a id="sportsButton" class="button" href="/pages/how-it-works/">How VKs Work</a>
+        {% endif %}
+    </div>
+</div>
+
+{% schema %}
+{
+  "name": "Index Sports",
+  "settings": [
+
+  ],
+  "presets": [
+    {
+      "name": "Index Sports"
+    }
+  ]
+}
+{% endschema %}

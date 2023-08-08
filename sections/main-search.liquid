@@ -1,0 +1,18 @@
+<div class="collection">
+    <h1 class="collectionTitle">Search</h1>
+    <p class="collectionDescription">{{ search.results_count }} {{ search.results_count | pluralize: 'result', 'results' }} of "{{ search.terms | split: '*' }}"</p>
+    <div class="collectionGrid">
+        {% for product in collection.products %}
+            {% render 'collection-item', product: product %}
+        {% endfor %}
+    </div>
+</div>
+
+{% schema %}
+{
+  "name": "Search",
+  "settings": [
+
+  ]
+}
+{% endschema %}

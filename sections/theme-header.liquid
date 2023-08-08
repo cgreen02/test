@@ -1,0 +1,108 @@
+<header id="header">
+    <div id="headerTop">
+        <a id="headerPhone" href="tel:8444685879">Need Help? (844)-468-5879</a>
+        <a id="headerLogo" href="/" title="VKTRY logo">
+            {% render 'svg', type: 'logo' %}
+        </a>
+        <div id="headerIcons">
+            <a id="headerPhoneMobile" href="tel:8444685879" title="phone number">
+                {% render 'svg', type: 'phone' %}
+            </a>
+            <a id="headerAccount" href="{{ routes.account_url }}" title="my account">
+                {% render 'svg', type: 'user' %}
+            </a>
+            <a id="headerCart" href="{{ routes.cart_url }}" title="cart">
+                {% if cart.item_count > 0 %}
+                    {% assign cart_count = cart.item_count %}
+                    {% for item in cart.items %}
+                        {% if item.product.id == 7224367743147 %}
+                            {% assign cart_count = cart.item_count | minus: 1 %}
+                        {% endif %}
+                    {% endfor %}
+                    <span id="headerCartCount">{{ cart_count }}</span>
+                {% endif %}
+                {% render 'svg', type: 'cart' %}
+            </a>
+            <button id="headerMenu" title="toggle menu">
+                {% render 'svg', type: 'menu' %}
+            </button>
+        </div>
+    </div>
+    <nav id="headerNav">
+        {% for link in linklists['main-menu'].links %}
+            {% if link.links.size > 0 %}
+                <div class="headerNavItem">
+                    {{ link.title }}
+                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="6" viewBox="0 0 8 6">
+                        <path id="down_arrow" data-name="down arrow" d="M4,0,8,6H0Z" transform="translate(8 6) rotate(180)"/>
+                    </svg>
+                </div>
+                <div class="headerNavDropdown" {% if link.title == "More" %}style="left: unset; right: 0"{% endif %}>
+                    {% for child_link in link.links %}
+                        <a class="headerNavDropdownItem" href="{{ child_link.url }}">{{ child_link.title }}</a>
+                    {% endfor %}
+                </div>
+            {% else %}
+                {% comment %}Skip platinum for international {% endcomment %}
+                {% if link.url contains "platinum" and localization.country != "United States" %}
+                    {% continue %}
+                {% endif %}
+                <a class="headerNavItem" href="{{ link.url }}">{{ link.title }}</a>
+            {% endif %}
+        {% endfor %}
+    </nav>
+</header>
+
+<div id="slider">
+    <nav id="sliderNav">
+        <div id="sliderNavExit" class="closeNav">X</div>
+        {% for link in linklists['main-menu'].links %}
+            {% if link.links.size > 0 %}
+                <div class="sliderNavItem dropdown">{{ link.title }}</div>
+                <div class="sliderNavDropdown">
+                    {% for child_link in link.links %}
+                        <a class="sliderNavDropdownItem" href="{{ child_link.url }}">{{ child_link.title }}</a>
+                    {% endfor %}
+                </div>
+            {% else %}
+                {% comment %}Skip platinum for international {% endcomment %}
+                {% if link.url contains "platinum" and localization.country != "United States" %}
+                    {% continue %}
+                {% endif %}
+                <a class="sliderNavItem" href="{{ link.url }}">{{ link.title }}</a>
+            {% endif %}
+        {% endfor %}
+    </nav>
+    <div id="sliderExit" class="closeNav"></div>
+</div>
+
+
+{% schema %}
+
+{
+    "name": "Header",
+    "blocks": [
+        {
+            "name": "Link",
+            "type": "link",
+            "settings": [
+                {
+                    "type": "checkbox",
+                    "id": "mobile_only",
+                    "label": "Mobile Only"
+                },
+                {
+                    "type": "text",
+                    "id": "title",
+                    "label": "Title"
+                },
+                {
+                    "type": "url",
+                    "id": "url",
+                    "label": "URL"
+                }
+            ]
+        }
+    ]
+}
+{% endschema %}

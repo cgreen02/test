@@ -1,0 +1,420 @@
+<style>
+    [id="{{ section.id }}"] {
+        background-color: {{ section.settings.background }};
+        overflow-x: hidden;
+    }
+
+    .full-width-feature--margin-top {
+        margin-top: 3rem
+    }
+
+    .full-width-feature--light-purple {
+        background-color: #c1c1e1
+    }
+
+    .fwf__container {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center
+    }
+
+    @media (max-width: 991px) {
+        .fwf__container {
+            padding-top: 4rem;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column
+        }
+    }
+
+    .full-width-feature--reverse .fwf__container {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: reverse;
+        -webkit-flex-direction: row-reverse;
+        -ms-flex-direction: row-reverse;
+        flex-direction: row-reverse
+    }
+
+    @media (max-width: 991px) {
+        .full-width-feature--reverse .fwf__container {
+            padding-top: 0;
+            padding-bottom: 4rem;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: reverse;
+            -webkit-flex-direction: column-reverse;
+            -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse
+        }
+    }
+
+    .fwf__info-container {
+        position: absolute;
+        z-index: 3;
+        width: 100%
+    }
+
+    @media (max-width: 1199px) {
+        .fwf__info-container {
+            padding-left: 2.5rem
+        }
+    }
+
+    @media (max-width: 991px) {
+        .fwf__info-container {
+            max-width: 600px;
+            width: 100%;
+            padding-right: 2.5rem;
+            position: relative
+        }
+    }
+
+    .full-width-feature--reverse .fwf__info-container {
+        text-align: right
+    }
+
+    @media (max-width: 1199px) {
+        .full-width-feature--reverse .fwf__info-container {
+            padding-left: 0;
+            padding-right: 2.5rem
+        }
+    }
+
+    @media (max-width: 991px) {
+        .full-width-feature--reverse .fwf__info-container {
+            padding-left: 2.5rem
+        }
+    }
+
+    .fwf__info {
+        margin-left: calc((100vw - 1500px) / 2 + 25px)
+    }
+
+    @media (max-width: 1500px) {
+        .fwf__info {
+            margin-left: calc((100vw - 1240px) / 2 + 25px)
+        }
+    }
+
+    @media (max-width: 1199px) {
+        .fwf__info {
+            margin-left: 2.5rem
+        }
+    }
+
+    @media (max-width: 991px) {
+        .fwf__info {
+            width: 100%;
+            margin: 0
+        }
+    }
+
+    .full-width-feature--reverse .fwf__info {
+        margin-left: initial;
+        margin-right: calc((100vw - 1500px) / 2 + 25px)
+    }
+
+    @media (max-width: 1500px) {
+        .full-width-feature--reverse .fwf__info {
+            margin-left: initial;
+            margin-right: calc((100vw - 1240px) / 2 + 25px)
+        }
+    }
+
+    @media (max-width: 1199px) {
+        .full-width-feature--reverse .fwf__info {
+            margin-right: 2.5rem;
+            margin-left: 0
+        }
+    }
+
+    @media (max-width: 991px) {
+        .full-width-feature--reverse .fwf__info {
+            margin: 0
+        }
+    }
+
+    .fwf__description {
+        max-width: 361px;
+        margin-top: 1rem
+    }
+
+    .full-width-feature--reverse .fwf__description {
+        margin-left: auto
+    }
+
+    .fwf__ctas {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        margin-top: 3rem
+    }
+
+    @media (max-width: 991px) {
+        .fwf__ctas {
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column
+        }
+    }
+
+    .full-width-feature--reverse .fwf__ctas {
+        -webkit-box-pack: end;
+        -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+        justify-content: flex-end
+    }
+
+    .fwf__cta:not(:first-child) {
+        margin-left: 3rem
+    }
+
+    @media (max-width: 991px) {
+        .fwf__cta:not(:first-child) {
+            margin: 1rem 0 0
+        }
+    }
+
+    .fwf__reference {
+        margin-top: 2rem;
+        max-width: 680px;
+        width: 45%;
+        margin-right: auto
+    }
+
+    .full-width-feature--reverse .fwf__reference {
+        margin-left: auto;
+        margin-right: initial
+    }
+
+    @media (max-width: 1199px) {
+        .fwf__reference {
+            width: 55%
+        }
+    }
+
+    @media (max-width: 991px) {
+        .fwf__reference {
+            width: 100%
+        }
+    }
+
+    .fwf__image-container {
+        position: relative;
+        width: 59.3vw;
+        overflow: hidden;
+        margin-left: auto
+    }
+
+    .fwf__image-container img {
+        position: absolute;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+    @media (max-width: 1199px) {
+        .fwf__image-container {
+            width: 45vw
+        }
+    }
+
+    @media (max-width: 991px) {
+        .fwf__image-container {
+            width: 100vw;
+            margin-top: 2.5rem
+        }
+    }
+
+    .full-width-feature--reverse .fwf__image-container {
+        margin-left: 0;
+        margin-right: auto
+    }
+
+    @media (max-width: 991px) {
+        .full-width-feature--reverse .fwf__image-container {
+            margin-top: 0;
+            margin-bottom: 2.5rem
+        }
+    }
+
+    .fwf__image-container:before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 40%;
+        height: 200%;
+        left: -32.5%;
+        top: -30%;
+        z-index: 2;
+        -webkit-transform: rotate(25deg);
+        -ms-transform: rotate(25deg);
+        transform: rotate(25deg)
+    }
+
+    [id="{{ section.id }}"] .fwf__image-container:before {
+        background-color: {{ section.settings.background }};
+    }
+
+    @media (max-width: 991px) {
+        .fwf__image-container:before {
+            width: 200%;
+            height: 38%;
+            top: 0;
+            left: 0;
+            -webkit-transform: rotate(20deg);
+            -ms-transform: rotate(20deg);
+            transform: rotate(20deg)
+        }
+    }
+
+    .full-width-feature--reverse .fwf__image-container:before {
+        right: -32%;
+        left: auto;
+        -webkit-transform: rotate(-25deg);
+        -ms-transform: rotate(-25deg);
+        transform: rotate(-25deg)
+    }
+
+    @media (max-width: 991px) {
+        .full-width-feature--reverse .fwf__image-container:before {
+            width: 200%;
+            height: 38%;
+            top: auto;
+            bottom: -25%;
+            left: -32.5%;
+            -webkit-transform: rotate(20deg);
+            -ms-transform: rotate(20deg);
+            transform: rotate(20deg)
+        }
+    }
+
+    .full-width-feature--light-purple .fwf__image-container:before {
+        background-color: #c1c1e1
+    }
+
+    .fwf__image-container:after {
+        content: "";
+        display: block;
+        padding-bottom: 68.4278351%
+    }
+
+    @media (max-width: 991px) {
+        .fwf__image-container:after {
+            padding-bottom: 94.6524064%
+        }
+    }
+</style>
+
+<section id="{{ section.id }}"
+         class="full-width-feature{% if section.settings.class %} {{- section.settings.class -}}{% endif %}  {% if section.settings.flip %}full-width-feature--reverse {% endif %}"
+         data-module="full-width-feature">
+    <div class="fwf__container">
+        <div class="fwf__info-container">
+            <div class="fwf__info z2">
+                {% if section.settings.title %}
+                    <h2 class="fwf__title h4">{{- section.settings.title -}}</h2>
+                {% endif %}
+                {% if subtitle %}
+                    <h2 class="fwf__subtitle {% if section.settings.subtitle_class %}{{- section.settings.subtitle_class -}}{% else %}h3 h3--no-resize{% endif %}">{{- section.settings.subtitle -}}</h2>
+                {% endif %}
+                {% if section.settings.description %}
+                    <div class="fwf__description b3">{{- section.settings.description -}}</div>
+                {% endif %}
+                {% if section.settings.quote %}
+                    <div class="fwf__reference h8">{{- section.settings.quote -}}</div>
+                {% endif %}
+                {% if section.settings.reference %}
+                    <div class="fwf__reference b1">{{- section.settings.reference -}}</div>
+                {% endif %}
+            </div>
+        </div>
+        {% if section.settings.image %}
+            <div class="fwf__image-container">
+                <img src="{{ section.settings.image | image_url: width: 1000 }}" alt="{{ section.settings.image.alt }}">
+            </div>
+        {% endif %}
+    </div>
+</section>
+
+{% schema %}
+{
+  "name": "Full Width Feature",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Sub Title"
+    },
+    {
+      "type": "text",
+      "id": "subtitle_class",
+      "label": "Sub Title Class"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description"
+    },
+    {
+      "type": "textarea",
+      "id": "quote",
+      "label": "Quote"
+    },
+    {
+      "type": "richtext",
+      "id": "reference",
+      "label": "Reference"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "color_background",
+      "id": "background",
+      "label": "Background",
+      "default": "#e9e9e9"
+    },
+    {
+      "type": "text",
+      "id": "class",
+      "label": "Class"
+    },
+    {
+      "type": "checkbox",
+      "id": "flip",
+      "label": "Flip",
+      "default": false
+    }
+  ],
+  "blocks": [
+
+  ],
+  "presets": [
+    {
+      "name": "Full Width Feature",
+      "settings": {
+      },
+      "blocks": [
+
+      ]
+    }
+  ]
+}
+{% endschema %}

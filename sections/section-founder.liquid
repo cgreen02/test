@@ -1,0 +1,72 @@
+<style>
+    #founder {
+        border-top: 4px solid var(--gold);
+        background-color: #C1C1C1;
+    }
+
+    #founderInner {
+        max-width: 1166px;
+        margin: auto;
+        position: relative;
+    }
+
+    .founderImage {
+        display: block;
+        width: 100%;
+    }
+
+    #founderContent {
+        position: absolute;
+        top: 35%;
+        left: 38%;
+        max-width: 566px;
+        font-size: 18px;
+        line-height: 30px;
+        width: 100%;
+    }
+
+    #founderContent span {
+        font-size: 16px;
+    }
+
+    @media (max-width: 800px) {
+        #founderContent {
+            position: static;
+            padding: 35px;
+            font-size: 16px;
+            line-height: 26px;
+        }
+    }
+
+</style>
+
+<div id="founder">
+    <div id="founderInner">
+        <picture class="founderImage">
+            <source media="(max-width: 800px)" srcset="{{ 'index-founder-mobile.jpg' | file_url }}">
+            <source srcset="{{ 'index-founder.png' | file_url }}">
+            <img class="founderImage" src="{{ 'index-founder.png' | file_url }}" alt="Matt Arciuolo" loading="lazy">
+        </picture>
+        <div id="founderContent">“As a Board Certified Pedorthist, I have been helping athletes recover from injuries
+            for over 30 years. As VKTRY’s founder and inventor, I am proud and honored that our insoles help athletes to
+            stay healthier and to perform up to their true potential.”<br><br><span>Matt Arciuolo | Founder</span>
+        </div>
+    </div>
+</div>
+
+{% schema %}
+{
+  "name": "Founder",
+  "settings": [
+
+  ],
+  "blocks": [
+
+  ],
+  "presets": [
+    {
+      "name": "Founder"
+    }
+  ]
+}
+{% endschema %}

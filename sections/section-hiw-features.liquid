@@ -1,0 +1,240 @@
+<style>
+
+    .hiw-features__container {
+        background-color: black;
+        color: #fff !important;
+        position: relative;
+    }
+
+    .hiw-features-left h3 {
+        font-family: titling-gothic-fb-compressed, sans-serif;
+        text-transform: uppercase;
+        font-weight: normal;
+        font-size: 18px;
+    }
+
+    .hiw-features-left {
+        width: 40%;
+        padding: 6rem 0;
+    }
+
+    .hiw-features-left img {
+        padding-right: 2rem;
+    }
+
+    .hiw-features-right {
+        width: 60%;
+    }
+
+    .hiv-feature-bg-wrap {
+        position: absolute;
+        height: 100%;
+        width: 60%;
+        top: 0;
+        right: 0;
+    }
+
+    .hiv-feature-bg-wrap {
+        clip-path: polygon(25% 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+
+    .hiv-feature-bg-wrap img {
+        height: 100%;
+        width: 100%;
+        object-position: top left;
+        object-fit: cover;
+    }
+
+    .hiw-features-left h2 {
+        text-transform: uppercase;
+        font-size: 42px;
+        font-weight: normal;
+        font-family: titling-gothic-fb-compressed, sans-serif;
+        font-weight: normal;
+    }
+
+    .hiw-features-wrap {
+        display: flex;
+        position: relative;
+    }
+
+
+    .hiw-feature {
+        display: flex;
+        margin: 5rem 0;
+    }
+
+    .hiw-feature img {
+        width: auto;
+    }
+
+    .hiw-features-left .hiw-feature:last-of-type {
+        margin-bottom: 0px !important;
+
+    }
+
+    .hiw-feature-number {
+        font-size: 4rem;
+        color: var(--gold);
+        border: 1px solid var(--gold);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        width: 75px;
+        height: 75px;
+        text-align: center;
+        margin-right: 4rem;
+        font-family: titling-gothic-fb-compressed, sans-serif;
+        font-weight: normal;
+    }
+
+    .hiw-feature-desc h3 {
+        margin: 0 0 1rem 0;
+        font-family: titling-gothic-fb-compressed, sans-serif;
+        text-transform: uppercase;
+        font-weight: normal;
+        font-size: 18px;
+
+    }
+
+    .hiw-feature-desc p {
+        font-size: 16px;
+    }
+
+    .card-highlight .image-mask {
+        border: .4rem solid #fff;
+
+    }
+
+    .hiv-feature-bg-wrap-mobile {
+        display: none;
+        width: 100%;
+        height: 400px;
+        position: relative;
+    }
+
+    .hiv-feature-bg-wrap-mobile img {
+        object-fit: cover;
+        object-position: top;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+    }
+
+
+    @media screen and (max-width: 800px) {
+
+        .hiv-feature-bg-wrap {
+            display: none;
+        }
+
+        .hiv-feature-bg-wrap-mobile {
+            display: block;
+        }
+
+        .hiw-features-wrap {
+            display: block;
+        }
+
+        .hiw-features-right,
+        .hiw-features-left {
+            width: 100%;
+
+        }
+
+
+        .hiw-features-left h2,
+        .hiw-features-left h3.hiw-heading {
+            text-align: center;
+        }
+
+
+    }
+
+</style>
+
+<section class="hiw-features">
+    <div class="hiw-features__container">
+
+        <div class="hiw-features-wrap container">
+
+            <div class="hiw-features-left">
+
+                <h2>Proven Performance</h2>
+
+                <div class="hiw-feature">
+                    <img src="{{ 'higher.svg' | file_url }}" alt="Higher"/>
+
+                    <div class="hiw-feature-desc">
+                        <h3>JUMP HIGHER</h3>
+                        <p>+1.6” on a vertical leap, +4” on a broad jump</p>
+                    </div>
+                </div>
+
+                <div class="hiw-feature">
+                    <img src="{{ 'faster.svg' | file_url }}" alt="Faster"/>
+
+                    <div class="hiw-feature-desc">
+                        <h3>RUN FASTER</h3>
+                        <p>.12 sec shaved off a 40 yd dash</p>
+                    </div>
+                </div>
+
+                <div class="hiw-feature">
+                    <img src="{{ 'explode.svg' | file_url }}" alt="Explode"/>
+
+                    <div class="hiw-feature-desc">
+                        <h3>MORE EXPLOSIVENESS</h3>
+                        <p>+9% rate of force development</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="hiw-features-right">
+
+
+            </div>
+
+
+        </div>
+
+
+        <div class="hiv-feature-bg-wrap">
+            <img src="{{ 'georgia-jones-basketball.jpeg' | file_url }}" alt="">
+        </div>
+
+        <div class="hiv-feature-bg-wrap-mobile">
+            <img src="{{ 'georgia-jones-basketball.jpeg' | file_url }}" alt="">
+        </div>
+
+
+    </div>
+</section>
+
+{% schema %}
+{
+  "name": "How It Works - Features",
+  "settings": [
+
+  ],
+  "blocks": [
+
+  ],
+  "presets": [
+    {
+      "name": "How It Works - Features",
+      "settings": {
+      },
+      "blocks": [
+
+      ]
+    }
+  ]
+}
+{% endschema %}

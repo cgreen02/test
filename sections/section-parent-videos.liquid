@@ -1,0 +1,154 @@
+<style>
+    /*********
+Videos
+ */
+
+    .videos {
+        margin-bottom: 30px;
+    }
+
+    .videoSlide {
+        height: auto;
+    }
+
+    .videoContainer {
+        position: relative;
+        margin-bottom: 14px;
+    }
+
+    .videoItem {
+        display: block;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        aspect-ratio: 406/720;
+    }
+
+    .videoPlay {
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+        z-index: 1;
+    }
+
+    .videoSlide.active .videoPlay {
+        display: none;
+    }
+
+    .videoTitle {
+        font-size: 21px;
+        line-height: 28px;
+        font-weight: bold;
+        text-align: center;
+        max-width: 335px;
+        margin: auto;
+    }
+
+    @media (max-width: 600px) {
+        .videoSlide {
+            width: 70%;
+        }
+
+        .videoTitle {
+            font-size: 17px;
+            line-height: 24px;
+        }
+    }
+</style>
+<div id="{{ section.id }}" class="videos swiper">
+    <div class="swiper-wrapper">
+        {% for block in section.blocks %}
+            <div class="swiper-slide videoSlide">
+                <div class="videoContainer">
+                    <video class="videoItem" playsinline poster="{{ block.settings.poster | image_url }}">
+                        <source src="{{ block.settings.video.sources[1].url }}" type="video/mp4">
+                    </video>
+                    <img class="videoPlay" src="{{ 'play.png' | file_url }}">
+                </div>
+                <div class="videoTitle">{{ block.settings.title | newline_to_br }}</div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
+<script>
+    new Swiper(`[id="{{ section.id }}"]`, {
+        slidesPerView: "auto",
+        spaceBetween: 10,
+        breakpoints: {
+            600: {
+                slidesPerView: 4,
+                spaceBetween: 20
+            },
+        },
+        on: {
+            slideChange: function () {
+                document.querySelectorAll(`[id="{{ section.id }}"] .videoSlide`).forEach(function (element) {
+                    element.querySelector("video").pause();
+                    element.classList.remove("active")
+                });
+            },
+        },
+    });
+
+    document.querySelectorAll(`[id="{{ section.id }}"] .videoSlide`).forEach(function (element) {
+        element.addEventListener("click", function () {
+            if (this.classList.contains("active")) {
+                this.querySelector("video").pause();
+                this.classList.remove("active")
+            } else {
+                // stop if there is another active
+                if (document.querySelector(".videoSlide.active")) {
+                    document.querySelector(".videoSlide.active").querySelector("video").pause();
+                    document.querySelector(".videoSlide.active").classList.remove("active")
+                }
+                this.querySelector("video").play();
+                this.classList.add("active");
+            }
+        });
+    });
+
+
+</script>
+
+
+{% schema %}
+{
+  "name": "Video Swiper",
+  "settings": [
+
+  ],
+  "blocks": [
+    {
+      "type": "video",
+      "name": "Video",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "poster",
+          "label": "Poster"
+        },
+        {
+          "type": "video",
+          "id": "video",
+          "label": "Video"
+        },
+        {
+          "type": "textarea",
+          "id": "title",
+          "label": "Title"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Video Swiper"
+    }
+  ]
+}
+{% endschema %}

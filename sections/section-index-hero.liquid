@@ -1,0 +1,129 @@
+<style>
+    #hero {
+        background-color: #070506;
+    }
+
+    #heroInner {
+        max-width: 1200px;
+        margin: auto;
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr 1fr;
+        padding: 0 20px;
+        column-gap: 20px;
+    }
+
+    #heroContent {
+        display: flex;
+        flex-direction: column;
+        min-width: 535px;
+        padding: 20px 0;
+    }
+
+    #heroSubtitle span {
+        color: var(--gold)
+    }
+
+    #heroTitle {
+        font-size: 42px;
+        line-height: 49px;
+        font-weight: bold;
+        margin-bottom: 19px;
+        color: white;
+    }
+
+    #heroTitleBig {
+        font-size: 60px;
+        color: var(--gold)
+    }
+
+    #heroTitle span:first-child {
+        color: var(--gold);
+    }
+
+    .heroButton:first-of-type {
+        margin-bottom: 21px;
+    }
+
+    #heroCompare {
+        text-align: center;
+        color: white;
+        display: block;
+        margin-top: 34px;
+        font-size: 16px;
+        line-height: 21px;
+        max-width: 345px;
+    }
+
+    .heroImage {
+        display: block;
+        width: 100%;
+    }
+
+    .heroVideo {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    @media (max-width: 800px) {
+        #heroInner {
+            grid-template-columns: 1fr;
+            padding: 0;
+        }
+
+        #heroContent {
+            order: 1;
+            padding: 17px 24px;
+            min-width: auto;
+            align-items: center;
+        }
+
+        #heroTitle {
+            font-size: 28px;
+            line-height: 33px;
+        }
+
+        #heroTitleBig {
+            font-size: 40px;
+        }
+    }
+</style>
+
+<div id="hero">
+    <div id="heroInner">
+        <div id="heroContent">
+            <div id="heroTitle">
+                <div>GET THE ADDED</div>
+                <div id="heroTitleBig">PERFORMANCE</div>
+                <div>YOUR REGULAR INSOLES AREN'T PROVIDING</div>
+            </div>
+            <a class="heroButton button" href="/products/vktry-insoles-gold">Insoles for Serious Athletes</a>
+            <a class="heroButton button" href="/products/vktry-insoles-silver">Insoles for Casual Athletes</a>
+            <a id="heroCompare" href="/#compare">Compare Insoles</a>
+        </div>
+        <video class="heroVideo" playsinline autoplay loop muted poster="//cdn.shopify.com/s/files/1/0072/5568/7283/files/preview_images/5df6013d73a144178e1efa5122404ba5.thumbnail.0000000000_500x.jpg?v=1686581176">
+            <source src="{{ section.settings.video.sources[1].url }}" type="video/mp4">
+        </video>
+    </div>
+</div>
+
+
+{% schema %}
+{
+    "name": "Homepage Hero",
+    "settings": [
+        {
+            "type": "video",
+            "id": "video",
+            "label": "Video"
+        }
+    ],
+    "presets": [
+        {
+            "name": "Homepage Hero"
+        }
+    ]
+}
+{% endschema %}

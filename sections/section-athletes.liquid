@@ -1,0 +1,613 @@
+{% for block in section.blocks %}
+    {% if block.type == "link" %}
+        {% assign has_links = true %}
+    {% endif %}
+{% endfor %}
+
+<style>
+    /****
+    Atheletes
+    ******/
+    #athletes {
+        max-width: 1400px;
+        margin: auto;
+        padding: 60px 20px 20px;
+    }
+
+    #athletesTitle {
+        display: flex;
+        align-items: center;
+    }
+
+    #athletesTitle hr {
+        height: 2px;
+        flex-grow: 1;
+    }
+
+    #athletesTitleInner {
+        margin: 0 10px;
+        font-size: 36px;
+        font-weight: bold;
+        text-align: center;
+        color: var(--gold)
+    }
+
+    #athletesSubtitle {
+        margin: 0 10px 40px;
+        font-size: 36px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .athletesLinks {
+        display: flex;
+        gap: 16px;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 45px;
+        margin-top: 60px;
+    }
+
+    .athletesMoneyBack {
+        width: 120px;
+        display: block;
+        margin: 60px auto 30px;
+    }
+
+    @media (max-width: 800px) {
+        .athletesMoneyBack {
+            margin-top: 20px;
+        }
+    }
+
+    .athletesLink {
+        text-align: center;
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: bold;
+        color: black;
+        display: block;
+    }
+
+    .athletesButtons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+        flex-wrap: wrap;
+    }
+
+    @media (max-width: 800px) {
+        #athletesTitleInner,
+        #athletesSubtitle {
+            font-size: 20px;
+        }
+    }
+
+    /*** Grid ***/
+    .grid-roster__container {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: start;
+        -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center
+    }
+
+    .grid-roster__item {
+        position: relative
+    }
+
+    @media (min-width: 992px) {
+        .grid-roster__item {
+            width: calc(100% / 3 - 10px)
+        }
+    }
+
+    @media (max-width: 991px) and (min-width: 576px) {
+        .grid-roster__item {
+            width: calc(50% - 7.5px)
+        }
+    }
+
+    @media (max-width: 575px) {
+        .grid-roster__item {
+            width: 100%
+        }
+    }
+
+    @media (min-width: 992px) {
+        .grid-roster__item:not(:nth-of-type(3n)) {
+            margin-right: 15px
+        }
+    }
+
+    @media (max-width: 991px) and (min-width: 576px) {
+        .grid-roster__item:not(:nth-of-type(2n)) {
+            margin-right: 15px
+        }
+    }
+
+    @media (min-width: 992px) {
+
+        .grid-roster__item:nth-child(6n+4),
+        .grid-roster__item:nth-child(6n+5),
+        .grid-roster__item:nth-child(6n+6) {
+            margin-top: -75px;
+            margin-bottom: 15px
+        }
+    }
+
+    @media (max-width: 991px) and (min-width: 576px) {
+
+        .grid-roster__item:nth-child(4n+3),
+        .grid-roster__item:nth-child(4n+4) {
+            margin-top: -75px;
+            margin-bottom: 15px
+        }
+    }
+
+    @media (max-width: 575px) {
+        .grid-roster__item:nth-child(2n) {
+            margin-top: -82px;
+            margin-bottom: 15px
+        }
+    }
+
+    .card-roster__overlay {
+        background-color: rgba(59, 56, 153, .75);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        -webkit-transition: all .3s cubic-bezier(.06, .305, 0, 1);
+        -o-transition: all .3s cubic-bezier(.06, .305, 0, 1);
+        transition: all .3s cubic-bezier(.06, .305, 0, 1);
+        z-index: 300;
+    }
+
+    .card-roster:hover .card-roster__overlay {
+        opacity: 1
+    }
+
+    .card-roster__copy {
+        position: absolute;
+        width: calc(100% - 80px);
+        top: 40px;
+        left: 40px;
+        color: #fff;
+        opacity: 0;
+        -webkit-transition: all .3s cubic-bezier(.06, .305, 0, 1);
+        -o-transition: all .3s cubic-bezier(.06, .305, 0, 1);
+        transition: all .3s cubic-bezier(.06, .305, 0, 1)
+    }
+
+    @media (max-width: 1199px) {
+        .card-roster__copy {
+            width: calc(100% - 40px);
+            top: 20px;
+            left: 20px
+        }
+    }
+
+    @media (min-width: 1200px) {
+
+        .grid-roster__item:nth-child(6n+4) .card-roster__copy,
+        .grid-roster__item:nth-child(6n+5) .card-roster__copy,
+        .grid-roster__item:nth-child(6n+6) .card-roster__copy {
+            top: 120px
+        }
+    }
+
+    @media (max-width: 1199px) and (min-width: 992px) {
+
+        .grid-roster__item:nth-child(6n+4) .card-roster__copy,
+        .grid-roster__item:nth-child(6n+5) .card-roster__copy,
+        .grid-roster__item:nth-child(6n+6) .card-roster__copy {
+            top: 100px
+        }
+    }
+
+    @media (max-width: 991px) and (min-width: 768px) {
+
+        .grid-roster__item:nth-child(4n+3) .card-roster__copy,
+        .grid-roster__item:nth-child(4n+4) .card-roster__copy {
+            top: 110px
+        }
+    }
+
+    @media (max-width: 767px) and (min-width: 576px) {
+
+        .grid-roster__item:nth-child(4n+3) .card-roster__copy,
+        .grid-roster__item:nth-child(4n+4) .card-roster__copy {
+            top: 100px
+        }
+    }
+
+    @media (max-width: 575px) and (min-width: 400px) {
+        .grid-roster__item:nth-of-type(2n) .card-roster__copy {
+            top: 125px
+        }
+    }
+
+    @media (max-width: 399px) {
+        .grid-roster__item:nth-of-type(2n) .card-roster__copy {
+            top: 105px
+        }
+    }
+
+    .card-roster:hover .card-roster__copy {
+        opacity: 1
+    }
+
+    .card-roster__image-mask-wrapper {
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        cursor: default
+    }
+
+    .card-roster__image-mask {
+        width: 100%;
+        -webkit-transform: skewY(12deg);
+        -ms-transform: skewY(12deg);
+        transform: skewY(12deg);
+        height: 100%;
+        overflow: hidden;
+        position: absolute;
+        bottom: 46px;
+        -webkit-backface-visibility: hidden
+    }
+
+    .card-roster__img-src img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    @media (max-width: 991px) {
+        .card-roster__image-mask {
+            bottom: 49px
+        }
+    }
+
+    @media (min-width: 992px) {
+
+        .grid-roster__item:nth-child(6n+4) .card-roster__image-mask,
+        .grid-roster__item:nth-child(6n+5) .card-roster__image-mask,
+        .grid-roster__item:nth-child(6n+6) .card-roster__image-mask {
+            -webkit-transform: skewY(12deg);
+            -ms-transform: skewY(12deg);
+            transform: skewY(12deg);
+            bottom: -46px
+        }
+    }
+
+    @media (max-width: 991px) and (min-width: 768px) {
+
+        .grid-roster__item:nth-child(4n+3) .card-roster__image-mask,
+        .grid-roster__item:nth-child(4n+4) .card-roster__image-mask {
+            -webkit-transform: skewY(12deg);
+            -ms-transform: skewY(12deg);
+            transform: skewY(12deg);
+            bottom: -49px
+        }
+    }
+
+    @media (max-width: 767px) and (min-width: 576px) {
+
+        .grid-roster__item:nth-child(4n+3) .card-roster__image-mask,
+        .grid-roster__item:nth-child(4n+4) .card-roster__image-mask {
+            -webkit-transform: skewY(12deg);
+            -ms-transform: skewY(12deg);
+            transform: skewY(12deg);
+            bottom: -39px
+        }
+    }
+
+    @media (max-width: 575px) {
+        .grid-roster__item:nth-of-type(2n) .card-roster__image-mask {
+            -webkit-transform: skewY(12deg);
+            -ms-transform: skewY(12deg);
+            transform: skewY(12deg);
+            bottom: -49px
+        }
+    }
+
+    .card-roster__image-mask-wrapper:after {
+        content: "";
+        display: block
+    }
+
+    @media (min-width: 1200px) {
+        .card-roster__image-mask-wrapper:after {
+            padding-top: 110%
+        }
+    }
+
+    @media (max-width: 1199px) and (min-width: 992px) {
+        .card-roster__image-mask-wrapper:after {
+            padding-top: 120%
+        }
+    }
+
+    @media (max-width: 991px) and (min-width: 768px) {
+        .card-roster__image-mask-wrapper:after {
+            padding-top: 130%
+        }
+    }
+
+    @media (max-width: 767px) and (min-width: 576px) {
+        .card-roster__image-mask-wrapper:after {
+            padding-top: 150%
+        }
+    }
+
+    @media (max-width: 575px) and (min-width: 400px) {
+        .card-roster__image-mask-wrapper:after {
+            padding-top: 110%
+        }
+    }
+
+    @media (max-width: 399px) {
+        .card-roster__image-mask-wrapper:after {
+            padding-top: 120%
+        }
+    }
+
+    .card-roster__image-mask__img-box {
+        max-width: 100%;
+        display: block;
+        -webkit-transform: skewY(-12deg);
+        -ms-transform: skewY(-12deg);
+        transform: skewY(-12deg);
+        position: absolute;
+        top: 46px;
+        left: 0;
+        width: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        z-index: 1
+    }
+
+    .card-roster__image-mask__img-box img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    @media (max-width: 991px) {
+        .card-roster__image-mask__img-box {
+            top: 49px
+        }
+    }
+
+    @media (min-width: 992px) {
+
+        .grid-roster__item:nth-child(6n+4) .card-roster__image-mask__img-box,
+        .grid-roster__item:nth-child(6n+5) .card-roster__image-mask__img-box,
+        .grid-roster__item:nth-child(6n+6) .card-roster__image-mask__img-box {
+            -webkit-transform: skewY(-12deg);
+            -ms-transform: skewY(-12deg);
+            transform: skewY(-12deg);
+            top: -46px
+        }
+    }
+
+    @media (max-width: 991px) and (min-width: 768px) {
+
+        .grid-roster__item:nth-child(4n+3) .card-roster__image-mask__img-box,
+        .grid-roster__item:nth-child(4n+4) .card-roster__image-mask__img-box {
+            -webkit-transform: skewY(-12deg);
+            -ms-transform: skewY(-12deg);
+            transform: skewY(-12deg);
+            top: -49px
+        }
+    }
+
+    @media (max-width: 767px) and (min-width: 576px) {
+
+        .grid-roster__item:nth-child(4n+3) .card-roster__image-mask__img-box,
+        .grid-roster__item:nth-child(4n+4) .card-roster__image-mask__img-box {
+            -webkit-transform: skewY(-12deg);
+            -ms-transform: skewY(-12deg);
+            transform: skewY(-12deg);
+            top: -39px
+        }
+    }
+
+    @media (max-width: 575px) {
+        .grid-roster__item:nth-of-type(2n) .card-roster__image-mask__img-box {
+            -webkit-transform: skewY(-12deg);
+            -ms-transform: skewY(-12deg);
+            transform: skewY(-12deg);
+            top: -49px
+        }
+    }
+
+    .card-roster__title {
+        margin-bottom: 20px
+    }
+
+    .card--roster__author {
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: 400;
+    }
+
+    .card--roster__author p {
+        margin: 0;
+    }
+
+</style>
+
+<div id="athletes">
+    {% if section.settings.title != blank %}
+        <div id="athletesTitle">
+            <hr>
+            <div id="athletesTitleInner">{{ section.settings.title }}</div>
+            <hr>
+        </div>
+    {% endif %}
+    {% if section.settings.subtitle != blank %}
+        <div id="athletesSubtitle">{{ section.settings.subtitle }}</div>
+    {% endif %}
+    <div class="grid-roster" data-module="grid-roster">
+        <div class="container grid-roster__container">
+            {% for block in section.blocks %}
+                {% if block.type == "card" %}
+                    <div class="grid-roster__item">
+                        <div class="card-roster" data-module="card-roster">
+                            <div class="card-roster__image-mask-wrapper">
+                                <div class="card-roster__image-mask z2">
+                                    <div class="card-roster__overlay z3"></div>
+                                    <div class="card-roster__image-mask__img-box z2">
+                                        <img src="{{ block.settings.image | image_url: width: 400 }}"
+                                             alt="{{ block.settings.quote_author | strip_html | strip_newlines }}"
+                                             class="card-roster__img-src" loading="lazy"
+                                        >
+                                    </div>
+                                </div>
+                                <div class="card-roster__copy z4">
+                                    {% if block.settings.quote %}
+                                        <div class="h4 h4--card card-roster__title">{{ block.settings.quote }}</div>
+                                    {% endif %}
+                                    {% if block.settings.quote_author %}
+                                        <div class="card--roster__author">{{ block.settings.quote_author }}</div>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+
+    {% if section.settings.show_money_back %}
+        <img src="{{ "money-back.svg" | asset_url }}" alt="money back" class="athletesMoneyBack">
+    {% endif %}
+
+    {% if has_links %}
+        <div class="athletesLinks">
+            {% for block in section.blocks %}
+                {% if block.type == "link" %}
+                    <a href="{{ block.settings.link_url }}" class="athletesLink">{{ block.settings.link_label }}</a>
+                {% endif %}
+            {% endfor %}
+        </div>
+    {% endif %}
+
+    <div class="athletesButtons">
+        {% for block in section.blocks %}
+            {% if block.type == "button" %}
+                <a class="button scrollTo" href="{{ block.settings.button_link }}">{{ block.settings.button_label }}</a>
+            {% endif %}
+        {% endfor %}
+    </div>
+</div>
+
+{% schema %}
+{
+  "name": "Athletes",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Sub Title"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_money_back",
+      "label": "Show Money Back Seal"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Card",
+      "type": "card",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "richtext",
+          "id": "quote",
+          "label": "Quote"
+        },
+        {
+          "type": "richtext",
+          "id": "quote_author",
+          "label": "Quote Author"
+        }
+      ]
+    },
+    {
+      "name": "Link",
+      "type": "link",
+      "settings": [
+        {
+          "type": "text",
+          "id": "link_label",
+          "label": "Link Label"
+        },
+        {
+          "type": "url",
+          "id": "link_url",
+          "label": "Link URL"
+        }
+      ]
+    },
+    {
+      "name": "Button",
+      "type": "button",
+      "settings": [
+        {
+          "type": "text",
+          "id": "button_label",
+          "label": "Button Label"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Button Link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Athletes"
+    }
+  ]
+}
+{% endschema %}

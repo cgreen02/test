@@ -1,0 +1,17 @@
+<div id="collections" class="container">
+    {%- for collection in collections -%}
+        <a class="collectionsItem" href="{{ collection.url }}">
+            <img class="collectionsItemImage" src="{{ collection.featured_image | image_url: width: 1000 }}" alt="{{ collection.featured_image.alt }}">
+            <div class="collectionsItemTitle">{{ collection.title }}</div>
+        </a>
+    {% endfor %}
+</div>
+
+{% schema %}
+{
+  "name": "List Collection",
+  "settings": [
+
+  ]
+}
+{% endschema %}

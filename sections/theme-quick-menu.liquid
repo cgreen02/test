@@ -1,0 +1,31 @@
+<div id="quickMenu">
+    <a class="quickMenuItem" href="/products/vktry-insoles-gold">Gold Insoles</a>
+    <a class="quickMenuItem" href="/products/vktry-insoles-silver">Silver Insoles</a>
+    {% if localization.country == "United States" %}
+        <a class="quickMenuItem" href="/products/vktry-insoles-platinum">Platinum Orthotics</a>
+    {% endif %}
+</div>
+{% schema %}
+{
+    "name": "Quick Menu",
+    "blocks": [
+        {
+            "name": "Link",
+            "type": "link",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "title",
+                    "label": "Title"
+                },
+                {
+                    "type": "url",
+                    "id": "url",
+                    "label": "URL"
+                }
+            ]
+        }
+    ],
+    "max_blocks": 4
+}
+{% endschema %}

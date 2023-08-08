@@ -1,0 +1,234 @@
+<style>
+    .hero {
+        position: relative;
+        height: 90vh;
+    }
+
+    .hero--has-overlay:after {
+        content: "";
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        background-color: #000;
+        opacity: .3;
+        position: absolute;
+    }
+
+    .hero__container {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: end;
+        -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+        height: 100%;
+        padding-bottom: 2rem;
+        position: relative;
+    }
+
+    .hero__header {
+        color: #fff;
+        margin-bottom: 0.4rem;
+    }
+
+    .hero__large-title {
+        margin-top: 2rem;
+        margin-bottom: 80px;
+        line-height: 105px;
+        letter-spacing: 2.45px;
+    }
+
+    .hero__description {
+        max-width: 407px;
+        width: 100%;
+        margin-top: 1rem;
+        font-size: 16px;
+    }
+
+    .hero__bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+
+    .mouse {
+        width: 31px;
+        height: 46px;
+        margin: 0 auto;
+    }
+
+    .mouse circle {
+        -webkit-animation: mouse 1.8s ease infinite;
+        animation: mouse 1.8s ease infinite;
+    }
+
+    @keyframes mouse {
+        0% {
+            opacity: 0;
+            -webkit-transform: translate(711px, 748.5px);
+            transform: translate(711px, 748.5px)
+        }
+
+        15% {
+            opacity: 1
+        }
+
+        20% {
+            opacity: 1
+        }
+
+        to {
+            -webkit-transform: translate(711px, 728.5px);
+            transform: translate(711px, 728.5px);
+            opacity: 0
+        }
+    }
+</style>
+
+<section
+        class="hero {% if section.setting.hero_class %} {{ section.settings.hero_class }}{% endif %}{% unless section.settings.hero_scroll %} hero--padding-bottom{% endunless %}  {% if section.settings.hero_has_overlay %} hero--has-overlay{% endif %}"
+        data-module="hero">
+    {% if section.settings.hero_image %}
+        <img src="{{ section.settings.hero_image | image_url: width: section.settings.hero_image_size | append: "px" }}"
+             alt="{{ section.settings.hero_image.alt }}"
+             class="hero__bg z2">
+    {% endif %}
+    <div class="hero__container container z3">
+        <div class="hero__header">
+            {% if section.settings.hero_title_small_top and section.settings.hero_title_small %}
+                <h2 class="hero__small-title h4">{{- section.settings.hero_title_small -}}</h2>
+            {% endif %}
+            {% if section.settings.hero_title_large != blank %}
+                <h1 class="hero__large-title h2">{{- section.settings.hero_title_large -}}</h1>
+            {% endif %}
+            {% if section.settings.hero_title_medium != blank %}
+                <h1 class="hero__medium-title h3">{{- section.settings.hero_title_medium -}}</h1>
+            {% endif %}
+            {% if section.settings.hero_title_small and section.settings.hero_title_small_top == false %}
+                <h2 class="hero__small-title h4">{{- section.settings.hero_title_small -}}</h2>
+            {% endif %}
+            {% if section.settings.hero_description != blank %}
+                <div class="hero__description b1">{{- section.settings.hero_description -}}</div>
+            {% endif %}
+            {% if section.settings.hero_video_link != blank %}
+                <a href="{{- section.settings.hero_video_link -}}"
+                   class="hero__video-link"{% if section.settings.hero_video_new_tab %} target="_blank"{% endif %}>
+                    {% render 'svg', type: 'play', class: 'hero__play-svg' %}
+                    {% if section.settings.hero_video_text %}
+                        <span class="hero__video-text b3 b3--bold">{{- section.settings.hero_video_text -}}</span>
+                    {% endif %}
+                </a>
+            {% endif %}
+        </div>
+        {% if section.settings.hero_scroll %}
+            {% render 'svg', type: 'mouse', class: 'mouse z3' %}
+        {% endif %}
+    </div>
+</section>
+
+{% schema %}
+{
+  "name": "Hero",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "hero_image",
+      "label": "Hero Image"
+    },
+    {
+      "type": "number",
+      "id": "hero_image_size",
+      "label": "Hero Image Size",
+      "info": "Set Image Size | 1000 will set image to 1000px width",
+      "default": 2000
+    },
+    {
+      "type": "text",
+      "id": "hero_title_large",
+      "label": "Hero Title Large"
+    },
+    {
+      "type": "text",
+      "id": "hero_title_medium",
+      "label": "Hero Title Medium"
+    },
+    {
+      "type": "checkbox",
+      "id": "hero_title_small_top",
+      "label": "Hero Title Small Top",
+      "default": false
+    },
+    {
+      "type": "text",
+      "id": "hero_title_small",
+      "label": "Hero Title Small"
+    },
+    {
+      "type": "textarea",
+      "id": "hero_description",
+      "label": "Hero Description"
+    },
+    {
+      "type": "checkbox",
+      "id": "hero_has_overlay",
+      "label": "Enable Overlay",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "hero_scroll",
+      "label": "Enable Scroll Icon",
+      "info": "This will show a mouse scroll icon",
+      "default": false
+    },
+    {
+      "type": "url",
+      "id": "hero_video_link",
+      "label": "Video Link"
+    },
+    {
+      "type": "text",
+      "id": "hero_video_text",
+      "label": "Video Text"
+    },
+    {
+      "type": "checkbox",
+      "id": "hero_video_new_tab",
+      "label": "Open Video Link In New Tab",
+      "default": false
+    },
+    {
+      "type": "text",
+      "id": "hero_class",
+      "label": "Hero Class",
+      "info": "Add a CSS class to the Hero"
+    }
+  ],
+  "blocks": [
+
+  ],
+  "presets": [
+    {
+      "name": "Hero",
+      "settings": {
+      },
+      "blocks": [
+
+      ]
+    }
+  ]
+}
+{% endschema %}

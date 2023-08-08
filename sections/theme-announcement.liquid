@@ -1,0 +1,78 @@
+<style>
+    #announcement {
+        background-color: {{ section.settings.background_color }};
+        color: white;
+        font-size: 24px;
+        line-height: 28px;
+        padding: 14px 5px 10px;
+        text-align: center;
+        margin: 0;
+    }
+
+    #announcement strong {
+        color: {{ section.settings.bold_color }}
+    }
+
+    #announcement p {
+        margin: 0;
+    }
+
+    #announcementDesktop {
+    }
+
+    #announcementMobile {
+        display: none;
+    }
+
+    @media (max-width: 800px) {
+        #announcement {
+            font-size: 18px;
+            line-height: 21px;
+            padding: 6px 5px 5px;
+        }
+
+        #announcementDesktop {
+            display: none;
+        }
+
+        #announcementMobile {
+            display: block;
+        }
+    }
+</style>
+
+{% if section.settings.announcement_desktop and section.settings.announcement_mobile %}
+    <div id="announcement">
+        <div id="announcementDesktop"> {{ section.settings.announcement_desktop }}</div>
+        <div id="announcementMobile"> {{ section.settings.announcement_mobile }}</div>
+    </div>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Announcement",
+  "settings": [
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#900000"
+    },
+    {
+      "type": "color",
+      "id": "bold_color",
+      "label": "Bold Color"
+    },
+    {
+      "type": "richtext",
+      "id": "announcement_desktop",
+      "label": "Announcement Desktop"
+    },
+    {
+      "type": "richtext",
+      "id": "announcement_mobile",
+      "label": "Announcement Mobile"
+    }
+  ]
+}
+{% endschema %}

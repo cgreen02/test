@@ -1,0 +1,402 @@
+<style>
+
+    [id="{{ section.id }}"] {
+        width: 100%;
+    }
+
+    .customerReviewInner {
+        margin: auto;
+        max-width: 1200px;
+        padding: 40px 20px 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .customerReviewTop {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        font-size: 36px;
+        font-weight: 700;
+        width: 100%;
+    }
+
+    .customerReviewTop hr {
+        height: 2px;
+        width: 100%;
+    }
+
+    .customerReviewTopText {
+        display: flex;
+        gap: 10px;
+        text-transform: uppercase;
+    }
+
+    .customerReviewHeader {
+        color: var(--gold)
+    }
+
+    .customerReviewTotal,
+    .customerReviewSlide,
+    .customerReviewSlideTop,
+    .customerReviewSlideText {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .customerReviewTotal {
+        margin: 30px auto 32px;
+        gap: 10px;
+    }
+
+    .customerReviewTotal img,
+    .customerReviewSlideStars {
+        max-width: 102px;
+    }
+
+    .customerReviewSwiper {
+        width: 100%;
+    }
+
+    .customerReviewSlide {
+        height: 400px;
+        padding: 16px 32px;
+    }
+
+    .customerReviewSlideImage {
+        max-width: 48px;
+        aspect-ratio: 1/1;
+    }
+
+    .customerReviewSlideTop {
+        gap: 16px;
+        line-height: 1.8;
+    }
+
+    .customerReviewSlideText {
+        gap: 12px;
+        line-height: 1.8;
+    }
+
+    .customerReviewSlideTag {
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    .customerReviewSlideQuote {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .customerReviewSlideBottom {
+        padding: 16px 0;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        display: flex;
+        gap: 12px;
+        justify-content: center;
+        font-weight: 600;
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .customerReviewSlideVerified {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        color: var(--gold);
+    }
+
+    .customerReviewSlideVerified > img {
+        width: 20px;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        --swiper-navigation-size: 14px;
+        --swiper-navigation-color: #000;
+    }
+
+    @media (max-width: 800px) {
+
+        .customerReviewTop {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            font-size: 36px;
+            font-weight: 700;
+            width: 100%;
+        }
+
+        .customerReviewTop hr {
+            height: 2px;
+            width: 100%;
+        }
+
+        .customerReviewTopText {
+            display: flex;
+            gap: 10px;
+            text-transform: uppercase;
+        }
+
+        .customerReviewHeader {
+            color: var(--gold)
+        }
+
+        .customerReviewTotal,
+        .customerReviewSlide,
+        .customerReviewSlideTop,
+        .customerReviewSlideText {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .customerReviewTotal {
+            margin: 30px auto 32px;
+            gap: 10px;
+        }
+
+        .customerReviewTotal img,
+        .customerReviewSlideStars {
+            max-width: 102px;
+        }
+
+        .customerReviewSwiper > .swiper-wrapper {
+            /*padding: 0 60px;*/
+            max-width: 1000px;
+        }
+
+        .customerReviewSlide {
+            justify-content: space-between;
+            height: 488px;
+            padding: 16px;
+            margin: 0;
+            width: 100% !important;
+            text-align: center;
+        }
+
+        .customerReviewSlideImage {
+            max-width: 48px;
+            aspect-ratio: 1/1;
+        }
+
+        .customerReviewSlideTop {
+            gap: 16px;
+            line-height: 1.8;
+        }
+
+        .customerReviewSlideText {
+            gap: 12px;
+            line-height: 1.8;
+            max-width: 300px;
+        }
+
+        .customerReviewSlideTag {
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        .customerReviewSlideQuote {
+            font-size: 16px;
+        }
+
+        .customerReviewSlideBottom {
+            padding: 16px 0;
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            font-weight: 600;
+            font-size: 16px;
+            width: 100%;
+        }
+
+        .customerReviewSlideVerified {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            color: var(--gold);
+        }
+
+        .customerReviewSlideVerified > img {
+            width: 20px;
+        }
+
+        .swiper-button-prev,
+        .swiper-button-next {
+            --swiper-navigation-size: 14px;
+            --swiper-navigation-color: #000;
+
+        }
+    }
+</style>
+
+<section id="{{ section.id }}">
+
+    <div class="customerReviewInner">
+        <div class="customerReviewTop">
+            <hr>
+            <div class="customerReviewTopText">
+                <div class="customerReviewHeader">{{ section.settings.header }}</div>
+                <div class="customerReviewHeaderAlt">{{ section.settings.header_alt }}</div>
+            </div>
+            <hr>
+        </div>
+        <div class="customerReviewTotal">
+            <img src="{{ section.settings.star_image | image_url }}" alt="{{ section.settings.star_image.alt }}"/>
+            <div class="customerReviewTotalCount">{{ section.settings.review_count }}</div>
+        </div>
+
+        <div class="customerReviewSwiper swiper">
+            <div class="swiper-wrapper">
+                {% for block in section.blocks %}
+                    <div class="swiper-slide customerReviewSlide">
+                        <div class="customerReviewSlideTop">
+                            <img src="{{ block.settings.image | image_url }}"
+                                 alt="{{ block.settings.image.alt }}"
+                                 class="customerReviewSlideImage"/>
+                            <img src="{{ block.settings.star_image | image_url }}"
+                                 alt="{{ block.settings.star_image.alt }}"
+                                 class="customerReviewSlideStars"/>
+                            <div class="customerReviewSlideText">
+                                <div class="customerReviewSlideTag">{{ block.settings.quote_tag }}</div>
+                                <div class="customerReviewSlideQuote">{{ block.settings.quote | truncatewords: 30 }}</div>
+                                <div class="customerReviewSlideDate">{{ block.settings.date_added }}</div>
+                            </div>
+                        </div>
+                        <div class="customerReviewSlideBottom">
+                            <div class="customerReviewSlideAuthor">{{ block.settings.quote_author }}</div>
+                            {% if block.settings.verified == true %}
+                                <div class="customerReviewSlideVerified">
+                                    <p>Verified Buyer</p> <!-- #F1C740  -->
+                                    <img src="{{ "verified_check.png" | asset_url }}" alt="checkmark"/>
+                                </div>
+                            {% endif %}
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+
+</section>
+
+<script>
+
+    let reviewSwiper = new Swiper(`[id="{{ section.id }}"] .customerReviewSwiper`, {
+        slidesPerView: "auto",
+        navigation: {
+            nextEl: `[id="{{ section.id }}"] .swiper-button-next`,
+            prevEl: `[id="{{ section.id }}"] .swiper-button-prev`,
+        },
+        breakpoints: {
+            800: {
+                slidesPerView: 2,
+            },
+            1000: {
+                slidesPerView: 3,
+            }
+        }
+    });
+
+</script>
+
+{% schema %}
+{
+  "name": "Customer Review",
+  "settings": [
+    {
+      "type": "text",
+      "id": "header",
+      "label": "Header",
+      "default": "Customer"
+    },
+    {
+      "type": "text",
+      "id": "header_alt",
+      "label": "Header Alt Color",
+      "default": "Review"
+    },
+    {
+      "type": "image_picker",
+      "id": "star_image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "review_count",
+      "label": "Review Count",
+      "default": "12345 Reviews"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Review",
+      "type": "card",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "image_picker",
+          "id": "star_image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "quote_tag",
+          "label": "Quote Tag",
+          "default": "A Bold Quote"
+        },
+        {
+          "type": "textarea",
+          "id": "quote",
+          "label": "Quote",
+          "default": "The rest of the Quote Here!"
+        },
+        {
+          "type": "text",
+          "id": "date_added",
+          "label": "Date Added",
+          "default": "Weeks/Days"
+        },
+        {
+          "type": "text",
+          "id": "quote_author",
+          "label": "Quote Author",
+          "default": "John S."
+        },
+        {
+          "type": "checkbox",
+          "id": "verified",
+          "label": "Verified",
+          "default": false
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Customer Review",
+      "blocks": [
+        {
+          "type": "card"
+        },
+        {
+          "type": "card"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

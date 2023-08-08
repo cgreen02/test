@@ -1,0 +1,363 @@
+{% if section.settings.show_promo_cta %}
+    <section class="promo-bar-cta" data-module="promo-bar-cta" style="background: {{ section.settings.promo_cta_background }}">
+        <div class="promo-bar-cta__container container z2">
+            <a href="{{- section.settings.promo_cta_link -}}" class="promo-bar-cta__link">
+                {% render 'svg', type: 'arrow-left', class: 'promo-bar-cta__svg' %}
+                {% if section.settings.promo_cta_text != blank %}
+                    <span class="promo-bar-cta__text b2">{{- section.settings.promo_cta_text -}}</span>
+                {% endif %}
+            </a>
+        </div>
+    </section>
+{% endif %}
+
+<div id="cart">
+
+    {% if cart.empty? %}
+
+        <div id="cartEmpty">
+            <div id="cartEmptyTitle">Your cart is empty</div>
+            <a id="cartEmptyButton" class="button center" href="/collections/insoles">Shop Now</a>
+        </div>
+
+    {% else %}
+
+        <div id="cartBody">
+
+            <!--
+            <div id="cartBodyInternational">
+                <span id="cartBodyInternationalEmoji"></span> Orders over $200 USD receive free international shipping!
+            </div>
+            -->
+
+            {% if settings.shipping_delay != "" %}
+                <div id="cartBodyShippingDelay" class="active">
+                    {{ settings.shipping_delay }}
+                </div>
+            {% endif %}
+
+            <div id="cartBodyHeader">
+                <div id="cartBodyHeaderTitle">SHOPPING BAG</div>
+                <div id="cartBodyHeaderCount">
+
+                    {% assign count = 0 %}
+                    {% for item in cart.items %}
+                        {% if item.product.handle == "navidium-shipping-protection" %}
+                            {% continue %}
+                        {% endif %}
+                        {% assign count = count | plus: item.quantity %}
+                    {% endfor %}
+                    {{ count }} {{ count | pluralize: 'item', 'items' }}
+
+                </div>
+            </div>
+
+            {% assign total = 0 %}
+            {% assign intelligems_total = 0 %}
+            {% for item in cart.items %}
+                {% case item.properties._igLineItemDiscount %}
+                  {% when "0" or nil or blank %}
+                    {% assign intelligems_discount = 0 %}
+                  {% else %}
+                    {% assign intelligems_discount = item.properties._igLineItemDiscount | plus: 0 %}
+                    {% assign intelligems_total = intelligems_total | plus: item.properties._igLineItemDiscount | times: item.quantity %}
+                {% endcase %} 
+                {% if item.product.handle == "navidium-shipping-protection" %}
+                    {% continue %}
+                {% endif %}
+
+                {% assign URL = item.url %}
+                {% if item.product.title contains "Gold VK" %}
+                    {% assign URL = "/products/vktry-insoles-gold" %}
+                {% endif %}
+
+                <div class="cartBodyItem">
+                    <a class="cartBodyItemLink" href="{{ URL }}">
+                        <img class="cartBodyItemLinkImage" src="{{ item.image | image_url }}" alt="{{ item.image.alt }}">
+                    </a>
+                    <div>
+                        <a class="cartBodyItemTitle" href="{{ URL }}">{{ item.product.title | split: "//" | first }}</a>
+                        {%- unless item.product.has_only_default_variant %}
+                            {% for option in item.options_with_values %}
+                                {% if option.name != "Top Cover" and option.name != "Weight" %}
+                                    <div class="cartBodyItemVariants">{{ option.name }}: {{ option.value }}</div>
+                                {% endif %}
+                            {%- endfor %}
+                        {% endunless %}
+                        {% for property in item.properties %}
+                            {% unless property[0] contains "_" %}
+                                <div class="cartBodyItemVariants">{{ property[0] }}: {{ property[1] }}</div>
+                            {% endunless %}
+                        {% endfor %}
+                    </div>
+                    <div>
+                        <div class="cartBodyItemQuantity">
+                            <a class="cartBodyItemQuantityMinus"
+                               href="{{ routes.cart_change_url }}?id={{ item.key }}&quantity={{ item.quantity | minus: 1 }}">
+                                <div class="cartBodyItemQuantityIcon">-</div>
+                            </a>
+                            <div class="cartBodyItemQuantityCount">{{ item.quantity }}</div>
+                            <a class="cartBodyItemQuantityPlus"
+                               href="{{ routes.cart_change_url }}?id={{ item.key }}&quantity={{ item.quantity | plus: 1 }}">
+                                <div class="cartBodyItemQuantityIcon">+</div>
+                            </a>
+                        </div>
+                        <a class="cartBodyItemRemove" href="{{ routes.cart_change_url }}?line={{ forloop.index }}&quantity=0">remove</a>
+                    </div>
+                    <div class="cartBodyItemPrice">
+
+                        {% if settings.multi_buy %}
+                            {% if item.product.title contains "Gold VK" or item.product.title contains "Silver VK" %}
+
+                                {% assign insoleCount = 0 %}
+                                {% for item in cart.items %}
+                                    {% if item.product.title contains "Gold VK" or item.product.title contains "Silver VK" %}
+                                        {% assign insoleCount = insoleCount | plus: item.quantity %}
+                                    {% endif %}
+                                {% endfor %}
+
+                                {% if insoleCount == 2 %}
+                                    <span class="sale">
+                                    {% assign price = item.final_line_price | times: 0.85 %}
+                                    {% assign igDiscount = true %}
+                                        {{ price | money }}
+                                        {% assign total = total | plus: price %}
+                                </span>
+                                    <s>{{ item.final_line_price | money }}</s>
+                                {% elsif insoleCount > 2 and insoleCount < 5 %}
+                                    <span class="sale">
+                                    {% assign price = item.final_line_price | times: 0.80 %}
+                                    {% assign igDiscount = true %}
+                                        {{ price | money }}
+                                        {% assign total = total | plus: price %}
+                                </span>
+                                    <s>{{ item.final_line_price | money }}</s>
+                                {% elsif insoleCount >= 5 %}
+                                    <span class="sale">
+                                    {% assign price = item.final_line_price | times: 0.75 %}
+                                    {% assign igDiscount = true %}
+                                        {{ price | money }}
+                                        {% assign total = total | plus: price %}
+                                </span>
+                                    <s>{{ item.final_line_price | money }}</s>
+                                {% else %}
+                                    {% assign total = total | plus: item.original_line_price %}
+
+                                    {% assign compare = item.variant.compare_at_price | times: item.quantity %}
+                                    <span class="{% if item.original_line_price < compare %}sale{% endif %}">
+                                        {% if intelligems_discount == 0  %}
+                                          {{ item.original_line_price | money }}
+                                        {% else %}
+                                          {{ item.final_line_price | money }}
+                                        {% endif %}
+                                    </span>
+                                    {% if item.original_line_price < compare %}
+                                        <s>{{ compare | money }}</s>
+                                    {% endif %}
+
+                                {% endif %}
+
+                            {% else %}
+                                {% assign total = total | plus: item.original_line_price %}
+
+                                {% assign compare = item.variant.compare_at_price | times: item.quantity %}
+                                <span class="{% if item.original_line_price < compare %}sale{% endif %}">
+                                  {% if intelligems_discount == 0  %}
+                                    {{ item.original_line_price | money }}
+                                  {% else %}
+                                    {{ item.final_line_price | money }}
+                                  {% endif %}
+                                </span>
+                                {% if item.original_line_price < compare %}
+                                    <s>{{ compare | money }}</s>
+                                {% endif %}
+
+                            {% endif %}
+
+                        {% else %}
+
+                            {% assign total = total | plus: item.original_line_price %}
+                            {% assign compare = item.variant.compare_at_price | times: item.quantity %}
+                            <span class="{% if item.original_line_price < compare %}sale{% endif %}">
+                              {% if intelligems_discount == 0  %}
+                                {{ item.original_line_price | money }}
+                              {% else %}
+                                {{ item.final_line_price | money }}
+                              {% endif %}
+                            </span>
+                            {% if item.original_line_price < compare %}
+                                <s>{{ compare | money }}</s>
+                            {% endif %}
+
+                        {% endif %}
+                    </div>
+                    {% if item.product.handle == "vktry-insoles-platinum" %}
+                        <div class="cartBodyItemCustom">
+                            <label for="platinum-{{ item.key }}" class="cartBodyItemCustomTitle">Have any injuries, ailments or conditions we should know about?</label>
+                            <textarea id="platinum-{{ item.key }}" class="cartBodyItemCustomTextarea" data-key="{{ item.key }}">{{ item.properties.Note }}</textarea>
+                        </div>
+                    {% endif %}
+                </div>
+            {% endfor %}
+
+        </div>
+
+        <div id="cartInfo">
+
+            {% if insoleCount > 0 and localization.country == "United States" %}
+                <div id="cartInfoShipping">
+                    <div class="svg svg--truck cart-sidebar__svg">
+                        <svg viewBox="0 0 84.974 45.994" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M84.908 37.559c.1-1.28.149-3.645-.314-3.977l-.282-.263a1.229 1.229 0 01-.349-.883c-.165-1.619-.277-3.524-.46-4.445a3.448 3.448 0 00-1.453-2.619l-3.122-1.952a7.269 7.269 0 01-.963-.744l-8.01-7.331a5.487 5.487 0 00-4.635-1.974c-2.928-.035-5.987-.065-9.136-.089V40.71h8.23a6.9 6.9 0 1113.79 0l2.191-.074a8.229 8.229 0 003.818-1.324c.584-.436.621-.816.693-1.752zm-29.881-3.612h-36.9a6.9 6.9 0 015.545 6.763H55.03v-6.763zM2.982 40.692c.064.008.13.014.2.018h6.7a6.9 6.9 0 015.545-6.763H2.981v6.745zm68.329-6.424a5.863 5.863 0 105.863 5.863 5.863 5.863 0 00-5.863-5.863zm0 2.6a3.262 3.262 0 11-3.262 3.262 3.261 3.261 0 013.262-3.262zm-54.557-2.6a5.863 5.863 0 105.863 5.863 5.863 5.863 0 00-5.863-5.863zm0 2.6a3.262 3.262 0 11-3.262 3.262 3.261 3.261 0 013.262-3.262zM69.799 16.72l5.2 5.127c.942.879.545 1.68-.694 1.68H60.478a1.047 1.047 0 01-1.039-.938l-.3-6.808a.422.422 0 01.418-.469l7.849.094c1.137 0 1.61.551 2.383 1.314zm12.992 10.277c.113.373.2.776.257 1.085.09.456.143.937.192 1.4q.053.5.1 1.007c.013.126.029.166-.208.166h-1.008c-.307 0-.278.043-.517-.169-.188-.165-.442-.42-.621-.6-.229-.229-.195-.148-.235-.472l-.324-2.587a.256.256 0 01.264-.306l1.7.188c.27 0 .331.032.407.287zM.005-.003V32.62h55.026V12.184h11l-2.151-3.74C61.564 4.419 60.08 0 55.436 0H-.001z"
+                                  data-name="Path 40438" fill-rule="evenodd" fill="#fff"></path>
+                        </svg>
+                    </div>
+                    Your order qualifies for free US Shipping
+                </div>
+            {% endif %}
+
+            <div id="cartInfoSummary">
+                <div id="cartInfoSummaryTitle">Order Summary</div>
+
+                <div class="cartInfoSummaryRow">
+                    <span>Subtotal</span>
+                    <span id="cartSubtotal" zmoney="{{ cart.total_price }}"></span>
+                </div>
+              {% unless igDiscount %}
+                {% assign total = total | minus : intelligems_total %}
+              {% endunless %}
+                {% if settings.multi_buy %}
+
+                    <div class="cartInfoSummaryRow">
+                        <span>Savings</span>
+                        <span>{{ cart.total_price | minus: total | money }}</span>
+                    </div>
+
+                {% else %}
+
+                    {% assign savings = 0 %}
+                    {% for item in cart.items %}
+                        {% if item.variant.price < item.variant.compare_at_price %}
+                            {% assign savingsPlus = item.variant.compare_at_price | minus: item.variant.price | times: item.quantity %}
+                            {% assign savings = savings | plus: savingsPlus %}
+                        {% endif %}
+                    {% endfor %}
+                    {% if savings > 0 %}
+                        <div class="cartInfoSummaryRow">
+                            <span>Savings</span>
+                            <span>{{ savings | money }}</span>
+                        </div>
+                    {% endif %}
+
+                {% endif %}
+                {% if insoleCount > 0 %}
+                    <div class="cartInfoSummaryRow">
+                        <span>Shipping</span>
+                        <span id="cartShipping">FREE</span>
+                    </div>
+                {% endif %}
+                <div id="cartInfoSummaryDivider"></div>
+                <div class="cartInfoSummaryRow">
+                    <span>Total</span>
+                    <span id="cartTotal" zmoney="{{ total }}"></span>
+                </div>
+
+                {% if localization.country == "United States" %}
+                <div class="appearance-right-previw" id="nvd-widget-cart" style="display: block;">
+                    <div class="d-flexCstm">
+                        <div class="flex-shrink-0Cstm">
+                            <div class="form-checkCstm form-switchCstm">
+                                <input class="forms-check-inputCstm" type="checkbox" id="shippingProtectionCheckBox"
+                                       checked>
+                                <div class="img">
+                                    <img class="navidium-shipping-icon" width="auto" height="auto"
+                                         src="{{ 'navidium-shipping-icon.png' | file_url }}" alt="Navidium icon">
+                                    <svg width="20" height="26" viewBox="0 0 20 26" fill="none"
+                                         xmlns="http: //www.w3.org/2000/svg">
+                                        <path d="M9.8056 0.867554L0.00976562 4.2023C0.218188 8.16232 -0.177814 14.415 0.635031 17.1245C1.32282 19.4171 7.16558 23.8634 9.8056 25.6698C11.9593 23.9329 17.3442 20.4317 18.3509 18.1666C20.0183 14.415 19.8793 8.09285 19.6014 4.2023L9.8056 0.867554Z"
+                                              fill="#6D7175"></path>
+                                        <path d="M5.01172 13.1644L7.92963 16.7076L14.3907 10.0381" stroke="white"
+                                              stroke-width="1.66738" stroke-linecap="round"
+                                              stroke-linejoin="round"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-grow-1Cstm ms-3Cstm">
+                            <h4>Navidium Shipping Protection
+                                <button type="button" class="btnCstm tooltipCstm">
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.5 0C3.36433 0 0 3.36433 0 7.5C0 11.6357 3.36433 15 7.5 15C11.6357 15 15 11.6357 15 7.5C15 3.36433 11.6357 0 7.5 0ZM7.5 11.875C7.15496 11.875 6.87504 11.595 6.87504 11.25C6.87504 10.905 7.15496 10.625 7.5 10.625C7.84504 10.625 8.12496 10.905 8.12496 11.25C8.12496 11.595 7.84504 11.875 7.5 11.875ZM8.48934 7.90123C8.26813 8.00308 8.12496 8.22624 8.12496 8.46943V8.75004C8.12496 9.09496 7.84561 9.375 7.5 9.375C7.15439 9.375 6.87504 9.09496 6.87504 8.75004V8.46943C6.87504 7.73998 7.30373 7.0713 7.96566 6.76563C8.60252 6.47255 9.06246 5.69435 9.06246 5.31246C9.06246 4.45129 8.36185 3.75 7.5 3.75C6.63815 3.75 5.93754 4.45129 5.93754 5.31246C5.93754 5.6575 5.65807 5.93754 5.31246 5.93754C4.96685 5.93754 4.6875 5.6575 4.6875 5.31246C4.6875 3.7619 5.94933 2.49996 7.5 2.49996C9.05067 2.49996 10.3125 3.7619 10.3125 5.31246C10.3125 6.15692 9.57996 7.39815 8.48934 7.90123Z"
+                                              fill="#212B36"></path>
+                                    </svg>
+                                    <span class="toolltiptextCstm">Get peace of mind with Delivery Guarantee in the event your delivery is damaged, stolen, or lost during transit.</span>
+                                </button>
+                            </h4>
+                            <p>from Damage, Loss &amp; Theft for
+                                <strong class="shipping-protection-price"></strong></p>
+                            <p class="nvd-selected" style="display: none;">Get peace of mind with Delivery Guarantee in
+                                the event your delivery is damaged, stolen, or lost during transit.</p>
+                            <p class="nvd-dis-selected" style="display: block;">By Deselecting Shipping Protection,
+                                VKTRY will not be liable for lost or stolen packages. </p>
+                        </div>
+                    </div>
+                </div>
+                {% endif %}
+
+                <button id="cartInfoSummaryCheckout" class="button">Checkout</button>
+            </div>
+
+        </div>
+
+    {% endif %}
+</div>
+
+<script>
+    const navadium ={{ all_products["navidium-shipping-protection"] | json }}
+</script>
+{% render 'cross-sell' %}
+
+<!-- <div data-rebuy-id="60640"></div> -->
+<div data-rebuy-id="64880"></div>
+
+{% schema %}
+{
+    "name": "Main Cart",
+    "settings": [
+        {
+            "type": "checkbox",
+            "id": "show_promo_cta",
+            "label": "Show Promo CTA",
+            "default": true
+        },
+        {
+            "type": "color_background",
+            "id": "promo_cta_background",
+            "label": "Promo CTA Background",
+            "default": "#e9e9e9"
+        },
+        {
+            "type": "textarea",
+            "id": "promo_cta_text",
+            "label": "Promo CTA Text"
+        },
+        {
+            "type": "url",
+            "id": "promo_cta_link",
+            "label": "Promo CTA Link"
+        }
+    ],
+    "blocks": [
+    ],
+    "presets": [
+        {
+            "name": "Main Cart",
+            "settings": {
+            },
+            "blocks": [
+            ]
+        }
+    ]
+}
+{% endschema %}

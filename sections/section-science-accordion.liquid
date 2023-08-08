@@ -1,0 +1,351 @@
+<style>
+    .science-accordion__container {
+        padding-top: 7rem;
+        border-top: 1px solid #c1c1e1;
+        padding-bottom: 4rem
+    }
+
+    @media (max-width: 991px) {
+        .science-accordion__container {
+            padding-top: 4rem
+        }
+    }
+
+    .science-accordion__content {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center
+    }
+
+    .science-accordion__accordion {
+        width: 100%;
+        margin-top: 3rem
+    }
+
+    .science-accordion__item {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: start;
+        -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+        align-items: flex-start
+    }
+
+    .science-accordion__item:not(:first-child) {
+        margin-top: 4rem
+    }
+
+    .science-accordion__num {
+        width: 100%;
+        max-width: 100px;
+        color: #fff;
+        -webkit-text-stroke: 2px #3b3899
+    }
+
+    @media (max-width: 991px) {
+        .science-accordion__num {
+            position: absolute
+        }
+    }
+
+    .science-accordion__function {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        width: 50%
+    }
+
+    @media (min-width: 992px) {
+        .science-accordion__function {
+            margin-left: 5rem
+        }
+    }
+
+    @media (max-width: 991px) {
+        .science-accordion__function {
+            width: 100%
+        }
+    }
+
+    .science-accordion__button {
+        position: relative;
+        padding-bottom: 2rem;
+        width: 100%;
+        cursor: pointer
+    }
+
+    @media (min-width: 992px) {
+        .science-accordion__button {
+            border-bottom: 1px solid #c1c1e1;
+            max-width: 386.5px
+        }
+    }
+
+    @media (max-width: 991px) {
+        .science-accordion__button {
+            min-height: 11.5rem
+        }
+    }
+
+    @media (max-width: 767px) {
+        .science-accordion__button {
+            min-height: 7rem
+        }
+    }
+
+    @media (max-width: 991px) {
+        .science-accordion__button:after {
+            content: "";
+            display: block;
+            height: 1px;
+            width: calc(100% + 2.5rem);
+            position: absolute;
+            left: -2.5rem;
+            background-color: #c1c1e1;
+            bottom: 0
+        }
+    }
+
+    .science-accordion__function-title {
+        padding-right: 1.5rem;
+        font-size: 14px;
+        line-height: 17px;
+        font-weight: 700;
+    }
+
+    @media (max-width: 991px) {
+        .science-accordion__function-title {
+            margin-left: 11rem
+        }
+    }
+
+    @media (max-width: 767px) {
+        .science-accordion__function-title {
+            margin-left: 7rem
+        }
+    }
+
+    .science-accordion__function-description {
+        display: none;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+    }
+
+    .science-accordion__item.active .science-accordion__function-description {
+        display: block
+    }
+
+    .science-accordion__svg {
+        width: 13px;
+        height: 15px;
+        position: absolute;
+        right: 0;
+        bottom: 1.1rem
+    }
+
+    .science-accordion__item.active .science-accordion__svg {
+        -webkit-transform: rotate(180deg) translateY(-.65rem);
+        -ms-transform: rotate(180deg) translateY(-.65rem);
+        transform: rotate(180deg) translateY(-.65rem)
+    }
+
+    .science-accordion__image-container {
+        position: relative;
+        width: 50%;
+        display: none
+    }
+
+    .science-accordion__image-container img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    @media (min-width: 992px) {
+        .science-accordion__image-container {
+            margin-left: 5rem
+        }
+    }
+
+    @media (max-width: 991px) {
+        .science-accordion__image-container {
+            width: 100%;
+            margin-top: 1.5rem
+        }
+    }
+
+    .science-accordion__image-container:after {
+        content: "";
+        display: block
+    }
+
+    .science-accordion__item:first-child .science-accordion__image-container:after {
+        padding-bottom: 85%
+    }
+
+    .science-accordion__item:nth-child(2) .science-accordion__image-container:after {
+        padding-bottom: 54.7445255%
+    }
+
+    .science-accordion__item:nth-child(3) .science-accordion__image-container:after {
+        padding-bottom: 57.4944072%
+    }
+
+    .science-accordion__item:last-child .science-accordion__image-container:after {
+        padding-bottom: 98.0506823%
+    }
+
+    .science-accordion__item.active .science-accordion__image-container {
+        display: block
+    }
+
+    @media (max-width: 991px) {
+        .science-accordion__item:nth-child(3) .science-accordion__image-container {
+            width: 60%
+        }
+    }
+
+    .science-accordion__item:nth-child(3) .science-accordion__image-container:before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 30%;
+        height: 1px;
+        bottom: 2rem;
+        z-index: 2;
+        right: 3rem;
+        -webkit-transform: rotate(50deg);
+        -ms-transform: rotate(50deg);
+        transform: rotate(50deg);
+        background-color: #000
+    }
+
+    @media (max-width: 991px) {
+        .science-accordion__item:nth-child(3) .science-accordion__image-container:before {
+            top: auto;
+            bottom: 20%;
+            -webkit-transform: none;
+            -ms-transform: none;
+            transform: none;
+            width: 90%;
+            right: -60%
+        }
+    }
+
+    .science-accordion__label {
+        position: absolute;
+        right: 0;
+        bottom: -6rem
+    }
+
+    @media (max-width: 991px) {
+        .science-accordion__label {
+            right: -60%;
+            width: 120px;
+            text-align: right;
+            bottom: 20%
+        }
+    }
+</style>
+
+<section class="science-accordion" data-module="science-accordion">
+    <div class="science-accordion__container container">
+        {% if section.settings.title != blank %}
+            <h2 class="science-accordion__title h2">{{- section.settings.title -}}</h2>
+        {% endif %}
+        <div class="science-accordion__content">
+            <div class="science-accordion__accordion">
+                {% for block in section.blocks %}
+                    <div class="science-accordion__item">
+                        <p class="science-accordion__num h2">0{{ forloop.index }}</p>
+                        <div class="science-accordion__function">
+                            <div class="science-accordion__button">
+                                <h3 class="science-accordion__function-title b3 b3--bold">{{ block.settings.title }}</h3>
+                                {% render 'svg', type: 'triangle-down', class: 'science-accordion__svg' %}
+                            </div>
+                            <div class="science-accordion__function-description b3">{{ block.settings.description }}</div>
+                        </div>
+                        <div class="science-accordion__image-container">
+                            <img src="{{ block.settings.image | image_url: width: 800 }}"
+                                 alt="{{ block.settings.image.alt }}">
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    document.querySelectorAll(".science-accordion__button").forEach(function (element) {
+        element.addEventListener("click", function () {
+            if (document.querySelector(".science-accordion__item.active") && !this.closest(".science-accordion__item.active")) {
+                document.querySelector(".science-accordion__item.active").classList.remove("active");
+            }
+            this.closest(".science-accordion__item").classList.toggle("active");
+        });
+    })
+</script>
+
+{% schema %}
+{
+  "name": "Science Accordion",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Item",
+      "type": "item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "Description"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Science Accordion",
+      "settings": {
+      },
+      "blocks": [
+
+      ]
+    }
+  ]
+}
+{% endschema %}

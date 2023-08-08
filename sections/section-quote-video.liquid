@@ -1,0 +1,195 @@
+<style>
+    .quoteVideo {
+        position: relative;
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    .quoteVideoImage {
+        display: block;
+        width: 100%;
+        background-color: white;
+        cursor: pointer;
+    }
+
+    .quoteVideoContent {
+        padding: 10px;
+        width: 45%;
+        height: 89%;
+        position: absolute;
+        top: 10%;
+        left: 3%;
+    }
+
+    .quoteVideoTitle {
+        font-weight: bold;
+        font-size: 21px;
+        line-height: 32px;
+        margin-bottom: 10px;
+    }
+
+    .quoteVideoBody {
+        font-size: 16px;
+        line-height: 32px;
+    }
+
+    .quoteVideoButton {
+        margin-top: 40px;
+    }
+
+    .quoteVideoBy {
+        font-size: 16px;
+        line-height: 38px;
+        display: flex;
+        gap: 40px;
+        font-style: italic;
+        position: relative;
+    }
+
+    .quoteImage {
+        display: block;
+        width: 35px;
+        height: auto;
+        object-fit: contain;
+        left: -20px;
+        position: relative;
+    }
+
+    .quoteImage:first-child {
+        margin-bottom: 10px;
+    }
+
+    .quoteVideoBy .quoteImage:last-child {
+        margin-bottom: 0;
+    }
+
+    @media (max-width: 1000px) {
+        .quoteVideoContent {
+
+        }
+
+        .quoteVideoContent {
+            position: relative;
+            top: -35px;
+            left: 0;
+            width: 100%;
+            padding: 20px 40px 0;
+            height: auto;
+        }
+
+
+    }
+</style>
+
+<section id="{{ section.id }}" class="quoteVideo">
+    <div class="quoteVideoContent">
+        <img class="quoteImage" src="{{ 'quote-up.png' | file_url }}">
+        <div class="quoteVideoTitle">
+            {{ section.settings.quote_title }}
+        </div>
+        <div class="quoteVideoBody">
+            {{ section.settings.quote_body }}
+        </div>
+        <div class="quoteVideoBy">
+            {{ section.settings.quote_author }}
+            <img class="quoteImage" src="{{ 'quote-down.png' | file_url }}">
+        </div>
+        <button class="button quoteVideoButton">{{ section.settings.quote_button_label }}</button>
+    </div>
+    <picture class="quoteVideoImage">
+        <source media="(max-width: 800px)"
+                srcset="{{ section.settings.quote_image_mobile | image_url: width: 2000 }}">
+        <source srcset="{{ section.settings.quote_image | image_url: width: 2000 }}">
+        <img class="quoteVideoImage" src="{{ section.settings.quote_image | image_url: width: 2000 }}">
+    </picture>
+
+    <dialog class="quoteDialog">
+        <div class="dialogClose quoteDialogClose">
+            close X
+        </div>
+        <div class="quoteDialogContent">
+            {{ section.settings.quote_video | video_tag: controls: true }}
+        </div>
+    </dialog>
+</section>
+
+<script>
+    // open modal
+    function openQuoteVideoModal() {
+        document.querySelector(`[id="{{ section.id }}"] .quoteDialog`).showModal();
+        document.querySelector(`[id="{{ section.id }}"] .quoteDialog video`).play();
+    }
+
+    document.querySelector(`[id="{{ section.id }}"] .quoteVideoButton`).addEventListener("click", openQuoteVideoModal);
+    document.querySelector(`[id="{{ section.id }}"] picture .quoteVideoImage`).addEventListener("click", openQuoteVideoModal);
+
+    // close Modal
+    function closeQuoteVideoModal() {
+        document.querySelector(`[id="{{ section.id }}"] .quoteDialog`).close();
+        document.querySelector(`[id="{{ section.id }}"] .quoteDialog video`).pause();
+    }
+
+    // close modal listener
+    document.querySelector(`[id="{{ section.id }}"] .quoteDialog .quoteDialogClose`).addEventListener("click", closeQuoteVideoModal);
+    document.querySelector(`[id="{{ section.id }}"] .quoteDialog`).addEventListener("click", function (e) {
+        if (e.target == this) {
+            closeQuoteVideoModal();
+        }
+    })
+</script>
+
+{% schema %}
+{
+  "name": "Quote Video",
+  "settings": [
+    {
+      "type": "text",
+      "id": "quote_title",
+      "label": "Quote Title"
+    },
+    {
+      "type": "richtext",
+      "id": "quote_body",
+      "label": "Quote Body"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "quote_author",
+      "label": "Quote Author"
+    },
+    {
+      "type": "video",
+      "id": "quote_video",
+      "label": "Quote Video"
+    },
+    {
+      "type": "text",
+      "id": "quote_button_label",
+      "label": "Quote Button Label"
+    },
+    {
+      "type": "image_picker",
+      "id": "quote_image",
+      "label": "Quote Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "quote_image_mobile",
+      "label": "Quoute Image Mobile"
+    }
+  ],
+  "blocks": [
+
+  ],
+  "presets": [
+    {
+      "name": "Quote Video",
+      "settings": {
+      },
+      "blocks": [
+
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,143 @@
+<style>
+    .press {
+        padding: 70px 20px;
+        background-color: #e9e9e9;
+    }
+
+    .press-highlight {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center
+    }
+
+    .press-highlight__logo {
+        width: 160px;
+        height: 45px;
+        position: relative
+    }
+
+    .press-highlight__copy {
+        margin: 20px 0 0;
+        text-align: center;
+        max-width: 800px
+    }
+
+    /* styles for the press-highlights module go in this file */
+    .press-highlights {
+        padding: 70px 20px;
+        background-color: #e9e9e9
+    }
+
+    .press-highlights__title {
+        text-align: center;
+        margin: 0 0 70px
+    }
+
+    .press-highlights__swiper-container {
+        padding-bottom: 70px
+    }
+
+    .press-highlights__swiper-slide {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center
+    }
+</style>
+
+<section id="{{ section.id }}" class="press">
+    <h2 class="h4 press-highlights__title">{{ section.settings.title }}</h2>
+    <div class="swiper-container press-highlights__swiper-container">
+        <div class="swiper-wrapper press-highlights__swiper-wrapper">
+            {% for block in section.blocks %}
+                <div class="swiper-slide press-highlights__swiper-slide">
+                    <div class="press-highlight" data-module="press-highlight">
+                        <div class="press-highlight__logo">
+                            <img src="{{ block.settings.image | image_url: width: 500 }}" class="image--contain" alt="{{ block.settings.copy | strip_html | strip_newlines }}">
+                        </div>
+                        <p class="b1 press-highlight__copy">{{ block.settings.copy }}</p>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination press-highlights__swiper-pagination"></div>
+    </div>
+</section>
+
+<script>
+    new Swiper(document.querySelector(`[id="{{ section.id }}"] .press-highlights__swiper-container`), {
+        loop: true,
+        pagination: {
+            el: '.press-highlights__swiper-pagination .swiper-pagination',
+        },
+    });
+</script>
+
+{% schema %}
+{
+  "name": "Press",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Slide",
+      "type": "slide",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Press Image"
+        },
+        {
+          "type": "textarea",
+          "id": "copy",
+          "label": "Press Copy"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Press",
+      "settings": {
+      },
+      "blocks": [
+
+      ]
+    }
+  ]
+}
+{% endschema %}

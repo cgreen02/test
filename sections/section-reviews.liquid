@@ -1,0 +1,94 @@
+<style>
+
+    /****
+    Reviews
+    ******/
+
+    #reviews {
+        max-width: 1200px;
+        margin: auto;
+        padding: 40px 20px 60px;
+    }
+
+    #reviewsTitle {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    #reviewsTitle hr {
+        height: 2px;
+        flex-grow: 1;
+    }
+
+    #reviewsTitleInner {
+        margin: 0 10px;
+        font-size: 36px;
+        font-weight: bold;
+        text-align: center;
+        color: var(--gold)
+    }
+
+    #reviewsTitleInner > span {
+        color: black;
+    }
+
+    @media (max-width: 800px) {
+        #reviewsTitle hr {
+            width: 19%;
+            flex-grow: unset;
+        }
+
+        #reviewsTitleInner {
+            font-size: 20px;
+        }
+    }
+</style>
+
+<div id="reviews">
+    <div id="reviewsTitle">
+        <hr>
+        <div id="reviewsTitleInner">CUSTOMER
+            <span>REVIEWS</span>
+        </div>
+        <hr>
+    </div>
+
+    {% if section.settings.size == "small" %}
+        <div data-oke-carousel></div>
+    {% else %}
+        <div data-oke-widget></div>
+    {% endif %}
+
+</div>
+
+{% schema %}
+{
+    "name": "Reviews",
+    "settings": [
+        {
+            "type": "select",
+            "id": "size",
+            "label": "Size",
+            "options": [
+                {
+                    "value": "small",
+                    "label": "Small"
+                },
+                {
+                    "value": "large",
+                    "label": "Large"
+                }
+            ],
+            "default": "small"
+        }
+    ],
+    "blocks": [
+    ],
+    "presets": [
+        {
+            "name": "Reviews"
+        }
+    ]
+}
+{% endschema %}

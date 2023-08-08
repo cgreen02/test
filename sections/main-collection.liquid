@@ -1,0 +1,19 @@
+<div class="collection">
+    <h1 class="collectionTitle">{{ collection.title }}</h1>
+    <p class="collectionDescription">{{ collection.description }}</p>
+
+    <div class="collectionGrid">
+        {% for product in collection.products %}
+            {% render 'collection-item', product: product %}
+        {% endfor %}
+    </div>
+</div>
+
+{% schema %}
+{
+  "name": "Collection",
+  "settings": [
+
+  ]
+}
+{% endschema %}

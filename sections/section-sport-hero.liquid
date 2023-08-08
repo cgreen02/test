@@ -1,0 +1,248 @@
+<style>
+    .sportHero {
+        position: relative;
+        margin-bottom: 10px;
+    }
+
+    .sportHeroImage {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .sportHeroContent {
+        position: absolute;
+        padding: 10px;
+    }
+
+    {% if request.design_mode %}
+
+    .sportHeroContent {
+        border: 2px solid var(--gold);
+    }
+
+    {% endif %}
+
+    .sportHeroSubtitle {
+        font-weight: bold;
+        color: white;
+    }
+
+    .sportHeroTitle {
+        color: white;
+        font-weight: bold;
+    }
+
+    .sportHeroTitle strong {
+        color: var(--gold)
+    }
+
+    .sportHeroTitle p {
+        margin: 0;
+    }
+
+    .sportButtons {
+        position: absolute;
+        width: 100%;
+        padding: 0 20px;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .sportBody {
+        max-width: 980px;
+        text-align: center;
+        font-size: 18px;
+        line-height: 28px;
+        padding: 0 20px;
+        margin: auto;
+    }
+
+    @media (max-width: 800px) {
+        .sportHeroContent {
+            position: static;
+            background-color: #1c1c1c;
+            width: 100% !important;
+            height: auto !important;
+            text-align: center;
+        }
+
+        .sportHeroSubtitle {
+            font-size: 21px !important;
+            line-height: 42px !important;
+        }
+
+        .sportHeroTitle {
+            font-size: 28px !important;
+            line-height: 32px !important;
+        }
+
+        .sportButtons {
+            flex-direction: column;
+            position: static;
+            margin-bottom: 20px;
+            margin-top: 10px;
+        }
+    }
+</style>
+
+
+<div id="{{ section.id }}" class="sportHero">
+    <div class="sportHeroContent" style="top: {{ section.settings.content_top }}%; left: {{ section.settings.content_left }}%; width: {{ section.settings.content_width }}%;">
+        <div class="sportHeroSubtitle" style="font-size: {{ section.settings.subtitle_font_size }}vw;">{{ section.settings.subtitle }}</div>
+        <div class="sportHeroTitle" style="font-size: {{ section.settings.title_font_size }}vw;">{{ section.settings.title }}</div>
+    </div>
+    <picture class="sportHeroImage">
+        <source media="(max-width: 800px)" srcset="{{ section.settings.hero_mobile | image_url }}">
+        <source srcset="{{ section.settings.hero | image_url }}">
+        <img class="sportHeroImage" src="{{ section.settings.hero | image_url }}" style="aspect-ratio: {{ section.settings.hero.width }}/{{ section.settings.hero.height }}">
+    </picture>
+    <div class="sportButtons" style="bottom: {{ section.settings.buttons_bottom }}%;">
+        <a class="button" href="/products/vktry-insoles-gold{% if section.settings.sport != "" %}?sport={{ section.settings.sport }}{% endif %}">Shop Gold Insoles</a>
+        {% if section.settings.show_silver %}
+            <a class="button silver" href="/products/vktry-insoles-silver{% if section.settings.sport != "" %}?sport={{ section.settings.sport }}{% endif %}">Shop Silver Insoles</a>
+        {% endif %}
+    </div>
+</div>
+
+<div class="sportBody">{{ section.settings.body }}</div>
+
+
+{% schema %}
+{
+    "name": "Sport Hero",
+    "settings": [
+        {
+            "type": "header",
+            "content": "Images"
+        },
+        {
+            "type": "image_picker",
+            "id": "hero",
+            "label": "Hero Desktop"
+        },
+        {
+            "type": "image_picker",
+            "id": "hero_mobile",
+            "label": "Hero Mobile"
+        },
+        {
+            "type": "header",
+            "content": "Subtitle"
+        },
+        {
+            "type": "text",
+            "id": "subtitle",
+            "label": "Subtitle"
+        },
+        {
+            "type": "range",
+            "id": "subtitle_font_size",
+            "label": "Subtitle Font Size",
+            "min": 1,
+            "max": 10,
+            "default": 1,
+            "step": 0.1,
+            "unit": "vw"
+        },
+        {
+            "type": "header",
+            "content": "Title"
+        },
+        {
+            "type": "richtext",
+            "id": "title",
+            "label": "Title"
+        },
+        {
+            "type": "range",
+            "id": "title_font_size",
+            "label": "Title Font Size",
+            "min": 1,
+            "max": 10,
+            "default": 1,
+            "step": 0.1,
+            "unit": "vw"
+        },
+        {
+            "type": "header",
+            "content": "Content Position"
+        },
+        {
+            "type": "range",
+            "id": "content_top",
+            "label": "Content Top",
+            "min": 1,
+            "max": 100,
+            "step": 1,
+            "unit": "%",
+            "default": 20
+        },
+        {
+            "type": "range",
+            "id": "content_left",
+            "label": "Content Left",
+            "min": 1,
+            "max": 100,
+            "step": 1,
+            "unit": "%",
+            "default": 20
+        },
+        {
+            "type": "range",
+            "id": "content_width",
+            "label": "Content Width",
+            "min": 1,
+            "max": 100,
+            "step": 1,
+            "unit": "%",
+            "default": 50
+        },
+        {
+            "type": "header",
+            "content": "Buttons"
+        },
+        {
+            "type": "text",
+            "id": "sport",
+            "label": "Sport",
+            "info": "Used to pre-select sport on CTA",
+            "default": "Basketball"
+        },
+        {
+            "type": "checkbox",
+            "id": "show_silver",
+            "label": "Show Silver CTA",
+            "default": false
+        },
+        {
+            "type": "range",
+            "id": "buttons_bottom",
+            "label": "Buttons Bottom",
+            "min": 1,
+            "max": 100,
+            "step": 1,
+            "unit": "%",
+            "default": 20
+        },
+        {
+            "type": "header",
+            "content": "Body"
+        },
+        {
+            "type": "textarea",
+            "id": "body",
+            "label": "Body"
+        }
+    ],
+    "blocks": [
+    ],
+    "presets": [
+        {
+            "name": "Sport Hero"
+        }
+    ]
+}
+{% endschema %}

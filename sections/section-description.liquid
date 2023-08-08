@@ -1,0 +1,70 @@
+<style>
+    .section-description {
+        text-align: left;
+        padding-top: 70px;
+    }
+
+    .section-description__title span {
+        color: var(--gold);
+    }
+
+    .section-description--padding-bottom {
+        padding-bottom: 70px;
+    }
+</style>
+
+<section class="section-description container {{ section.settings.description_class }}">
+    {% if section.settings.description_title != blank %}
+        <h2 class="h3 section-description__title">{{ section.settings.description_title | newline_to_br }}</h2>
+    {% endif %}
+    {% if section.settings.description_copy %}
+        <div class="b1 section-description__copy">
+            {{ section.settings.description_copy }}
+        </div>
+    {% endif %}
+    {% if section.settings.description_button_copy != blank and section.settings.description_button_url %}
+        <a href="{{ section.settings.description_button_url }}"
+           class="button">{{ section.settings.description_button_copy }}</a>
+    {% endif %}
+</section>
+
+{% schema %}
+{
+  "name": "Description",
+  "settings": [
+    {
+      "type": "html",
+      "id": "description_title",
+      "label": "Description Title"
+    },
+    {
+      "type": "richtext",
+      "id": "description_copy",
+      "label": "Description Copy"
+    },
+    {
+      "type": "text",
+      "id": "description_class",
+      "label": "Description CSS Class"
+    },
+    {
+      "type": "url",
+      "id": "description_button_url",
+      "label": "Description Button Link"
+    }
+  ],
+  "blocks": [
+
+  ],
+  "presets": [
+    {
+      "name": "Description",
+      "settings": {
+      },
+      "blocks": [
+
+      ]
+    }
+  ]
+}
+{% endschema %}
